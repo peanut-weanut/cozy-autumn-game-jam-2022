@@ -1,0 +1,67 @@
+title: Start
+tags: 
+colorID: 0
+position: 0,0
+---
+// <<Me>> and <<Them>> are custom commands implemented in PhoneChatDialogueHelper.cs
+
+// set current speaker to "Me", the player
+<<Me>>
+Guess what?
+<<wait 1>>
+I wasted 5 hours on making my own version of this text system when a perfect one already works
+
+// set current speaker to "Them", the person the player is talking to
+<<Them>>
+<<wait 3>>
+Did you add the ability to add pictures you [wave][bounce]FUCKING[/] mongaloid
+<<wait 2>>
+nah fr fr fr get that added
+
+
+<<Me>>
+<<wait 1>>
+-> Ok cool I'll figure it out I can do it!
+    [wave][bounce]I CAN DO IT!!![/] mongaloid
+-> No I'm going to commit die lul
+    goodbye world *lynkin park plays in the distance
+    
+<<Them>>
+<<wait 2>>
+you'll figure it out
+<<wait 4>>
+just read the documentation... www.yarnspinner.dev !
+<<wait 2>>
+but if you want my advice,
+<<wait 5>>
+you should maybe add an automatic delay before a message, based on the length of the message, in PhoneChatDialogueHelper.RunLine()
+<<wait 4>>
+otherwise you have to keep typing out "wait" instructions, which is annoying
+
+<<Me>>
+<<wait 1>>
+-> Thanks!
+    Thanks!
+    <<wait 2>>
+    This conversation helped a lot
+-> Thanks!... for nothing
+    Thanks!... for nothing
+    <<wait 4>>
+    Next time, make my entire game for me! The whole thing!
+
+
+<<jump Bye>>
+===
+
+
+title: Bye
+tags: 
+colorID: 0
+position: 0,0
+---
+<<Them>>
+<<wait 2>>
+sorry I have to go now, bye
+<<wait 2>>
+good luck with your game!
+===
