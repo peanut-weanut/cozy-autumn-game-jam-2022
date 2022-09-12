@@ -15,6 +15,9 @@ namespace Yarn.Unity.Example
 
         public TMPro.TextMeshProUGUI text;
 
+        //this holds images printed to chat
+        public Sprite[] spriteArray;
+
         public GameObject optionsContainer;
         public OptionView optionPrefab;
 
@@ -31,8 +34,9 @@ namespace Yarn.Unity.Example
         void Awake()
         {
             runner = GetComponent<DialogueRunner>();
-            runner.AddCommandHandler( "Me", SetSenderMe ); // registers Yarn Command <<Me>>, which sets the current message sender to "Me"
-            runner.AddCommandHandler( "Them", SetSenderThem ); // registers Yarn Command <<They>>, which sets the current message sender to "Them" (whoever the player is talking to)
+            runner.AddCommandHandler("Me", SetSenderMe ); // registers Yarn Command <<Me>>, which sets the current message sender to "Me"
+            runner.AddCommandHandler("Them", SetSenderThem ); // registers Yarn Command <<They>>, which sets the current message sender to "Them" (whoever the player is talking to)
+            runner.AddCommandHandler<int>("DisplayImage", DisplayImage);
 
             optionsContainer.SetActive(false);
         }
@@ -47,22 +51,38 @@ namespace Yarn.Unity.Example
         public void SetSenderMe() 
         {
             isRightAlignment = true;
-            currentBGColor = Color.blue;
-            currentTextColor = Color.white;
+            currentBGColor = Color.grey;
+            currentBGColor.a = 0.75f;
+            currentTextColor = Color.black;
         }
 
         // YarnCommand <<Them>> does not use YarnCommand C# attribute, registers in Awake() instead
         public void SetSenderThem() 
         {
             isRightAlignment = false;
-            currentBGColor = Color.white;
-            currentTextColor = Color.black;
+            currentBGColor = new Color(0.1990477f, 0.2161004f, 0.5943396f);
+            currentBGColor.a = 0.69f;
+            currentTextColor = Color.white;
+        }
+
+        //THIS IS SUPPOSED TO BE CALLED BY THE YARN SCRIPT Yarnchatdialoge and display an image
+        //;3
+        void DisplayImage(int spriteID)
+        {
+            //currentBGColor = Color.white;
+            //currentBGColor.a = 1f;
+            Debug.Log(spriteID);
+            //var bg = dialogueBubblePrefab.GetComponentInChildren<Image>();
+            //bg.sprite = spriteArray[spriteID];
+            Instantiate<Sprite>(spriteArray[spriteID]);
+            
         }
 
         // when we clone a new message box, re-style the message box based on whether SetSenderMe or SetSenderThem was most recently called
         void UpdateMessageBoxSettings() 
         {
             var bg = dialogueBubblePrefab.GetComponentInChildren<Image>();
+            bg.sprite = spriteArray[0];
             bg.color = currentBGColor;
             var message = dialogueBubblePrefab.GetComponentInChildren<TMPro.TextMeshProUGUI>();
             message.text = "";

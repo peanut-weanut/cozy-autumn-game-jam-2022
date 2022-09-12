@@ -1,9 +1,9 @@
 ﻿title: Start
 ---
-Billy: Wow!
-My first ever Yarn script in Unity!
-more test text
-....BASED
+Billy: Wow! <sprite=0>
+My first ever Yarn script in Unity! <sprite=0>
+more test text <sprite=0>
+....BASED <sprite=0>
 
 Anyway, time to get writing!
 ===
