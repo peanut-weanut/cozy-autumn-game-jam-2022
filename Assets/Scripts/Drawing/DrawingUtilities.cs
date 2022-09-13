@@ -13,10 +13,10 @@ public class DrawingUtilities : MonoBehaviour
     // !!!ALL OF THIS IS UNTESTED!!!
 
     void Update(){
-        if(Input.GetButtonDown("Fire2"))
-            SaveAllToArray();
-        if(Input.GetButtonDown("Submit"))
-            UndoDrawing();
+        // if(Input.GetButtonDown("Fire2"))
+        //     SaveAllToArray();
+        // if(Input.GetButtonDown("Submit"))
+        //     UndoDrawing();
     }
     void SaveAllToArray(){
         RefreshDrawings();

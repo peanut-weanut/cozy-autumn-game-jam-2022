@@ -26,10 +26,30 @@ public class DrawLines : MonoBehaviour
     private Vector3 lastPoint;
     private bool isDrawing = false;
     private GameObject newDrawing = null;
+    public InputSystem controls;
+    public bool inputBuffer = false;
 
+    private void Awake()
+    {
+        controls = new InputSystem();
+    }
+    
     void Start()
     {
+        //cameras = GameObject.FindGameObjectsWithTag("Camera");
+        controls.mouse.Click.started += ctx => StartDrawing();
+        controls.mouse.Click.canceled += ctx => StopDrawing();
+        // cameras = GameObject.FindGameObjectsWithTag("Camera");
         cam = Camera.main;
+    }
+        private void OnEnable()
+    {
+        controls.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controls.Disable();
     }
 
     // Update is called once per frame
@@ -37,9 +57,13 @@ public class DrawLines : MonoBehaviour
     {   if (accuracy < 0.05f){ // lower bound for accuracy to prevent crashes
             accuracy = 0.05f;
         }
-        Vector2 pos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-        if(Input.GetAxis("Fire1") > 0.0f){
-            Ray ray = cam.ScreenPointToRay(pos);
+        // Vector2 pos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        if (inputBuffer)
+            Draw();
+    }
+    void Draw(){
+            Vector2 mousePosition = controls.mouse.MousePosition.ReadValue<Vector2>();
+            Ray ray = cam.ScreenPointToRay(mousePosition);
             Debug.DrawRay(ray.origin, ray.direction * 30.0f, Color.red);
             RaycastHit hit;
             bool raycast = Physics.Raycast(ray, out hit, 100.0f, canvasLayer);
@@ -63,14 +87,17 @@ public class DrawLines : MonoBehaviour
                     newDrawing = null;
                 }
                 isDrawing = false;
-            }
-            
-        } else{ // if you stop clicking, then stop drawing.
-            if (newDrawing !=null){
-                // newDrawing.GetComponent<RenderLines>().Stop();
-                newDrawing = null;
-            }
-            isDrawing = false;
-        }       
+            } 
+        }
+    void StopDrawing(){
+        if (newDrawing !=null){
+            // newDrawing.GetComponent<RenderLines>().Stop();
+            newDrawing = null;
+        }
+        isDrawing = false;    
+        inputBuffer = false; 
+    }   
+    void StartDrawing(){
+        inputBuffer = true;
     }
 }
