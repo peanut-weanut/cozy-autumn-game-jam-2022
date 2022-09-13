@@ -8,7 +8,7 @@ public class DrawingUtilities : MonoBehaviour
                                       // its more performant than resizing an array(which in c# is deleting and recreating it) every time we undo, from what i can tell
     private GameObject[] drawingsTemp;
     public Vector3[][] points;
-    
+
     
     // !!!ALL OF THIS IS UNTESTED!!!
 
