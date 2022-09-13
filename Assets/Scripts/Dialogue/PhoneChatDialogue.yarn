@@ -10,7 +10,7 @@ position: 0,0
 Guess what?
 <<wait 1>>
 I wasted 5 hours on making my own version of this text system when a perfect one already works <sprite=0>
-
+                                                                                      
 // set current speaker to "Them", the person the player is talking to
 <<Them>>
 <<wait 3>>
