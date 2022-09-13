@@ -68,6 +68,7 @@ public class DrawLines : MonoBehaviour
             RaycastHit hit;
             bool raycast = Physics.Raycast(ray, out hit, 100.0f, canvasLayer);
             if (raycast){
+                Debug.Log("Ray hit.");
                 if (isDrawing){
                     if ((hit.point-lastPoint).magnitude > accuracy * scaling){ // if the distance between the hit point and the previous point is greater than the resolution of the accuracy, place a new point
                         Vector3 newPoint = hit.point - (ray.direction); // set the new point to where it lands on the canvas
@@ -78,6 +79,7 @@ public class DrawLines : MonoBehaviour
                     }
                 } else{ // if there is no list or drawing object, then create a new list and drawing object.
                     newDrawing = Instantiate(drawingPrefab, hit.point, Quaternion.identity);
+                    Debug.Log("New prefab made.");
                     // points = new List<Vector3>();
                     isDrawing = true;
                 }

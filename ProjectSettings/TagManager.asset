@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Camera
   - Line
-  - Canvas
   - POI
   layers:
   - Default
