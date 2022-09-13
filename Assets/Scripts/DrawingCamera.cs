@@ -5,14 +5,16 @@ using Cinemachine;
 
 public class DrawingCamera : MonoBehaviour
 {
-    private CinemachineVirtualCamera cam;
+    // private CinemachineVirtualCamera cam;
+    private CinemachineBrain brain;
     public InputSystem controls;
     [SerializeField]
     private bool dragging;
     private void Awake()
     {
         controls = new InputSystem();
-        cam = transform.GetComponent<CinemachineVirtualCamera>();
+        // cam = transform.GetComponent<CinemachineVirtualCamera>();
+        brain = Camera.main.GetComponent<CinemachineBrain>();
     }
     private void OnEnable()
     {
@@ -49,6 +51,8 @@ public class DrawingCamera : MonoBehaviour
 
     public float GetAxisCustom(string axisName)
     {
+        if (brain.IsBlending)
+            return 0;
         if(dragging)
             return controls.mouse.MouseLook.ReadValue<Vector2>().y;
         else 

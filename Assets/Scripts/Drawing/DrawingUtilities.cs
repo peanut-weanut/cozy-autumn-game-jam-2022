@@ -6,7 +6,7 @@ public class DrawingUtilities : MonoBehaviour
 {
     public List<GameObject> drawings; // we prefer lists here because we wont be updating the list very often, nor will we be creating or removing in a single frame. 
                                       // its more performant than resizing an array(which in c# is deleting and recreating it) every time we undo, from what i can tell
-    private GameObject[] drawingsTemp;
+    
     public Vector3[][] points;
     public InputSystem controls;
     private void Awake()
@@ -16,6 +16,7 @@ public class DrawingUtilities : MonoBehaviour
     private void Start(){
         controls.inputs.Undo.performed += ctx => UndoDrawing();
         controls.inputs.Submit.performed += ctx => SubmitDrawing();
+        controls.CameraStates.ChangeView.performed += ctx => ClearDrawings();
     }
     private void OnEnable()
     {
@@ -49,17 +50,21 @@ public class DrawingUtilities : MonoBehaviour
     }
     void RefreshDrawings(){
             drawings.Clear();
-            drawingsTemp = GameObject.FindGameObjectsWithTag("Line"); // we have to do this since you cant convert an array into a list
-            foreach(GameObject drawing in drawingsTemp){
-                drawings.Add(drawing);
+            var drawingsTemp = GameObject.FindGameObjectsWithTag("Line"); // we have to do this since you cant convert an array into a list
+            for(var i = 0; i < drawingsTemp.Length; i++){
+                if (drawingsTemp[i] != null)
+                    drawings.Add(drawingsTemp[i]);
             }
+            
     }
     void ClearDrawings(){
         RefreshDrawings();
-        foreach(GameObject i in drawings){
-            drawings.Remove(i);
-            Destroy(i);
+        for(var i = drawings.Count - 1; i > -1; i--){
+            var dead = drawings[i];
+            drawings.Remove(dead);
+            Destroy(dead);
         }
+        RefreshDrawings();
     }
     void SubmitDrawing(){ //VERY IMPORTANT TO NOT CALL CLEARDRAWINGS ANYWHERE ELSE THAN HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         SaveAllToArray();
@@ -74,5 +79,6 @@ public class DrawingUtilities : MonoBehaviour
         Debug.Log(deadIndex + "/" + drawings.Count + dead.name);
         drawings.Remove(dead); // remove the last entry from drawings
         Destroy(dead); 
+        RefreshDrawings();
     }
 }

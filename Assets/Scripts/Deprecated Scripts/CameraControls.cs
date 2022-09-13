@@ -24,6 +24,7 @@ public class CameraControls : MonoBehaviour
     private void Awake()
     {
         controls = new InputSystem();
+        Cursor.lockState = CursorLockMode.Locked;
     }
     
     void Start()
@@ -72,6 +73,7 @@ public class CameraControls : MonoBehaviour
                     i.GetComponent<CinemachineVirtualCamera>().m_Priority = i.name == "Horizontal Camera" ? 1 : 0;
                 }
                 state = states.DRAWING;
+                Cursor.lockState = CursorLockMode.Locked;
             break;
             case states.DRAWING:
                 foreach (GameObject i in cameras){
@@ -80,6 +82,7 @@ public class CameraControls : MonoBehaviour
                     i.GetComponent<CinemachineVirtualCamera>().m_Priority = i.name == "Vertical Camera" ? 1 : 0;
                 }
                 state = states.LOOKING;
+                Cursor.lockState = CursorLockMode.None;
             break;
         }
     }
