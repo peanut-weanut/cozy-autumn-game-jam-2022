@@ -8,7 +8,24 @@ public class DrawingUtilities : MonoBehaviour
                                       // its more performant than resizing an array(which in c# is deleting and recreating it) every time we undo, from what i can tell
     private GameObject[] drawingsTemp;
     public Vector3[][] points;
-    
+    public InputSystem controls;
+    private void Awake()
+    {
+        controls = new InputSystem();
+    }
+    private void Start(){
+        controls.inputs.Undo.performed += ctx => UndoDrawing();
+        controls.inputs.Submit.performed += ctx => SubmitDrawing();
+    }
+    private void OnEnable()
+    {
+        controls.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controls.Disable();
+    }
     
     // !!!ALL OF THIS IS UNTESTED!!!
 
@@ -43,6 +60,11 @@ public class DrawingUtilities : MonoBehaviour
             drawings.Remove(i);
             Destroy(i);
         }
+    }
+    void SubmitDrawing(){ //VERY IMPORTANT TO NOT CALL CLEARDRAWINGS ANYWHERE ELSE THAN HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        SaveAllToArray();
+        // SaveBufferToPNG()/Screenshot();
+        ClearDrawings();
     }
     void UndoDrawing(){
         RefreshDrawings();

@@ -127,6 +127,54 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "inputs",
+            "id": "631a1cb7-2120-44cf-9f23-23df5a5b49a0",
+            "actions": [
+                {
+                    "name": "Undo",
+                    "type": "Button",
+                    "id": "96f36fa7-93f0-4ce7-acff-f7f118893aac",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Submit",
+                    "type": "Button",
+                    "id": "4bc216c7-18da-45d6-b2f1-9f222fe6ef06",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3df08064-1ade-4db4-8d31-ef8d268e5538",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Undo",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b8f50dfa-9e03-48de-9a9e-b1da3bc3b3da",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

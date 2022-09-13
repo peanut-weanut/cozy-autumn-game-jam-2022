@@ -149,6 +149,54 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""inputs"",
+            ""id"": ""631a1cb7-2120-44cf-9f23-23df5a5b49a0"",
+            ""actions"": [
+                {
+                    ""name"": ""Undo"",
+                    ""type"": ""Button"",
+                    ""id"": ""96f36fa7-93f0-4ce7-acff-f7f118893aac"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Submit"",
+                    ""type"": ""Button"",
+                    ""id"": ""4bc216c7-18da-45d6-b2f1-9f222fe6ef06"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""3df08064-1ade-4db4-8d31-ef8d268e5538"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Undo"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b8f50dfa-9e03-48de-9a9e-b1da3bc3b3da"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Submit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -162,6 +210,10 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         // Camera States
         m_CameraStates = asset.FindActionMap("Camera States", throwIfNotFound: true);
         m_CameraStates_ChangeView = m_CameraStates.FindAction("Change View", throwIfNotFound: true);
+        // inputs
+        m_inputs = asset.FindActionMap("inputs", throwIfNotFound: true);
+        m_inputs_Undo = m_inputs.FindAction("Undo", throwIfNotFound: true);
+        m_inputs_Submit = m_inputs.FindAction("Submit", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -307,6 +359,47 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         }
     }
     public CameraStatesActions @CameraStates => new CameraStatesActions(this);
+
+    // inputs
+    private readonly InputActionMap m_inputs;
+    private IInputsActions m_InputsActionsCallbackInterface;
+    private readonly InputAction m_inputs_Undo;
+    private readonly InputAction m_inputs_Submit;
+    public struct InputsActions
+    {
+        private @InputSystem m_Wrapper;
+        public InputsActions(@InputSystem wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Undo => m_Wrapper.m_inputs_Undo;
+        public InputAction @Submit => m_Wrapper.m_inputs_Submit;
+        public InputActionMap Get() { return m_Wrapper.m_inputs; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(InputsActions set) { return set.Get(); }
+        public void SetCallbacks(IInputsActions instance)
+        {
+            if (m_Wrapper.m_InputsActionsCallbackInterface != null)
+            {
+                @Undo.started -= m_Wrapper.m_InputsActionsCallbackInterface.OnUndo;
+                @Undo.performed -= m_Wrapper.m_InputsActionsCallbackInterface.OnUndo;
+                @Undo.canceled -= m_Wrapper.m_InputsActionsCallbackInterface.OnUndo;
+                @Submit.started -= m_Wrapper.m_InputsActionsCallbackInterface.OnSubmit;
+                @Submit.performed -= m_Wrapper.m_InputsActionsCallbackInterface.OnSubmit;
+                @Submit.canceled -= m_Wrapper.m_InputsActionsCallbackInterface.OnSubmit;
+            }
+            m_Wrapper.m_InputsActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Undo.started += instance.OnUndo;
+                @Undo.performed += instance.OnUndo;
+                @Undo.canceled += instance.OnUndo;
+                @Submit.started += instance.OnSubmit;
+                @Submit.performed += instance.OnSubmit;
+                @Submit.canceled += instance.OnSubmit;
+            }
+        }
+    }
+    public InputsActions @inputs => new InputsActions(this);
     public interface IMouseActions
     {
         void OnMouseLook(InputAction.CallbackContext context);
@@ -317,5 +410,10 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
     public interface ICameraStatesActions
     {
         void OnChangeView(InputAction.CallbackContext context);
+    }
+    public interface IInputsActions
+    {
+        void OnUndo(InputAction.CallbackContext context);
+        void OnSubmit(InputAction.CallbackContext context);
     }
 }
