@@ -9,7 +9,6 @@ public class CameraControls : MonoBehaviour
     // public List<int> visiblePOIs;
 
     public GameObject[] cameras;
-    private int currentCamera = 0;
     public enum states {
         LOOKING,
         DRAWING
