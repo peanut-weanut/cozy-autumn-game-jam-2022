@@ -6,7 +6,7 @@ using Cinemachine;
 public class CameraControls : MonoBehaviour
 {
     //Switches between cinemachines cameras for looking and drawing
-    public GameObject[] POIs;
+
     // public List<int> visiblePOIs;
 
     public GameObject[] cameras;
@@ -32,7 +32,7 @@ public class CameraControls : MonoBehaviour
         //cameras = GameObject.FindGameObjectsWithTag("Camera");
         controls.CameraStates.ChangeView.performed += ctx => TryDrawing();
         state = states.LOOKING;
-        POIs = GameObject.FindGameObjectsWithTag("POI");
+        
         // cameras = GameObject.FindGameObjectsWithTag("Camera");
     }
     private void OnEnable()
@@ -87,7 +87,7 @@ public class CameraControls : MonoBehaviour
         }
     }
     bool CheckPOIs(){
-        foreach(GameObject i in POIs){
+        foreach(GameObject i in GameManager.game.POIs){
             if (i.GetComponent<POIScript>().isVisible){
                 //run the script that starts selecting
                 if (i.GetComponent<POIScript>().isDrawable){
