@@ -35,7 +35,7 @@ public class CameraControls : MonoBehaviour
         POIs = GameObject.FindGameObjectsWithTag("POI");
         // cameras = GameObject.FindGameObjectsWithTag("Camera");
     }
-        private void OnEnable()
+    private void OnEnable()
     {
         controls.Enable();
     }
@@ -88,7 +88,7 @@ public class CameraControls : MonoBehaviour
     }
     bool CheckPOIs(){
         foreach(GameObject i in POIs){
-            if (i.GetComponent<Renderer>().isVisible){
+            if (i.GetComponent<POIScript>().isVisible){
                 //run the script that starts selecting
                 if (i.GetComponent<POIScript>().isDrawable){
                     Debug.Log(i + " is visible and drawable!");
