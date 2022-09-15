@@ -31,7 +31,8 @@ public class CameraControls : MonoBehaviour
     {
         //cameras = GameObject.FindGameObjectsWithTag("Camera");
         controls.CameraStates.ChangeView.performed += ctx => TryDrawing();
-        state = states.LOOKING;
+        state = states.DRAWING;
+        ToggleState();
         
         // cameras = GameObject.FindGameObjectsWithTag("Camera");
     }
@@ -70,19 +71,19 @@ public class CameraControls : MonoBehaviour
                 foreach (GameObject i in cameras){
                     // InheritRotation(i);
                     // MatchCameras(0);
-                    i.GetComponent<CinemachineVirtualCamera>().m_Priority = i.name == "Horizontal Camera" ? 1 : 0;
+                    i.GetComponent<CinemachineVirtualCamera>().m_Priority = i.name == "Vertical Camera" ? 1 : 0;
                 }
                 state = states.DRAWING;
-                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.lockState = CursorLockMode.None;
             break;
             case states.DRAWING:
                 foreach (GameObject i in cameras){
                     // InheritRotation(i);
                     // MatchCameras(1);
-                    i.GetComponent<CinemachineVirtualCamera>().m_Priority = i.name == "Vertical Camera" ? 1 : 0;
+                    i.GetComponent<CinemachineVirtualCamera>().m_Priority = i.name == "Horizontal Camera" ? 1 : 0;
                 }
                 state = states.LOOKING;
-                Cursor.lockState = CursorLockMode.None;
+                Cursor.lockState = CursorLockMode.Locked;
             break;
         }
     }

@@ -7,6 +7,7 @@ public class InputIntercept : MonoBehaviour
 {
     private CinemachineBrain brain;
     public InputSystem controls;
+    public CinemachineInputProvider input;
     void Awake(){
         controls = new InputSystem();
     }
@@ -15,7 +16,7 @@ public class InputIntercept : MonoBehaviour
         
         // cam = transform.GetComponent<CinemachineVirtualCamera>();
         brain = Camera.main.GetComponent<CinemachineBrain>();
-        // CinemachineCore.GetInputAxis = GetAxisCustom;
+        input = GetComponent<CinemachineInputProvider>();
     }
     private void OnEnable()
     {
@@ -28,16 +29,13 @@ public class InputIntercept : MonoBehaviour
     }
     void Update(){
         if (brain.IsBlending){
-            Debug.Log("BLENDING");
-            
+            input.enabled = false;
+        } else{
+            input.enabled = true;
         }
     }
-    // private float GetAxisCustom(string axisName)
-    // {
-    //     if (brain.IsBlending){
-    //         Debug.Log("BLENDING");
-    //         return 0.0f;
-    //     }
-    //     return Input.GetAxis(axisName);
-    // }
+    private float GetAxisCustom(string axisName)
+    {
+            return 0.0f;
+    }
 }
