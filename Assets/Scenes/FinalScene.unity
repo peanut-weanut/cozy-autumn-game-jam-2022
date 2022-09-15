@@ -29047,7 +29047,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6203e2e9365e0b8498e6b5161f36bfb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  POIs: []
   cameras:
   - {fileID: 1555108452}
   - {fileID: 329231291}
@@ -34697,6 +34696,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf7fbdfaf4494c3429ccf46bb3a33bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  POIs: []
+  triggers:
+  - {fileID: 11400000, guid: d9de3597065c52d4b9405ee229fd1e56, type: 2}
+  continuousTriggers: []
 --- !u!4 &1825101533
 Transform:
   m_ObjectHideFlags: 0
