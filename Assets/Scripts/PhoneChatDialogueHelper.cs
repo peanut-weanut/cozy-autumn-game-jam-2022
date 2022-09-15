@@ -38,7 +38,7 @@ namespace Yarn.Unity.Example
             runner.AddCommandHandler("Them", SetSenderThem ); // registers Yarn Command <<They>>, which sets the current message sender to "Them" (whoever the player is talking to)
             runner.AddCommandHandler<int>("DisplayImage", DisplayImage);
 
-            optionsContainer.SetActive(false);
+            optionsContainer.SetActive(false); 
         }
 
         void Start () 
@@ -72,9 +72,9 @@ namespace Yarn.Unity.Example
             //currentBGColor = Color.white;
             //currentBGColor.a = 1f;
             Debug.Log(spriteID);
-            //var bg = dialogueBubblePrefab.GetComponentInChildren<Image>();
+            var bg = dialogueBubblePrefab.GetComponentInChildren<Image>();
             //bg.sprite = spriteArray[spriteID];
-            Instantiate<Sprite>(spriteArray[spriteID]);
+            Instantiate<Sprite>(spriteArray[spriteID], bg.transform.position, bg.transform.rotation);
             
         }
 
