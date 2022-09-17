@@ -16,6 +16,10 @@ public class CameraControls : MonoBehaviour
     public states state;
     public bool free = true;
 
+    // Adds cursor sprites
+    public Texture2D cursorSpriteLook;
+    public Texture2D cursorSpriteDraw;
+
     // Start is called before the first frame update
     public enum states {
         LOOKING,
@@ -29,6 +33,9 @@ public class CameraControls : MonoBehaviour
     
     void Start()
     {
+        //Set Cursor to look, which is the default
+        Cursor.SetCursor(cursorSpriteLook, Vector2.zero, CursorMode.Auto);
+
         //cameras = GameObject.FindGameObjectsWithTag("Camera");
         controls.CameraStates.ChangeView.performed += ctx => TryDrawing();
         state = states.DRAWING;
@@ -74,6 +81,7 @@ public class CameraControls : MonoBehaviour
                     i.GetComponent<CinemachineVirtualCamera>().m_Priority = i.name == "Vertical Camera" ? 1 : 0;
                 }
                 state = states.DRAWING;
+                //Cursor.SetCursor(cursorSpriteLook, Vector2.zero, CursorMode.Auto);
                 Cursor.lockState = CursorLockMode.None;
             break;
             case states.DRAWING:
@@ -83,6 +91,7 @@ public class CameraControls : MonoBehaviour
                     i.GetComponent<CinemachineVirtualCamera>().m_Priority = i.name == "Horizontal Camera" ? 1 : 0;
                 }
                 state = states.LOOKING;
+                //Cursor.SetCursor(cursorSpriteDraw, Vector2.zero, CursorMode.Auto);
                 Cursor.lockState = CursorLockMode.Locked;
             break;
         }
@@ -114,6 +123,11 @@ public class CameraControls : MonoBehaviour
         //Match Values : follow offset, position & rotation
             cameras[hackyIndex].GetComponent<CinemachineVirtualCamera>().ForceCameraPosition(transform.position, Camera.main.transform.rotation);
 
+
+    }
+
+    public void toggleCursorSprite ()
+    {
 
     }
 

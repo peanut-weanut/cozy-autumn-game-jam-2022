@@ -29060,6 +29060,8 @@ MonoBehaviour:
   - {fileID: 329231291}
   state: 0
   free: 0
+  cursorSpriteLook: {fileID: 2800000, guid: 5d45f819d54018a4db8f930a5be852d0, type: 3}
+  cursorSpriteDraw: {fileID: 2800000, guid: b2b0dab0d5660814e80a1e2edea45977, type: 3}
 --- !u!114 &1514301020
 MonoBehaviour:
   m_ObjectHideFlags: 0
