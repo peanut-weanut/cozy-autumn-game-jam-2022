@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
                 UpdateCTriggers(new List<ContinuousTrigger>(){continuousTriggers[0]});
             break;
             case 2:
-                UpdateTriggers(new List<Trigger>(){triggers[1]});
+                UpdateTriggers(new List<Trigger>(){triggers[1], triggers[4]});
             break;
             case 3:
                 UpdateTriggers(new List<Trigger>(){triggers[2], triggers[3]});

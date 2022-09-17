@@ -6200,7 +6200,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isVisible: 0
   isDrawable: 0
-  myTrigger: {fileID: 11400000, guid: 6439f0ab05c97ae49928c89d5e38f405, type: 2}
+  myTrigger:
+  - {fileID: 11400000, guid: 6439f0ab05c97ae49928c89d5e38f405, type: 2}
+  - {fileID: 11400000, guid: 05f501005f043ec47be8ab6a8769e913, type: 2}
   triggerActive: 0
 --- !u!1001 &390624453
 PrefabInstance:
@@ -11131,7 +11133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isVisible: 0
   isDrawable: 0
-  myTrigger: {fileID: 11400000, guid: dd9c862cd4bb9e340860123fb53dfef5, type: 2}
+  myTrigger: []
   triggerActive: 0
 --- !u!65 &399371848
 BoxCollider:
@@ -17472,7 +17474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isVisible: 0
   isDrawable: 0
-  myTrigger: {fileID: 11400000, guid: dd9c862cd4bb9e340860123fb53dfef5, type: 2}
+  myTrigger: []
   triggerActive: 0
 --- !u!65 &835919400
 BoxCollider:
@@ -34709,6 +34711,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6439f0ab05c97ae49928c89d5e38f405, type: 2}
   - {fileID: 11400000, guid: b21dee0a94ef17a4799a30c87baad8fb, type: 2}
   - {fileID: 11400000, guid: 5595ea4155c74584182ca3fa5ac6b895, type: 2}
+  - {fileID: 11400000, guid: 05f501005f043ec47be8ab6a8769e913, type: 2}
   continuousTriggers:
   - {fileID: 11400000, guid: 46d2cf24f1016944d98244cd5ddfef0e, type: 2}
   triggersActive: []

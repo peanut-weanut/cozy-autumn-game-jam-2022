@@ -7,15 +7,10 @@ public class POIScript : MonoBehaviour
 {
     public bool isVisible;
     public bool isDrawable;
-    public Trigger myTrigger;
+    public Trigger[] myTrigger;
     public bool triggerActive;
     private Renderer render;
-    private void Reset() {
-        if (transform.tag != "POI")
-            transform.tag = "POI";
-        if (!myTrigger)
-            myTrigger = GetTrigger("default_trigger", typeof(Trigger)) as Trigger;
-    }
+    
     private void Start(){
         GameManager.game.OnListUpdate += CheckTrigger;
         render = GetComponent<Renderer>();
@@ -28,29 +23,48 @@ public class POIScript : MonoBehaviour
         isVisible = false;  
     }
     void CheckTrigger(){
-        if (GameManager.game.triggersActive.Contains(myTrigger)){
-            triggerActive = true;
-        } else{
-            triggerActive = false;
+        int badCount = 0;
+        int goodCount = 0;
+        foreach(Trigger t in myTrigger){
+            goodCount++;
+            if (GameManager.game.triggersActive.Contains(t)){
+                triggerActive = true;
+            } else{
+                badCount++;
+            }
+            if (badCount == goodCount)
+                triggerActive = false;
+            ExecuteTrigger(t);
+            Debug.Log(t.id);
         }
-        ExecuteTrigger();
+        
     }
-    void ExecuteTrigger(){
+    void ExecuteTrigger(Trigger trigger){
         if(triggerActive){
-            if (myTrigger.id.EndsWith("_Spawn")){
+            Debug.Log("Trigger is active");
+            if (trigger.id.EndsWith("_Spawn")){
                 render.enabled = true;
+                Debug.Log("Spawned");
             } 
-            else if (myTrigger.id.EndsWith("_MakeDrawable")){
+            else if (trigger.id.EndsWith("_MakeDrawable")){
                 isDrawable = true;
+                Debug.Log("Drawned");
             } 
-            else if(myTrigger.id.EndsWith("_Despawn")){
+            else if(trigger.id.EndsWith("_Despawn")){
                 render.enabled = false;
                 isDrawable = false;
             }
             else{
-                render.enabled = false;
+                // render.enabled = false;
             }
         }
+    }
+    #if UNITY_EDITOR
+    private void Reset() {
+        if (transform.tag != "POI")
+            transform.tag = "POI";
+        if (myTrigger.Length == 0)
+            myTrigger[0] = GetTrigger("default_trigger", typeof(Trigger)) as Trigger;
     }
     public static object GetTrigger(string SOName, System.Type type)
     {
@@ -65,4 +79,5 @@ public class POIScript : MonoBehaviour
 
         return null;    
     }
+    #endif
 }
