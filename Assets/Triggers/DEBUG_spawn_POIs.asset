@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 890f6b43ffbc8c1409d93a5723299335, type: 3}
-  m_Name: birds_flying
+  m_Script: {fileID: 11500000, guid: 4994ca0dabb0eac42b552ee34eca3817, type: 3}
+  m_Name: DEBUG_spawn_POIs
   m_EditorClassIdentifier: 
-  id: birds_flying
-  waitTime: 10
+  id: 
+  waitTime: 0
   active: 0

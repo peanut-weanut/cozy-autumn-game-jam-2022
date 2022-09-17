@@ -6122,6 +6122,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isVisible: 0
   isDrawable: 1
+  myTrigger: {fileID: 0}
+  triggerActive: 0
 --- !u!65 &387787972
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11129,6 +11131,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isVisible: 0
   isDrawable: 0
+  myTrigger: {fileID: 0}
+  triggerActive: 0
 --- !u!65 &399371848
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17468,6 +17472,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isVisible: 0
   isDrawable: 0
+  myTrigger: {fileID: 0}
+  triggerActive: 0
 --- !u!65 &835919400
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34700,7 +34706,13 @@ MonoBehaviour:
   POIs: []
   triggers:
   - {fileID: 11400000, guid: d9de3597065c52d4b9405ee229fd1e56, type: 2}
-  continuousTriggers: []
+  - {fileID: 11400000, guid: 6439f0ab05c97ae49928c89d5e38f405, type: 2}
+  - {fileID: 11400000, guid: b21dee0a94ef17a4799a30c87baad8fb, type: 2}
+  - {fileID: 11400000, guid: 5595ea4155c74584182ca3fa5ac6b895, type: 2}
+  continuousTriggers:
+  - {fileID: 11400000, guid: 46d2cf24f1016944d98244cd5ddfef0e, type: 2}
+  triggersActive: []
+  cTriggersActive: []
 --- !u!4 &1825101533
 Transform:
   m_ObjectHideFlags: 0

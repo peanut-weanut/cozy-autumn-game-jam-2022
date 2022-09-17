@@ -175,6 +175,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "debug",
+            "id": "703bb401-c42b-4b30-802c-82795bd1341c",
+            "actions": [
+                {
+                    "name": "AdvanceCutscene",
+                    "type": "Button",
+                    "id": "c1a2b685-5b35-46e6-a010-213dd64a3908",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ad969529-64d4-4de5-a740-e37423bcd3f8",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AdvanceCutscene",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

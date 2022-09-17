@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4994ca0dabb0eac42b552ee34eca3817, type: 3}
   m_Name: start_event
   m_EditorClassIdentifier: 
-  id: Test Trigger
-  time: 0
+  id: start_event
+  waitTime: 5
   active: 0

@@ -197,6 +197,34 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""debug"",
+            ""id"": ""703bb401-c42b-4b30-802c-82795bd1341c"",
+            ""actions"": [
+                {
+                    ""name"": ""AdvanceCutscene"",
+                    ""type"": ""Button"",
+                    ""id"": ""c1a2b685-5b35-46e6-a010-213dd64a3908"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""ad969529-64d4-4de5-a740-e37423bcd3f8"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""AdvanceCutscene"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -214,6 +242,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         m_inputs = asset.FindActionMap("inputs", throwIfNotFound: true);
         m_inputs_Undo = m_inputs.FindAction("Undo", throwIfNotFound: true);
         m_inputs_Submit = m_inputs.FindAction("Submit", throwIfNotFound: true);
+        // debug
+        m_debug = asset.FindActionMap("debug", throwIfNotFound: true);
+        m_debug_AdvanceCutscene = m_debug.FindAction("AdvanceCutscene", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -400,6 +431,39 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         }
     }
     public InputsActions @inputs => new InputsActions(this);
+
+    // debug
+    private readonly InputActionMap m_debug;
+    private IDebugActions m_DebugActionsCallbackInterface;
+    private readonly InputAction m_debug_AdvanceCutscene;
+    public struct DebugActions
+    {
+        private @InputSystem m_Wrapper;
+        public DebugActions(@InputSystem wrapper) { m_Wrapper = wrapper; }
+        public InputAction @AdvanceCutscene => m_Wrapper.m_debug_AdvanceCutscene;
+        public InputActionMap Get() { return m_Wrapper.m_debug; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(DebugActions set) { return set.Get(); }
+        public void SetCallbacks(IDebugActions instance)
+        {
+            if (m_Wrapper.m_DebugActionsCallbackInterface != null)
+            {
+                @AdvanceCutscene.started -= m_Wrapper.m_DebugActionsCallbackInterface.OnAdvanceCutscene;
+                @AdvanceCutscene.performed -= m_Wrapper.m_DebugActionsCallbackInterface.OnAdvanceCutscene;
+                @AdvanceCutscene.canceled -= m_Wrapper.m_DebugActionsCallbackInterface.OnAdvanceCutscene;
+            }
+            m_Wrapper.m_DebugActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @AdvanceCutscene.started += instance.OnAdvanceCutscene;
+                @AdvanceCutscene.performed += instance.OnAdvanceCutscene;
+                @AdvanceCutscene.canceled += instance.OnAdvanceCutscene;
+            }
+        }
+    }
+    public DebugActions @debug => new DebugActions(this);
     public interface IMouseActions
     {
         void OnMouseLook(InputAction.CallbackContext context);
@@ -415,5 +479,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
     {
         void OnUndo(InputAction.CallbackContext context);
         void OnSubmit(InputAction.CallbackContext context);
+    }
+    public interface IDebugActions
+    {
+        void OnAdvanceCutscene(InputAction.CallbackContext context);
     }
 }
