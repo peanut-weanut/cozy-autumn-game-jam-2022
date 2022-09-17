@@ -9,6 +9,7 @@ public class POIScript : MonoBehaviour
     public bool isDrawable;
     public Trigger myTrigger;
     public bool triggerActive;
+    private Renderer render;
     private void Reset() {
         if (transform.tag != "POI")
             transform.tag = "POI";
@@ -17,14 +18,14 @@ public class POIScript : MonoBehaviour
     }
     private void Start(){
         GameManager.game.OnListUpdate += CheckTrigger;
-        
+        render = GetComponent<Renderer>();
+        render.enabled = false;
     }
     public void OnBecameVisible(){ //if it mattered, then this method would return a ray instead 
         isVisible = true;    
     }
     public void OnBecameInvisible(){ //if it mattered, then this method would return a ray instead 
         isVisible = false;  
-        
     }
     void CheckTrigger(){
         if (GameManager.game.triggersActive.Contains(myTrigger)){
@@ -32,10 +33,23 @@ public class POIScript : MonoBehaviour
         } else{
             triggerActive = false;
         }
+        ExecuteTrigger();
     }
-    void Update(){
+    void ExecuteTrigger(){
         if(triggerActive){
-            Debug.Log("Trigger POIs is active.");
+            if (myTrigger.id.EndsWith("_Spawn")){
+                render.enabled = true;
+            } 
+            else if (myTrigger.id.EndsWith("_MakeDrawable")){
+                isDrawable = true;
+            } 
+            else if(myTrigger.id.EndsWith("_Despawn")){
+                render.enabled = false;
+                isDrawable = false;
+            }
+            else{
+                render.enabled = false;
+            }
         }
     }
     public static object GetTrigger(string SOName, System.Type type)

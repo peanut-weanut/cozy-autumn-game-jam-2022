@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         controls = new InputSystem();
+        game = this;
     }
     private void OnEnable()
     {
@@ -48,19 +49,20 @@ public class GameManager : MonoBehaviour
 
     }
     void AdvanceState(){
+        state++;
         switch(state){
             case 0:
                 //initialize everything
             break;
             case 1:
-                UpdateTriggers(new List<Trigger>{triggers[0]});
-                UpdateCTriggers(new List<ContinuousTrigger>{continuousTriggers[0]});
+                UpdateTriggers(new List<Trigger>(){triggers[0]});
+                UpdateCTriggers(new List<ContinuousTrigger>(){continuousTriggers[0]});
             break;
             case 2:
-                UpdateTriggers(new List<Trigger>{triggers[1]});
+                UpdateTriggers(new List<Trigger>(){triggers[1]});
             break;
             case 3:
-                UpdateTriggers(new List<Trigger>{triggers[2], triggers[3]});
+                UpdateTriggers(new List<Trigger>(){triggers[2], triggers[3]});
             break;
         }
     }
@@ -70,14 +72,14 @@ public class GameManager : MonoBehaviour
         foreach(Trigger t in triggerList){
             triggersActive.Add(t);
         }
-        OnListUpdate();
+        OnListUpdate?.Invoke();
     }
         void UpdateCTriggers(List<ContinuousTrigger> triggerList){
         cTriggersActive.Clear();
         foreach(ContinuousTrigger t in triggerList){
             cTriggersActive.Add(t);
         }
-        OnCListUpdate();
+        OnCListUpdate?.Invoke();
     }
 
 }
