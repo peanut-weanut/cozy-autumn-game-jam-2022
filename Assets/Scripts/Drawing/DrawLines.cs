@@ -28,6 +28,8 @@ public class DrawLines : MonoBehaviour
     private GameObject newDrawing = null;
     public InputSystem controls;
     public bool inputBuffer = false;
+    public delegate void OnDrawDelegate();
+    public OnDrawDelegate OnDraw;
 
     private void Awake()
     {
@@ -75,6 +77,7 @@ public class DrawLines : MonoBehaviour
                         // points.Add(newPoint);
                         // newDrawing.GetComponent<RenderLines>().AddPoints(newPoint);
                         newDrawing.GetComponent<RenderLines>().AddPointsFast(newPoint);
+                        OnDraw();
                     }
                 } else{ // if there is no list or drawing object, then create a new list and drawing object.
                     newDrawing = Instantiate(drawingPrefab, hit.point, Quaternion.identity);

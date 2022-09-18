@@ -17,7 +17,6 @@ public class CameraControls : MonoBehaviour
     public bool free = true;
 
     // Adds cursor sprites
-    public Texture2D cursorSpriteLook;
     public Texture2D cursorSpriteDraw;
 
     // Start is called before the first frame update
@@ -34,8 +33,7 @@ public class CameraControls : MonoBehaviour
     void Start()
     {
         //Set Cursor to look, which is the default
-        Cursor.SetCursor(cursorSpriteLook, Vector2.zero, CursorMode.Auto);
-
+        Cursor.SetCursor(cursorSpriteDraw, new Vector2(0, cursorSpriteDraw.height), CursorMode.Auto);
         //cameras = GameObject.FindGameObjectsWithTag("Camera");
         controls.CameraStates.ChangeView.performed += ctx => TryDrawing();
         state = states.DRAWING;
@@ -123,11 +121,6 @@ public class CameraControls : MonoBehaviour
         //Match Values : follow offset, position & rotation
             cameras[hackyIndex].GetComponent<CinemachineVirtualCamera>().ForceCameraPosition(transform.position, Camera.main.transform.rotation);
 
-
-    }
-
-    public void toggleCursorSprite ()
-    {
 
     }
 

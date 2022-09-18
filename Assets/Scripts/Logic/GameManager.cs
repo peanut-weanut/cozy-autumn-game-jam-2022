@@ -26,12 +26,15 @@ public class GameManager : MonoBehaviour
 
     // public DialogueRunner runner;
     public InputSystem controls;
+    public DrawLines drawLines;
     int state = 0;
     private void Awake()
     {
         controls = new InputSystem();
+        drawLines = GetComponent<DrawLines>();
         game = this;
     }
+
     private void OnEnable()
     {
         controls.Enable();
