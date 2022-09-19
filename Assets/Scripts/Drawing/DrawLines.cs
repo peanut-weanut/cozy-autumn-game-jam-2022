@@ -28,8 +28,11 @@ public class DrawLines : MonoBehaviour
     private GameObject newDrawing = null;
     public InputSystem controls;
     public bool inputBuffer = false;
+    public bool allowDrawing = false;
     public delegate void OnDrawDelegate();
+    // public delegate void OnDrawEndedDelegate();
     public OnDrawDelegate OnDraw;
+    // public OnDrawDelegate OnDrawEnded;
 
     private void Awake()
     {
@@ -72,7 +75,7 @@ public class DrawLines : MonoBehaviour
             if (raycast){
                 if (isDrawing){
                     if ((hit.point-lastPoint).magnitude > accuracy * scaling){ // if the distance between the hit point and the previous point is greater than the resolution of the accuracy, place a new point
-                        Vector3 newPoint = hit.point - (ray.direction); // set the new point to where it lands on the canvas
+                        Vector3 newPoint = hit.point - (ray.direction*0.5f); // set the new point to where it lands on the canvas
                         lastPoint = newPoint; // set the last point to the new point
                         // points.Add(newPoint);
                         // newDrawing.GetComponent<RenderLines>().AddPoints(newPoint);
@@ -81,6 +84,7 @@ public class DrawLines : MonoBehaviour
                     }
                 } else{ // if there is no list or drawing object, then create a new list and drawing object.
                     newDrawing = Instantiate(drawingPrefab, hit.point, Quaternion.identity);
+                    newDrawing.transform.parent = hit.transform;
                     // points = new List<Vector3>();
                     isDrawing = true;
                 }
@@ -90,6 +94,7 @@ public class DrawLines : MonoBehaviour
                     newDrawing = null;
                 }
                 isDrawing = false;
+                // OnDrawEnded();
             } 
         }
     void StopDrawing(){
@@ -101,6 +106,7 @@ public class DrawLines : MonoBehaviour
         inputBuffer = false; 
     }   
     void StartDrawing(){
-        inputBuffer = true;
+        if (allowDrawing)
+            inputBuffer = true;
     }
 }

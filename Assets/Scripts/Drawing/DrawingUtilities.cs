@@ -9,6 +9,9 @@ public class DrawingUtilities : MonoBehaviour
     
     public Vector3[][] points;
     public InputSystem controls;
+    public Transform canvas;
+    private Vector3 canvasPos;
+    private Vector3[][] canvasOffset;
     private void Awake()
     {
         controls = new InputSystem();
@@ -16,7 +19,10 @@ public class DrawingUtilities : MonoBehaviour
     private void Start(){
         controls.inputs.Undo.performed += ctx => UndoDrawing();
         controls.inputs.Submit.performed += ctx => SubmitDrawing();
-        controls.CameraStates.ChangeView.performed += ctx => ClearDrawings();
+        // GameManager.game.drawLines.OnDrawEnded += BeginGetOffset;
+        canvasPos = canvas.position;
+        controls.CameraStates.ChangeView.performed += ctx => HideDrawings();
+        canvas.GetComponent<CanvasBehavior>().TransDone += ShowDrawings;
     }
     private void OnEnable()
     {
@@ -35,6 +41,12 @@ public class DrawingUtilities : MonoBehaviour
         //     SaveAllToArray();
         // if(Input.GetButtonDown("Submit"))
         //     UndoDrawing();
+
+        // if (canvasPos != canvas.position){
+        //     for(var i = drawings.Count - 1; i > -1; i--){
+        //         SetOffset(i, canvasOffset[i]);
+        //     }
+        // }
     }
     void SaveAllToArray(){
         RefreshDrawings();
@@ -66,6 +78,52 @@ public class DrawingUtilities : MonoBehaviour
         }
         RefreshDrawings();
     }
+    void ShowDrawings(){
+        for(var i = 0; i < drawings.Count; i++){
+            var hide = drawings[i];
+            var lRenderer = hide.GetComponent<LineRenderer>();
+            Debug.Log("Tried to show 2.");
+            lRenderer.enabled = true;
+        }
+    }
+    void HideDrawings(){
+        RefreshDrawings();
+        Debug.Log("Tried to hide 1.");
+        for(var i = 0; i < drawings.Count; i++){
+            var hide = drawings[i];
+            var lRenderer = hide.GetComponent<LineRenderer>();
+            Debug.Log("Tried to hide 2.");
+            lRenderer.enabled = false;
+        }
+        
+    }
+    // void BeginGetOffset(){
+    //     RefreshDrawings();
+    //     for(var i = drawings.Count - 1; i > -1; i--){
+    //         canvasOffset[i] = GetOffset(i);
+    //     }
+    // }
+
+    // private Vector3[] GetOffset(int i){
+    //     var lRenderer = drawings[i].GetComponent<LineRenderer>();
+    //     Vector3[] pointsRaw = new Vector3[lRenderer.positionCount];
+    //     lRenderer.GetPositions(pointsRaw);
+    //     Vector3[] offset = new Vector3[lRenderer.positionCount];
+    //     for(var x = pointsRaw.Length - 1; x > -1; x--){
+    //         offset[x] = pointsRaw[x] - canvas.position;
+    //     }
+    //     return offset;
+    // }
+
+    // void SetOffset(int i, Vector3[] offset){
+    //     var lRenderer = drawings[i].GetComponent<LineRenderer>();
+    //     Vector3[] pointsRaw = new Vector3[lRenderer.positionCount];
+    //     // lRenderer.GetPositions(pointsRaw);
+    //     for(var x = pointsRaw.Length - 1; x > -1; x--){
+    //         Vector3 pointNormalized = canvas.position + offset[x];
+    //         lRenderer.SetPosition(x, pointNormalized);
+    //     }
+    // }
     void SubmitDrawing(){ //VERY IMPORTANT TO NOT CALL CLEARDRAWINGS ANYWHERE ELSE THAN HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         SaveAllToArray();
         // SaveBufferToPNG()/Screenshot();

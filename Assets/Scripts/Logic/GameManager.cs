@@ -27,11 +27,14 @@ public class GameManager : MonoBehaviour
     // public DialogueRunner runner;
     public InputSystem controls;
     public DrawLines drawLines;
+    public CameraControls camControls;
+    public CanvasBehavior canvas;
     int state = 0;
     private void Awake()
     {
         controls = new InputSystem();
         drawLines = GetComponent<DrawLines>();
+        camControls = Camera.main.transform.GetComponent<CameraControls>();
         game = this;
     }
 
@@ -47,9 +50,17 @@ public class GameManager : MonoBehaviour
     void Start(){
         POIs = GameObject.FindGameObjectsWithTag("POI");
         controls.debug.AdvanceCutscene.performed += ctx => AdvanceState();
+        canvas.TransDone += AllowDrawing;
+        canvas.TransDoneLooking += DisallowDrawing;
     }
     void Update(){
 
+    }
+    void AllowDrawing(){
+        drawLines.allowDrawing = true;
+    }
+    void DisallowDrawing(){
+        drawLines.allowDrawing = false;
     }
     void AdvanceState(){
         state++;
