@@ -20,6 +20,8 @@ public class CameraControls : MonoBehaviour
     // Adds cursor sprites
     public Texture2D cursorSpriteDraw;
     public Image lookSprite;
+    public delegate void POISeenDelegate();
+    public POISeenDelegate POISeen;
 
     // Start is called before the first frame update
     public enum states {
@@ -64,8 +66,21 @@ public class CameraControls : MonoBehaviour
     //         break;
     //     }
     // }
-
-
+    void Update(){
+        if(StartTimer){
+            POITimer += Time.deltaTime;
+        }
+        if (POITimer > POITime){
+            POISeen?.Invoke();
+            POITimer = 0;
+            StartTimer = false;
+            DebugPOISeen = true;
+        }
+    }
+    public bool StartTimer = false;
+    public float POITime = 15.0f;
+    public float POITimer = 0.0f;
+    public bool DebugPOISeen = false;
     void TryDrawing(){
         Debug.Log("Tried to draw.");
         if (!free){ // if you are not free to draw whatever,
@@ -73,6 +88,7 @@ public class CameraControls : MonoBehaviour
                 ToggleState(); // and toggle the state
         }else{
             ToggleState(); // otherwise just toggle the state
+            
         }
     }
     void ToggleState(){
@@ -85,6 +101,8 @@ public class CameraControls : MonoBehaviour
                     // MatchCameras(0);
                     i.GetComponent<CinemachineVirtualCamera>().m_Priority = i.name == "Vertical Camera" ? 1 : 0;
                 }
+                if(CheckPOIs())
+                    StartTimer = true;
                 state = states.DRAWING;
                 //Cursor.SetCursor(cursorSpriteLook, Vector2.zero, CursorMode.Auto);
                 Cursor.lockState = CursorLockMode.None;
@@ -96,6 +114,8 @@ public class CameraControls : MonoBehaviour
                     i.GetComponent<CinemachineVirtualCamera>().m_Priority = i.name == "Horizontal Camera" ? 1 : 0;
                 }
                 state = states.LOOKING;
+                StartTimer = false;
+                DebugPOISeen = false;
                 //Cursor.SetCursor(cursorSpriteDraw, Vector2.zero, CursorMode.Auto);
                 Cursor.lockState = CursorLockMode.Locked;
             break;

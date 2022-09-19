@@ -3,17 +3,7 @@ guid: e096020ae68ec5b48ae5ba7fcc74367d
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Green_Leaves_matt
-    second: {fileID: 2100000, guid: 1eef3a08bb9f9564d98b0eb1177c7054, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Trunk_matt
-    second: {fileID: 2100000, guid: 2625cc957b9816549b5c8e3755dca36e, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

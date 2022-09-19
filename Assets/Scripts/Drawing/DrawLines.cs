@@ -15,6 +15,7 @@ public class DrawLines : MonoBehaviour
     public LayerMask canvasLayer;
     public Camera cam;
     public GameObject drawingPrefab;
+    public GameObject canvas;
 
     // Number of points on the line
     public int numPoints = 50;
@@ -75,7 +76,7 @@ public class DrawLines : MonoBehaviour
             if (raycast){
                 if (isDrawing){
                     if ((hit.point-lastPoint).magnitude > accuracy * scaling){ // if the distance between the hit point and the previous point is greater than the resolution of the accuracy, place a new point
-                        Vector3 newPoint = hit.point - (ray.direction*0.5f); // set the new point to where it lands on the canvas
+                        Vector3 newPoint = canvas.transform.InverseTransformPoint(hit.point); // set the new point to where it lands on the canvas (you have to subtract the ray direction because otherwise it clips into the paper)
                         lastPoint = newPoint; // set the last point to the new point
                         // points.Add(newPoint);
                         // newDrawing.GetComponent<RenderLines>().AddPoints(newPoint);
@@ -85,6 +86,9 @@ public class DrawLines : MonoBehaviour
                 } else{ // if there is no list or drawing object, then create a new list and drawing object.
                     newDrawing = Instantiate(drawingPrefab, hit.point, Quaternion.identity);
                     newDrawing.transform.parent = hit.transform;
+                    newDrawing.transform.localPosition = Vector3.zero + (canvas.transform.forward * 0.5f);
+                    newDrawing.transform.localRotation = Quaternion.Euler(Vector3.zero);
+                    newDrawing.transform.localScale = Vector3.one;
                     // points = new List<Vector3>();
                     isDrawing = true;
                 }

@@ -5,23 +5,27 @@ using UnityEngine;
 public class DrawingUtilities : MonoBehaviour
 {
     public List<GameObject> drawings; // we prefer lists here because we wont be updating the list very often, nor will we be creating or removing in a single frame. 
-                                      // its more performant than resizing an array(which in c# is deleting and recreating it) every time we undo, from what i can tell
     
     public Vector3[][] points;
     public InputSystem controls;
     public Transform canvas;
     private Vector3 canvasPos;
-    private Vector3[][] canvasOffset;
+    private List<Vector3[]> canvasOffset;
+    private float angleDiff;
+    private float initialAngle, newAngle;
+    public Transform camRig;
     private void Awake()
     {
         controls = new InputSystem();
     }
     private void Start(){
+        drawings = new List<GameObject>();
+        canvasOffset = new List<Vector3[]>();
         controls.inputs.Undo.performed += ctx => UndoDrawing();
         controls.inputs.Submit.performed += ctx => SubmitDrawing();
         // GameManager.game.drawLines.OnDrawEnded += BeginGetOffset;
         canvasPos = canvas.position;
-        controls.CameraStates.ChangeView.performed += ctx => HideDrawings();
+        // controls.CameraStates.ChangeView.performed += ctx => HideDrawings();
         canvas.GetComponent<CanvasBehavior>().TransDone += ShowDrawings;
     }
     private void OnEnable()
@@ -34,8 +38,6 @@ public class DrawingUtilities : MonoBehaviour
         controls.Disable();
     }
     
-    // !!!ALL OF THIS IS UNTESTED!!!
-
     void Update(){
         // if(Input.GetButtonDown("Fire2"))
         //     SaveAllToArray();
@@ -47,6 +49,8 @@ public class DrawingUtilities : MonoBehaviour
         //         SetOffset(i, canvasOffset[i]);
         //     }
         // }
+        
+        
     }
     void SaveAllToArray(){
         RefreshDrawings();
@@ -61,7 +65,7 @@ public class DrawingUtilities : MonoBehaviour
         } 
     }
     void RefreshDrawings(){
-            drawings.Clear();
+            drawings.Clear(); // clears list to make sure there arent any stragglers
             var drawingsTemp = GameObject.FindGameObjectsWithTag("Line"); // we have to do this since you cant convert an array into a list
             for(var i = 0; i < drawingsTemp.Length; i++){
                 if (drawingsTemp[i] != null)
@@ -82,11 +86,14 @@ public class DrawingUtilities : MonoBehaviour
         for(var i = 0; i < drawings.Count; i++){
             var hide = drawings[i];
             var lRenderer = hide.GetComponent<LineRenderer>();
-            Debug.Log("Tried to show 2.");
+            // Debug.Log("Tried to show 2.");
             lRenderer.enabled = true;
         }
     }
+    Vector3 debugCanvasPos;
+    public Transform pointDrawing;
     void HideDrawings(){
+        Debug.Log("Hiding drawings!");
         RefreshDrawings();
         Debug.Log("Tried to hide 1.");
         for(var i = 0; i < drawings.Count; i++){
@@ -94,9 +101,37 @@ public class DrawingUtilities : MonoBehaviour
             var lRenderer = hide.GetComponent<LineRenderer>();
             Debug.Log("Tried to hide 2.");
             lRenderer.enabled = false;
+            // Vector3[] pointsRaw = new Vector3[lRenderer.positionCount];
+            // lRenderer.GetPositions(pointsRaw);
+            // Vector3[] offset = new Vector3[lRenderer.positionCount];
+            // for(var x = 0; x < pointsRaw.Length - 1; x++){
+            //     offset[x] = pointsRaw[x] - pointDrawing.position;
+            // }
+            // canvasOffset.Add(offset);
+            // if(GameManager.game.camControls.state == CameraControls.states.LOOKING){
+            //     debugCanvasPos = pointDrawing.position;
+            //     initialAngle = camRig.rotation.eulerAngles.y;
+            // }
         }
         
     }
+    // void Readjust(){
+    //     // newAngle = camRig.rotation.eulerAngles.y;
+    //     Vector3 pointDir = pointDrawing.position - camRig.position;
+    //     angleDiff = Mathf.DeltaAngle(initialAngle, camRig.rotation.eulerAngles.y);
+    //      Debug.DrawLine(camRig.position, canvas.position, Color.green);
+    //      Debug.DrawLine(camRig.position, debugCanvasPos, Color.blue);
+    //     //Debug.DrawLine(camRig.position,initialAngle-pointDir, Color.red);
+    //     pointDir *= angleDiff;
+    //     // pointDir.Normalize();
+    //     for(var i = 0; i < drawings.Count; i++){
+    //         drawings[i].transform.rotation = canvas.rotation;
+    //         for(var x = 0; x < drawings[i].GetComponent<LineRenderer>().positionCount; x++)
+    //             drawings[i].GetComponent<LineRenderer>().SetPosition(x, (canvas.transform.position + (Quaternion.Euler(0, angleDiff, 0)*(canvasOffset[i][x]))));
+    //             //basically here you should be using the above line of code but doing (x, (canvas.transform.position + offset) * Quaternion.Euler(0, angleDiff, 0))
+    //     }
+    //     ShowDrawings();
+    // }
     // void BeginGetOffset(){
     //     RefreshDrawings();
     //     for(var i = drawings.Count - 1; i > -1; i--){
@@ -133,7 +168,7 @@ public class DrawingUtilities : MonoBehaviour
         RefreshDrawings();
         Debug.Log("Recieved input 'Undo'.");
         int deadIndex = drawings.Count;
-        GameObject dead = drawings[deadIndex-1]; // since we did this we can also do things like highlight the last drawn line, or 
+        GameObject dead = drawings[deadIndex-1]; //takes the newest drawing
         Debug.Log(deadIndex + "/" + drawings.Count + dead.name);
         drawings.Remove(dead); // remove the last entry from drawings
         Destroy(dead); 
