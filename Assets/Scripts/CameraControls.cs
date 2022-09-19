@@ -19,8 +19,9 @@ public class CameraControls : MonoBehaviour
 
     // Adds cursor sprites
     public Texture2D cursorSpriteDraw;
-    public Image lookSprite;
+    private Image lookSprite;
 
+    public GameObject playerUI;
 
     // Start is called before the first frame update
     public enum states {
@@ -42,8 +43,7 @@ public class CameraControls : MonoBehaviour
         state = states.DRAWING;
         ToggleState();
 
-        // lookSprite = image.GetComponent<Image>();
-        lookSprite.enabled = true;
+        lookSprite = playerUI.GetComponent<Image>();
 
         
         // cameras = GameObject.FindGameObjectsWithTag("Camera");
