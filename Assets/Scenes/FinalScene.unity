@@ -26139,7 +26139,7 @@ MonoBehaviour:
   state: 0
   free: 1
   cursorSpriteDraw: {fileID: 2800000, guid: b2b0dab0d5660814e80a1e2edea45977, type: 3}
-  playerUI: {fileID: 1139462082}
+  lookSprite: {fileID: 1139462084}
 --- !u!114 &1514301020
 MonoBehaviour:
   m_ObjectHideFlags: 0
