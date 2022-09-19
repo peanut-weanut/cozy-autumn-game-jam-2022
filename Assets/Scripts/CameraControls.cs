@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Cinemachine;
 
 public class CameraControls : MonoBehaviour
@@ -18,6 +19,9 @@ public class CameraControls : MonoBehaviour
 
     // Adds cursor sprites
     public Texture2D cursorSpriteDraw;
+    private Image lookSprite;
+
+    public GameObject playerUI;
 
     // Start is called before the first frame update
     public enum states {
@@ -38,6 +42,9 @@ public class CameraControls : MonoBehaviour
         controls.CameraStates.ChangeView.performed += ctx => TryDrawing();
         state = states.DRAWING;
         ToggleState();
+
+        lookSprite = playerUI.GetComponent<Image>();
+
         
         // cameras = GameObject.FindGameObjectsWithTag("Camera");
     }
@@ -45,7 +52,7 @@ public class CameraControls : MonoBehaviour
     {
         controls.Enable();
     }
-
+   
     private void OnDisable()
     {
         controls.Disable();
@@ -60,6 +67,8 @@ public class CameraControls : MonoBehaviour
     //         break;
     //     }
     // }
+
+
     void TryDrawing(){
         Debug.Log("Tried to draw.");
         if (!free){ // if you are not free to draw whatever,
@@ -71,6 +80,7 @@ public class CameraControls : MonoBehaviour
     }
     void ToggleState(){
         Debug.Log("Tried to toggle.");
+        lookSprite.enabled = !lookSprite.enabled;
         switch (state){
             case states.LOOKING:
                 foreach (GameObject i in cameras){
