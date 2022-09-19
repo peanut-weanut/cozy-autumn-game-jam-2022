@@ -16,7 +16,7 @@ namespace Yarn.Unity.Example
         public TMPro.TextMeshProUGUI text;
 
         //this holds images printed to chat
-        public Sprite[] spriteArray;
+        public Texture2D[] spriteArray;
 
         public GameObject optionsContainer;
         public OptionView optionPrefab;
@@ -72,9 +72,11 @@ namespace Yarn.Unity.Example
             //currentBGColor = Color.white;
             //currentBGColor.a = 1f;
             Debug.Log(spriteID);
-            var bg = dialogueBubblePrefab.GetComponentInChildren<Image>();
+            Texture2D picToPost = spriteArray[spriteID];
+            Sprite.Create(picToPost, Rect.zero, Vector2.up );
+            //var bg = dialogueBubblePrefab.GetComponentInChildren<Image>();
             //bg.sprite = spriteArray[spriteID];
-            Instantiate<Sprite>(spriteArray[spriteID], bg.transform.position, bg.transform.rotation);
+            //Instantiate<Sprite>(spriteArray[spriteID], bg.transform.position, bg.transform.rotation);
             
         }
 
@@ -82,7 +84,7 @@ namespace Yarn.Unity.Example
         void UpdateMessageBoxSettings() 
         {
             var bg = dialogueBubblePrefab.GetComponentInChildren<Image>();
-            bg.sprite = spriteArray[0];
+            
             bg.color = currentBGColor;
             var message = dialogueBubblePrefab.GetComponentInChildren<TMPro.TextMeshProUGUI>();
             message.text = "";
