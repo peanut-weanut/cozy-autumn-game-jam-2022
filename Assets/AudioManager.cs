@@ -30,6 +30,7 @@ public class AudioManager : MonoBehaviour
         source = GetComponents<AudioSource>();
         GameManager.game.drawLines.OnDraw += PlayDrawSound;
         PlayBGM();
+        songTimer -= 3.0f;
         GameManager.game.camControls.POISeen += POISongIndex;
         controls.inputs.Submit.performed += ctx => AdvanceSongIndex();
     }
@@ -85,10 +86,12 @@ public class AudioManager : MonoBehaviour
     }
     void ResetSongIndex(){
         nextSongIndex = 0;
+        currentSongPackIndex++; // DONT SET THIS HERE IN FINAL GAME, SET IT IN THE DIALOGUE
         // TestCrossFade = 2;
     }
     void DisableSongIndex(){
         nextSongIndex = 3;
+        
     }
     // void CrossfadeSources(int sourceFrom, int sourceTo){
     //     source[sourceFrom].volume = Mathf.Lerp(source[sourceFrom].volume, 0.0f, crossfadeAmount);
@@ -122,21 +125,24 @@ public class AudioManager : MonoBehaviour
             source[5].clip = currentSongPack[0];
             source[5].volume = 1;
             source[5].Play();
-            // source[6].volume = 0;
-            // source[6].clip = currentSongPack[1];
-            // source[6].Play();
+            source[6].volume = 0;
+            source[6].clip = currentSongPack[1];
+            source[6].Play();
         break;
         case 1:
-            // source[5].clip = currentSongPack[0];
-            // source[5].volume = 0;
-            // source[5].Play();
+            source[5].clip = currentSongPack[0];
+            source[5].volume = 0;
+            source[5].Play();
             source[6].volume = 1;
             source[6].clip = currentSongPack[1];
             source[6].Play();
         break;
         case 2:
-            source[6].volume = 1;
-            source[6].clip = currentSongPack[2];
+            source[5].clip = currentSongPack[2];
+            source[5].volume = 1;
+            source[5].Play();
+            source[6].volume = 0;
+            source[6].clip = currentSongPack[1];
             source[6].Play();
         break;
         case 3:
