@@ -45,8 +45,10 @@ namespace Yarn.Unity.Example
             runner.AddCommandHandler("Me", SetSenderMe ); // registers Yarn Command <<Me>>, which sets the current message sender to "Me"
             runner.AddCommandHandler("Them", SetSenderThem ); // registers Yarn Command <<They>>, which sets the current message sender to "Them" (whoever the player is talking to)
             runner.AddCommandHandler<int>("DisplayImage", DisplayImage);
+            // runner.AddCommandHandler<int>("NextStage", SetNextStage); // set nextstage stage. ends dialogue and goes to next stage
+            // runner.AddCommandHandler<Trigger>("CheckTrigger", OnTrigger) //taking a trigger as an argument, it will wait until the trigger is activated, and then go to the next dialogue
 
-            optionsContainer.SetActive(false); 
+            // optionsContainer.SetActive(false); 
         }
 
         void Start () 
@@ -59,17 +61,17 @@ namespace Yarn.Unity.Example
         public void SetSenderMe() 
         {
             isRightAlignment = true;
-            currentBGColor = Color.grey;
-            currentBGColor.a = 0.75f;
-            currentTextColor = Color.black;
+            currentBGColor = new Color(1.0f, 0.5824543f, 0.259434f);
+            currentBGColor.a = 1.0f;
+            currentTextColor = Color.white;
         }
 
         // YarnCommand <<Them>> does not use YarnCommand C# attribute, registers in Awake() instead
         public void SetSenderThem() 
         {
             isRightAlignment = false;
-            currentBGColor = new Color(0.1990477f, 0.2161004f, 0.5943396f);
-            currentBGColor.a = 0.69f;
+            currentBGColor = new Color(1.0f, 0.284667f, 0.2588235f);
+            currentBGColor.a = 1.0f;
             currentTextColor = Color.white;
         }
 
@@ -163,26 +165,26 @@ namespace Yarn.Unity.Example
             UpdateMessageBoxSettings();
         }
 
-        Coroutine currentTypewriterEffect;
+        // Coroutine currentTypewriterEffect;
 
         public override void RunLine(LocalizedLine dialogueLine, Action onDialogueLineFinished)
         {
-            if (currentTypewriterEffect != null)
-            {
-                StopCoroutine(currentTypewriterEffect);
-            }
+            // if (currentTypewriterEffect != null)
+            // {
+            //     StopCoroutine(currentTypewriterEffect);
+            // }
 
             CloneMessageBoxToHistory();
 
             text.text = dialogueLine.TextWithoutCharacterName.Text;
 
-            currentTypewriterEffect = StartCoroutine(ShowTextAndNotify());
+            // currentTypewriterEffect = StartCoroutine(ShowTextAndNotify());
 
-            IEnumerator ShowTextAndNotify() {
-                yield return StartCoroutine(Effects.Typewriter(text, lettersPerSecond, null));
-                currentTypewriterEffect = null;
+            // IEnumerator ShowTextAndNotify() {
+                // yield return StartCoroutine(Effects.Typewriter(text, lettersPerSecond, null));
+                // currentTypewriterEffect = null;
                 onDialogueLineFinished();
-            }
+            // }
         }
 
         public override void RunOptions(DialogueOption[] dialogueOptions, Action<int> onOptionSelected)

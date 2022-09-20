@@ -1,0 +1,43 @@
+title: Start
+tags: 
+colorID: 0
+position: 0,0
+---
+<<Me>>
+Hey, what's up? I heard you graduated! 
+<<wait 2>>
+How have you been these days?
+
+<<Them>>
+im in between jobs right now
+<<wait 4>>
+its hard to find work right now with my major
+
+<<Me>>
+<<wait 2.25>>
+Awe, that sucks.
+<<wait 1.75>>
+You've been good otherwise?
+
+<<Them>>
+<<wait 2>>
+yeah i actually moved into a new apartment in downtown boston
+
+<<Me>>
+<<wait 2>>
+That's awesome!
+<<wait 2>>
+Hey I'm actually somewhere pretty cool too :)
+
+<<Them>>
+<<wait 2>>
+oh word?
+
+<<Me>>
+<<wait 2>>
+Hold on
+<<wait 2>>
+Let me send you a drawing
+
+//<<TriggerCheck stage0_Check_drawing>>
+===

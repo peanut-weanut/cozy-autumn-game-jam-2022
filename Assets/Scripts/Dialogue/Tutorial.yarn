@@ -1,0 +1,55 @@
+title: Start
+tags: 
+colorID: 0
+position: 0,0
+---
+// <<Me>> and <<Them>> are custom commands implemented in PhoneChatDialogueHelper.cs
+
+// beginning of the game
+<<Me>>
+Hey, what's up? I heard you graduated!
+<<wait 3.5>>
+How have you been these days?
+<<wait 3.5>>
+
+<<Them>>
+im in between jobs right now
+<<wait 3.5>>
+its hard to find work right now with my major
+<<wait 4.5>>
+
+<<Me>>
+Awe, that sucks.
+<<wait 2.5>>
+You've been good otherwise?
+<<wait 3.5>>
+
+<<Them>>
+yeah i actually moved into a new apartment in downtown boston
+<<wait 4.75>>
+
+<<Me>>
+That's awesome!
+<<wait 2.5>>
+Hey I'm actually somewhere pretty cool too //:)
+<<wait 4.5>>
+
+<<Them>>
+oh word?
+<<wait 3.5>>
+
+<<Me>>
+Hold on
+<<wait 2.5>>
+Let me send you a drawing
+
+// display tutorial
+<<SetTrigger tutorial>>
+===
+
+title: Prompt
+tags: 
+colorID: 0
+position: 0,0
+---
+===
