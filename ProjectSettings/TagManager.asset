@@ -6,6 +6,14 @@ TagManager:
   tags:
   - Camera
   - Line
+  - Plaque
+  - Tree
+  - Lake
+  - Picnic Table
+  - Stump
+  - Waterfall
+  - Lakehouse
+  - Frog
   layers:
   - Default
   - TransparentFX
