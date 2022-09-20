@@ -91,6 +91,10 @@ namespace Yarn.Unity.Example
 
             rectValue.preferredHeight = 200f;
 
+            var localScale = chatImageGameObject.GetComponent<RectTransform>();
+
+            localScale.localScale = new Vector3 (.5f, 1f, 1f);
+
             chatImageGameObject.transform.SetParent(parent.transform);
 
 
