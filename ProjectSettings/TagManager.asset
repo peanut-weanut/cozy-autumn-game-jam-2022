@@ -14,6 +14,7 @@ TagManager:
   - Waterfall
   - Lakehouse
   - Frog
+  - Bird
   layers:
   - Default
   - TransparentFX

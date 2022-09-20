@@ -110,11 +110,11 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _Atmosphere: {r: 0, g: 0.18849117, b: 0.6792453, a: 0}
+    - _Atmosphere: {r: 0.5754717, g: 0.48711815, b: 0.41531682, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.1321645, g: 0.29563618, b: 0.509434, a: 1}
+    - _Color: {r: 0.50980395, g: 0.28594133, b: 0.13333334, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Gradient_Color: {r: 0.4339623, g: 0.26815593, b: 0.26815593, a: 0}
+    - _Gradient_Color: {r: 0.3773585, g: 0.31861874, b: 0.31861874, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _Toon_Ramp_Tinting: {r: 0.24056602, g: 0.75578994, b: 1, a: 0}
   m_BuildTextureStacks: []

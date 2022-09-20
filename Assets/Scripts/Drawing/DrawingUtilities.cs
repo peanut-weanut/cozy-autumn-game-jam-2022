@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class DrawingUtilities : MonoBehaviour
 {
     public List<GameObject> drawings; // we prefer lists here because we wont be updating the list very often, nor will we be creating or removing in a single frame. 
-    
+    public List<Texture2D> screenshots;
     public Vector3[][] points;
     public InputSystem controls;
     public Transform canvas;
@@ -69,7 +70,7 @@ public class DrawingUtilities : MonoBehaviour
     void LoadPoints(){
         for(var x = 0; x < points.Length; x++){
             for(var y = 0; y < points[x].Length; y++){
-                
+
             }
         }
     }
@@ -126,6 +127,7 @@ public class DrawingUtilities : MonoBehaviour
         }
         
     }
+    
     // void Readjust(){
     //     // newAngle = camRig.rotation.eulerAngles.y;
     //     Vector3 pointDir = pointDrawing.position - camRig.position;
@@ -170,11 +172,28 @@ public class DrawingUtilities : MonoBehaviour
     //         lRenderer.SetPosition(x, pointNormalized);
     //     }
     // }
+    public Camera[] screenshottingCameras;
     void SubmitDrawing(){ //VERY IMPORTANT TO NOT CALL CLEARDRAWINGS ANYWHERE ELSE THAN HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         SaveAllToArray();
-        // SaveBufferToPNG()/Screenshot();
+        screenshots.Add(GetScreenshot(screenshottingCameras[0])); // for final gallery at end of game
+        var textPic = GetScreenshot(screenshottingCameras[1]);
+        //send textpic to dialogue helper
+        // SendToDialogueHelper();
         ClearDrawings();
         OnDoneDrawing();
+    }
+    private Texture2D GetScreenshot(Camera cam ){
+        var rTex = cam.targetTexture;
+        RenderTexture.active = cam.targetTexture;
+        cam.Render();
+        int height = cam.pixelHeight;
+        int width = cam.pixelWidth;
+        Texture2D screenshotTexture = new Texture2D(width, height);
+        Rect rect = new Rect(0, 0, width, height);
+        screenshotTexture.ReadPixels(rect, 0, 0);
+        screenshotTexture.Apply();
+        RenderTexture.active = null;
+        return screenshotTexture;
     }
     void UndoDrawing(){
         RefreshDrawings();
