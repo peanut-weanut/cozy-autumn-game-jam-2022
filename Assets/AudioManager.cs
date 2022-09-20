@@ -21,6 +21,8 @@ public class AudioManager : MonoBehaviour
     private AudioClip[] currentSongPack;
     private float songTimer = 100.0f;
     public InputSystem controls;
+    public AudioClip[] paperSounds;
+    private int currentPaperSound;
     private void Awake()
     {
         controls = new InputSystem();
@@ -33,6 +35,7 @@ public class AudioManager : MonoBehaviour
         songTimer -= 3.0f;
         GameManager.game.camControls.POISeen += POISongIndex;
         controls.inputs.Submit.performed += ctx => AdvanceSongIndex();
+        controls.CameraStates.ChangeView.performed += ctx => PlayPaperSound();
     }
     private void OnEnable()
     {
@@ -57,6 +60,13 @@ public class AudioManager : MonoBehaviour
         // } else if (TestCrossFade == 2){
         //     CrossfadeSources(6, 5);
         // }
+    }
+    void PlayPaperSound(){
+        source[0].PlayOneShot(paperSounds[currentPaperSound]);
+        if(currentPaperSound == 0)
+            currentPaperSound = 1;
+        else
+            currentPaperSound = 0;
     }
     void PlayDrawSound(){
         if (soundCount > maxSoundCount){
