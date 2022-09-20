@@ -1,0 +1,324 @@
+title: Start
+tags: 
+colorID: 0
+position: 0,0
+---
+<<jump Intro>>
+===
+title: Intro
+tags: 
+colorID: 0
+position: 0,0
+---
+// beginning of the game
+<<Me>>
+Hey, what's up? I heard you graduated!
+<<wait 3.5>>
+How have you been these days?
+<<wait 3.5>>
+
+<<Them>>
+im in between jobs right now
+<<wait 4.5>>
+its hard to find work right now with my major
+<<wait 4>>
+
+<<Me>>
+Awe, that sucks.
+<<wait 2.5>>
+You've been good otherwise?
+<<wait 3.5>>
+
+<<Them>>
+yeah i actually moved into a new apartment in downtown boston
+<<wait 4.75>>
+
+<<Me>>
+That's awesome!
+<<wait 2.5>>
+x: Hey I'm actually somewhere pretty cool too :)
+<<wait 4.5>>
+
+<<Them>>
+oh word?
+<<wait 3.5>>
+
+<<Me>>
+Hold on
+<<wait 2.5>>
+Let me send you a drawing
+
+// display tutorial
+
+<<jump PromptPlaque>>
+===
+
+
+
+title: PromptPlaque
+tags: 
+colorID: 0
+position: 0,0
+---
+// Stage 0
+<<Them>>
+<<wait 2.5>>
+hey is that little thing on the fence still there? 
+<<wait 4.5>>
+
+<<Me>>
+Yeah, I think it was next to the picnic table.
+// <<jump PromptPlaqueSuccess>>
+===
+
+title: PromptPlaqueFail
+tags: 
+colorID: 0
+position: 0,0
+---
+// <<if GetTrigger stage1_Check_drawing == False>>
+<<Them>>
+<<wait 2.5>>
+no i think it was a plaque or something
+<<wait 4>>
+
+<<Me>>
+Maybe I'm not drawing it for long enough for it to be clear?
+
+===
+
+
+title: PromptPlaqueSuccess
+tags: 
+colorID: 0
+position: 0,0
+---
+<<Me>>
+<<wait 1>>
+Tada!
+<<wait 1.5>>
+
+<<Them>>
+did we ever even read what that said
+<<wait 3.5>>
+
+<<Me>>
+Read what?
+<<wait 2.5>>
+
+<<Them>>
+the plaque
+<<wait 2.5>>
+on the fence
+<<wait 3.5>>
+yknow the fence you lived next to for eight whole years
+<<wait 3.5>>
+
+<<Me>>
+Oh
+<<wait 3>>
+Lemme see...
+<<wait 4>>
+
+<<Them>>
+i mean there arent even any actually any like 
+<<wait 4.5>>
+plaqueworthy things in that town
+<<wait 3.5>>
+
+<<Me>>
+Ok
+<<wait 1.5>>
+So it's covered in marker
+<<wait 3.5>>
+Anything that was written there is long gone
+<<wait 2.5>>
+
+<<Them>>
+aww
+
+<<SetTrigger stage1_Dialogue>>
+===
+
+
+
+
+
+
+
+
+
+
+
+title: PromptSomewhereToSwim
+tags: 
+colorID: 0
+position: 0,0
+---
+//Stage 1
+<<Them>>
+<<wait 2.5>>
+yknow being in the city kinda sucks
+<<wait 3.5>>
+i havent swam in ages
+<<wait 3.5>>
+
+<<Me>>
+That actually reminds me of something...
+<<wait 3.5>>
+hold on, lemme draw it
+
+<<SetTrigger stage1_makeDrawable>>
+===
+
+title: PromptSomewhereToSwim_LakeFinished
+tags: 
+colorID: 0
+position: 0,0
+---
+<<Them>>
+<<wait 2>>
+since you drew the lake
+<<wait 3>>
+i do have a slight memory with the waterfall on the other side
+<<wait 5>>
+
+<<Me>>
+Maybe I should draw that too
+
+<<SetTrigger waterfall_makeDrawable>>
+===
+
+title: PromptSomewhereToSwim_WaterfallFinished
+tags: 
+colorID: 0
+position: 0,0
+---
+<<Them>>
+<<wait 2>>
+since you drew the waterfall
+<<wait 3.5>>
+i do have a memory with the lake on the other side
+
+<<Me>>
+<<wait 4>>
+I think I know what you're talking about
+<<wait 2.5>>
+let me draw it real quick
+<<SetTrigger lake_makeDrawable>>
+===
+
+title: PromptSomewhereToSwimFail
+tags: 
+colorID: 0
+position: 0,0
+---
+<<Me>>
+<<wait 2>>
+Oh wait, that didn't turn out how i wanted it to
+<<wait 4.5>>
+
+<<Them>>
+im assuming me swimming reminded you of the lake there right
+<<wait 4>>
+or the waterfall
+<<wait 3>>
+
+<<Me>>
+Yeah, just hold on, let me finish drawing it
+===
+
+title: PromptSomewhereToSwimSuccess_Lake
+tags: 
+colorID: 0
+position: 0,0
+---
+<<Them>>
+<<wait 2>>
+i remember when we tried to throw skipping stones 
+<<wait 4>>
+and i threw the stone so hard i dislocated my shoulder
+<<wait 4>>
+
+<<Me>>
+What a terrible thing to remember
+<<wait 2>>
+wtf
+<<wait 5>>
+
+<<Them>>
+oh well the only other memory i have of that lake is all the fishing trips your dad dragged us on 
+<<wait 5>>
+
+<<Me>>
+What??
+<<wait 2.5>>
+I liked those trips!
+<<wait 3.5>>
+
+<<Them>>
+this is why no one sat next to you in school
+<<wait 4>>
+
+<<Me>>
+But you sat next to me 
+<<wait 8>>
+//[long pause]
+*smile*
+//:)
+<<wait 4>>
+
+<<Them>>
+yeah i guess im lame too
+
+<<SetTrigger stage2_Dialogue>>
+===
+
+title: PromptSomewhereToSwimSuccess_Waterfall
+tags: 
+colorID: 0
+position: 0,0
+---
+<<Them>>
+<<wait 2>>
+dont even send this to me
+<<wait 3>>
+
+<<Me>>
+What?
+<<wait 2.5>>
+
+<<Them>>
+i will never forgive you
+<<wait 4>>
+
+<<Me>>
+WTF are you talking about?
+<<wait 8>>
+
+<<Them>>
+YOU PUSHED ME OFF!!
+<<wait 6>>
+
+<<Me>>
+Oh yeah LOL
+<<wait 3.5>>
+Hey, it was your idea to climb it.
+<<wait 3>>
+
+<<Them>>
+i literally thought i was gonna die
+<<wait 3.5>>
+
+<<Me>>
+But you lived...
+<<wait 4>>
+Drama queen!
+
+<<SetTrigger stage2_Dialogue>>
+===
+
+
+
+
+

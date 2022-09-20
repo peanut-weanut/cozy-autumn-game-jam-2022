@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
         controls.debug.AdvanceCutscene.performed += ctx => AdvanceState();
         canvas.TransDone += AllowDrawing;
         canvas.TransDoneLooking += DisallowDrawing;
-        
+
         UpdateTriggers(new List<Trigger>{triggers[1]});
     }
     private static GameObject[] FindObjectsInLayer(int layer)
@@ -86,16 +86,16 @@ public class GameManager : MonoBehaviour
                 //done in start function
             break;
             case 1:
-                UpdateTriggers(new List<Trigger>{triggers[5]});
+                UpdateTriggers(new List<Trigger>{triggers[5], triggers[6]});
             break;
             case 2:
-                UpdateTriggers(new List<Trigger>{triggers[9]});
+                UpdateTriggers(new List<Trigger>{triggers[9],triggers[10]});
             break;
             case 3:
-                UpdateTriggers(new List<Trigger>{triggers[13]});
+                UpdateTriggers(new List<Trigger>{triggers[13],triggers[14]});
             break;
             case 4:
-                UpdateTriggers(new List<Trigger>{triggers[17]});
+                UpdateTriggers(new List<Trigger>{triggers[17],triggers[18]});
             break;
         }
     }
