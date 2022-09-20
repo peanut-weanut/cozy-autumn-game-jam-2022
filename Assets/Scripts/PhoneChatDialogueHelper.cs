@@ -19,7 +19,7 @@ namespace Yarn.Unity.Example
         public Sprite[] spriteArray;
 
         //Chat Image Game Object
-        private SpriteRenderer chatImage;
+        private Image chatImage;
 
         private GameObject chatImageGameObject;
 
@@ -79,19 +79,29 @@ namespace Yarn.Unity.Example
         {
             Sprite picToPost = spriteArray[spriteID];
             chatImageGameObject = new GameObject();
-            chatImage = chatImageGameObject.AddComponent<SpriteRenderer>() as SpriteRenderer;
+            chatImage = chatImageGameObject.AddComponent<Image>() as Image;
             chatImage.sprite = picToPost;
 
             chatImageGameObject.AddComponent<RectTransform>();
             chatImageGameObject.AddComponent<HorizontalLayoutGroup>();
+            chatImageGameObject.AddComponent<CanvasRenderer>();
+            chatImageGameObject.AddComponent<LayoutElement>();
+
+            var rectValue = chatImageGameObject.GetComponent<LayoutElement>();
+
+            rectValue.preferredHeight = 200f;
+
+            var localScale = chatImageGameObject.GetComponent<RectTransform>();
+
+            localScale.localScale = new Vector3 (.5f, 1f, 1f);
 
             chatImageGameObject.transform.SetParent(parent.transform);
 
 
 
-            var rectValue = chatImageGameObject.GetComponent<RectTransform>();
+            //var rectValue = chatImageGameObject.GetComponent<RectTransform>();
 
-            rectValue.sizeDelta = new Vector2(415.2f, 79.48f);
+            //rectValue.sizeDelta = new Vector2(415.2f, 79.48f);
 
             Debug.Log("Posted Image to Chat");
             //Instantiate(chatImageGameObject, dialogueBubblePrefab.transform.parent);
