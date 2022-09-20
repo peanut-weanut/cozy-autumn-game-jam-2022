@@ -22,6 +22,7 @@ public class CameraControls : MonoBehaviour
     public Image lookSprite;
     public delegate void POISeenDelegate();
     public POISeenDelegate POISeen;
+    public GameObject currentPOI;
 
     // Start is called before the first frame update
     public enum states {
@@ -40,6 +41,7 @@ public class CameraControls : MonoBehaviour
         Cursor.SetCursor(cursorSpriteDraw, new Vector2(0, cursorSpriteDraw.height), CursorMode.Auto);
         //cameras = GameObject.FindGameObjectsWithTag("Camera");
         controls.CameraStates.ChangeView.performed += ctx => TryDrawing();
+        GameManager.game.drawUtils.OnDoneDrawing += ToggleState;
         state = states.DRAWING;
         ToggleState();
 
@@ -68,13 +70,20 @@ public class CameraControls : MonoBehaviour
     // }
     void Update(){
         if(StartTimer){
-            POITimer += Time.deltaTime;
+            if(state == states.DRAWING)
+                POITimer += Time.deltaTime;
+            else{
+                POITimer /= 2.0f;
+                StartTimer = false;
+            }
+
         }
         if (POITimer > POITime){
             POISeen?.Invoke();
             POITimer = 0;
             StartTimer = false;
             DebugPOISeen = true;
+            currentPOI = null;
         }
     }
     public bool StartTimer = false;
@@ -127,6 +136,7 @@ public class CameraControls : MonoBehaviour
                 //run the script that starts selecting
                 if (i.GetComponent<POIScript>().isDrawable){
                     Debug.Log(i + " is visible and drawable!");
+                    currentPOI = i;
                     return true;
                 }
                 else{
@@ -147,8 +157,6 @@ public class CameraControls : MonoBehaviour
     {
         //Match Values : follow offset, position & rotation
             cameras[hackyIndex].GetComponent<CinemachineVirtualCamera>().ForceCameraPosition(transform.position, Camera.main.transform.rotation);
-
-
     }
 
 }

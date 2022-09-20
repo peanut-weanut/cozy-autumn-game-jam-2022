@@ -5,22 +5,40 @@ using UnityEditor;
 
 public class POIScript : MonoBehaviour
 {
+    public bool startVisible = true;
     public bool isVisible;
     public bool isDrawable;
     public Trigger[] myTrigger;
     public bool triggerActive;
     private Renderer render;
+    private string myTag;
+    
     
     private void Start(){
         GameManager.game.OnListUpdate += CheckTrigger;
+        GameManager.game.camControls.POISeen += CheckMe;
         render = GetComponent<Renderer>();
-        render.enabled = false;
+        if(!startVisible)
+            render.enabled = false;
+        myTag = transform.tag;
     }
     public void OnBecameVisible(){ //if it mattered, then this method would return a ray instead 
         isVisible = true;    
     }
     public void OnBecameInvisible(){ //if it mattered, then this method would return a ray instead 
         isVisible = false;  
+    }
+    void CheckMe(){
+        if(GameManager.game.camControls.currentPOI == this.transform.gameObject){
+            isDrawable = false;
+            LockType();
+        }
+    }
+    void LockType(){
+        var myType = GameObject.FindGameObjectsWithTag(myTag);
+        foreach(GameObject i in myType){
+            i.layer = 0;
+        }
     }
     void CheckTrigger(){
         int badCount = 0;
@@ -61,8 +79,8 @@ public class POIScript : MonoBehaviour
     }
     #if UNITY_EDITOR
     private void Reset() {
-        if (transform.tag != "POI")
-            transform.tag = "POI";
+        if (gameObject.layer != 7)
+            gameObject.layer = 7;
         if (myTrigger.Length == 0)
             myTrigger[0] = GetTrigger("default_trigger", typeof(Trigger)) as Trigger;
     }

@@ -86,7 +86,7 @@ public class DrawLines : MonoBehaviour
                 } else{ // if there is no list or drawing object, then create a new list and drawing object.
                     newDrawing = Instantiate(drawingPrefab, hit.point, Quaternion.identity);
                     newDrawing.transform.parent = hit.transform;
-                    newDrawing.transform.localPosition = Vector3.zero + (canvas.transform.forward * 0.5f);
+                    newDrawing.transform.localPosition = Vector3.zero - canvas.transform.InverseTransformDirection(ray.direction * 0.25f);
                     newDrawing.transform.localRotation = Quaternion.Euler(Vector3.zero);
                     newDrawing.transform.localScale = Vector3.one;
                     // points = new List<Vector3>();

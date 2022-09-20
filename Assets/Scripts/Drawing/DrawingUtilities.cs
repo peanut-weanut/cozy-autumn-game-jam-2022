@@ -14,6 +14,8 @@ public class DrawingUtilities : MonoBehaviour
     private float angleDiff;
     private float initialAngle, newAngle;
     public Transform camRig;
+    public delegate void OnDoneDrawingDelegate();
+    public OnDoneDrawingDelegate OnDoneDrawing;
     private void Awake()
     {
         controls = new InputSystem();
@@ -64,8 +66,15 @@ public class DrawingUtilities : MonoBehaviour
             index++;
         } 
     }
+    void LoadPoints(){
+        for(var x = 0; x < points.Length; x++){
+            for(var y = 0; y < points[x].Length; y++){
+                
+            }
+        }
+    }
     void RefreshDrawings(){
-            drawings.Clear(); // clears list to make sure there arent any stragglers
+            drawings = new List<GameObject>(); // clears list to make sure there arent any stragglers
             var drawingsTemp = GameObject.FindGameObjectsWithTag("Line"); // we have to do this since you cant convert an array into a list
             for(var i = 0; i < drawingsTemp.Length; i++){
                 if (drawingsTemp[i] != null)
@@ -75,12 +84,14 @@ public class DrawingUtilities : MonoBehaviour
     }
     void ClearDrawings(){
         RefreshDrawings();
-        for(var i = drawings.Count - 1; i > -1; i--){
-            var dead = drawings[i];
-            drawings.Remove(dead);
-            Destroy(dead);
-        }
-        RefreshDrawings();
+        if(drawings.Count > 0)
+            for(var i = drawings.Count - 1; i > -1; i--){
+                var dead = drawings[i];
+                drawings.Remove(dead);
+                Destroy(dead);
+            }
+        drawings = new List<GameObject>();
+        // RefreshDrawings();
     }
     void ShowDrawings(){
         for(var i = 0; i < drawings.Count; i++){
@@ -163,6 +174,7 @@ public class DrawingUtilities : MonoBehaviour
         SaveAllToArray();
         // SaveBufferToPNG()/Screenshot();
         ClearDrawings();
+        OnDoneDrawing();
     }
     void UndoDrawing(){
         RefreshDrawings();

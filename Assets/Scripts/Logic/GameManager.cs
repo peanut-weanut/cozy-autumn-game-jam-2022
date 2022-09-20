@@ -29,12 +29,15 @@ public class GameManager : MonoBehaviour
     public DrawLines drawLines;
     public CameraControls camControls;
     public CanvasBehavior canvas;
+    public DrawingUtilities drawUtils;
     int state = 0;
     private void Awake()
     {
+        Application.targetFrameRate = 90;
         controls = new InputSystem();
         drawLines = GetComponent<DrawLines>();
         camControls = Camera.main.transform.GetComponent<CameraControls>();
+        drawUtils = transform.GetComponent<DrawingUtilities>();
         game = this;
     }
 
@@ -48,10 +51,22 @@ public class GameManager : MonoBehaviour
         controls.Disable();
     }
     void Start(){
-        POIs = GameObject.FindGameObjectsWithTag("POI");
+        POIs = FindObjectsInLayer(7);
         controls.debug.AdvanceCutscene.performed += ctx => AdvanceState();
         canvas.TransDone += AllowDrawing;
         canvas.TransDoneLooking += DisallowDrawing;
+    }
+    private static GameObject[] FindObjectsInLayer(int layer)
+    {
+     var ret = new List<GameObject>();
+     foreach (GameObject t in GameObject.FindObjectsOfType<GameObject>())
+     {
+         if (t.layer == layer)
+         {
+             ret.Add (t);
+         }
+     }
+     return ret.ToArray();        
     }
     void Update(){
 
