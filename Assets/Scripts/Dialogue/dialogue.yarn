@@ -18,8 +18,10 @@ How have you been these days?
 <<wait 3.5>>
 
 <<Them>>
-im in between jobs right now
-<<wait 4.5>>
+heyyyy
+<<wait 3.5>>
+been good
+<<wait 3.5>>
 its hard to find work right now with my major
 <<wait 4>>
 
@@ -49,8 +51,8 @@ Hold on
 Let me send you a drawing
 
 // display tutorial
+<<AdvanceState>>
 
-<<jump PromptPlaque>>
 ===
 
 

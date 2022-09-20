@@ -53,6 +53,7 @@ namespace Yarn.Unity.Example
 
         void Start () 
         {
+            
             dialogueBubblePrefab.SetActive(false);
             UpdateMessageBoxSettings();
         }

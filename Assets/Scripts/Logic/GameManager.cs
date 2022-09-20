@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Yarn;
+using Yarn.Unity;
 
 public class GameManager : MonoBehaviour
 {
@@ -30,7 +30,8 @@ public class GameManager : MonoBehaviour
     public CameraControls camControls;
     public CanvasBehavior canvas;
     public DrawingUtilities drawUtils;
-    int state = 0;
+    public DialogueRunner dialogueRunner;
+    int state = -1;
     private void Awake()
     {
         Application.targetFrameRate = 90;
@@ -55,7 +56,7 @@ public class GameManager : MonoBehaviour
         controls.debug.AdvanceCutscene.performed += ctx => AdvanceState();
         canvas.TransDone += AllowDrawing;
         canvas.TransDoneLooking += DisallowDrawing;
-
+        drawUtils.OnDoneDrawing += StartTestDialogue;
         UpdateTriggers(new List<Trigger>{triggers[1]});
     }
     private static GameObject[] FindObjectsInLayer(int layer)
@@ -70,6 +71,9 @@ public class GameManager : MonoBehaviour
      }
      return ret.ToArray();        
     }
+    void StartTestDialogue(){
+        dialogueRunner.StartDialogue("PromptPlaque");
+    }
     void Update(){
 
     }
@@ -79,6 +83,7 @@ public class GameManager : MonoBehaviour
     void DisallowDrawing(){
         drawLines.allowDrawing = false;
     }
+    [YarnCommand("AdvanceState")]
     void AdvanceState(){
         state++;
         switch(state){
