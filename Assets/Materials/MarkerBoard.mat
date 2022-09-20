@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BasicFoliage 2
+  m_Name: MarkerBoard
   m_Shader: {fileID: -6465566751694194690, guid: 6c6876fb6b1f59c479322fd1411ae866, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
