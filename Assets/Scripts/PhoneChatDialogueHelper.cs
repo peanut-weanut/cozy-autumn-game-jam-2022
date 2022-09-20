@@ -16,7 +16,15 @@ namespace Yarn.Unity.Example
         public TMPro.TextMeshProUGUI text;
 
         //this holds images printed to chat
-        public Texture2D[] spriteArray;
+        public Sprite[] spriteArray;
+
+        //Chat Image Game Object
+        private SpriteRenderer chatImage;
+
+        private GameObject chatImageGameObject;
+
+        //gets where the image needs to be put
+        public GameObject parent;
 
         public GameObject optionsContainer;
         public OptionView optionPrefab;
@@ -69,15 +77,35 @@ namespace Yarn.Unity.Example
         //;3
         void DisplayImage(int spriteID)
         {
-            //currentBGColor = Color.white;
-            //currentBGColor.a = 1f;
-            Debug.Log(spriteID);
-            Texture2D picToPost = spriteArray[spriteID];
-            Sprite.Create(picToPost, Rect.zero, Vector2.up );
+            Sprite picToPost = spriteArray[spriteID];
+            chatImageGameObject = new GameObject();
+            chatImage = chatImageGameObject.AddComponent<SpriteRenderer>() as SpriteRenderer;
+            chatImage.sprite = picToPost;
+
+            chatImageGameObject.AddComponent<RectTransform>();
+            chatImageGameObject.AddComponent<HorizontalLayoutGroup>();
+
+            chatImageGameObject.transform.SetParent(parent.transform);
+
+
+
+            var rectValue = chatImageGameObject.GetComponent<RectTransform>();
+
+            rectValue.sizeDelta = new Vector2(415.2f, 79.48f);
+
+            Debug.Log("Posted Image to Chat");
+            //Instantiate(chatImageGameObject, dialogueBubblePrefab.transform.parent);
+
+
+
+
+
+
+            //Sprite.Create(picToPost, new Rect(0.0f, 0.0f, picToPost.width, picToPost.height), new Vector2(0.5f, 0.5f), 100.0f);
             //var bg = dialogueBubblePrefab.GetComponentInChildren<Image>();
             //bg.sprite = spriteArray[spriteID];
             //Instantiate<Sprite>(spriteArray[spriteID], bg.transform.position, bg.transform.rotation);
-            
+
         }
 
         // when we clone a new message box, re-style the message box based on whether SetSenderMe or SetSenderThem was most recently called
