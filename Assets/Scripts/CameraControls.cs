@@ -131,12 +131,12 @@ public class CameraControls : MonoBehaviour
         }
     }
     bool CheckPOIs(){
-        foreach(GameObject i in GameManager.game.POIs){
-            if (i.GetComponent<POIScript>().isVisible){
+        for(int i = 0; i < GameManager.game.POIs.Length-1; i++){
+            if (GameManager.game.POIs[i].GetComponent<Renderer>().isVisible){
                 //run the script that starts selecting
-                if (i.GetComponent<POIScript>().isDrawable){
-                    Debug.Log(i + " is visible and drawable!");
-                    currentPOI = i;
+                if (GameManager.game.POIs[i].GetComponent<POIScript>().isDrawable){
+                    currentPOI = GameManager.game.POIs[i];
+                    Debug.Log(i + " is visible and drawable! \n" + currentPOI.name + " is your current POI.");
                     return true;
                 }
                 else{

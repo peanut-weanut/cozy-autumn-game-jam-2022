@@ -6,7 +6,6 @@ using Yarn.Unity;
 public class GameManager : MonoBehaviour
 {
     public static GameManager game;
-    [HideInInspector]
     public GameObject[] POIs;
     public List<Trigger> triggers; // triggers that happen exactly once
     public List<ContinuousTrigger> continuousTriggers; //triggers that loop until deactivated
@@ -31,7 +30,14 @@ public class GameManager : MonoBehaviour
     public CanvasBehavior canvas;
     public DrawingUtilities drawUtils;
     public DialogueRunner dialogueRunner;
-    int state = -1;
+
+
+    public GameObject[] stage0Objects;
+    public GameObject[] stage1Objects;
+    public GameObject[] stage2Objects;
+    public GameObject[] stage3Objects;
+    public GameObject[] stage4Objects;
+    int state = 5; // tutorial state
     private void Awake()
     {
         Application.targetFrameRate = 90;
@@ -57,7 +63,8 @@ public class GameManager : MonoBehaviour
         canvas.TransDone += AllowDrawing;
         canvas.TransDoneLooking += DisallowDrawing;
         drawUtils.OnDoneDrawing += StartTestDialogue;
-        UpdateTriggers(new List<Trigger>{triggers[1]});
+        UpdateTriggers(new List<Trigger>{triggers[2]});
+        OnListUpdate?.Invoke();
     }
     private static GameObject[] FindObjectsInLayer(int layer)
     {
@@ -110,6 +117,7 @@ public class GameManager : MonoBehaviour
         foreach(Trigger t in triggerList){
             triggersActive.Add(t);
         }
+        Debug.Log(triggersActive);
         OnListUpdate?.Invoke();
     }
         void UpdateCTriggers(List<ContinuousTrigger> triggerList){

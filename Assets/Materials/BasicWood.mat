@@ -107,7 +107,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
-    - _Flatten_Shadows: 0.02
+    - _Flatten_Shadows: 0
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -130,9 +130,9 @@ Material:
     m_Colors:
     - _Atmosphere: {r: 1, g: 0.8160377, b: 0.82694614, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.6886792, g: 0.51001245, b: 0.51001245, a: 1}
+    - _Color: {r: 0.6901961, g: 0.5948311, b: 0.50980395, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Gradient_Color: {r: 0.37407166, g: 0.3962264, b: 0.28595585, a: 0}
+    - _Gradient_Color: {r: 0.3207547, g: 0.31508106, b: 0.22241011, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-    - _Toon_Ramp_Tinting: {r: 0.5566038, g: 0.35614228, b: 0.118147045, a: 0}
+    - _Toon_Ramp_Tinting: {r: 0.7254902, g: 0.46294767, b: 0.24313724, a: 0}
   m_BuildTextureStacks: []

@@ -32,6 +32,7 @@ public class POIScript : MonoBehaviour
         if(GameManager.game.camControls.currentPOI == this.transform.gameObject){
             isDrawable = false;
             LockType();
+            Debug.Log(this.transform.name + " has just checked itself.");
         }
     }
     void LockType(){
@@ -53,7 +54,7 @@ public class POIScript : MonoBehaviour
             if (badCount == goodCount)
                 triggerActive = false;
             ExecuteTrigger(t);
-            Debug.Log(t.id);
+            // Debug.Log(this.transform.name + " checked " + t.id);
         }
         
     }
@@ -62,12 +63,14 @@ public class POIScript : MonoBehaviour
             Debug.Log("Trigger is active");
             if (trigger.id.EndsWith("_Spawn")){
                 render.enabled = true;
-                Debug.Log("Spawned");
             } 
             else if (trigger.id.EndsWith("_MakeDrawable")){
                 isDrawable = true;
-                Debug.Log("Drawned");
             } 
+            else if(trigger.id.EndsWith("_Despawn")){
+                render.enabled = false;
+                isDrawable = false;
+            }
             else if(trigger.id.EndsWith("_Despawn")){
                 render.enabled = false;
                 isDrawable = false;
@@ -75,6 +78,7 @@ public class POIScript : MonoBehaviour
             else{
                 // render.enabled = false;
             }
+            Debug.Log(this.transform.name + " executed " + trigger.id);
         }
     }
     #if UNITY_EDITOR

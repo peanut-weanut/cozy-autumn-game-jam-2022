@@ -102,7 +102,7 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
-    - _Desaturate: 0.89
+    - _Desaturate: 2.01
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -124,15 +124,15 @@ Material:
     - _SrcBlend: 1
     - _Surface: 0
     - _Toon_Ramp_Smoothness: 0
-    - _Toon_ramp_Offset: 0.11
+    - _Toon_ramp_Offset: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _Atmosphere: {r: 0.26415092, g: 0.1783583, b: 0, a: 0}
+    - _Atmosphere: {r: 0.5372549, g: 0.23684804, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.7830189, g: 0.57360756, b: 0.14404595, a: 1}
+    - _Color: {r: 0.764151, g: 0.7245016, b: 0.64520293, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Gradient_Color: {r: 0.5, g: 0.47827706, b: 0.4174528, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-    - _Toon_Ramp_Tinting: {r: 1, g: 1, b: 1, a: 0}
+    - _Toon_Ramp_Tinting: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 0}
   m_BuildTextureStacks: []
