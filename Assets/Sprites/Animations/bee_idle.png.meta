@@ -66,7 +66,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -131,10 +131,10 @@ TextureImporter:
       name: bee_idle_0
       rect:
         serializedVersion: 2
-        x: 126
-        y: 3733
-        width: 376
-        height: 416
+        x: 0
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,8 +142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a3e0fee08b4a144280964aeddfeea39
-      internalID: 471553176
+      spriteID: 26acf2fc3996e0c4ca0b3c446dcbf9c4
+      internalID: -1399666317
       vertices: []
       indices: 
       edges: []
@@ -152,10 +152,10 @@ TextureImporter:
       name: bee_idle_1
       rect:
         serializedVersion: 2
-        x: 728
-        y: 3735
-        width: 388
-        height: 407
+        x: 602
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5bdf637ee1c4ed418997f7dc6cd8a26
-      internalID: -665825068
+      spriteID: c908340246806e7468a18a4775683772
+      internalID: -1082772031
       vertices: []
       indices: 
       edges: []
@@ -173,10 +173,10 @@ TextureImporter:
       name: bee_idle_2
       rect:
         serializedVersion: 2
-        x: 1330
-        y: 3735
-        width: 400
-        height: 381
+        x: 1204
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6c956711503cf541877fa2cbffdefe7
-      internalID: -1423234892
+      spriteID: 7ff052909da95924588be154a8ded6a4
+      internalID: 420144233
       vertices: []
       indices: 
       edges: []
@@ -194,10 +194,10 @@ TextureImporter:
       name: bee_idle_3
       rect:
         serializedVersion: 2
-        x: 1932
-        y: 3738
-        width: 409
-        height: 395
+        x: 1806
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,8 +205,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f95af0254fcbe50489d27a3cdf451eb3
-      internalID: 808823226
+      spriteID: 61bb620d0da45ef4281e67fa4498888c
+      internalID: -959384544
       vertices: []
       indices: 
       edges: []
@@ -215,10 +215,10 @@ TextureImporter:
       name: bee_idle_4
       rect:
         serializedVersion: 2
-        x: 2534
-        y: 3740
-        width: 411
-        height: 402
+        x: 2408
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,8 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97b7eda5df4b95c47a822bd77aface47
-      internalID: -490825612
+      spriteID: e67c61f6d81c11d4eb5341eb24ce905f
+      internalID: -2080656849
       vertices: []
       indices: 
       edges: []
@@ -236,10 +236,10 @@ TextureImporter:
       name: bee_idle_5
       rect:
         serializedVersion: 2
-        x: 3136
-        y: 3745
-        width: 401
-        height: 400
+        x: 3010
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,8 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca3b7fd6df4b2614bb784b42c8935bf6
-      internalID: 1442691442
+      spriteID: 4c31a0bd2fc49cc4c9f6ba2c559144c4
+      internalID: 1578492159
       vertices: []
       indices: 
       edges: []
@@ -257,10 +257,10 @@ TextureImporter:
       name: bee_idle_6
       rect:
         serializedVersion: 2
-        x: 3738
-        y: 3747
-        width: 378
-        height: 395
+        x: 3612
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,8 +268,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01d7339368110dd4ba7e60259b933b11
-      internalID: 3583048
+      spriteID: 944a992bad5d14745904a02ad613d8b5
+      internalID: -1079747373
       vertices: []
       indices: 
       edges: []
@@ -278,10 +278,10 @@ TextureImporter:
       name: bee_idle_7
       rect:
         serializedVersion: 2
-        x: 4340
-        y: 3761
-        width: 367
-        height: 393
+        x: 4214
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,8 +289,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29077be5c3d5e0e48a7d2a18eb074bf5
-      internalID: 1352573120
+      spriteID: d520f7816a0da814cb1b4ccf343f9d6e
+      internalID: -927301984
       vertices: []
       indices: 
       edges: []
@@ -299,10 +299,10 @@ TextureImporter:
       name: bee_idle_8
       rect:
         serializedVersion: 2
-        x: 126
-        y: 3149
-        width: 369
-        height: 412
+        x: 0
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,8 +310,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31f3e18e28b9c8a42b0b37f6057946cb
-      internalID: -519303497
+      spriteID: c7cbeaea05de15f488359deeeae8fc36
+      internalID: -2107998662
       vertices: []
       indices: 
       edges: []
@@ -320,10 +320,10 @@ TextureImporter:
       name: bee_idle_9
       rect:
         serializedVersion: 2
-        x: 728
-        y: 3152
-        width: 374
-        height: 426
+        x: 602
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,8 +331,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 514e471c71912564295e3b1d236a62c1
-      internalID: 1538343326
+      spriteID: 0770d6f4fd6594d40a55603564256ed5
+      internalID: 1774752865
       vertices: []
       indices: 
       edges: []
@@ -341,10 +341,10 @@ TextureImporter:
       name: bee_idle_10
       rect:
         serializedVersion: 2
-        x: 1330
-        y: 3157
-        width: 383
-        height: 409
+        x: 1204
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,8 +352,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5aa06f86fa92734fa244e12115a2956
-      internalID: -685223698
+      spriteID: e3c0075ca43fc2045bea9d02f957011c
+      internalID: 887021098
       vertices: []
       indices: 
       edges: []
@@ -362,10 +362,10 @@ TextureImporter:
       name: bee_idle_11
       rect:
         serializedVersion: 2
-        x: 1932
-        y: 3162
-        width: 407
-        height: 406
+        x: 1806
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,8 +373,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7aad32cd8b5b25746aced5c7a4aaddf5
-      internalID: 246306439
+      spriteID: 95d00ad829e6be24e9d84820c52c58f5
+      internalID: -1315197715
       vertices: []
       indices: 
       edges: []
@@ -383,10 +383,10 @@ TextureImporter:
       name: bee_idle_12
       rect:
         serializedVersion: 2
-        x: 2534
-        y: 3164
-        width: 407
-        height: 383
+        x: 2408
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,8 +394,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52c2b654161eaa545ae6782e971a0e2a
-      internalID: -1386987368
+      spriteID: 7736e0e204ea0d74bb8e2016e36a3bde
+      internalID: -1394638630
       vertices: []
       indices: 
       edges: []
@@ -404,10 +404,10 @@ TextureImporter:
       name: bee_idle_13
       rect:
         serializedVersion: 2
-        x: 3138
-        y: 3166
-        width: 405
-        height: 393
+        x: 3010
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,8 +415,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 179b9a9053b2ce944848dbf4b4bd5492
-      internalID: -1009141833
+      spriteID: 1838610fb6e6071458918d59d8e1a513
+      internalID: 1245449634
       vertices: []
       indices: 
       edges: []
@@ -425,10 +425,10 @@ TextureImporter:
       name: bee_idle_14
       rect:
         serializedVersion: 2
-        x: 3740
-        y: 3171
-        width: 386
-        height: 390
+        x: 3612
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,8 +436,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd15e634b80caa941989d2b176b38bda
-      internalID: 1002884792
+      spriteID: b1b92dd409021d84b840df5606791f50
+      internalID: 1391447304
       vertices: []
       indices: 
       edges: []
@@ -446,10 +446,10 @@ TextureImporter:
       name: bee_idle_15
       rect:
         serializedVersion: 2
-        x: 4340
-        y: 3155
-        width: 369
-        height: 404
+        x: 4214
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,8 +457,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c74921db8418a334ba966987e4b536c5
-      internalID: -439330851
+      spriteID: 193b99474df87e4498b1b0ce7cf63c4b
+      internalID: 1539377547
       vertices: []
       indices: 
       edges: []
@@ -467,10 +467,10 @@ TextureImporter:
       name: bee_idle_16
       rect:
         serializedVersion: 2
-        x: 128
-        y: 2571
-        width: 376
-        height: 419
+        x: 0
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,8 +478,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e29c455e54cc58c46a38dc9add6dbf51
-      internalID: -762041152
+      spriteID: 6b0b2deb74b75b74e9e93a6ebb76d643
+      internalID: -1642795324
       vertices: []
       indices: 
       edges: []
@@ -488,10 +488,10 @@ TextureImporter:
       name: bee_idle_17
       rect:
         serializedVersion: 2
-        x: 730
-        y: 2571
-        width: 390
-        height: 410
+        x: 602
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,8 +499,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6c30e2003771224bbfb4e29db11f70a
-      internalID: -465824020
+      spriteID: ffa6763f4f6ce104e8feb4d5891980e9
+      internalID: -2010121015
       vertices: []
       indices: 
       edges: []
@@ -509,10 +509,10 @@ TextureImporter:
       name: bee_idle_18
       rect:
         serializedVersion: 2
-        x: 1332
-        y: 2571
-        width: 409
-        height: 405
+        x: 1204
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -520,8 +520,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d186bfb5bcd691340a8445acd8434e52
-      internalID: -1792546897
+      spriteID: e6151592388fa634f8adb955fbc2a5c6
+      internalID: -136278215
       vertices: []
       indices: 
       edges: []
@@ -530,10 +530,10 @@ TextureImporter:
       name: bee_idle_19
       rect:
         serializedVersion: 2
-        x: 1934
-        y: 2571
-        width: 411
-        height: 394
+        x: 1806
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -541,8 +541,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 195be086490660c42bc733e8c592565d
-      internalID: -1143811577
+      spriteID: 57746dad68a0b9940bbc33ebc5e60421
+      internalID: -462037597
       vertices: []
       indices: 
       edges: []
@@ -551,10 +551,10 @@ TextureImporter:
       name: bee_idle_20
       rect:
         serializedVersion: 2
-        x: 2534
-        y: 2569
-        width: 416
-        height: 400
+        x: 2408
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,8 +562,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e7a267c076579e46a1019583444afdb
-      internalID: 638743331
+      spriteID: 4a06d9dfc0d218c4c91ca123d2ed0270
+      internalID: 113555897
       vertices: []
       indices: 
       edges: []
@@ -572,10 +572,10 @@ TextureImporter:
       name: bee_idle_21
       rect:
         serializedVersion: 2
-        x: 3136
-        y: 2565
-        width: 402
-        height: 397
+        x: 3010
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -583,8 +583,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ba73f6c59121bc42a679fe3f2880c09
-      internalID: -741859844
+      spriteID: 05104407a9ae435419a0ebfff0645e7a
+      internalID: -1536751368
       vertices: []
       indices: 
       edges: []
@@ -593,10 +593,10 @@ TextureImporter:
       name: bee_idle_22
       rect:
         serializedVersion: 2
-        x: 3738
-        y: 2562
-        width: 383
-        height: 400
+        x: 3612
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -604,8 +604,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05a1fc152f6e8544dbe0f73fe547c54f
-      internalID: 11208901
+      spriteID: ed952a2af88be8f4d8e6bd9052ae59e7
+      internalID: 151650045
       vertices: []
       indices: 
       edges: []
@@ -614,10 +614,10 @@ TextureImporter:
       name: bee_idle_23
       rect:
         serializedVersion: 2
-        x: 4340
-        y: 2546
-        width: 383
-        height: 409
+        x: 4214
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -625,8 +625,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a63fe57e6d6acc54c802a6307faeea42
-      internalID: -934814081
+      spriteID: 53a8abd814d5e5f4ebe0086e38529e39
+      internalID: -550505419
       vertices: []
       indices: 
       edges: []
@@ -635,10 +635,10 @@ TextureImporter:
       name: bee_idle_24
       rect:
         serializedVersion: 2
-        x: 126
-        y: 1955
-        width: 369
-        height: 405
+        x: 0
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -646,8 +646,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb15821c95e22174e9068f997cb86e2a
-      internalID: 256792075
+      spriteID: 189864a5e7003ce46bc9895e82051fb8
+      internalID: 1014536133
       vertices: []
       indices: 
       edges: []
@@ -656,10 +656,10 @@ TextureImporter:
       name: bee_idle_25
       rect:
         serializedVersion: 2
-        x: 728
-        y: 1951
-        width: 371
-        height: 413
+        x: 602
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -667,8 +667,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c72dab97ff429148963d2de4ada1690
-      internalID: -591497961
+      spriteID: 6cb62acbf343b514387922d4d144bde1
+      internalID: -1139544709
       vertices: []
       indices: 
       edges: []
@@ -677,10 +677,10 @@ TextureImporter:
       name: bee_idle_26
       rect:
         serializedVersion: 2
-        x: 1330
-        y: 1944
-        width: 388
-        height: 425
+        x: 1204
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -688,8 +688,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 628d2f717391f0a4ab67f925c99ef631
-      internalID: 1951743791
+      spriteID: 1c8407d392d9f7b41adafa9f2217c472
+      internalID: 1353274771
       vertices: []
       indices: 
       edges: []
@@ -698,10 +698,10 @@ TextureImporter:
       name: bee_idle_27
       rect:
         serializedVersion: 2
-        x: 1932
-        y: 1939
-        width: 404
-        height: 397
+        x: 1806
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -709,8 +709,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c652a7e9167ecb4aad1cdfc8e4c048d
-      internalID: 90647653
+      spriteID: b3d28aa355639044c8e741b7437e5a9d
+      internalID: 669923810
       vertices: []
       indices: 
       edges: []
@@ -719,10 +719,10 @@ TextureImporter:
       name: bee_idle_28
       rect:
         serializedVersion: 2
-        x: 2534
-        y: 1934
-        width: 414
-        height: 407
+        x: 2408
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -730,8 +730,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efc4bcf49b77fd040b07268c3219eea3
-      internalID: -648931292
+      spriteID: b642e50eecc3cc1449fcb2664a8977cf
+      internalID: -2068069055
       vertices: []
       indices: 
       edges: []
@@ -740,10 +740,10 @@ TextureImporter:
       name: bee_idle_29
       rect:
         serializedVersion: 2
-        x: 3136
-        y: 1932
-        width: 407
-        height: 390
+        x: 3010
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -751,8 +751,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85f058ca6592c30479c664f8643c1e91
-      internalID: -145705205
+      spriteID: 971822cf96d19b64d8c98bd0b7b14deb
+      internalID: 1546762854
       vertices: []
       indices: 
       edges: []
@@ -761,10 +761,10 @@ TextureImporter:
       name: bee_idle_30
       rect:
         serializedVersion: 2
-        x: 3738
-        y: 1929
-        width: 393
-        height: 403
+        x: 3612
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -772,8 +772,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f2caafd2c4c1174589a3474ad696a9a
-      internalID: 1455329973
+      spriteID: ac65a5ba95be98849bed105aedd68cb1
+      internalID: -264396560
       vertices: []
       indices: 
       edges: []
@@ -782,10 +782,10 @@ TextureImporter:
       name: bee_idle_31
       rect:
         serializedVersion: 2
-        x: 4340
-        y: 1939
-        width: 404
-        height: 400
+        x: 4214
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -793,8 +793,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0ad3ed2657cfeb498346558e455c8db
-      internalID: 461798695
+      spriteID: 1b032c478dbba414991f40bbada3e987
+      internalID: -312348222
       vertices: []
       indices: 
       edges: []
@@ -803,10 +803,10 @@ TextureImporter:
       name: bee_idle_32
       rect:
         serializedVersion: 2
-        x: 126
-        y: 1325
-        width: 371
-        height: 400
+        x: 0
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -814,8 +814,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef58c77deafdf5b4889c872e9823feae
-      internalID: -1808804823
+      spriteID: 1bbdeb3f4f7c5ed459afeb8ec8764c45
+      internalID: -1008270100
       vertices: []
       indices: 
       edges: []
@@ -824,10 +824,10 @@ TextureImporter:
       name: bee_idle_33
       rect:
         serializedVersion: 2
-        x: 728
-        y: 1327
-        width: 385
-        height: 398
+        x: 602
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -835,8 +835,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f066a4c182355b4dbfca68b361034a3
-      internalID: 1366981662
+      spriteID: 94f8d2e56096b35428625193a268f4c3
+      internalID: 363608891
       vertices: []
       indices: 
       edges: []
@@ -845,10 +845,10 @@ TextureImporter:
       name: bee_idle_34
       rect:
         serializedVersion: 2
-        x: 1330
-        y: 1327
-        width: 407
-        height: 398
+        x: 1204
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -856,8 +856,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bb475a801672f641b7ef1365478df31
-      internalID: -1374081239
+      spriteID: 11fffa87226872a4b824579cb491dead
+      internalID: 1955958355
       vertices: []
       indices: 
       edges: []
@@ -866,10 +866,10 @@ TextureImporter:
       name: bee_idle_35
       rect:
         serializedVersion: 2
-        x: 1932
-        y: 1330
-        width: 404
-        height: 383
+        x: 1806
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -877,8 +877,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f77f15baa1c42594c8757e6f29a6825a
-      internalID: 834568471
+      spriteID: d783232835d61f2458b99cf0e1ce98ee
+      internalID: -1071803835
       vertices: []
       indices: 
       edges: []
@@ -887,10 +887,10 @@ TextureImporter:
       name: bee_idle_36
       rect:
         serializedVersion: 2
-        x: 2534
-        y: 1332
-        width: 407
-        height: 395
+        x: 2408
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -898,8 +898,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8cc7ea157117f34687feb9253276787
-      internalID: -1524440943
+      spriteID: 6039b0fb065395e4f84d56791a4af5e0
+      internalID: 1773578276
       vertices: []
       indices: 
       edges: []
@@ -908,10 +908,10 @@ TextureImporter:
       name: bee_idle_37
       rect:
         serializedVersion: 2
-        x: 3136
-        y: 1337
-        width: 402
-        height: 402
+        x: 3010
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -919,8 +919,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d2a47c6cff04454c830b8711a0cac50
-      internalID: -949325260
+      spriteID: e5d7e240034a9c04e982969a8469e3d2
+      internalID: -993629144
       vertices: []
       indices: 
       edges: []
@@ -929,10 +929,10 @@ TextureImporter:
       name: bee_idle_38
       rect:
         serializedVersion: 2
-        x: 3738
-        y: 1339
-        width: 381
-        height: 405
+        x: 3612
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -940,8 +940,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67dfe0b4403a5a54199e22b7b9a379a9
-      internalID: 1804545756
+      spriteID: 035e381d6fd50e34f97af46ed20c9191
+      internalID: -1149280336
       vertices: []
       indices: 
       edges: []
@@ -950,10 +950,10 @@ TextureImporter:
       name: bee_idle_39
       rect:
         serializedVersion: 2
-        x: 4340
-        y: 1332
-        width: 414
-        height: 402
+        x: 4214
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -961,8 +961,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76239f07d77ffe94b9372ade3de31454
-      internalID: -66431038
+      spriteID: 0649c044995b01a44a8dfe0b9b9f9701
+      internalID: 695522356
       vertices: []
       indices: 
       edges: []
@@ -971,10 +971,10 @@ TextureImporter:
       name: bee_idle_40
       rect:
         serializedVersion: 2
-        x: 126
-        y: 741
-        width: 369
-        height: 415
+        x: 0
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -982,8 +982,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1be9e410a483fa54fafd681a2c2ccb8b
-      internalID: -1275838122
+      spriteID: e1fa756edd4e29d4bb3a7f986bc33311
+      internalID: -1860170782
       vertices: []
       indices: 
       edges: []
@@ -992,10 +992,10 @@ TextureImporter:
       name: bee_idle_41
       rect:
         serializedVersion: 2
-        x: 728
-        y: 744
-        width: 371
-        height: 421
+        x: 602
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1003,8 +1003,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a2f124849c826844afdeeec3afb255f
-      internalID: 1639303863
+      spriteID: 06fef5667e7a90e4ca944ce9639acab4
+      internalID: -375355715
       vertices: []
       indices: 
       edges: []
@@ -1013,10 +1013,10 @@ TextureImporter:
       name: bee_idle_42
       rect:
         serializedVersion: 2
-        x: 1330
-        y: 749
-        width: 385
-        height: 416
+        x: 1204
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1024,8 +1024,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03549c18f3fdda946a798ab893336e21
-      internalID: 360136024
+      spriteID: 4032a47698aa1054191481c8a20b992c
+      internalID: -1037152318
       vertices: []
       indices: 
       edges: []
@@ -1034,10 +1034,10 @@ TextureImporter:
       name: bee_idle_43
       rect:
         serializedVersion: 2
-        x: 1932
-        y: 754
-        width: 400
-        height: 387
+        x: 1806
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1045,8 +1045,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a43fbb98a8aa3334e9ca61b9f0279689
-      internalID: 2069764017
+      spriteID: cafe9c76549d3ca468f361eef8253d91
+      internalID: -1094298808
       vertices: []
       indices: 
       edges: []
@@ -1055,10 +1055,10 @@ TextureImporter:
       name: bee_idle_44
       rect:
         serializedVersion: 2
-        x: 2534
-        y: 756
-        width: 413
-        height: 400
+        x: 2408
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1066,8 +1066,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 161053e224e0efe4f9edcceb6cbac666
-      internalID: -316381046
+      spriteID: b361de4d73e26704fb6d4bed34a189bf
+      internalID: -794483224
       vertices: []
       indices: 
       edges: []
@@ -1076,10 +1076,10 @@ TextureImporter:
       name: bee_idle_45
       rect:
         serializedVersion: 2
-        x: 3138
-        y: 758
-        width: 414
-        height: 417
+        x: 3010
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1087,8 +1087,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71a6ff99f21079d45b4b7db87516c5d6
-      internalID: -1434532646
+      spriteID: b3fbb4bda4a4dd949842500b7e8c767b
+      internalID: -1134305345
       vertices: []
       indices: 
       edges: []
@@ -1097,10 +1097,10 @@ TextureImporter:
       name: bee_idle_46
       rect:
         serializedVersion: 2
-        x: 3740
-        y: 763
-        width: 393
-        height: 400
+        x: 3612
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1108,8 +1108,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a16237018cc0efa4496bfc34ec1763ec
-      internalID: 266967872
+      spriteID: b46885f8258c8d94cbaee478131d49ef
+      internalID: 1860996656
       vertices: []
       indices: 
       edges: []
@@ -1118,10 +1118,10 @@ TextureImporter:
       name: bee_idle_47
       rect:
         serializedVersion: 2
-        x: 4340
-        y: 728
-        width: 409
-        height: 400
+        x: 4214
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1129,8 +1129,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3925f7c735512eb489d6a7b8e380f197
-      internalID: 757879650
+      spriteID: 9fdbe8edb0b078546a5a8c2674f8df03
+      internalID: 1248948599
       vertices: []
       indices: 
       edges: []
@@ -1139,10 +1139,10 @@ TextureImporter:
       name: bee_idle_48
       rect:
         serializedVersion: 2
-        x: 128
-        y: 163
-        width: 374
-        height: 407
+        x: 0
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1150,8 +1150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 361bbc4ee8942c64da9941677db724e9
-      internalID: -994060625
+      spriteID: fe4ce6a3730b1444abcb3426d8883bc4
+      internalID: 1652153259
       vertices: []
       indices: 
       edges: []
@@ -1160,10 +1160,10 @@ TextureImporter:
       name: bee_idle_49
       rect:
         serializedVersion: 2
-        x: 730
-        y: 163
-        width: 388
-        height: 405
+        x: 602
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1171,8 +1171,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 358c434c564124e4fa0c80fe37265ae6
-      internalID: 578487986
+      spriteID: ece00c96f75f4394ab3e090400e23c30
+      internalID: 1116782211
       vertices: []
       indices: 
       edges: []
@@ -1181,10 +1181,10 @@ TextureImporter:
       name: bee_idle_50
       rect:
         serializedVersion: 2
-        x: 1332
-        y: 163
-        width: 405
-        height: 391
+        x: 1204
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1192,8 +1192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89ba13b396588814db998102c6479bcb
-      internalID: 1242208844
+      spriteID: a21624e3997bd764aacb0ff4eb83760c
+      internalID: 692792687
       vertices: []
       indices: 
       edges: []
@@ -1202,10 +1202,10 @@ TextureImporter:
       name: bee_idle_51
       rect:
         serializedVersion: 2
-        x: 1934
-        y: 163
-        width: 414
-        height: 400
+        x: 1806
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1213,8 +1213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2af22c4736b4b7646b225f39dc787c39
-      internalID: -804881062
+      spriteID: c30248bee7670eb4fbf909aa7c87d367
+      internalID: -1898926666
       vertices: []
       indices: 
       edges: []
@@ -1223,10 +1223,10 @@ TextureImporter:
       name: bee_idle_52
       rect:
         serializedVersion: 2
-        x: 2534
-        y: 161
-        width: 411
-        height: 390
+        x: 2408
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1234,8 +1234,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0504249046e24114bb4e022126515b27
-      internalID: 1624223025
+      spriteID: 46df79d2c68d12c48b92d05041efef3e
+      internalID: 316618036
       vertices: []
       indices: 
       edges: []
@@ -1244,10 +1244,10 @@ TextureImporter:
       name: bee_idle_53
       rect:
         serializedVersion: 2
-        x: 3136
-        y: 157
-        width: 404
-        height: 404
+        x: 3010
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1255,8 +1255,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bce1694cb71c8645b54dc68bfc65d91
-      internalID: -203769065
+      spriteID: 2510bd7caef3a91459532a138998f22e
+      internalID: -1903067831
       vertices: []
       indices: 
       edges: []
@@ -1265,10 +1265,10 @@ TextureImporter:
       name: bee_idle_54
       rect:
         serializedVersion: 2
-        x: 3738
-        y: 154
-        width: 383
-        height: 397
+        x: 3612
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1276,8 +1276,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24c2d4ad19645cf4c88abb74ea9c1819
-      internalID: -1267049399
+      spriteID: 199169cdcc9d20c46bb163bc890aa89f
+      internalID: 776398327
       vertices: []
       indices: 
       edges: []
@@ -1286,10 +1286,10 @@ TextureImporter:
       name: bee_idle_55
       rect:
         serializedVersion: 2
-        x: 4340
-        y: 123
-        width: 390
-        height: 396
+        x: 4214
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1297,8 +1297,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35e4bd2a979be4a4995e65ca5b377079
-      internalID: -880468458
+      spriteID: 0ec36d36f9b54b5458797b0910d1acc8
+      internalID: -294363009
       vertices: []
       indices: 
       edges: []
@@ -1306,7 +1306,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f50caa1d8a8d5ee4ba9d2c2352ca50d2
+    spriteID: d11a1b7bb3e032e47afa0a134955b5c4
     internalID: 0
     vertices: []
     indices: 
@@ -1314,62 +1314,62 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bee_idle_34: -1374081239
-      bee_idle_38: 1804545756
-      bee_idle_39: -66431038
-      bee_idle_23: -934814081
-      bee_idle_14: 1002884792
-      bee_idle_26: 1951743791
-      bee_idle_6: 3583048
-      bee_idle_22: 11208901
-      bee_idle_42: 360136024
-      bee_idle_40: -1275838122
-      bee_idle_13: -1009141833
-      bee_idle_55: -880468458
-      bee_idle_47: 757879650
-      bee_idle_49: 578487986
-      bee_idle_1: -665825068
-      bee_idle_48: -994060625
-      bee_idle_31: 461798695
-      bee_idle_44: -316381046
-      bee_idle_51: -804881062
-      bee_idle_24: 256792075
-      bee_idle_43: 2069764017
-      bee_idle_16: -762041152
-      bee_idle_20: 638743331
-      bee_idle_54: -1267049399
-      bee_idle_12: -1386987368
-      bee_idle_15: -439330851
-      bee_idle_19: -1143811577
-      bee_idle_41: 1639303863
-      bee_idle_9: 1538343326
-      bee_idle_53: -203769065
-      bee_idle_7: 1352573120
-      bee_idle_3: 808823226
-      bee_idle_28: -648931292
-      bee_idle_8: -519303497
-      bee_idle_4: -490825612
-      bee_idle_17: -465824020
-      bee_idle_21: -741859844
-      bee_idle_27: 90647653
-      bee_idle_29: -145705205
-      bee_idle_10: -685223698
-      bee_idle_36: -1524440943
-      bee_idle_11: 246306439
-      bee_idle_46: 266967872
-      bee_idle_18: -1792546897
-      bee_idle_32: -1808804823
-      bee_idle_33: 1366981662
-      bee_idle_37: -949325260
-      bee_idle_5: 1442691442
-      bee_idle_35: 834568471
-      bee_idle_30: 1455329973
-      bee_idle_52: 1624223025
-      bee_idle_2: -1423234892
-      bee_idle_45: -1434532646
-      bee_idle_0: 471553176
-      bee_idle_25: -591497961
-      bee_idle_50: 1242208844
+      bee_idle_34: 1955958355
+      bee_idle_38: -1149280336
+      bee_idle_39: 695522356
+      bee_idle_23: -550505419
+      bee_idle_14: 1391447304
+      bee_idle_26: 1353274771
+      bee_idle_6: -1079747373
+      bee_idle_22: 151650045
+      bee_idle_42: -1037152318
+      bee_idle_40: -1860170782
+      bee_idle_13: 1245449634
+      bee_idle_55: -294363009
+      bee_idle_47: 1248948599
+      bee_idle_49: 1116782211
+      bee_idle_1: -1082772031
+      bee_idle_48: 1652153259
+      bee_idle_31: -312348222
+      bee_idle_44: -794483224
+      bee_idle_51: -1898926666
+      bee_idle_24: 1014536133
+      bee_idle_43: -1094298808
+      bee_idle_16: -1642795324
+      bee_idle_20: 113555897
+      bee_idle_54: 776398327
+      bee_idle_12: -1394638630
+      bee_idle_15: 1539377547
+      bee_idle_19: -462037597
+      bee_idle_41: -375355715
+      bee_idle_9: 1774752865
+      bee_idle_53: -1903067831
+      bee_idle_7: -927301984
+      bee_idle_3: -959384544
+      bee_idle_28: -2068069055
+      bee_idle_8: -2107998662
+      bee_idle_4: -2080656849
+      bee_idle_17: -2010121015
+      bee_idle_21: -1536751368
+      bee_idle_27: 669923810
+      bee_idle_29: 1546762854
+      bee_idle_10: 887021098
+      bee_idle_36: 1773578276
+      bee_idle_11: -1315197715
+      bee_idle_46: 1860996656
+      bee_idle_18: -136278215
+      bee_idle_32: -1008270100
+      bee_idle_33: 363608891
+      bee_idle_37: -993629144
+      bee_idle_5: 1578492159
+      bee_idle_35: -1071803835
+      bee_idle_30: -264396560
+      bee_idle_52: 316618036
+      bee_idle_2: 420144233
+      bee_idle_45: -1134305345
+      bee_idle_0: -1399666317
+      bee_idle_25: -1139544709
+      bee_idle_50: 692792687
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

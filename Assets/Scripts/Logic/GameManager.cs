@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
         camControls = Camera.main.transform.GetComponent<CameraControls>();
         drawUtils = transform.GetComponent<DrawingUtilities>();
         dialogueRunner.AddCommandHandler<int>("SetState", SetState);
+        dialogueRunner.AddCommandHandler("ToCredits", ToCredits);
         game = this;
     }
 
@@ -70,6 +71,9 @@ public class GameManager : MonoBehaviour
         drawUtils.OnDoneDrawing += PlayPrompt;
         
         AdvanceState();
+    }
+    void ToCredits(){
+        //transition scene to credits
     }
     void PlayPrompt(){
         if(camControls.DebugPOISeen){

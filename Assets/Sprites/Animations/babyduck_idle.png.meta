@@ -66,7 +66,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -131,10 +131,10 @@ TextureImporter:
       name: babyduck_idle_0
       rect:
         serializedVersion: 2
-        x: 175
-        y: 4378
-        width: 252
-        height: 206
+        x: 0
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,8 +142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d08b3f7eccf3f4429afb770cbe5eea0
-      internalID: -1437789332
+      spriteID: f636facb73ea8dd4b8daa402ce9a73b4
+      internalID: 1307485999
       vertices: []
       indices: 
       edges: []
@@ -152,10 +152,10 @@ TextureImporter:
       name: babyduck_idle_1
       rect:
         serializedVersion: 2
-        x: 777
-        y: 4378
-        width: 252
-        height: 206
+        x: 602
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6dba7bbd0830ee4daf0cdf005a3ba9e
-      internalID: -958616005
+      spriteID: 3afac53a4a7cf5340bba6b2f258023ea
+      internalID: -1112076519
       vertices: []
       indices: 
       edges: []
@@ -173,10 +173,10 @@ TextureImporter:
       name: babyduck_idle_2
       rect:
         serializedVersion: 2
-        x: 1379
-        y: 4378
-        width: 252
-        height: 206
+        x: 1204
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3916675d21240649a6518e44e914a57
-      internalID: -1103276330
+      spriteID: f5ee8b6c4af09d3448c5dd8436c6e659
+      internalID: 1765291680
       vertices: []
       indices: 
       edges: []
@@ -194,10 +194,10 @@ TextureImporter:
       name: babyduck_idle_3
       rect:
         serializedVersion: 2
-        x: 1981
-        y: 4380
-        width: 252
-        height: 204
+        x: 1806
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,8 +205,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b3715ee812d7814c92b30f0a9181eb3
-      internalID: 282558410
+      spriteID: b0cf4c6eb0b136b4ba76d097e4748ab6
+      internalID: 1292634845
       vertices: []
       indices: 
       edges: []
@@ -215,10 +215,10 @@ TextureImporter:
       name: babyduck_idle_4
       rect:
         serializedVersion: 2
-        x: 2583
-        y: 4380
-        width: 252
-        height: 207
+        x: 2408
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,8 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b22e8888432f5c64fb109ec0eb9dd139
-      internalID: 1015107550
+      spriteID: ce86cff25b5db2f4c8f9fe239add336e
+      internalID: 1154894156
       vertices: []
       indices: 
       edges: []
@@ -236,10 +236,10 @@ TextureImporter:
       name: babyduck_idle_5
       rect:
         serializedVersion: 2
-        x: 3185
-        y: 4380
-        width: 252
-        height: 207
+        x: 3010
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,8 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2aaa23350b0be44ab31eb5fa55bea38
-      internalID: -1285659881
+      spriteID: e8e8a861af52eaa419927eb6996e3191
+      internalID: -1008667280
       vertices: []
       indices: 
       edges: []
@@ -257,10 +257,10 @@ TextureImporter:
       name: babyduck_idle_6
       rect:
         serializedVersion: 2
-        x: 3787
-        y: 4380
-        width: 254
-        height: 207
+        x: 3612
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,8 +268,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12086d9d05a4c2b4684db91dd82ce461
-      internalID: 390455262
+      spriteID: 48d92c988427e9f40b07675cd6488a97
+      internalID: -1604130527
       vertices: []
       indices: 
       edges: []
@@ -278,10 +278,10 @@ TextureImporter:
       name: babyduck_idle_7
       rect:
         serializedVersion: 2
-        x: 4396
-        y: 4383
-        width: 240
-        height: 211
+        x: 4214
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,8 +289,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9c3e4affb739c048abc2d29bba07222
-      internalID: -1621599275
+      spriteID: 554125e6e6d792d4ca7f4cfa47dc03a2
+      internalID: -1890159897
       vertices: []
       indices: 
       edges: []
@@ -299,10 +299,10 @@ TextureImporter:
       name: babyduck_idle_8
       rect:
         serializedVersion: 2
-        x: 175
-        y: 3780
-        width: 254
-        height: 207
+        x: 0
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,8 +310,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 748a0f2687e47c94e9edc579351989b9
-      internalID: -1354131306
+      spriteID: 2aa6643634804804d8346b8c73f30ed8
+      internalID: -427393473
       vertices: []
       indices: 
       edges: []
@@ -320,10 +320,10 @@ TextureImporter:
       name: babyduck_idle_9
       rect:
         serializedVersion: 2
-        x: 777
-        y: 3780
-        width: 254
-        height: 208
+        x: 602
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,8 +331,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e5a3aba3766966428320b450eeea8a3
-      internalID: -88958270
+      spriteID: 71c605be7fc6aa149a4309bd487e0dd6
+      internalID: 2573125
       vertices: []
       indices: 
       edges: []
@@ -341,10 +341,10 @@ TextureImporter:
       name: babyduck_idle_10
       rect:
         serializedVersion: 2
-        x: 1380
-        y: 3781
-        width: 253
-        height: 208
+        x: 1204
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,8 +352,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 905c7d9e6fd745e41a14dc47c5aabbec
-      internalID: 55341330
+      spriteID: 5eb23a5fba47f8a48a9376801b60e620
+      internalID: -462576109
       vertices: []
       indices: 
       edges: []
@@ -362,10 +362,10 @@ TextureImporter:
       name: babyduck_idle_11
       rect:
         serializedVersion: 2
-        x: 1984
-        y: 3783
-        width: 253
-        height: 207
+        x: 1806
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,8 +373,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7f7c51333b7cf142a57387a4c684d61
-      internalID: 868303166
+      spriteID: b81b5182c541c89439b6098046c16b04
+      internalID: -426973648
       vertices: []
       indices: 
       edges: []
@@ -383,10 +383,10 @@ TextureImporter:
       name: babyduck_idle_12
       rect:
         serializedVersion: 2
-        x: 2587
-        y: 3783
-        width: 250
-        height: 208
+        x: 2408
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,8 +394,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 725315c156b7c6b448ebde50fd41225e
-      internalID: 451500485
+      spriteID: b20421b1345f8e34b88c2860d69b00a8
+      internalID: 1636012518
       vertices: []
       indices: 
       edges: []
@@ -404,10 +404,10 @@ TextureImporter:
       name: babyduck_idle_13
       rect:
         serializedVersion: 2
-        x: 3190
-        y: 3785
-        width: 249
-        height: 206
+        x: 3010
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,8 +415,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d73bf7817f147da4c8713d53bb9e0888
-      internalID: -749610839
+      spriteID: f0cabf0fc1461e246bd0426216df7740
+      internalID: 1316349760
       vertices: []
       indices: 
       edges: []
@@ -425,10 +425,10 @@ TextureImporter:
       name: babyduck_idle_14
       rect:
         serializedVersion: 2
-        x: 3792
-        y: 3785
-        width: 249
-        height: 206
+        x: 3612
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,8 +436,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b42bf4506dc676a48839c798cb97c726
-      internalID: -341391275
+      spriteID: fd8f72f03644ba443abe70399bd6532f
+      internalID: 1440599822
       vertices: []
       indices: 
       edges: []
@@ -446,10 +446,10 @@ TextureImporter:
       name: babyduck_idle_15
       rect:
         serializedVersion: 2
-        x: 4396
-        y: 3781
-        width: 240
-        height: 211
+        x: 4214
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,8 +457,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ad5e3f26c8072d4b89ca80c931e1ff9
-      internalID: -1732847528
+      spriteID: 7b6eb6ffc49f4e3429ca50a6b7e6795c
+      internalID: 1744940750
       vertices: []
       indices: 
       edges: []
@@ -467,10 +467,10 @@ TextureImporter:
       name: babyduck_idle_16
       rect:
         serializedVersion: 2
-        x: 180
-        y: 3181
-        width: 247
-        height: 208
+        x: 0
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,8 +478,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f7e4bde6f8a11348aeb39f9fee40895
-      internalID: -201111493
+      spriteID: c94ddd282abaf0d449ad68a20bf641b5
+      internalID: 373359690
       vertices: []
       indices: 
       edges: []
@@ -488,10 +488,10 @@ TextureImporter:
       name: babyduck_idle_17
       rect:
         serializedVersion: 2
-        x: 782
-        y: 3181
-        width: 247
-        height: 208
+        x: 602
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,8 +499,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af7894225ac51e8449446ff059bd9f46
-      internalID: -1552523994
+      spriteID: 4b6fc1a2002000b48b71b9b0d503a8be
+      internalID: -383047647
       vertices: []
       indices: 
       edges: []
@@ -509,10 +509,10 @@ TextureImporter:
       name: babyduck_idle_18
       rect:
         serializedVersion: 2
-        x: 1384
-        y: 3181
-        width: 244
-        height: 208
+        x: 1204
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -520,8 +520,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48c8a28a6f325ff489b8ceaf7d6b1a75
-      internalID: -478059507
+      spriteID: 246f29789705d7c4591acf679795861f
+      internalID: -729817645
       vertices: []
       indices: 
       edges: []
@@ -530,10 +530,10 @@ TextureImporter:
       name: babyduck_idle_19
       rect:
         serializedVersion: 2
-        x: 1988
-        y: 3179
-        width: 240
-        height: 211
+        x: 1806
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -541,8 +541,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70338c96676b9394e8a3dee1cfb01b77
-      internalID: -1946134937
+      spriteID: f31b261cbe20b2941a4eeb1099daf72f
+      internalID: -1435710180
       vertices: []
       indices: 
       edges: []
@@ -551,10 +551,10 @@ TextureImporter:
       name: babyduck_idle_20
       rect:
         serializedVersion: 2
-        x: 2590
-        y: 3179
-        width: 240
-        height: 211
+        x: 2408
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,8 +562,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d94b59eaa317ee24dbdb4477214a4c60
-      internalID: -959236224
+      spriteID: 00548b8555b837a49a52a9856d1b96b3
+      internalID: 550333390
       vertices: []
       indices: 
       edges: []
@@ -572,10 +572,10 @@ TextureImporter:
       name: babyduck_idle_21
       rect:
         serializedVersion: 2
-        x: 3192
-        y: 3178
-        width: 242
-        height: 212
+        x: 3010
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -583,8 +583,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2889bc85597f8f46a9bda9ca4ecf21c
-      internalID: 136067613
+      spriteID: 33709a021f483c34aa15910b13586a7e
+      internalID: 1179545605
       vertices: []
       indices: 
       edges: []
@@ -593,10 +593,10 @@ TextureImporter:
       name: babyduck_idle_22
       rect:
         serializedVersion: 2
-        x: 3792
-        y: 3178
-        width: 246
-        height: 212
+        x: 3612
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -604,8 +604,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 144759f133d24ca49a803d1434a339e9
-      internalID: -1990324544
+      spriteID: 265cf6a72fbcbaa4e826f95adb645061
+      internalID: 1866192659
       vertices: []
       indices: 
       edges: []
@@ -614,10 +614,10 @@ TextureImporter:
       name: babyduck_idle_23
       rect:
         serializedVersion: 2
-        x: 4396
-        y: 3178
-        width: 242
-        height: 212
+        x: 4214
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -625,8 +625,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7cbb731fbfe41e40a5d3a0f469e2615
-      internalID: 7304175
+      spriteID: f4659b84588b8eb4bb14d2e6efa7e047
+      internalID: -1717339889
       vertices: []
       indices: 
       edges: []
@@ -635,10 +635,10 @@ TextureImporter:
       name: babyduck_idle_24
       rect:
         serializedVersion: 2
-        x: 178
-        y: 2576
-        width: 249
-        height: 212
+        x: 0
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -646,8 +646,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 323e6f97993d83341a23da1f6d950660
-      internalID: -1604760595
+      spriteID: 62c1d4be2f4636945b3d39d4e7e742a5
+      internalID: -1168617221
       vertices: []
       indices: 
       edges: []
@@ -656,10 +656,10 @@ TextureImporter:
       name: babyduck_idle_25
       rect:
         serializedVersion: 2
-        x: 780
-        y: 2575
-        width: 251
-        height: 213
+        x: 602
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -667,8 +667,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca5e37986ac566940b6167448ac576ad
-      internalID: 1371235282
+      spriteID: c42a209a0d26b4a449c6edc74fec97f8
+      internalID: -1696925284
       vertices: []
       indices: 
       edges: []
@@ -677,10 +677,10 @@ TextureImporter:
       name: babyduck_idle_26
       rect:
         serializedVersion: 2
-        x: 1379
-        y: 2575
-        width: 256
-        height: 211
+        x: 1204
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -688,8 +688,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 032ad3d5aee478e41aee4c110f29f756
-      internalID: 1521904295
+      spriteID: 5d30504e36271e24eb3a310d67a602d6
+      internalID: 37671378
       vertices: []
       indices: 
       edges: []
@@ -698,10 +698,10 @@ TextureImporter:
       name: babyduck_idle_27
       rect:
         serializedVersion: 2
-        x: 1982
-        y: 2574
-        width: 255
-        height: 211
+        x: 1806
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -709,8 +709,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1486b55a6db8499438e15cb3276844a6
-      internalID: 275154654
+      spriteID: ad1373589410bbd4e8c161d16bff2705
+      internalID: 614960235
       vertices: []
       indices: 
       edges: []
@@ -719,10 +719,10 @@ TextureImporter:
       name: babyduck_idle_28
       rect:
         serializedVersion: 2
-        x: 2586
-        y: 2574
-        width: 257
-        height: 209
+        x: 2408
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -730,8 +730,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5d5d7bfad2d227479d68ec3acfa5094
-      internalID: 1359385845
+      spriteID: 11d2de325a5a52444b887f3a726eeefb
+      internalID: 1830614043
       vertices: []
       indices: 
       edges: []
@@ -740,10 +740,10 @@ TextureImporter:
       name: babyduck_idle_29
       rect:
         serializedVersion: 2
-        x: 3188
-        y: 2574
-        width: 261
-        height: 207
+        x: 3010
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -751,8 +751,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f81f0fda32ff0ee4ca8684708b12ec6f
-      internalID: -1700535836
+      spriteID: dbb055cfc44f3034d8c01697a37ccf64
+      internalID: 1058461334
       vertices: []
       indices: 
       edges: []
@@ -761,10 +761,10 @@ TextureImporter:
       name: babyduck_idle_30
       rect:
         serializedVersion: 2
-        x: 3790
-        y: 2574
-        width: 258
-        height: 207
+        x: 3612
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -772,8 +772,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b10ce1017e552b54a9d292393438229b
-      internalID: -749671911
+      spriteID: 734b4f82109711b4495ff417e00428c6
+      internalID: 857251920
       vertices: []
       indices: 
       edges: []
@@ -782,10 +782,10 @@ TextureImporter:
       name: babyduck_idle_31
       rect:
         serializedVersion: 2
-        x: 4396
-        y: 2576
-        width: 245
-        height: 212
+        x: 4214
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -793,8 +793,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af98c160a7df00245bffc6aff463b8c3
-      internalID: 276393270
+      spriteID: 66c49974404819849b4c4ce49c826282
+      internalID: -695279722
       vertices: []
       indices: 
       edges: []
@@ -803,10 +803,10 @@ TextureImporter:
       name: babyduck_idle_32
       rect:
         serializedVersion: 2
-        x: 178
-        y: 1972
-        width: 253
-        height: 207
+        x: 0
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -814,8 +814,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62a6b124c314f8f43bf54a44cad03931
-      internalID: -428351895
+      spriteID: a050e091f2e763f42b6b9ebda31b0035
+      internalID: 1835497477
       vertices: []
       indices: 
       edges: []
@@ -824,10 +824,10 @@ TextureImporter:
       name: babyduck_idle_33
       rect:
         serializedVersion: 2
-        x: 779
-        y: 1970
-        width: 252
-        height: 206
+        x: 602
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -835,8 +835,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3066f5ccda1836c49a6d8b72419269bb
-      internalID: 1709104059
+      spriteID: 9ebc5f75757274c4986871504397a197
+      internalID: -784643389
       vertices: []
       indices: 
       edges: []
@@ -845,10 +845,10 @@ TextureImporter:
       name: babyduck_idle_34
       rect:
         serializedVersion: 2
-        x: 1379
-        y: 1969
-        width: 254
-        height: 207
+        x: 1204
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -856,8 +856,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72719ca65d5dea74bab7abb38c045705
-      internalID: -593887983
+      spriteID: 1dab726cbc6924a43b2f0e64c6f298d4
+      internalID: -11124379
       vertices: []
       indices: 
       edges: []
@@ -866,10 +866,10 @@ TextureImporter:
       name: babyduck_idle_35
       rect:
         serializedVersion: 2
-        x: 1981
-        y: 1969
-        width: 254
-        height: 207
+        x: 1806
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -877,8 +877,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5e052c0f1eeab24a984b5d09a16fcc9
-      internalID: -1393744601
+      spriteID: 27531f6a758afb74cb7f27dd91f41aab
+      internalID: 1636453272
       vertices: []
       indices: 
       edges: []
@@ -887,10 +887,10 @@ TextureImporter:
       name: babyduck_idle_36
       rect:
         serializedVersion: 2
-        x: 2583
-        y: 1969
-        width: 252
-        height: 207
+        x: 2408
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -898,8 +898,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 956503fd23835c44c9404d4c636d8a96
-      internalID: 1243933789
+      spriteID: efd6d46f80147d14885b48240b18978e
+      internalID: 737963958
       vertices: []
       indices: 
       edges: []
@@ -908,10 +908,10 @@ TextureImporter:
       name: babyduck_idle_37
       rect:
         serializedVersion: 2
-        x: 3183
-        y: 1969
-        width: 254
-        height: 207
+        x: 3010
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -919,8 +919,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 843020fd9814f9744989250373149a7a
-      internalID: -1358385710
+      spriteID: a30b0adc24257f542aaa8b43fca8ae91
+      internalID: 16845541
       vertices: []
       indices: 
       edges: []
@@ -929,10 +929,10 @@ TextureImporter:
       name: babyduck_idle_38
       rect:
         serializedVersion: 2
-        x: 3785
-        y: 1970
-        width: 254
-        height: 209
+        x: 3612
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -940,8 +940,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb71b0f2b539df9498738420cbfa5c17
-      internalID: -346852154
+      spriteID: 81a0850a83099e740bdbeb678ee132c9
+      internalID: -1737715688
       vertices: []
       indices: 
       edges: []
@@ -950,10 +950,10 @@ TextureImporter:
       name: babyduck_idle_39
       rect:
         serializedVersion: 2
-        x: 4396
-        y: 1974
-        width: 245
-        height: 212
+        x: 4214
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -961,8 +961,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ae1d038909287446b057001d30ab992
-      internalID: 117634192
+      spriteID: fbe2b5ab2b164ff47a0560b7db675a4e
+      internalID: 1939922975
       vertices: []
       indices: 
       edges: []
@@ -971,10 +971,10 @@ TextureImporter:
       name: babyduck_idle_40
       rect:
         serializedVersion: 2
-        x: 173
-        y: 1370
-        width: 254
-        height: 207
+        x: 0
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -982,8 +982,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05d92fc6e2c5b864ba7fecc2b1cfa75a
-      internalID: 1857456306
+      spriteID: 7cc46d890963f1347842ebfb2e7789c4
+      internalID: -1120532982
       vertices: []
       indices: 
       edges: []
@@ -992,10 +992,10 @@ TextureImporter:
       name: babyduck_idle_41
       rect:
         serializedVersion: 2
-        x: 775
-        y: 1370
-        width: 256
-        height: 207
+        x: 602
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1003,8 +1003,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1f97a2882feba64482d6e214db1f97a
-      internalID: -1853757442
+      spriteID: 075134c047d4671488a036354defdbcc
+      internalID: -1867111784
       vertices: []
       indices: 
       edges: []
@@ -1013,10 +1013,10 @@ TextureImporter:
       name: babyduck_idle_42
       rect:
         serializedVersion: 2
-        x: 1379
-        y: 1371
-        width: 254
-        height: 206
+        x: 1204
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1024,8 +1024,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa133a08ecee3b14d8d55ef73b57f839
-      internalID: 2097040398
+      spriteID: 6815ed08561a75d40a78fc9513ed967d
+      internalID: 805409010
       vertices: []
       indices: 
       edges: []
@@ -1034,10 +1034,10 @@ TextureImporter:
       name: babyduck_idle_43
       rect:
         serializedVersion: 2
-        x: 1981
-        y: 1372
-        width: 254
-        height: 207
+        x: 1806
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1045,8 +1045,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2581f3c44d22ce4eb698b0c564d7ce6
-      internalID: -1986633010
+      spriteID: b2b89bc4894916a4d9a2b3c7f6ef9793
+      internalID: -2119341647
       vertices: []
       indices: 
       edges: []
@@ -1055,10 +1055,10 @@ TextureImporter:
       name: babyduck_idle_44
       rect:
         serializedVersion: 2
-        x: 2586
-        y: 1372
-        width: 251
-        height: 207
+        x: 2408
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1066,8 +1066,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf6894e5459442e41872258312e83334
-      internalID: -655609532
+      spriteID: 00339f6a956bd094193a8020d1a6b648
+      internalID: 913965977
       vertices: []
       indices: 
       edges: []
@@ -1076,10 +1076,10 @@ TextureImporter:
       name: babyduck_idle_45
       rect:
         serializedVersion: 2
-        x: 3188
-        y: 1373
-        width: 251
-        height: 208
+        x: 3010
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1087,8 +1087,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68e4fa793ed932945ba8bf880fdf5c01
-      internalID: 1922299580
+      spriteID: 1d35806b09eb00441b664993f8009ddf
+      internalID: -1934606665
       vertices: []
       indices: 
       edges: []
@@ -1097,10 +1097,10 @@ TextureImporter:
       name: babyduck_idle_46
       rect:
         serializedVersion: 2
-        x: 3790
-        y: 1375
-        width: 251
-        height: 206
+        x: 3612
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1108,8 +1108,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4ee6733fb854384d8800356ec1da5ee
-      internalID: 1339790039
+      spriteID: 2ec712bfbfb35ce4bb35d8b59bcf9a0c
+      internalID: -220306297
       vertices: []
       indices: 
       edges: []
@@ -1118,10 +1118,10 @@ TextureImporter:
       name: babyduck_idle_47
       rect:
         serializedVersion: 2
-        x: 4394
-        y: 1372
-        width: 249
-        height: 212
+        x: 4214
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1129,8 +1129,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97391a0a3f29919448593dd02cbc7c1d
-      internalID: 1107331536
+      spriteID: 0109b9bb3b78e27498c99fd268d51d75
+      internalID: 515598384
       vertices: []
       indices: 
       edges: []
@@ -1139,10 +1139,10 @@ TextureImporter:
       name: babyduck_idle_48
       rect:
         serializedVersion: 2
-        x: 179
-        y: 773
-        width: 250
-        height: 206
+        x: 0
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1150,8 +1150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ffa43a01e114d0489a58d96ad75c9e8
-      internalID: -16567851
+      spriteID: 3e3bc9fdee1795b4bb3d012183a04087
+      internalID: 1221005102
       vertices: []
       indices: 
       edges: []
@@ -1160,10 +1160,10 @@ TextureImporter:
       name: babyduck_idle_49
       rect:
         serializedVersion: 2
-        x: 781
-        y: 773
-        width: 250
-        height: 208
+        x: 602
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1171,8 +1171,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cbbf7f5d89de3d4e90d005e44347d81
-      internalID: -963670690
+      spriteID: ce069b1aeb4c5994495ca28ecc6f1645
+      internalID: -275893318
       vertices: []
       indices: 
       edges: []
@@ -1181,10 +1181,10 @@ TextureImporter:
       name: babyduck_idle_50
       rect:
         serializedVersion: 2
-        x: 1383
-        y: 773
-        width: 250
-        height: 208
+        x: 1204
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1192,8 +1192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50ed23203c53a1b4cae02ccb2b17d2dd
-      internalID: 509401740
+      spriteID: d74c7018ca0963446945fedd43931792
+      internalID: 906164495
       vertices: []
       indices: 
       edges: []
@@ -1202,10 +1202,10 @@ TextureImporter:
       name: babyduck_idle_51
       rect:
         serializedVersion: 2
-        x: 1984
-        y: 773
-        width: 249
-        height: 208
+        x: 1806
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1213,8 +1213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 070f4fba2281d4341bc79e190062f92d
-      internalID: 290209951
+      spriteID: 1927eb7c80e505d45aebdd80f59a70ea
+      internalID: -592518341
       vertices: []
       indices: 
       edges: []
@@ -1223,10 +1223,10 @@ TextureImporter:
       name: babyduck_idle_52
       rect:
         serializedVersion: 2
-        x: 2586
-        y: 773
-        width: 249
-        height: 208
+        x: 2408
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1234,8 +1234,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ab609781819a724da7b03f8af497027
-      internalID: 1171497327
+      spriteID: ab68622bb8d7c1644acae6c37bfd62c2
+      internalID: 1873725114
       vertices: []
       indices: 
       edges: []
@@ -1244,10 +1244,10 @@ TextureImporter:
       name: babyduck_idle_53
       rect:
         serializedVersion: 2
-        x: 3188
-        y: 773
-        width: 246
-        height: 208
+        x: 3010
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1255,8 +1255,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c82ddbc3c8d4ff64cb76fae0ce4b79aa
-      internalID: -758758640
+      spriteID: 858d12397f6581842acc9b0583a823bc
+      internalID: 1661774677
       vertices: []
       indices: 
       edges: []
@@ -1265,10 +1265,10 @@ TextureImporter:
       name: babyduck_idle_54
       rect:
         serializedVersion: 2
-        x: 3792
-        y: 771
-        width: 242
-        height: 211
+        x: 3612
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1276,8 +1276,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67bad14d87c45a14991ef341f2c8a883
-      internalID: 463784900
+      spriteID: 63ca6d5bdba67e1478a64e14fef0eee6
+      internalID: 1284586319
       vertices: []
       indices: 
       edges: []
@@ -1286,10 +1286,10 @@ TextureImporter:
       name: babyduck_idle_55
       rect:
         serializedVersion: 2
-        x: 4394
-        y: 769
-        width: 249
-        height: 213
+        x: 4214
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1297,8 +1297,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60510e2636d01c840979c299871fa978
-      internalID: 190788733
+      spriteID: 9519d34ce16570143bdf0aa33f5f816b
+      internalID: -611470449
       vertices: []
       indices: 
       edges: []
@@ -1307,10 +1307,10 @@ TextureImporter:
       name: babyduck_idle_56
       rect:
         serializedVersion: 2
-        x: 180
-        y: 166
-        width: 251
-        height: 211
+        x: 0
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1318,8 +1318,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5953d896527e1f49bf213dadb3af419
-      internalID: 1071433650
+      spriteID: c10632c52f536e543a9d0ab9d734c3da
+      internalID: 1563990684
       vertices: []
       indices: 
       edges: []
@@ -1328,10 +1328,10 @@ TextureImporter:
       name: babyduck_idle_57
       rect:
         serializedVersion: 2
-        x: 780
-        y: 166
-        width: 261
-        height: 211
+        x: 602
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1339,8 +1339,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ecdf87a2bb0a25488ec2caa1f7bd758
-      internalID: 2103124043
+      spriteID: 3812e23d5106f7b49bf340ae55dc1cce
+      internalID: 1194429506
       vertices: []
       indices: 
       edges: []
@@ -1349,10 +1349,10 @@ TextureImporter:
       name: babyduck_idle_58
       rect:
         serializedVersion: 2
-        x: 1382
-        y: 166
-        width: 258
-        height: 209
+        x: 1204
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1360,8 +1360,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b605c28dbb97ebe4b96cfac11dd785ac
-      internalID: -1411388414
+      spriteID: ec6041875dd71f645837685de7b9f7a4
+      internalID: 1565925924
       vertices: []
       indices: 
       edges: []
@@ -1370,10 +1370,10 @@ TextureImporter:
       name: babyduck_idle_59
       rect:
         serializedVersion: 2
-        x: 1982
-        y: 166
-        width: 256
-        height: 207
+        x: 1806
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1381,8 +1381,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75b8b1619f8e0ef4391e2cb1ef6ac550
-      internalID: 775449179
+      spriteID: 4eaa1dcb48cef15448e775b96df5d44a
+      internalID: -234922862
       vertices: []
       indices: 
       edges: []
@@ -1391,10 +1391,10 @@ TextureImporter:
       name: babyduck_idle_60
       rect:
         serializedVersion: 2
-        x: 2583
-        y: 164
-        width: 254
-        height: 209
+        x: 2408
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1402,8 +1402,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d589ee1381369f4c806113a7b41b389
-      internalID: 1557437554
+      spriteID: 6f54970e90c354b449c7ad235aad9757
+      internalID: 2006850742
       vertices: []
       indices: 
       edges: []
@@ -1412,10 +1412,10 @@ TextureImporter:
       name: babyduck_idle_61
       rect:
         serializedVersion: 2
-        x: 3185
-        y: 164
-        width: 254
-        height: 206
+        x: 3010
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1423,8 +1423,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9e53c7f2223d6447a3364d99a63a1f2
-      internalID: -146992766
+      spriteID: 91674549f30cc7e45a9ef53981add53a
+      internalID: 271242163
       vertices: []
       indices: 
       edges: []
@@ -1432,7 +1432,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a1bcd06becfb3d549b34abc33a1c8c75
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -1440,68 +1440,68 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      babyduck_idle_30: -749671911
-      babyduck_idle_43: -1986633010
-      babyduck_idle_57: 2103124043
-      babyduck_idle_12: 451500485
-      babyduck_idle_17: -1552523994
-      babyduck_idle_2: -1103276330
-      babyduck_idle_26: 1521904295
-      babyduck_idle_9: -88958270
-      babyduck_idle_14: -341391275
-      babyduck_idle_28: 1359385845
-      babyduck_idle_51: 290209951
-      babyduck_idle_58: -1411388414
-      babyduck_idle_5: -1285659881
-      babyduck_idle_8: -1354131306
-      babyduck_idle_47: 1107331536
-      babyduck_idle_39: 117634192
-      babyduck_idle_0: -1437789332
-      babyduck_idle_10: 55341330
-      babyduck_idle_31: 276393270
-      babyduck_idle_60: 1557437554
-      babyduck_idle_11: 868303166
-      babyduck_idle_41: -1853757442
-      babyduck_idle_13: -749610839
-      babyduck_idle_1: -958616005
-      babyduck_idle_4: 1015107550
-      babyduck_idle_32: -428351895
-      babyduck_idle_23: 7304175
-      babyduck_idle_35: -1393744601
-      babyduck_idle_55: 190788733
-      babyduck_idle_3: 282558410
-      babyduck_idle_22: -1990324544
-      babyduck_idle_18: -478059507
-      babyduck_idle_59: 775449179
-      babyduck_idle_7: -1621599275
-      babyduck_idle_40: 1857456306
-      babyduck_idle_61: -146992766
-      babyduck_idle_52: 1171497327
-      babyduck_idle_27: 275154654
-      babyduck_idle_20: -959236224
-      babyduck_idle_24: -1604760595
-      babyduck_idle_34: -593887983
-      babyduck_idle_37: -1358385710
-      babyduck_idle_50: 509401740
-      babyduck_idle_36: 1243933789
-      babyduck_idle_15: -1732847528
-      babyduck_idle_33: 1709104059
-      babyduck_idle_46: 1339790039
-      babyduck_idle_29: -1700535836
-      babyduck_idle_44: -655609532
-      babyduck_idle_38: -346852154
-      babyduck_idle_6: 390455262
-      babyduck_idle_42: 2097040398
-      babyduck_idle_25: 1371235282
-      babyduck_idle_45: 1922299580
-      babyduck_idle_49: -963670690
-      babyduck_idle_53: -758758640
-      babyduck_idle_48: -16567851
-      babyduck_idle_16: -201111493
-      babyduck_idle_56: 1071433650
-      babyduck_idle_19: -1946134937
-      babyduck_idle_21: 136067613
-      babyduck_idle_54: 463784900
+      babyduck_idle_30: 857251920
+      babyduck_idle_43: -2119341647
+      babyduck_idle_57: 1194429506
+      babyduck_idle_12: 1636012518
+      babyduck_idle_17: -383047647
+      babyduck_idle_2: 1765291680
+      babyduck_idle_26: 37671378
+      babyduck_idle_9: 2573125
+      babyduck_idle_14: 1440599822
+      babyduck_idle_28: 1830614043
+      babyduck_idle_51: -592518341
+      babyduck_idle_58: 1565925924
+      babyduck_idle_5: -1008667280
+      babyduck_idle_8: -427393473
+      babyduck_idle_47: 515598384
+      babyduck_idle_39: 1939922975
+      babyduck_idle_0: 1307485999
+      babyduck_idle_10: -462576109
+      babyduck_idle_31: -695279722
+      babyduck_idle_60: 2006850742
+      babyduck_idle_11: -426973648
+      babyduck_idle_41: -1867111784
+      babyduck_idle_13: 1316349760
+      babyduck_idle_1: -1112076519
+      babyduck_idle_4: 1154894156
+      babyduck_idle_32: 1835497477
+      babyduck_idle_23: -1717339889
+      babyduck_idle_35: 1636453272
+      babyduck_idle_55: -611470449
+      babyduck_idle_3: 1292634845
+      babyduck_idle_22: 1866192659
+      babyduck_idle_18: -729817645
+      babyduck_idle_59: -234922862
+      babyduck_idle_7: -1890159897
+      babyduck_idle_40: -1120532982
+      babyduck_idle_61: 271242163
+      babyduck_idle_52: 1873725114
+      babyduck_idle_27: 614960235
+      babyduck_idle_20: 550333390
+      babyduck_idle_24: -1168617221
+      babyduck_idle_34: -11124379
+      babyduck_idle_37: 16845541
+      babyduck_idle_50: 906164495
+      babyduck_idle_36: 737963958
+      babyduck_idle_15: 1744940750
+      babyduck_idle_33: -784643389
+      babyduck_idle_46: -220306297
+      babyduck_idle_29: 1058461334
+      babyduck_idle_44: 913965977
+      babyduck_idle_38: -1737715688
+      babyduck_idle_6: -1604130527
+      babyduck_idle_42: 805409010
+      babyduck_idle_25: -1696925284
+      babyduck_idle_45: -1934606665
+      babyduck_idle_49: -275893318
+      babyduck_idle_53: 1661774677
+      babyduck_idle_48: 1221005102
+      babyduck_idle_16: 373359690
+      babyduck_idle_56: 1563990684
+      babyduck_idle_19: -1435710180
+      babyduck_idle_21: 1179545605
+      babyduck_idle_54: 1284586319
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -175,13 +175,15 @@ public class DrawingUtilities : MonoBehaviour
     public Camera[] screenshottingCameras;
     public Texture2D textPic;
     void SubmitDrawing(){ //VERY IMPORTANT TO NOT CALL CLEARDRAWINGS ANYWHERE ELSE THAN HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        SaveAllToArray();
-        screenshots.Add(GetScreenshot(screenshottingCameras[0])); // for final gallery at end of game
-        textPic = GetScreenshot(screenshottingCameras[1]);
-        //send textpic to dialogue helper
-        // SendToDialogueHelper();
-        ClearDrawings();
-        OnDoneDrawing();
+        if (GameManager.game.camControls.state == CameraControls.states.DRAWING){
+            SaveAllToArray();
+            screenshots.Add(GetScreenshot(screenshottingCameras[0])); // for final gallery at end of game
+            textPic = GetScreenshot(screenshottingCameras[1]);
+            //send textpic to dialogue helper
+            // SendToDialogueHelper();
+            ClearDrawings();
+            OnDoneDrawing();
+        }
     }
     private Texture2D GetScreenshot(Camera cam ){
         var rTex = cam.targetTexture;

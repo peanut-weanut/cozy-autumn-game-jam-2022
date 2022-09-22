@@ -78,7 +78,7 @@ okok ill let you draw now
 
 <<SetState -1>> //-1 to 0
 
-<<stop>>
+
 // <<jump PromptPlaque>>
 ===
 
@@ -122,7 +122,7 @@ Yeah, I think it was next to the picnic table.
 // <<SetTrigger stage0_makeDrawable>>
 
 //
-<<Stop>>
+
 ===
 
 title: PromptPlaqueFail
@@ -141,7 +141,7 @@ no i think it was a sign or something
 
 <<Me>>
 Maybe I'm not drawing it for long enough for it to be clear?
-<<Stop>>
+
 ===
 
 
@@ -186,22 +186,20 @@ plaqueworthy things in that town
 <<wait 3.5>>
 
 <<Me>>
-Ok
+Well
 <<wait 1.5>>
-So it's covered in marker
+It's covered in marker
 <<wait 3.5>>
 Anything that was written there is long gone
 <<wait 2.5>>
 
 <<Them>>
 aww
-
+<<wait 3>>
 // <<SetTrigger stage1_Dialogue>>
 <<SetState 1>> //0 to 1
-<<wait 3>>
 
 
-<<Stop>>
 ===
 
 
@@ -222,7 +220,7 @@ colorID: 0
 position: 0,0
 ---
 //Stage 1
-<<wait 2>>
+<<wait 4>>
 <<Them>>
 <<wait 2.5>>
 yknow living in the city kinda stinks
@@ -239,7 +237,7 @@ Hold on, lemme draw it
 
 // <<SetTrigger stage1_makeDrawable>>
 
-<<Stop>>
+
 ===
 
 // title: PromptSomewhereToSwim_LakeFinished
@@ -260,7 +258,7 @@ Hold on, lemme draw it
 // // <<SetTrigger waterfall_makeDrawable>>
 // <<AdvanceState>>
 
-// <<Stop>>
+// 
 //===
 
 // title: PromptSomewhereToSwim_WaterfallFinished
@@ -281,7 +279,7 @@ Hold on, lemme draw it
 // let me draw it real quick
 // // <<SetTrigger lake_makeDrawable>>
 
-// <<Stop>>
+// 
 //===
 
 title: PromptSomewhereToSwimFail
@@ -305,7 +303,7 @@ or the waterfall
 
 <<Me>>
 Yeah, just hold on, let me finish drawing it
-<<Stop>>
+
 ===
 
 title: PromptSomewhereToSwimSuccess_Lake
@@ -347,7 +345,7 @@ this is why no one sat next to you in school
 But you sat next to me 
 <<wait 8>>
 //[long pause]
-x: :)
+x:   :)
 <<wait 4>>
 
 <<Them>>
@@ -357,7 +355,7 @@ yeah i guess im lame too
 
 <<SetState 2>>
 
-<<Stop>>
+
 ===
 
 title: PromptSomewhereToSwimSuccess_Waterfall
@@ -407,7 +405,7 @@ Drama queen!
 // <<SetTrigger stage2_Dialogue>>
 <<SetState 2>>
 
-<<Stop>>
+
 ===
 
 
@@ -443,7 +441,7 @@ i want you to draw them
 
 // <<SetTrigger stage2_makeDrawable>>
 <<ResetMusic>>
-<<Stop>>
+
 ===
 
 title: PromptAnimalsFail
@@ -464,7 +462,7 @@ Let me redo that
 
 <<Them>>
 yeah im not sure what im looking at
-<<Stop>>
+
 ===
 
 title: PromptAnimalsSuccess_Bee
@@ -505,7 +503,7 @@ Indeed...
 <<SetState 3>>
 
 
-<<Stop>>
+
 ===
 
 title: PromptAnimalsSuccess_Bird
@@ -539,7 +537,7 @@ there's a lot of things there for a woodpecker to enjoy
 
 <<SetState 3>>
 
-<<Stop>>
+
 ===
 
 title: PromptAnimalsSuccess_Frog
@@ -579,7 +577,7 @@ What else to draw...?
 
 <<SetState 3>>
 
-<<Stop>>
+
 ===
 
 
@@ -608,7 +606,7 @@ is there anywhere to sit down?
 
 // <<SetTrigger stage3_makeDrawable>>
 <<ResetMusic>>
-<<Stop>>
+
 ===
 
 title: PromptSomewhereToSitFail
@@ -629,7 +627,7 @@ that doesnt look very comfortable
 <<Me>>
 Hold on, let me try again
 
-<<Stop>>
+
 ===
 
 title: PromptSomewhereToSitSuccess_PicnicTable
@@ -697,7 +695,7 @@ Me too.
 <<SetState 4>>
 
 
-<<Stop>>
+
 ===
 
 title: PromptSomewhereToSitSuccess_Tree
@@ -772,7 +770,7 @@ Yep...
 <<SetState 4>>
 
 
-<<Stop>>
+
 ===
 
 title: PromptSomewhereToSitSuccess_Stump
@@ -833,15 +831,15 @@ x: Getting his associates :)
 <<wait 3>>
 
 <<Them>>
-hmm 
+wow
 <<wait 5>>
 i guess things change
 
-
+<<wait 8>>
 <<SetState 4>>
 
 
-<<Stop>>
+
 ===
 
 
@@ -900,23 +898,22 @@ I'll start drawing now
 <<Them>>
 //Variable Messages
 it cant be hawaii
-<<wait 6>>
+<<wait 12>>
 is it the golden gate ive already been to the golden gate
-<<wait 7>>
-just tell me //>:(
-<<wait 8>> 
+<<wait 14>>
+x: just tell me >:(
+<<wait 16>> 
 can i find it on google
-<<wait 6>>
+<<wait 12>>
 is it somewhere i know
-<<wait 5>>
+<<wait 10>>
 your moms house
-<<wait 8>>
+<<wait 16>>
 idk dude just tell me
-<<wait 6>>
+<<wait 12>>
 ok im just not gonna say anything
-<<wait 8>>
+<<wait 16>>
 are you still there?
-//end 
 
 //[shortly after the full loop plays for the first time]
 //if drawing long enough
@@ -925,10 +922,10 @@ wait
 <<wait 3>>
 i think i have an idea
 
-
+<<stop>>
 // <<SetTrigger stage4_makeDrawable>>
 
-<<Stop>>
+
 ===
 
 title: PromptLakehouseFail
@@ -940,7 +937,7 @@ position: 0,0
 Hold on, I just want to get this right
 
 
-<<Stop>>
+
 ===
 
 title: PromptLakehouseSuccess
@@ -949,59 +946,79 @@ colorID: 0
 position: 0,0
 ---
 <<Me>>
+<<wait 2>>
 Remember this?
+<<wait 2.5>>
 
 <<Them>>
 is that the lakehouse?
+<<wait 3>>
 
 <<Me>>
 You got it!
+<<wait 2.5>>
 
 <<Them>>
 did anyone new move in?
+<<wait 5>>
 
 <<Me>>
 Some deer
+<<wait 2.5>>
 A family of possum, too
+<<wait 3>>
 
 <<Them>>
 jesus
+<<wait 2.5>>
 its really gone to heck, huh
+<<wait 3.5>>
 
 <<Me>>
 No one took care of the house, so
+<<wait 3.5>>
 
 <<Them>>
 what?? why not
+<<wait 4>>
 
 <<Me>>
 Well, who would?
+<<wait 2.5>>
 
 <<Them>>
-theres really no one who stuck around, huh
+theres really no one who stuck around huh
+<<wait 4.5>>
 yknow what hold on
+<<wait 3>>
 IM gonna send you a drawing
 
 //[Pause for about 5 seconds or so]
-<<wait 10>>
-//<<DisplayMoneyshot>>
+<<wait 6>>
+<<DisplayMoneyshot>>
+
+<<wait 1>>
 tada!
+<<wait 2.5>>
 it's us 
+<<wait 4>>
 
 <<Me>>
 Am I holding a hammer?
+<<wait 3>>
 
 i miss that place
+<<wait 3>>
 lets save it
+<<wait 4>>
 
 <<Me>>
-x: I'd like that :)
-
-
+I'd like that //:)
+<<wait 10>>
+<<ToCredits>>
 // <<SetTrigger ending>>
-//ending
+//fadetoblack
 
-<<Stop>>
 ===
 
 
@@ -1046,5 +1063,5 @@ Yeah, it's broke
 
 <<AdvanceState>>
 
-<<Stop>>
+
 ===

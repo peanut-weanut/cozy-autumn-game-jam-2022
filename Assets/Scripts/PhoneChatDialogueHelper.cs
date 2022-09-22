@@ -33,8 +33,6 @@ namespace Yarn.Unity.Example
         [Tooltip("This is the chat message bubble UI object (what we are cloning for each message!)... NOT the container group for all chat bubbles")]
         public GameObject dialogueBubblePrefab;
         public float lettersPerSecond = 10f;
-        public delegate void OnTextSentDelegate();
-        public OnTextSentDelegate OnTextSent;
         bool isFirstMessage = true;
 
         // current message bubble styling settings, modified by SetSender
@@ -109,6 +107,7 @@ namespace Yarn.Unity.Example
             localScale.localScale = new Vector3 (0.35f, 0.5f, 1f);
             chatImageGameObject.transform.SetParent(parent.transform);
             chatImageGameObject.transform.SetAsLastSibling();
+            
 
 
 

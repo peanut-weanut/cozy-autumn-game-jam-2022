@@ -66,7 +66,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -131,10 +131,10 @@ TextureImporter:
       name: frog_idle_0
       rect:
         serializedVersion: 2
-        x: 89
-        y: 4925
-        width: 465
-        height: 312
+        x: 0
+        y: 4816
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,8 +142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 127e53d33b604bf48aa7bf7a65e200ac
-      internalID: 1683555968
+      spriteID: 148f9465ddd2d8e40bb0cbc2a6166238
+      internalID: 1101454218
       vertices: []
       indices: 
       edges: []
@@ -152,10 +152,10 @@ TextureImporter:
       name: frog_idle_1
       rect:
         serializedVersion: 2
-        x: 692
-        y: 4925
-        width: 463
-        height: 312
+        x: 602
+        y: 4816
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a1abd2e6297d4343aa7eb3bf8145fef
-      internalID: -1115442426
+      spriteID: 090e4cca921f3be4a9bd3983ea28c633
+      internalID: 692306205
       vertices: []
       indices: 
       edges: []
@@ -173,10 +173,10 @@ TextureImporter:
       name: frog_idle_2
       rect:
         serializedVersion: 2
-        x: 1295
-        y: 4925
-        width: 460
-        height: 312
+        x: 1204
+        y: 4816
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98a0e1a132db41c4cba7b11146076668
-      internalID: 1840309278
+      spriteID: 37a600b9c3aeb5e44ade1e703750acaa
+      internalID: 783394620
       vertices: []
       indices: 
       edges: []
@@ -194,10 +194,10 @@ TextureImporter:
       name: frog_idle_3
       rect:
         serializedVersion: 2
-        x: 1896
-        y: 4925
-        width: 462
-        height: 309
+        x: 1806
+        y: 4816
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,8 +205,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef4ab4e1208f04146a88228cd2fa8014
-      internalID: -2011848537
+      spriteID: e68817a4f9510e24bbdbe5f9daf55ab5
+      internalID: -1657235877
       vertices: []
       indices: 
       edges: []
@@ -215,10 +215,10 @@ TextureImporter:
       name: frog_idle_4
       rect:
         serializedVersion: 2
-        x: 2499
-        y: 4925
-        width: 463
-        height: 309
+        x: 2408
+        y: 4816
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,8 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0abd7c6f8e1ed874199dda3f040f22f0
-      internalID: 2074171301
+      spriteID: 7e5f8da0a89bc4045ba2c253cf98816f
+      internalID: -178529836
       vertices: []
       indices: 
       edges: []
@@ -236,10 +236,10 @@ TextureImporter:
       name: frog_idle_5
       rect:
         serializedVersion: 2
-        x: 3099
-        y: 4922
-        width: 463
-        height: 309
+        x: 3010
+        y: 4816
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,8 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc542d554a42e6c4f9936ee77745536b
-      internalID: -1079251257
+      spriteID: b2804afe3cd27ab49a6b6dd4a93e6c5b
+      internalID: 13733323
       vertices: []
       indices: 
       edges: []
@@ -257,10 +257,10 @@ TextureImporter:
       name: frog_idle_6
       rect:
         serializedVersion: 2
-        x: 3702
-        y: 4925
-        width: 463
-        height: 306
+        x: 3612
+        y: 4816
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,8 +268,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1aeb70e5a7e90ba42818f19dabf40bde
-      internalID: 1119209455
+      spriteID: 6d75cabdd16a9ba419363a682b9e37ab
+      internalID: -1468817460
       vertices: []
       indices: 
       edges: []
@@ -278,10 +278,10 @@ TextureImporter:
       name: frog_idle_7
       rect:
         serializedVersion: 2
-        x: 4303
-        y: 4925
-        width: 465
-        height: 304
+        x: 4214
+        y: 4816
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,8 +289,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d53b51093a305c047b5b3f038631c57d
-      internalID: -631622455
+      spriteID: a232eff82e205c246a0716c4e11cea20
+      internalID: 1435008048
       vertices: []
       indices: 
       edges: []
@@ -299,10 +299,10 @@ TextureImporter:
       name: frog_idle_8
       rect:
         serializedVersion: 2
-        x: 4906
-        y: 4925
-        width: 463
-        height: 301
+        x: 4816
+        y: 4816
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,8 +310,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26b4aafbcb864d14e93d39d0bd2df25d
-      internalID: -1321236725
+      spriteID: 718600525c155904b82a4b62f4c79864
+      internalID: -726978890
       vertices: []
       indices: 
       edges: []
@@ -320,10 +320,10 @@ TextureImporter:
       name: frog_idle_9
       rect:
         serializedVersion: 2
-        x: 89
-        y: 4321
-        width: 465
-        height: 302
+        x: 0
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,8 +331,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41abfeaa3b8e2d746b38189dd9055aee
-      internalID: 914749508
+      spriteID: 05b9f87d7988eab4eb9757508889a17c
+      internalID: -1247758167
       vertices: []
       indices: 
       edges: []
@@ -341,10 +341,10 @@ TextureImporter:
       name: frog_idle_10
       rect:
         serializedVersion: 2
-        x: 692
-        y: 4321
-        width: 465
-        height: 299
+        x: 602
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,8 +352,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bda50094af0bb27499897eed6e963e94
-      internalID: 769076798
+      spriteID: 7a0717c178f1de4419e6fed6864f255e
+      internalID: 1654121937
       vertices: []
       indices: 
       edges: []
@@ -362,10 +362,10 @@ TextureImporter:
       name: frog_idle_11
       rect:
         serializedVersion: 2
-        x: 1295
-        y: 4321
-        width: 466
-        height: 297
+        x: 1204
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,8 +373,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2badb51afe4749d4b92b1195e03487cd
-      internalID: -2006085508
+      spriteID: d5f4e539ed9cb9244bce956a90ed2981
+      internalID: 157335498
       vertices: []
       indices: 
       edges: []
@@ -383,10 +383,10 @@ TextureImporter:
       name: frog_idle_12
       rect:
         serializedVersion: 2
-        x: 1896
-        y: 4321
-        width: 467
-        height: 294
+        x: 1806
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,8 +394,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f009d93fc00e138439a665ebe0d9a958
-      internalID: -591210786
+      spriteID: 924a6231cfc4b1346abbc82360936ced
+      internalID: 1934823761
       vertices: []
       indices: 
       edges: []
@@ -404,10 +404,10 @@ TextureImporter:
       name: frog_idle_13
       rect:
         serializedVersion: 2
-        x: 2499
-        y: 4321
-        width: 465
-        height: 291
+        x: 2408
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,8 +415,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9966b8e2d5a8db41ac217780851a652
-      internalID: -1625440280
+      spriteID: b099acaede9a88841976b135039b9563
+      internalID: -463596705
       vertices: []
       indices: 
       edges: []
@@ -425,10 +425,10 @@ TextureImporter:
       name: frog_idle_14
       rect:
         serializedVersion: 2
-        x: 3099
-        y: 4321
-        width: 468
-        height: 291
+        x: 3010
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,8 +436,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9296fc562dac024ab715eaf1aed929d
-      internalID: -882601038
+      spriteID: 9cb73465fb6dd72498ffcc1b9a7fa08b
+      internalID: -773663066
       vertices: []
       indices: 
       edges: []
@@ -446,10 +446,10 @@ TextureImporter:
       name: frog_idle_15
       rect:
         serializedVersion: 2
-        x: 3701
-        y: 4321
-        width: 469
-        height: 289
+        x: 3612
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,8 +457,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbdf62b5406cbde42b7c733c60fa228e
-      internalID: 1452219796
+      spriteID: 1f3793d36997b1f4e8c5c4c8e5ea3faf
+      internalID: 420821107
       vertices: []
       indices: 
       edges: []
@@ -467,10 +467,10 @@ TextureImporter:
       name: frog_idle_16
       rect:
         serializedVersion: 2
-        x: 4303
-        y: 4321
-        width: 468
-        height: 286
+        x: 4214
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,8 +478,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8124dedbc9b62db49a272d246447db62
-      internalID: 656624671
+      spriteID: 8aa1bbd7c9f718441bdc3ef69bbd1100
+      internalID: 2056676872
       vertices: []
       indices: 
       edges: []
@@ -488,10 +488,10 @@ TextureImporter:
       name: frog_idle_17
       rect:
         serializedVersion: 2
-        x: 4906
-        y: 4321
-        width: 468
-        height: 286
+        x: 4816
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,8 +499,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5eef5fa7c071d8d48bf5a8672d2c6af0
-      internalID: 262484463
+      spriteID: 723ebfeefe0d0ab4e9a99786a6bb8dc5
+      internalID: 240782648
       vertices: []
       indices: 
       edges: []
@@ -509,10 +509,10 @@ TextureImporter:
       name: frog_idle_18
       rect:
         serializedVersion: 2
-        x: 89
-        y: 3721
-        width: 470
-        height: 283
+        x: 0
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -520,8 +520,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a73cd257635c264f8a5792687c285f2
-      internalID: 283660031
+      spriteID: dd854643b35ebdb44805ece3dea63263
+      internalID: -260940693
       vertices: []
       indices: 
       edges: []
@@ -530,10 +530,10 @@ TextureImporter:
       name: frog_idle_19
       rect:
         serializedVersion: 2
-        x: 692
-        y: 3718
-        width: 468
-        height: 286
+        x: 602
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -541,8 +541,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebe182f21e319784f8ab9821c01bfb3a
-      internalID: -2132118136
+      spriteID: 0ef2efc37eb0ffc4f8221c5af73b8dac
+      internalID: -1568318533
       vertices: []
       indices: 
       edges: []
@@ -551,10 +551,10 @@ TextureImporter:
       name: frog_idle_20
       rect:
         serializedVersion: 2
-        x: 1295
-        y: 3721
-        width: 468
-        height: 283
+        x: 1204
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,8 +562,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5b9f6b850c27f94eb0d1afa016492ec
-      internalID: 756053567
+      spriteID: 1d251930e0ed2eb4084cce2db024450f
+      internalID: -1349159424
       vertices: []
       indices: 
       edges: []
@@ -572,10 +572,10 @@ TextureImporter:
       name: frog_idle_21
       rect:
         serializedVersion: 2
-        x: 1896
-        y: 3718
-        width: 470
-        height: 286
+        x: 1806
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -583,8 +583,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddea94b3633683b45b7891e2f1eb3443
-      internalID: -235974687
+      spriteID: 7a4a3bcbeb9eedc44aa25569f067128a
+      internalID: 930633198
       vertices: []
       indices: 
       edges: []
@@ -593,10 +593,10 @@ TextureImporter:
       name: frog_idle_22
       rect:
         serializedVersion: 2
-        x: 2499
-        y: 3718
-        width: 468
-        height: 286
+        x: 2408
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -604,8 +604,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be4e2797f4ea57b47b0d2d0fc858f3a6
-      internalID: 783158055
+      spriteID: 7c06254b8e1081747b2db7fe0a8a0cf2
+      internalID: 454856896
       vertices: []
       indices: 
       edges: []
@@ -614,10 +614,10 @@ TextureImporter:
       name: frog_idle_23
       rect:
         serializedVersion: 2
-        x: 3099
-        y: 3719
-        width: 471
-        height: 288
+        x: 3010
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -625,8 +625,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45de4e6929d18d64d8bf459f325bd3e7
-      internalID: -503554156
+      spriteID: da234ebeb315623488ab29810ec2414f
+      internalID: 1734414266
       vertices: []
       indices: 
       edges: []
@@ -635,10 +635,10 @@ TextureImporter:
       name: frog_idle_24
       rect:
         serializedVersion: 2
-        x: 3701
-        y: 3720
-        width: 472
-        height: 287
+        x: 3612
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -646,8 +646,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 109e8b8fc001c9b43a6d00b29cbf0327
-      internalID: -1375373793
+      spriteID: 99e8b4a4ab5730442b309ee05562eb58
+      internalID: 408038168
       vertices: []
       indices: 
       edges: []
@@ -656,10 +656,10 @@ TextureImporter:
       name: frog_idle_25
       rect:
         serializedVersion: 2
-        x: 4303
-        y: 3721
-        width: 471
-        height: 288
+        x: 4214
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -667,8 +667,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a39ee06dba1dd3142a1fb1999b419f9c
-      internalID: -1843983806
+      spriteID: 23fa743a00e0178449dadfec3f8c8653
+      internalID: 539807085
       vertices: []
       indices: 
       edges: []
@@ -677,10 +677,10 @@ TextureImporter:
       name: frog_idle_26
       rect:
         serializedVersion: 2
-        x: 4906
-        y: 3721
-        width: 468
-        height: 293
+        x: 4816
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -688,8 +688,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8745bd573a407c645857f58707b3f8f1
-      internalID: -2071719870
+      spriteID: aec566bd4bb528946a1a6ebb467a70b6
+      internalID: 605725948
       vertices: []
       indices: 
       edges: []
@@ -698,10 +698,10 @@ TextureImporter:
       name: frog_idle_27
       rect:
         serializedVersion: 2
-        x: 89
-        y: 3118
-        width: 470
-        height: 296
+        x: 0
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -709,8 +709,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcd089f0491de9a4c87d557b6b0db460
-      internalID: -1945079193
+      spriteID: a94839bc0e5be874d9723d2ce3577a67
+      internalID: 800097173
       vertices: []
       indices: 
       edges: []
@@ -719,10 +719,10 @@ TextureImporter:
       name: frog_idle_28
       rect:
         serializedVersion: 2
-        x: 692
-        y: 3118
-        width: 468
-        height: 299
+        x: 602
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -730,8 +730,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ef8bef81377bb64fa138acc2bbb57c1
-      internalID: -1765602483
+      spriteID: 16a48b67a90756343a4f5aee5aeb74ea
+      internalID: -135994067
       vertices: []
       indices: 
       edges: []
@@ -740,10 +740,10 @@ TextureImporter:
       name: frog_idle_29
       rect:
         serializedVersion: 2
-        x: 1295
-        y: 3118
-        width: 468
-        height: 302
+        x: 1204
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -751,8 +751,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36254e92e3003d346b453977953ed546
-      internalID: 1120763630
+      spriteID: 9ccacdb1899e90e4d972d932d48e86dd
+      internalID: -1994352119
       vertices: []
       indices: 
       edges: []
@@ -761,10 +761,10 @@ TextureImporter:
       name: frog_idle_30
       rect:
         serializedVersion: 2
-        x: 1896
-        y: 3118
-        width: 468
-        height: 304
+        x: 1806
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -772,8 +772,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cc9b46c1b957f2448f63c11391aed21
-      internalID: -1981360131
+      spriteID: a3bc855f03881494d8cb26604d6a26df
+      internalID: 1422069823
       vertices: []
       indices: 
       edges: []
@@ -782,10 +782,10 @@ TextureImporter:
       name: frog_idle_31
       rect:
         serializedVersion: 2
-        x: 2499
-        y: 3118
-        width: 465
-        height: 307
+        x: 2408
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -793,8 +793,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 913525f5ba6575d47842636006040d2b
-      internalID: -271035587
+      spriteID: ea44d83a24c7c204fa5bbee9434355be
+      internalID: -568859237
       vertices: []
       indices: 
       edges: []
@@ -803,10 +803,10 @@ TextureImporter:
       name: frog_idle_32
       rect:
         serializedVersion: 2
-        x: 3099
-        y: 3118
-        width: 467
-        height: 309
+        x: 3010
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -814,8 +814,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b29d472c80673540b989c415a30b417
-      internalID: 1510661936
+      spriteID: abb7449bb7f04ad4b9890ef9786a11c8
+      internalID: 547409169
       vertices: []
       indices: 
       edges: []
@@ -824,10 +824,10 @@ TextureImporter:
       name: frog_idle_33
       rect:
         serializedVersion: 2
-        x: 3701
-        y: 3118
-        width: 467
-        height: 312
+        x: 3612
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -835,8 +835,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e78c0c558360efd438d82d9c21a3979d
-      internalID: 1930800147
+      spriteID: e7d56b8ba25a7ba4ab69caac492b3080
+      internalID: -1701435206
       vertices: []
       indices: 
       edges: []
@@ -845,10 +845,10 @@ TextureImporter:
       name: frog_idle_34
       rect:
         serializedVersion: 2
-        x: 4303
-        y: 3118
-        width: 466
-        height: 312
+        x: 4214
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -856,8 +856,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 506bbba3308bd20459e7f34ee49a6b1b
-      internalID: 165220557
+      spriteID: d42fbd10cf3c45846973f6ab27f5ede6
+      internalID: 948949033
       vertices: []
       indices: 
       edges: []
@@ -866,10 +866,10 @@ TextureImporter:
       name: frog_idle_35
       rect:
         serializedVersion: 2
-        x: 4906
-        y: 3118
-        width: 463
-        height: 314
+        x: 4816
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -877,8 +877,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbd6b5d7d30825f4a8f083e6311a4ff0
-      internalID: 1142950613
+      spriteID: 35dcdf2806a0b144eb17968798d53564
+      internalID: 277313240
       vertices: []
       indices: 
       edges: []
@@ -887,10 +887,10 @@ TextureImporter:
       name: frog_idle_36
       rect:
         serializedVersion: 2
-        x: 89
-        y: 2515
-        width: 465
-        height: 314
+        x: 0
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -898,8 +898,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fbc9845bbb15d049b2f91192d318fd7
-      internalID: -1886766367
+      spriteID: c21b1340f6657e549a36ee8f1ccdc814
+      internalID: -1569813945
       vertices: []
       indices: 
       edges: []
@@ -908,10 +908,10 @@ TextureImporter:
       name: frog_idle_37
       rect:
         serializedVersion: 2
-        x: 692
-        y: 2515
-        width: 463
-        height: 314
+        x: 602
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -919,8 +919,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04637f26a443acd48a310390fb835c76
-      internalID: -77078371
+      spriteID: ac571cd4639f40e41884ee07bdfd3a99
+      internalID: -1080260230
       vertices: []
       indices: 
       edges: []
@@ -929,10 +929,10 @@ TextureImporter:
       name: frog_idle_38
       rect:
         serializedVersion: 2
-        x: 1294
-        y: 2515
-        width: 461
-        height: 314
+        x: 1204
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -940,8 +940,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 023748b910ac63b40aec95bd5b19fbad
-      internalID: -1628037988
+      spriteID: 4d5a866070999c349ab17308c9c96a5c
+      internalID: -2142462742
       vertices: []
       indices: 
       edges: []
@@ -950,10 +950,10 @@ TextureImporter:
       name: frog_idle_39
       rect:
         serializedVersion: 2
-        x: 1896
-        y: 2515
-        width: 462
-        height: 314
+        x: 1806
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -961,8 +961,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ea9e56b9c8ced0438e1420eebd4c388
-      internalID: -761070662
+      spriteID: 79278f4ec4a2d794ba29e460816313dd
+      internalID: 1374770632
       vertices: []
       indices: 
       edges: []
@@ -971,10 +971,10 @@ TextureImporter:
       name: frog_idle_40
       rect:
         serializedVersion: 2
-        x: 2499
-        y: 2515
-        width: 460
-        height: 314
+        x: 2408
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -982,8 +982,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a72879d50a29e949aeee1189d38f8fc
-      internalID: 531541131
+      spriteID: eb90f0c014dfb964d82c8c92cc540e88
+      internalID: 1734589938
       vertices: []
       indices: 
       edges: []
@@ -992,10 +992,10 @@ TextureImporter:
       name: frog_idle_41
       rect:
         serializedVersion: 2
-        x: 3099
-        y: 2515
-        width: 463
-        height: 314
+        x: 3010
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1003,8 +1003,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc4ebc3eba8f4c9448e7c0006ca4553a
-      internalID: -405125115
+      spriteID: c07c0c6136a9f2e459e45edca8e76295
+      internalID: -862232028
       vertices: []
       indices: 
       edges: []
@@ -1013,10 +1013,10 @@ TextureImporter:
       name: frog_idle_42
       rect:
         serializedVersion: 2
-        x: 3701
-        y: 2515
-        width: 464
-        height: 314
+        x: 3612
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1024,8 +1024,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c731c75c25a22e468300362b687eaad
-      internalID: -1912956412
+      spriteID: d79828b7ac9528244bceae0764398c60
+      internalID: -619284191
       vertices: []
       indices: 
       edges: []
@@ -1034,10 +1034,10 @@ TextureImporter:
       name: frog_idle_43
       rect:
         serializedVersion: 2
-        x: 4303
-        y: 2515
-        width: 463
-        height: 314
+        x: 4214
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1045,8 +1045,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0503d776b6f78d94b92b3169af4b83df
-      internalID: 725853742
+      spriteID: 26737199eb2e8a64c905d14a1a8a1192
+      internalID: -411343767
       vertices: []
       indices: 
       edges: []
@@ -1055,10 +1055,10 @@ TextureImporter:
       name: frog_idle_44
       rect:
         serializedVersion: 2
-        x: 4906
-        y: 2515
-        width: 463
-        height: 312
+        x: 4816
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1066,8 +1066,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45514b92b0cbe0342b338abb917bf94e
-      internalID: -1586440476
+      spriteID: fc4a22e91c1061648857315002ddffa8
+      internalID: 37477642
       vertices: []
       indices: 
       edges: []
@@ -1076,10 +1076,10 @@ TextureImporter:
       name: frog_idle_45
       rect:
         serializedVersion: 2
-        x: 89
-        y: 1914
-        width: 465
-        height: 310
+        x: 0
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1087,8 +1087,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d14ea1ecf58bce4eb80c9c8804fbe7f
-      internalID: -111694823
+      spriteID: 9389e5dfb0243e449a9450f5ad2e3817
+      internalID: -1136969623
       vertices: []
       indices: 
       edges: []
@@ -1097,10 +1097,10 @@ TextureImporter:
       name: frog_idle_46
       rect:
         serializedVersion: 2
-        x: 692
-        y: 1914
-        width: 465
-        height: 307
+        x: 602
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1108,8 +1108,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d60f41d3d9aea542910afa84cb9c100
-      internalID: -496281439
+      spriteID: 6ee0b2ba7a01b23459dd08adeced502f
+      internalID: -1632477138
       vertices: []
       indices: 
       edges: []
@@ -1118,10 +1118,10 @@ TextureImporter:
       name: frog_idle_47
       rect:
         serializedVersion: 2
-        x: 1293
-        y: 1914
-        width: 465
-        height: 304
+        x: 1204
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1129,8 +1129,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ae2dfea5a935ab43b0ac1983da130a5
-      internalID: -519819448
+      spriteID: 8e7b5030719f2cf41862cbeb18f75e0c
+      internalID: 1778338475
       vertices: []
       indices: 
       edges: []
@@ -1139,10 +1139,10 @@ TextureImporter:
       name: frog_idle_48
       rect:
         serializedVersion: 2
-        x: 1896
-        y: 1914
-        width: 465
-        height: 302
+        x: 1806
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1150,8 +1150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 153b2b0063b305d419503de832f3dedf
-      internalID: -1939782523
+      spriteID: 2b20d86ca8f01664a877a19614972720
+      internalID: -1531987261
       vertices: []
       indices: 
       edges: []
@@ -1160,10 +1160,10 @@ TextureImporter:
       name: frog_idle_49
       rect:
         serializedVersion: 2
-        x: 2499
-        y: 1914
-        width: 463
-        height: 302
+        x: 2408
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1171,8 +1171,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ba880d091081364c805a5e6ff038b2b
-      internalID: 1327063057
+      spriteID: c71ec46f59a8b04499fea42dc3c10567
+      internalID: 1689314128
       vertices: []
       indices: 
       edges: []
@@ -1181,10 +1181,10 @@ TextureImporter:
       name: frog_idle_50
       rect:
         serializedVersion: 2
-        x: 3099
-        y: 1914
-        width: 466
-        height: 299
+        x: 3010
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1192,8 +1192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a75300ca932514c49a8e5a0a824780f5
-      internalID: 660670022
+      spriteID: c16b9c6556507ef4fa85bec0057465c6
+      internalID: 32436162
       vertices: []
       indices: 
       edges: []
@@ -1202,10 +1202,10 @@ TextureImporter:
       name: frog_idle_51
       rect:
         serializedVersion: 2
-        x: 3701
-        y: 1914
-        width: 467
-        height: 296
+        x: 3612
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1213,8 +1213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d2cc93096f2fdb4b97427faf2f7133d
-      internalID: -1417053406
+      spriteID: ff0237aaa282e334eb301d23536659a9
+      internalID: 712232394
       vertices: []
       indices: 
       edges: []
@@ -1223,10 +1223,10 @@ TextureImporter:
       name: frog_idle_52
       rect:
         serializedVersion: 2
-        x: 4303
-        y: 1914
-        width: 468
-        height: 294
+        x: 4214
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1234,8 +1234,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e202b084ee2c6174e89063ce8288321c
-      internalID: -1465098506
+      spriteID: 3c8f7724b54c4934abef6068d04fedc4
+      internalID: 2033220403
       vertices: []
       indices: 
       edges: []
@@ -1244,10 +1244,10 @@ TextureImporter:
       name: frog_idle_53
       rect:
         serializedVersion: 2
-        x: 4906
-        y: 1914
-        width: 466
-        height: 291
+        x: 4816
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1255,8 +1255,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5644d7333ce625844adecbaa3037afe1
-      internalID: 50270917
+      spriteID: 90671108dd010b64d9947fe50ae14ce9
+      internalID: -1220790863
       vertices: []
       indices: 
       edges: []
@@ -1265,10 +1265,10 @@ TextureImporter:
       name: frog_idle_54
       rect:
         serializedVersion: 2
-        x: 89
-        y: 1311
-        width: 468
-        height: 291
+        x: 0
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1276,8 +1276,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a5b6f35b3c66814ba395c13a0e2cc56
-      internalID: 1119545061
+      spriteID: 2def6ab13e3a7d7418a40cf480f3dfdb
+      internalID: 864989484
       vertices: []
       indices: 
       edges: []
@@ -1286,10 +1286,10 @@ TextureImporter:
       name: frog_idle_55
       rect:
         serializedVersion: 2
-        x: 692
-        y: 1311
-        width: 468
-        height: 288
+        x: 602
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1297,8 +1297,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5217e1f795a71284cbded4db782577f6
-      internalID: -164037485
+      spriteID: b62fae972d95a8a46999a755af5f5139
+      internalID: 1604529593
       vertices: []
       indices: 
       edges: []
@@ -1307,10 +1307,10 @@ TextureImporter:
       name: frog_idle_56
       rect:
         serializedVersion: 2
-        x: 1295
-        y: 1311
-        width: 466
-        height: 288
+        x: 1204
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1318,8 +1318,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b431460f9cb5344095666b227f8e91d
-      internalID: -1610053654
+      spriteID: dfcb15e7e12191c4baf5175159f19ffe
+      internalID: 673122405
       vertices: []
       indices: 
       edges: []
@@ -1328,10 +1328,10 @@ TextureImporter:
       name: frog_idle_57
       rect:
         serializedVersion: 2
-        x: 1896
-        y: 1311
-        width: 468
-        height: 286
+        x: 1806
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1339,8 +1339,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88a6e26ee0c060d4f889694691879195
-      internalID: -1470038220
+      spriteID: 24addaf1bc1e5744c8b470231d1546a1
+      internalID: 859193932
       vertices: []
       indices: 
       edges: []
@@ -1349,10 +1349,10 @@ TextureImporter:
       name: frog_idle_58
       rect:
         serializedVersion: 2
-        x: 2499
-        y: 1311
-        width: 468
-        height: 286
+        x: 2408
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1360,8 +1360,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bff77ec5f05377c4ebd8c10dce90fa38
-      internalID: 916024474
+      spriteID: c1036a6b6217f4949acb67b3e042c7cb
+      internalID: -1105966623
       vertices: []
       indices: 
       edges: []
@@ -1370,10 +1370,10 @@ TextureImporter:
       name: frog_idle_59
       rect:
         serializedVersion: 2
-        x: 3099
-        y: 1311
-        width: 471
-        height: 283
+        x: 3010
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1381,8 +1381,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99133bc0b15aec14d809556a1135fdfc
-      internalID: 1693809502
+      spriteID: fa36529f9c89cc5479c87c9fe1947441
+      internalID: -16972241
       vertices: []
       indices: 
       edges: []
@@ -1391,10 +1391,10 @@ TextureImporter:
       name: frog_idle_60
       rect:
         serializedVersion: 2
-        x: 3701
-        y: 1311
-        width: 470
-        height: 283
+        x: 3612
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1402,8 +1402,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3eb729fde1fc1540ab923ef1df7a43e
-      internalID: -1085383169
+      spriteID: 7e8d9a60043ed6143a6de951ec94aea6
+      internalID: 999485858
       vertices: []
       indices: 
       edges: []
@@ -1412,10 +1412,10 @@ TextureImporter:
       name: frog_idle_61
       rect:
         serializedVersion: 2
-        x: 4303
-        y: 1311
-        width: 471
-        height: 283
+        x: 4214
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1423,8 +1423,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d29d43fb723ed24db96f5f745e9c19d
-      internalID: 881744715
+      spriteID: aa441b1af6159f9438c5eaf2fefc0cfd
+      internalID: 452166797
       vertices: []
       indices: 
       edges: []
@@ -1433,10 +1433,10 @@ TextureImporter:
       name: frog_idle_62
       rect:
         serializedVersion: 2
-        x: 4906
-        y: 1311
-        width: 468
-        height: 286
+        x: 4816
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1444,8 +1444,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc0c1a4322f88bc4aac48f25d4329699
-      internalID: -245444342
+      spriteID: 28839ff6c97346945adb99baae9effe5
+      internalID: -890153083
       vertices: []
       indices: 
       edges: []
@@ -1454,10 +1454,10 @@ TextureImporter:
       name: frog_idle_63
       rect:
         serializedVersion: 2
-        x: 89
-        y: 710
-        width: 471
-        height: 286
+        x: 0
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1465,8 +1465,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f09517b7badb90943b5337fa1e17903a
-      internalID: -1539007906
+      spriteID: f68a1ba4c0dbb504a980598ac5c6b71b
+      internalID: -837943047
       vertices: []
       indices: 
       edges: []
@@ -1475,10 +1475,10 @@ TextureImporter:
       name: frog_idle_64
       rect:
         serializedVersion: 2
-        x: 692
-        y: 710
-        width: 471
-        height: 289
+        x: 602
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1486,8 +1486,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b15d28da80ac564ba7e7cce8c72f618
-      internalID: -1763731899
+      spriteID: 2a7a1f8172738b049b7ccb6b92242051
+      internalID: 1385712489
       vertices: []
       indices: 
       edges: []
@@ -1496,10 +1496,10 @@ TextureImporter:
       name: frog_idle_65
       rect:
         serializedVersion: 2
-        x: 1295
-        y: 710
-        width: 468
-        height: 291
+        x: 1204
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1507,8 +1507,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d3cd2cf7430b694d905fd0c25aa2db1
-      internalID: 643284341
+      spriteID: b68602206263959479c0cd8caa695daa
+      internalID: -893923312
       vertices: []
       indices: 
       edges: []
@@ -1517,10 +1517,10 @@ TextureImporter:
       name: frog_idle_66
       rect:
         serializedVersion: 2
-        x: 1896
-        y: 710
-        width: 470
-        height: 294
+        x: 1806
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1528,8 +1528,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b541dfcfe9ac4246adbd45b7fad080c
-      internalID: -1030927445
+      spriteID: 0a08941b28579a643a9056bedd56893e
+      internalID: -923413608
       vertices: []
       indices: 
       edges: []
@@ -1538,10 +1538,10 @@ TextureImporter:
       name: frog_idle_67
       rect:
         serializedVersion: 2
-        x: 2499
-        y: 710
-        width: 468
-        height: 297
+        x: 2408
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1549,8 +1549,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75459e1d47dcb8f4a82fec547f56b8bc
-      internalID: -1034942414
+      spriteID: 3e8a5d3d249145448be2581dcec9f954
+      internalID: -1039863799
       vertices: []
       indices: 
       edges: []
@@ -1559,10 +1559,10 @@ TextureImporter:
       name: frog_idle_68
       rect:
         serializedVersion: 2
-        x: 3099
-        y: 710
-        width: 471
-        height: 299
+        x: 3010
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1570,8 +1570,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c3f42fb24b8f094592c5b672ebab799
-      internalID: -1171085006
+      spriteID: b8661f78ecc85404ebbd5e74331f0e9f
+      internalID: 1588542820
       vertices: []
       indices: 
       edges: []
@@ -1580,10 +1580,10 @@ TextureImporter:
       name: frog_idle_69
       rect:
         serializedVersion: 2
-        x: 3701
-        y: 710
-        width: 470
-        height: 302
+        x: 3612
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1591,8 +1591,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc849f5f89d835b4991e2be0b4adbf6b
-      internalID: 2065924737
+      spriteID: 88762af66eca1eb438db2097b56826ed
+      internalID: 1025065834
       vertices: []
       indices: 
       edges: []
@@ -1601,10 +1601,10 @@ TextureImporter:
       name: frog_idle_70
       rect:
         serializedVersion: 2
-        x: 4303
-        y: 710
-        width: 468
-        height: 305
+        x: 4214
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1612,8 +1612,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbdc5bae3c2a79d4da425c0d761185f2
-      internalID: -156448994
+      spriteID: 1d65a91858f036142bef47d5498454e5
+      internalID: -678160106
       vertices: []
       indices: 
       edges: []
@@ -1622,10 +1622,10 @@ TextureImporter:
       name: frog_idle_71
       rect:
         serializedVersion: 2
-        x: 4906
-        y: 710
-        width: 466
-        height: 307
+        x: 4816
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1633,8 +1633,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7f64f6978553284c96864f99369aece
-      internalID: -1633294933
+      spriteID: 63bc6c35a43e44b4da18150a396963f1
+      internalID: 144134950
       vertices: []
       indices: 
       edges: []
@@ -1643,10 +1643,10 @@ TextureImporter:
       name: frog_idle_72
       rect:
         serializedVersion: 2
-        x: 89
-        y: 107
-        width: 468
-        height: 310
+        x: 0
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1654,8 +1654,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec03980186df69340b3f10f9cdcdf8cd
-      internalID: 1975148130
+      spriteID: df13f52bdbe48614c9459dfbeaf343c9
+      internalID: -847241274
       vertices: []
       indices: 
       edges: []
@@ -1664,10 +1664,10 @@ TextureImporter:
       name: frog_idle_73
       rect:
         serializedVersion: 2
-        x: 692
-        y: 107
-        width: 465
-        height: 312
+        x: 602
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1675,8 +1675,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 945bd8ddb2d3ba7469f4df6de5e8142d
-      internalID: -823377778
+      spriteID: 1c7c595047dea02448e0954210f83649
+      internalID: 771677932
       vertices: []
       indices: 
       edges: []
@@ -1685,10 +1685,10 @@ TextureImporter:
       name: frog_idle_74
       rect:
         serializedVersion: 2
-        x: 1295
-        y: 107
-        width: 464
-        height: 312
+        x: 1204
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1696,8 +1696,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ad84d778ca87da4db0b890e51d33d11
-      internalID: -1552976141
+      spriteID: f2efb6a5bbf8e8a47a99f454fdd86443
+      internalID: -376924148
       vertices: []
       indices: 
       edges: []
@@ -1706,10 +1706,10 @@ TextureImporter:
       name: frog_idle_75
       rect:
         serializedVersion: 2
-        x: 1896
-        y: 107
-        width: 465
-        height: 315
+        x: 1806
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1717,8 +1717,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa11715761ff00f47858355612174348
-      internalID: 1088054111
+      spriteID: 8abf6a25a2996fa42b71df1e8c92e495
+      internalID: 1329007904
       vertices: []
       indices: 
       edges: []
@@ -1727,10 +1727,10 @@ TextureImporter:
       name: frog_idle_76
       rect:
         serializedVersion: 2
-        x: 2499
-        y: 107
-        width: 463
-        height: 315
+        x: 2408
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1738,8 +1738,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14743e049287a5e4480690a1c970133d
-      internalID: 168674124
+      spriteID: 47e830a4861604848bab8f2b23819cfe
+      internalID: -2108643994
       vertices: []
       indices: 
       edges: []
@@ -1748,10 +1748,10 @@ TextureImporter:
       name: frog_idle_77
       rect:
         serializedVersion: 2
-        x: 3099
-        y: 107
-        width: 463
-        height: 315
+        x: 3010
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1759,8 +1759,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77bb1e9842332f34a8f6858a34fa7857
-      internalID: 1962248726
+      spriteID: 699e10a034fa7bc42b21f13a7ab9a86b
+      internalID: -136634200
       vertices: []
       indices: 
       edges: []
@@ -1769,10 +1769,10 @@ TextureImporter:
       name: frog_idle_78
       rect:
         serializedVersion: 2
-        x: 3701
-        y: 107
-        width: 464
-        height: 315
+        x: 3612
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1780,8 +1780,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27c3abc4e694e0f48a267cd9f30cfaf6
-      internalID: -1287786509
+      spriteID: 9c848c3cd28a08f49b094da42f93445a
+      internalID: -561932673
       vertices: []
       indices: 
       edges: []
@@ -1790,10 +1790,10 @@ TextureImporter:
       name: frog_idle_79
       rect:
         serializedVersion: 2
-        x: 4303
-        y: 107
-        width: 463
-        height: 315
+        x: 4214
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1801,8 +1801,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e5c78222e41e9144b7e1fa23cd4e9be
-      internalID: -1224121400
+      spriteID: 47ba9e67268fe3b4c955ecc1de4598d4
+      internalID: -1194969145
       vertices: []
       indices: 
       edges: []
@@ -1811,10 +1811,10 @@ TextureImporter:
       name: frog_idle_80
       rect:
         serializedVersion: 2
-        x: 4906
-        y: 107
-        width: 463
-        height: 315
+        x: 4816
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1822,8 +1822,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e18d511a58963e24cbfdf6688c08409d
-      internalID: -1384505065
+      spriteID: b8aad60f538b1bf48aa97a07e1f078ba
+      internalID: 879251980
       vertices: []
       indices: 
       edges: []
@@ -1831,7 +1831,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 46f9cb6878adefa48b72919df6c2ae55
     internalID: 0
     vertices: []
     indices: 
@@ -1839,87 +1839,87 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      frog_idle_46: -496281439
-      frog_idle_58: 916024474
-      frog_idle_4: 2074171301
-      frog_idle_7: -631622455
-      frog_idle_25: -1843983806
-      frog_idle_39: -761070662
-      frog_idle_49: 1327063057
-      frog_idle_29: 1120763630
-      frog_idle_61: 881744715
-      frog_idle_17: 262484463
-      frog_idle_27: -1945079193
-      frog_idle_14: -882601038
-      frog_idle_50: 660670022
-      frog_idle_11: -2006085508
-      frog_idle_2: 1840309278
-      frog_idle_62: -245444342
-      frog_idle_52: -1465098506
-      frog_idle_55: -164037485
-      frog_idle_36: -1886766367
-      frog_idle_68: -1171085006
-      frog_idle_77: 1962248726
-      frog_idle_80: -1384505065
-      frog_idle_66: -1030927445
-      frog_idle_43: 725853742
-      frog_idle_41: -405125115
-      frog_idle_72: 1975148130
-      frog_idle_32: 1510661936
-      frog_idle_44: -1586440476
-      frog_idle_23: -503554156
-      frog_idle_1: -1115442426
-      frog_idle_19: -2132118136
-      frog_idle_10: 769076798
-      frog_idle_33: 1930800147
-      frog_idle_48: -1939782523
-      frog_idle_0: 1683555968
-      frog_idle_51: -1417053406
-      frog_idle_65: 643284341
-      frog_idle_26: -2071719870
-      frog_idle_15: 1452219796
-      frog_idle_31: -271035587
-      frog_idle_12: -591210786
-      frog_idle_37: -77078371
-      frog_idle_76: 168674124
-      frog_idle_53: 50270917
-      frog_idle_9: 914749508
-      frog_idle_13: -1625440280
-      frog_idle_70: -156448994
-      frog_idle_47: -519819448
-      frog_idle_6: 1119209455
-      frog_idle_40: 531541131
-      frog_idle_60: -1085383169
-      frog_idle_42: -1912956412
-      frog_idle_74: -1552976141
-      frog_idle_56: -1610053654
-      frog_idle_16: 656624671
-      frog_idle_79: -1224121400
-      frog_idle_30: -1981360131
-      frog_idle_57: -1470038220
-      frog_idle_78: -1287786509
-      frog_idle_69: 2065924737
-      frog_idle_24: -1375373793
-      frog_idle_18: 283660031
-      frog_idle_28: -1765602483
-      frog_idle_35: 1142950613
-      frog_idle_45: -111694823
-      frog_idle_67: -1034942414
-      frog_idle_54: 1119545061
-      frog_idle_20: 756053567
-      frog_idle_22: 783158055
-      frog_idle_8: -1321236725
-      frog_idle_34: 165220557
-      frog_idle_63: -1539007906
-      frog_idle_64: -1763731899
-      frog_idle_5: -1079251257
-      frog_idle_59: 1693809502
-      frog_idle_71: -1633294933
-      frog_idle_75: 1088054111
-      frog_idle_21: -235974687
-      frog_idle_3: -2011848537
-      frog_idle_73: -823377778
-      frog_idle_38: -1628037988
+      frog_idle_46: -1632477138
+      frog_idle_58: -1105966623
+      frog_idle_4: -178529836
+      frog_idle_7: 1435008048
+      frog_idle_25: 539807085
+      frog_idle_39: 1374770632
+      frog_idle_49: 1689314128
+      frog_idle_29: -1994352119
+      frog_idle_61: 452166797
+      frog_idle_17: 240782648
+      frog_idle_27: 800097173
+      frog_idle_14: -773663066
+      frog_idle_50: 32436162
+      frog_idle_11: 157335498
+      frog_idle_2: 783394620
+      frog_idle_62: -890153083
+      frog_idle_52: 2033220403
+      frog_idle_55: 1604529593
+      frog_idle_36: -1569813945
+      frog_idle_68: 1588542820
+      frog_idle_77: -136634200
+      frog_idle_80: 879251980
+      frog_idle_66: -923413608
+      frog_idle_43: -411343767
+      frog_idle_41: -862232028
+      frog_idle_72: -847241274
+      frog_idle_32: 547409169
+      frog_idle_44: 37477642
+      frog_idle_23: 1734414266
+      frog_idle_1: 692306205
+      frog_idle_19: -1568318533
+      frog_idle_10: 1654121937
+      frog_idle_33: -1701435206
+      frog_idle_48: -1531987261
+      frog_idle_0: 1101454218
+      frog_idle_51: 712232394
+      frog_idle_65: -893923312
+      frog_idle_26: 605725948
+      frog_idle_15: 420821107
+      frog_idle_31: -568859237
+      frog_idle_12: 1934823761
+      frog_idle_37: -1080260230
+      frog_idle_76: -2108643994
+      frog_idle_53: -1220790863
+      frog_idle_9: -1247758167
+      frog_idle_13: -463596705
+      frog_idle_70: -678160106
+      frog_idle_47: 1778338475
+      frog_idle_6: -1468817460
+      frog_idle_40: 1734589938
+      frog_idle_60: 999485858
+      frog_idle_42: -619284191
+      frog_idle_74: -376924148
+      frog_idle_56: 673122405
+      frog_idle_16: 2056676872
+      frog_idle_79: -1194969145
+      frog_idle_30: 1422069823
+      frog_idle_57: 859193932
+      frog_idle_78: -561932673
+      frog_idle_69: 1025065834
+      frog_idle_24: 408038168
+      frog_idle_18: -260940693
+      frog_idle_28: -135994067
+      frog_idle_35: 277313240
+      frog_idle_45: -1136969623
+      frog_idle_67: -1039863799
+      frog_idle_54: 864989484
+      frog_idle_20: -1349159424
+      frog_idle_22: 454856896
+      frog_idle_8: -726978890
+      frog_idle_34: 948949033
+      frog_idle_63: -837943047
+      frog_idle_64: 1385712489
+      frog_idle_5: 13733323
+      frog_idle_59: -16972241
+      frog_idle_71: 144134950
+      frog_idle_75: 1329007904
+      frog_idle_21: 930633198
+      frog_idle_3: -1657235877
+      frog_idle_73: 771677932
+      frog_idle_38: -2142462742
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -66,7 +66,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -131,10 +131,10 @@ TextureImporter:
       name: bird_idle_0
       rect:
         serializedVersion: 2
-        x: 161
-        y: 4356
-        width: 322
-        height: 297
+        x: 0
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,8 +142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63809cc9ecc9f11458cd87896298faaf
-      internalID: 840318743
+      spriteID: 980e564baa9004746840c2ed5ed4b72c
+      internalID: -1900458956
       vertices: []
       indices: 
       edges: []
@@ -152,10 +152,10 @@ TextureImporter:
       name: bird_idle_1
       rect:
         serializedVersion: 2
-        x: 763
-        y: 4356
-        width: 322
-        height: 297
+        x: 602
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91c9f2c75c37be3448f3be4fb11e05c5
-      internalID: -1791354961
+      spriteID: caf8d4995fa44e34f9ca6b6f00b90658
+      internalID: 1569422498
       vertices: []
       indices: 
       edges: []
@@ -173,10 +173,10 @@ TextureImporter:
       name: bird_idle_2
       rect:
         serializedVersion: 2
-        x: 1365
-        y: 4356
-        width: 325
-        height: 297
+        x: 1204
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d02982e911898ed429e824828bc368fd
-      internalID: -1544992646
+      spriteID: e60abe8a110a3454984a8cffc00dbd34
+      internalID: 1035182246
       vertices: []
       indices: 
       edges: []
@@ -194,10 +194,10 @@ TextureImporter:
       name: bird_idle_3
       rect:
         serializedVersion: 2
-        x: 1967
-        y: 4356
-        width: 325
-        height: 297
+        x: 1806
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,8 +205,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: beb05e1075bc51e4e9e785062f81601a
-      internalID: -1319871364
+      spriteID: 677c42d9184ab744d947dd18e1ab6c34
+      internalID: 759975304
       vertices: []
       indices: 
       edges: []
@@ -215,10 +215,10 @@ TextureImporter:
       name: bird_idle_4
       rect:
         serializedVersion: 2
-        x: 2569
-        y: 4356
-        width: 325
-        height: 297
+        x: 2408
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,8 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbfac365cc970374bafb58dd7cfdf1ed
-      internalID: -1209134773
+      spriteID: 0a2f1dfca44ac5a4d896e1254854a361
+      internalID: -2052410329
       vertices: []
       indices: 
       edges: []
@@ -236,10 +236,10 @@ TextureImporter:
       name: bird_idle_5
       rect:
         serializedVersion: 2
-        x: 3171
-        y: 4356
-        width: 325
-        height: 294
+        x: 3010
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,8 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da08bdf0e5d228340aaefd95a5b2c4f3
-      internalID: 1304963157
+      spriteID: f1518a20d48f6bd47ba3a4b9c8df4f37
+      internalID: 1060501169
       vertices: []
       indices: 
       edges: []
@@ -257,10 +257,10 @@ TextureImporter:
       name: bird_idle_6
       rect:
         serializedVersion: 2
-        x: 3773
-        y: 4356
-        width: 325
-        height: 297
+        x: 3612
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,8 +268,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b71c1c82131ede64eb8322aceaaa4f55
-      internalID: 625805894
+      spriteID: 5e0cacf372ccf1d4bb854149a748cc07
+      internalID: -1118872693
       vertices: []
       indices: 
       edges: []
@@ -278,10 +278,10 @@ TextureImporter:
       name: bird_idle_7
       rect:
         serializedVersion: 2
-        x: 4373
-        y: 4356
-        width: 324
-        height: 306
+        x: 4214
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,8 +289,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed91d83c3d4e28a4099a77e2c7663bad
-      internalID: 1910165361
+      spriteID: d5ac368abf1abeb4c83c40e8872111a3
+      internalID: 109106982
       vertices: []
       indices: 
       edges: []
@@ -299,10 +299,10 @@ TextureImporter:
       name: bird_idle_8
       rect:
         serializedVersion: 2
-        x: 161
-        y: 3754
-        width: 325
-        height: 297
+        x: 0
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,8 +310,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c21f5366ff5c63c49ad7caa0a8757f54
-      internalID: 221890044
+      spriteID: 7675285d4b8189842a8e2bf87b74296f
+      internalID: 1300723290
       vertices: []
       indices: 
       edges: []
@@ -320,10 +320,10 @@ TextureImporter:
       name: bird_idle_9
       rect:
         serializedVersion: 2
-        x: 763
-        y: 3754
-        width: 325
-        height: 297
+        x: 602
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,8 +331,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc2865c8ae794ac4483cdc6e06f05e95
-      internalID: 1346280999
+      spriteID: a94e127ba17d7694d9b60a66ada0adc4
+      internalID: 2095816299
       vertices: []
       indices: 
       edges: []
@@ -341,10 +341,10 @@ TextureImporter:
       name: bird_idle_10
       rect:
         serializedVersion: 2
-        x: 1365
-        y: 3754
-        width: 325
-        height: 297
+        x: 1204
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,8 +352,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef44b8b35b0263145a921c73377d3e04
-      internalID: 1117011097
+      spriteID: 8449a37edb3f1d64786e96d6502a2846
+      internalID: 1647088155
       vertices: []
       indices: 
       edges: []
@@ -362,10 +362,10 @@ TextureImporter:
       name: bird_idle_11
       rect:
         serializedVersion: 2
-        x: 1967
-        y: 3754
-        width: 325
-        height: 299
+        x: 1806
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,8 +373,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa76062d5108f364f8bfc5ec02944ef8
-      internalID: 1427035732
+      spriteID: 9fe20b42b1d6e0f4d96d8ed1ad25f2ac
+      internalID: 466087461
       vertices: []
       indices: 
       edges: []
@@ -383,10 +383,10 @@ TextureImporter:
       name: bird_idle_12
       rect:
         serializedVersion: 2
-        x: 2571
-        y: 3754
-        width: 323
-        height: 299
+        x: 2408
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,8 +394,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8456866d723b2c64685da5383e0b4bcb
-      internalID: -555935518
+      spriteID: 60c166cd37915444ea8fb03be96eb4ca
+      internalID: -299439659
       vertices: []
       indices: 
       edges: []
@@ -404,10 +404,10 @@ TextureImporter:
       name: bird_idle_13
       rect:
         serializedVersion: 2
-        x: 3173
-        y: 3754
-        width: 323
-        height: 301
+        x: 3010
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,8 +415,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10b6ce9972b078640862bdd11c4e8951
-      internalID: 1784737915
+      spriteID: 5b54c7793f381cf469a5b33ec918b4a6
+      internalID: -1934116928
       vertices: []
       indices: 
       edges: []
@@ -425,10 +425,10 @@ TextureImporter:
       name: bird_idle_14
       rect:
         serializedVersion: 2
-        x: 3775
-        y: 3754
-        width: 323
-        height: 301
+        x: 3612
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,8 +436,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc68c711ae41bf94faa3d3d1ef1bfac6
-      internalID: -521536436
+      spriteID: 84d3537704c2e614a9657809c6fd1754
+      internalID: -552577210
       vertices: []
       indices: 
       edges: []
@@ -446,10 +446,10 @@ TextureImporter:
       name: bird_idle_15
       rect:
         serializedVersion: 2
-        x: 4371
-        y: 3754
-        width: 329
-        height: 306
+        x: 4214
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,8 +457,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78ec3c3241234ff48adc1b6ced0e94be
-      internalID: 498978929
+      spriteID: 541031972997e4543a71118b250348db
+      internalID: 722832662
       vertices: []
       indices: 
       edges: []
@@ -467,10 +467,10 @@ TextureImporter:
       name: bird_idle_16
       rect:
         serializedVersion: 2
-        x: 163
-        y: 3152
-        width: 323
-        height: 304
+        x: 0
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,8 +478,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57345a6ed83c32f4d885a01eacfa12df
-      internalID: -894050809
+      spriteID: 287a8122c8c3b72449328efabfb2be67
+      internalID: 1293758713
       vertices: []
       indices: 
       edges: []
@@ -488,10 +488,10 @@ TextureImporter:
       name: bird_idle_17
       rect:
         serializedVersion: 2
-        x: 763
-        y: 3152
-        width: 325
-        height: 306
+        x: 602
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,8 +499,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ed899cf5a15abf439767e09340f51f5
-      internalID: 492194985
+      spriteID: 8bcb33cd4fe3f0940850b0b26c9a3d3a
+      internalID: 1110271178
       vertices: []
       indices: 
       edges: []
@@ -509,10 +509,10 @@ TextureImporter:
       name: bird_idle_18
       rect:
         serializedVersion: 2
-        x: 1363
-        y: 3152
-        width: 327
-        height: 306
+        x: 1204
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -520,8 +520,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39450704c4ca9d645a280288ed79e507
-      internalID: -562134452
+      spriteID: c2c1750536c160b47b4687b8d7cad068
+      internalID: -184107799
       vertices: []
       indices: 
       edges: []
@@ -530,10 +530,10 @@ TextureImporter:
       name: bird_idle_19
       rect:
         serializedVersion: 2
-        x: 1965
-        y: 3152
-        width: 327
-        height: 297
+        x: 1806
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -541,8 +541,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0fd850564ca2c7418b74a5c149cc34b
-      internalID: 1843052604
+      spriteID: 2f7a6a1475263b24591f43094911dd4c
+      internalID: 896319976
       vertices: []
       indices: 
       edges: []
@@ -551,10 +551,10 @@ TextureImporter:
       name: bird_idle_20
       rect:
         serializedVersion: 2
-        x: 2567
-        y: 3152
-        width: 327
-        height: 303
+        x: 2408
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,8 +562,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2c87b3ab0e4e3c47a4891d1ca9fc2be
-      internalID: 1858623402
+      spriteID: f1eae9a8caa0e5b4aabe229a3fc06869
+      internalID: 164814006
       vertices: []
       indices: 
       edges: []
@@ -572,10 +572,10 @@ TextureImporter:
       name: bird_idle_21
       rect:
         serializedVersion: 2
-        x: 3167
-        y: 3152
-        width: 329
-        height: 301
+        x: 3010
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -583,8 +583,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d34f97ea7803e214987370e564146285
-      internalID: -1611146491
+      spriteID: 8163848662639504a88dced5fd9c6366
+      internalID: 1383973955
       vertices: []
       indices: 
       edges: []
@@ -593,10 +593,10 @@ TextureImporter:
       name: bird_idle_22
       rect:
         serializedVersion: 2
-        x: 3768
-        y: 3152
-        width: 330
-        height: 299
+        x: 3612
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -604,8 +604,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c52cf9c94d1ded34a8e754edd810e9c6
-      internalID: 1428410087
+      spriteID: 09957dc4a4d6e2d4c99efc5651266e50
+      internalID: 1218920803
       vertices: []
       indices: 
       edges: []
@@ -614,10 +614,10 @@ TextureImporter:
       name: bird_idle_23
       rect:
         serializedVersion: 2
-        x: 4370
-        y: 3152
-        width: 330
-        height: 306
+        x: 4214
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -625,8 +625,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 293dc9a74a381114ca4fe1b25527ac79
-      internalID: -1959984825
+      spriteID: 87fbfe505eea238419f3997ef9e5668f
+      internalID: 1095637175
       vertices: []
       indices: 
       edges: []
@@ -635,10 +635,10 @@ TextureImporter:
       name: bird_idle_24
       rect:
         serializedVersion: 2
-        x: 156
-        y: 2550
-        width: 330
-        height: 306
+        x: 0
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -646,8 +646,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45751007e8d1fbc4889219245afad8e7
-      internalID: -1098164505
+      spriteID: 696a47bf5d156a04e9d64ed3cdc869d6
+      internalID: -955354431
       vertices: []
       indices: 
       edges: []
@@ -656,10 +656,10 @@ TextureImporter:
       name: bird_idle_25
       rect:
         serializedVersion: 2
-        x: 758
-        y: 2550
-        width: 330
-        height: 308
+        x: 602
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -667,8 +667,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7d2af1ef6891394387eba5afbc71a58
-      internalID: -1482207066
+      spriteID: 23681f6bf2246294d81dc8fd33c21731
+      internalID: 2105136207
       vertices: []
       indices: 
       edges: []
@@ -677,10 +677,10 @@ TextureImporter:
       name: bird_idle_26
       rect:
         serializedVersion: 2
-        x: 1360
-        y: 2550
-        width: 330
-        height: 306
+        x: 1204
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -688,8 +688,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b37a0b33e70f8f4fb784beb90e117a9
-      internalID: -1017535252
+      spriteID: d34abe0a89a419b4498e89bc64caa27f
+      internalID: 1968820099
       vertices: []
       indices: 
       edges: []
@@ -698,10 +698,10 @@ TextureImporter:
       name: bird_idle_27
       rect:
         serializedVersion: 2
-        x: 1963
-        y: 2550
-        width: 329
-        height: 301
+        x: 1806
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -709,8 +709,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e0495f2ca91eee49a7b065b8bcb0c15
-      internalID: 1331484450
+      spriteID: aff8299ac2c77e449a9c73630d9c4eca
+      internalID: 1808247987
       vertices: []
       indices: 
       edges: []
@@ -719,10 +719,10 @@ TextureImporter:
       name: bird_idle_28
       rect:
         serializedVersion: 2
-        x: 2567
-        y: 2550
-        width: 327
-        height: 297
+        x: 2408
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -730,8 +730,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88f6abc0c4b3ede4a995ab8584411eff
-      internalID: 1297620030
+      spriteID: 3bc2ceeae8c816e4fb97e46a8bba0c41
+      internalID: 479887498
       vertices: []
       indices: 
       edges: []
@@ -740,10 +740,10 @@ TextureImporter:
       name: bird_idle_29
       rect:
         serializedVersion: 2
-        x: 3169
-        y: 2550
-        width: 327
-        height: 297
+        x: 3010
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -751,8 +751,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a272f6a96aeeb2488d005fde1e99020
-      internalID: -2073164034
+      spriteID: 02ac4747ac88589468aae0e1b58ede42
+      internalID: -228294961
       vertices: []
       indices: 
       edges: []
@@ -761,10 +761,10 @@ TextureImporter:
       name: bird_idle_30
       rect:
         serializedVersion: 2
-        x: 3771
-        y: 2550
-        width: 327
-        height: 297
+        x: 3612
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -772,8 +772,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5d15d01b300ecc4986e985b7e34e719
-      internalID: -229777909
+      spriteID: 6f9f2502a060d1240a09de462bbbe5df
+      internalID: -631623738
       vertices: []
       indices: 
       edges: []
@@ -782,10 +782,10 @@ TextureImporter:
       name: bird_idle_31
       rect:
         serializedVersion: 2
-        x: 4370
-        y: 2550
-        width: 327
-        height: 306
+        x: 4214
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -793,8 +793,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c35dae931ce1fa447b3b039843d23fd0
-      internalID: 1595521778
+      spriteID: 221d58e8fa4a6f441af3776c4fa49d34
+      internalID: -817698172
       vertices: []
       indices: 
       edges: []
@@ -803,10 +803,10 @@ TextureImporter:
       name: bird_idle_32
       rect:
         serializedVersion: 2
-        x: 159
-        y: 1948
-        width: 327
-        height: 299
+        x: 0
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -814,8 +814,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02e1f37581b2ff945b3561430e502b52
-      internalID: -2063465367
+      spriteID: 1543fdd53ffd11a43baf39e6df15fc80
+      internalID: 1952696988
       vertices: []
       indices: 
       edges: []
@@ -824,10 +824,10 @@ TextureImporter:
       name: bird_idle_33
       rect:
         serializedVersion: 2
-        x: 763
-        y: 1948
-        width: 322
-        height: 297
+        x: 602
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -835,8 +835,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e77b7eaf4267d58458699b322589f78e
-      internalID: 601766273
+      spriteID: 9db06902b24b27c47852367cbd674a12
+      internalID: 2029712454
       vertices: []
       indices: 
       edges: []
@@ -845,10 +845,10 @@ TextureImporter:
       name: bird_idle_34
       rect:
         serializedVersion: 2
-        x: 1365
-        y: 1948
-        width: 322
-        height: 297
+        x: 1204
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -856,8 +856,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56106007c1e4c704f9ddb342a971e078
-      internalID: 1217691476
+      spriteID: 1821c9a9dd155f247b1fa4a33b31a83d
+      internalID: -1379432504
       vertices: []
       indices: 
       edges: []
@@ -866,10 +866,10 @@ TextureImporter:
       name: bird_idle_35
       rect:
         serializedVersion: 2
-        x: 1967
-        y: 1948
-        width: 322
-        height: 294
+        x: 1806
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -877,8 +877,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4460740be5ca82748a03c50ac2c46bec
-      internalID: -1218581970
+      spriteID: 1a9536a9bcf1e334ebdda3cca9fdc1fb
+      internalID: 363127498
       vertices: []
       indices: 
       edges: []
@@ -887,10 +887,10 @@ TextureImporter:
       name: bird_idle_36
       rect:
         serializedVersion: 2
-        x: 2569
-        y: 1948
-        width: 322
-        height: 294
+        x: 2408
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -898,8 +898,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ce2a208422eb0a468f7a4586e0d04ed
-      internalID: -1651504647
+      spriteID: e576bd24d5c4b054fbf118543b1c5eb7
+      internalID: -1758380077
       vertices: []
       indices: 
       edges: []
@@ -908,10 +908,10 @@ TextureImporter:
       name: bird_idle_37
       rect:
         serializedVersion: 2
-        x: 3171
-        y: 1948
-        width: 325
-        height: 294
+        x: 3010
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -919,8 +919,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59b32695bbc9ce24cbdb5d09099a397a
-      internalID: -304166122
+      spriteID: e95d95e66a086614bafbbcf343e03bdb
+      internalID: -717770053
       vertices: []
       indices: 
       edges: []
@@ -929,10 +929,10 @@ TextureImporter:
       name: bird_idle_38
       rect:
         serializedVersion: 2
-        x: 3773
-        y: 1948
-        width: 325
-        height: 294
+        x: 3612
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -940,8 +940,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb96f458adac40140bf76641d118d5fc
-      internalID: -1487674927
+      spriteID: 793a870c22a239d4a8b2cf5d2081bf11
+      internalID: -1808545807
       vertices: []
       indices: 
       edges: []
@@ -950,10 +950,10 @@ TextureImporter:
       name: bird_idle_39
       rect:
         serializedVersion: 2
-        x: 4370
-        y: 1948
-        width: 327
-        height: 306
+        x: 4214
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -961,8 +961,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fc18fee91ec26144b24e325db3d71c5
-      internalID: 1186205016
+      spriteID: 74105c3db1a735c4c8dc0307fde202b2
+      internalID: -1201948733
       vertices: []
       indices: 
       edges: []
@@ -971,10 +971,10 @@ TextureImporter:
       name: bird_idle_40
       rect:
         serializedVersion: 2
-        x: 161
-        y: 1346
-        width: 325
-        height: 294
+        x: 0
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -982,8 +982,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2125f758ede62ae4ea9f4157971000bd
-      internalID: 488070395
+      spriteID: 0acd3a7bbf3f27349a2e234f050872b8
+      internalID: 206733294
       vertices: []
       indices: 
       edges: []
@@ -992,10 +992,10 @@ TextureImporter:
       name: bird_idle_41
       rect:
         serializedVersion: 2
-        x: 763
-        y: 1346
-        width: 325
-        height: 294
+        x: 602
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1003,8 +1003,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cec95388e507134fabacd60ecaecea3
-      internalID: -711174163
+      spriteID: ef235d5fa27f35b4583ed03c9bf9009e
+      internalID: 1291122748
       vertices: []
       indices: 
       edges: []
@@ -1013,10 +1013,10 @@ TextureImporter:
       name: bird_idle_42
       rect:
         serializedVersion: 2
-        x: 1365
-        y: 1346
-        width: 325
-        height: 294
+        x: 1204
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1024,8 +1024,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ce1be9b41eecd449a73877c9433d773
-      internalID: 1699657370
+      spriteID: ec81eedaf737f92439a3eb1c8c0a0131
+      internalID: -1761149466
       vertices: []
       indices: 
       edges: []
@@ -1034,10 +1034,10 @@ TextureImporter:
       name: bird_idle_43
       rect:
         serializedVersion: 2
-        x: 1967
-        y: 1346
-        width: 325
-        height: 297
+        x: 1806
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1045,8 +1045,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e6688a0b11bf3349a9bb20123d216c0
-      internalID: -1380654906
+      spriteID: 7d85db61260c8b34b83b86fd2587b6c0
+      internalID: 1540678708
       vertices: []
       indices: 
       edges: []
@@ -1055,10 +1055,10 @@ TextureImporter:
       name: bird_idle_44
       rect:
         serializedVersion: 2
-        x: 2569
-        y: 1346
-        width: 325
-        height: 297
+        x: 2408
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1066,8 +1066,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 392164fc512e6d744ae228db6fd721ed
-      internalID: 1319306928
+      spriteID: 51463a56e7b169c488182a2341ea8b4a
+      internalID: -1789024069
       vertices: []
       indices: 
       edges: []
@@ -1076,10 +1076,10 @@ TextureImporter:
       name: bird_idle_45
       rect:
         serializedVersion: 2
-        x: 3171
-        y: 1346
-        width: 325
-        height: 297
+        x: 3010
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1087,8 +1087,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec58ae88b3699ce44bbc7d783c3524c4
-      internalID: 1482575738
+      spriteID: 4156d2c255025074cbaddaff29c3794b
+      internalID: 71185087
       vertices: []
       indices: 
       edges: []
@@ -1097,10 +1097,10 @@ TextureImporter:
       name: bird_idle_46
       rect:
         serializedVersion: 2
-        x: 3773
-        y: 1346
-        width: 325
-        height: 299
+        x: 3612
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1108,8 +1108,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d17c0f5ba766be54d834ce3cea9895dd
-      internalID: 916459276
+      spriteID: 0c82a8c2d84f0a246b1f0e3dd8b7605e
+      internalID: 1207121246
       vertices: []
       indices: 
       edges: []
@@ -1118,10 +1118,10 @@ TextureImporter:
       name: bird_idle_47
       rect:
         serializedVersion: 2
-        x: 4371
-        y: 1346
-        width: 326
-        height: 304
+        x: 4214
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1129,8 +1129,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b06b7333f3b3d740b0361976df14cec
-      internalID: 1474291269
+      spriteID: 532139897f77fad409486f76ecf55280
+      internalID: 1697651912
       vertices: []
       indices: 
       edges: []
@@ -1139,10 +1139,10 @@ TextureImporter:
       name: bird_idle_48
       rect:
         serializedVersion: 2
-        x: 161
-        y: 744
-        width: 325
-        height: 299
+        x: 0
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1150,8 +1150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 087c24777c313a6499731093850fa59e
-      internalID: -498139966
+      spriteID: ee8d864ccf77a584da5a715c84788b3a
+      internalID: -827142965
       vertices: []
       indices: 
       edges: []
@@ -1160,10 +1160,10 @@ TextureImporter:
       name: bird_idle_49
       rect:
         serializedVersion: 2
-        x: 763
-        y: 744
-        width: 325
-        height: 301
+        x: 602
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1171,8 +1171,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fe77409ae24d3d41934fdfca6c65cef
-      internalID: -892840425
+      spriteID: 742d4ff418076d248aa3393383c14239
+      internalID: 667436298
       vertices: []
       indices: 
       edges: []
@@ -1181,10 +1181,10 @@ TextureImporter:
       name: bird_idle_50
       rect:
         serializedVersion: 2
-        x: 1365
-        y: 744
-        width: 325
-        height: 301
+        x: 1204
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1192,8 +1192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0696ad5c9eaa73a419f1d372ac1634c5
-      internalID: -657134626
+      spriteID: c2693424b9e47d04889604d332a7c32c
+      internalID: -1664522380
       vertices: []
       indices: 
       edges: []
@@ -1202,10 +1202,10 @@ TextureImporter:
       name: bird_idle_51
       rect:
         serializedVersion: 2
-        x: 1965
-        y: 744
-        width: 327
-        height: 303
+        x: 1806
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1213,8 +1213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0112aecccf5cdf146a5b26107d79adf9
-      internalID: 645315589
+      spriteID: 6714ec5b19d137c4e9f9e12fa7d4e0fb
+      internalID: -1614568605
       vertices: []
       indices: 
       edges: []
@@ -1223,10 +1223,10 @@ TextureImporter:
       name: bird_idle_52
       rect:
         serializedVersion: 2
-        x: 2567
-        y: 744
-        width: 324
-        height: 304
+        x: 2408
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1234,8 +1234,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c08960c3e034c574bb7607e7522f8e45
-      internalID: 695289400
+      spriteID: 6a67c5c4081b5d04e92e3ce223092f4d
+      internalID: 779912154
       vertices: []
       indices: 
       edges: []
@@ -1244,10 +1244,10 @@ TextureImporter:
       name: bird_idle_53
       rect:
         serializedVersion: 2
-        x: 3169
-        y: 744
-        width: 322
-        height: 304
+        x: 3010
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1255,8 +1255,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d1b05cf74f838b45a3ce3bb7d0a502a
-      internalID: -2054572504
+      spriteID: 492c7a0085d39ad428ee049b8d1011bb
+      internalID: -449012978
       vertices: []
       indices: 
       edges: []
@@ -1265,10 +1265,10 @@ TextureImporter:
       name: bird_idle_54
       rect:
         serializedVersion: 2
-        x: 3771
-        y: 744
-        width: 322
-        height: 304
+        x: 3612
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1276,8 +1276,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 412c6b50492c3874190915aa6b7d7c4f
-      internalID: -1570277637
+      spriteID: 741ce0b899826274ca3eea7eb5105bc8
+      internalID: 1625725925
       vertices: []
       indices: 
       edges: []
@@ -1286,10 +1286,10 @@ TextureImporter:
       name: bird_idle_55
       rect:
         serializedVersion: 2
-        x: 4371
-        y: 744
-        width: 326
-        height: 304
+        x: 4214
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1297,8 +1297,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca15b002f69d3604f933274ae31b9b7d
-      internalID: -792216650
+      spriteID: f6d25c25bddafd84f920f0a43a1dfcbc
+      internalID: -153621128
       vertices: []
       indices: 
       edges: []
@@ -1307,10 +1307,10 @@ TextureImporter:
       name: bird_idle_56
       rect:
         serializedVersion: 2
-        x: 159
-        y: 142
-        width: 324
-        height: 304
+        x: 0
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1318,8 +1318,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7042118deaddb84aa25856f2cb66e31
-      internalID: 421758115
+      spriteID: 299e1c7c961cea54ab8986dc674fd70c
+      internalID: 1144490639
       vertices: []
       indices: 
       edges: []
@@ -1328,10 +1328,10 @@ TextureImporter:
       name: bird_idle_57
       rect:
         serializedVersion: 2
-        x: 761
-        y: 142
-        width: 324
-        height: 303
+        x: 602
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1339,8 +1339,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30a05e6867dba77438a2fc91b6a93775
-      internalID: -621490067
+      spriteID: d60cd4f42c8b3e14b8e26fc9e02a5083
+      internalID: -1452888966
       vertices: []
       indices: 
       edges: []
@@ -1349,10 +1349,10 @@ TextureImporter:
       name: bird_idle_58
       rect:
         serializedVersion: 2
-        x: 1363
-        y: 142
-        width: 324
-        height: 301
+        x: 1204
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1360,8 +1360,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b050c74cc704b2046b43a4836d580ef1
-      internalID: 526180667
+      spriteID: cf244e61067797b47a956a6158d54ebd
+      internalID: -1794443174
       vertices: []
       indices: 
       edges: []
@@ -1370,10 +1370,10 @@ TextureImporter:
       name: bird_idle_59
       rect:
         serializedVersion: 2
-        x: 1967
-        y: 142
-        width: 322
-        height: 299
+        x: 1806
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1381,8 +1381,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94b5f5987dc57d246bfcfc90dd4d4f9b
-      internalID: 1915058561
+      spriteID: 910a1202779e927468ba63ac5c09cafd
+      internalID: 1870960089
       vertices: []
       indices: 
       edges: []
@@ -1391,10 +1391,10 @@ TextureImporter:
       name: bird_idle_60
       rect:
         serializedVersion: 2
-        x: 2569
-        y: 142
-        width: 325
-        height: 299
+        x: 2408
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1402,8 +1402,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 697c1eaacf2055f448eb5b7f42f57180
-      internalID: 1002457666
+      spriteID: 6b54264aef3ddc34b95c9878c64dea4b
+      internalID: -517487245
       vertices: []
       indices: 
       edges: []
@@ -1412,10 +1412,10 @@ TextureImporter:
       name: bird_idle_61
       rect:
         serializedVersion: 2
-        x: 3171
-        y: 142
-        width: 322
-        height: 297
+        x: 3010
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1423,8 +1423,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75d89eb57cb2c0a429f2a3977e1ae9cc
-      internalID: -1693361871
+      spriteID: 93e530ad0ce3ab049a733b7d002161dd
+      internalID: 99673512
       vertices: []
       indices: 
       edges: []
@@ -1433,10 +1433,10 @@ TextureImporter:
       name: bird_idle_62
       rect:
         serializedVersion: 2
-        x: 3773
-        y: 142
-        width: 322
-        height: 297
+        x: 3612
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1444,8 +1444,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 179acf92422814d46952d9f294e473b2
-      internalID: 1274024958
+      spriteID: 260ee48a12b18344b8bb6bf35cfebfe7
+      internalID: -549491519
       vertices: []
       indices: 
       edges: []
@@ -1453,7 +1453,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 05d4b071ee4558c49913e04640e3c9cf
+    spriteID: ea287b0ba5d6dab4abf50d989129d38d
     internalID: 0
     vertices: []
     indices: 
@@ -1461,69 +1461,69 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bird_idle_39: 1186205016
-      bird_idle_50: -657134626
-      bird_idle_31: 1595521778
-      bird_idle_58: 526180667
-      bird_idle_41: -711174163
-      bird_idle_62: 1274024958
-      bird_idle_33: 601766273
-      bird_idle_53: -2054572504
-      bird_idle_3: -1319871364
-      bird_idle_25: -1482207066
-      bird_idle_15: 498978929
-      bird_idle_49: -892840425
-      bird_idle_52: 695289400
-      bird_idle_7: 1910165361
-      bird_idle_9: 1346280999
-      bird_idle_14: -521536436
-      bird_idle_59: 1915058561
-      bird_idle_45: 1482575738
-      bird_idle_26: -1017535252
-      bird_idle_35: -1218581970
-      bird_idle_5: 1304963157
-      bird_idle_30: -229777909
-      bird_idle_18: -562134452
-      bird_idle_28: 1297620030
-      bird_idle_46: 916459276
-      bird_idle_55: -792216650
-      bird_idle_24: -1098164505
-      bird_idle_23: -1959984825
-      bird_idle_60: 1002457666
-      bird_idle_48: -498139966
-      bird_idle_16: -894050809
-      bird_idle_20: 1858623402
-      bird_idle_51: 645315589
-      bird_idle_43: -1380654906
-      bird_idle_38: -1487674927
-      bird_idle_47: 1474291269
-      bird_idle_0: 840318743
-      bird_idle_57: -621490067
-      bird_idle_19: 1843052604
-      bird_idle_54: -1570277637
-      bird_idle_34: 1217691476
-      bird_idle_42: 1699657370
-      bird_idle_6: 625805894
-      bird_idle_29: -2073164034
-      bird_idle_56: 421758115
-      bird_idle_4: -1209134773
-      bird_idle_10: 1117011097
-      bird_idle_17: 492194985
-      bird_idle_32: -2063465367
-      bird_idle_27: 1331484450
-      bird_idle_2: -1544992646
-      bird_idle_11: 1427035732
-      bird_idle_40: 488070395
-      bird_idle_44: 1319306928
-      bird_idle_8: 221890044
-      bird_idle_12: -555935518
-      bird_idle_22: 1428410087
-      bird_idle_61: -1693361871
-      bird_idle_37: -304166122
-      bird_idle_36: -1651504647
-      bird_idle_21: -1611146491
-      bird_idle_13: 1784737915
-      bird_idle_1: -1791354961
+      bird_idle_39: -1201948733
+      bird_idle_50: -1664522380
+      bird_idle_31: -817698172
+      bird_idle_58: -1794443174
+      bird_idle_41: 1291122748
+      bird_idle_62: -549491519
+      bird_idle_33: 2029712454
+      bird_idle_53: -449012978
+      bird_idle_3: 759975304
+      bird_idle_25: 2105136207
+      bird_idle_15: 722832662
+      bird_idle_49: 667436298
+      bird_idle_52: 779912154
+      bird_idle_7: 109106982
+      bird_idle_9: 2095816299
+      bird_idle_14: -552577210
+      bird_idle_59: 1870960089
+      bird_idle_45: 71185087
+      bird_idle_26: 1968820099
+      bird_idle_35: 363127498
+      bird_idle_5: 1060501169
+      bird_idle_30: -631623738
+      bird_idle_18: -184107799
+      bird_idle_28: 479887498
+      bird_idle_46: 1207121246
+      bird_idle_55: -153621128
+      bird_idle_24: -955354431
+      bird_idle_23: 1095637175
+      bird_idle_60: -517487245
+      bird_idle_48: -827142965
+      bird_idle_16: 1293758713
+      bird_idle_20: 164814006
+      bird_idle_51: -1614568605
+      bird_idle_43: 1540678708
+      bird_idle_38: -1808545807
+      bird_idle_47: 1697651912
+      bird_idle_0: -1900458956
+      bird_idle_57: -1452888966
+      bird_idle_19: 896319976
+      bird_idle_54: 1625725925
+      bird_idle_34: -1379432504
+      bird_idle_42: -1761149466
+      bird_idle_6: -1118872693
+      bird_idle_29: -228294961
+      bird_idle_56: 1144490639
+      bird_idle_4: -2052410329
+      bird_idle_10: 1647088155
+      bird_idle_17: 1110271178
+      bird_idle_32: 1952696988
+      bird_idle_27: 1808247987
+      bird_idle_2: 1035182246
+      bird_idle_11: 466087461
+      bird_idle_40: 206733294
+      bird_idle_44: -1789024069
+      bird_idle_8: 1300723290
+      bird_idle_12: -299439659
+      bird_idle_22: 1218920803
+      bird_idle_61: 99673512
+      bird_idle_37: -717770053
+      bird_idle_36: -1758380077
+      bird_idle_21: 1383973955
+      bird_idle_13: -1934116928
+      bird_idle_1: 1569422498
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

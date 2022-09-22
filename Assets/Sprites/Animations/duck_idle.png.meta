@@ -49,7 +49,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -66,7 +66,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -131,10 +131,10 @@ TextureImporter:
       name: duck_idle_0
       rect:
         serializedVersion: 2
-        x: 155
-        y: 4352
-        width: 328
-        height: 394
+        x: 0
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,8 +142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7396b9ac5b9b634f8f9bcd3a0a765d2
-      internalID: 640163298
+      spriteID: ee05e9dd2c1528d4b9a57f3176a67be4
+      internalID: -1041086668
       vertices: []
       indices: 
       edges: []
@@ -152,10 +152,10 @@ TextureImporter:
       name: duck_idle_1
       rect:
         serializedVersion: 2
-        x: 758
-        y: 4352
-        width: 328
-        height: 394
+        x: 602
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85fb5c554687cd3449fe1b05fd8d1219
-      internalID: 658014535
+      spriteID: e39e192071b9ed34fae92a4662af50b5
+      internalID: -1717647348
       vertices: []
       indices: 
       edges: []
@@ -173,10 +173,10 @@ TextureImporter:
       name: duck_idle_2
       rect:
         serializedVersion: 2
-        x: 1359
-        y: 4352
-        width: 329
-        height: 391
+        x: 1204
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b07c9feb84d83c3419f525e5ac84fc29
-      internalID: 1507099336
+      spriteID: f394db4ef303b6a40b57f4c27bad12e9
+      internalID: -1370534389
       vertices: []
       indices: 
       edges: []
@@ -194,10 +194,10 @@ TextureImporter:
       name: duck_idle_3
       rect:
         serializedVersion: 2
-        x: 1962
-        y: 4354
-        width: 328
-        height: 388
+        x: 1806
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,8 +205,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 844f52857c899a943af30328ec1f33ac
-      internalID: 718621518
+      spriteID: 92ee945334cc86c4b91f37d4605997fc
+      internalID: 892882183
       vertices: []
       indices: 
       edges: []
@@ -215,10 +215,10 @@ TextureImporter:
       name: duck_idle_4
       rect:
         serializedVersion: 2
-        x: 2565
-        y: 4354
-        width: 327
-        height: 387
+        x: 2408
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,8 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efd43fa5fc158884d86eb2a73613130e
-      internalID: -1530678181
+      spriteID: ef7dcd3e8b82fe8448b80334dfc5359f
+      internalID: -1897826137
       vertices: []
       indices: 
       edges: []
@@ -236,10 +236,10 @@ TextureImporter:
       name: duck_idle_5
       rect:
         serializedVersion: 2
-        x: 3165
-        y: 4354
-        width: 328
-        height: 384
+        x: 3010
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,8 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 968680c34bbb2ab40a8d0dfbb8657bce
-      internalID: 871496290
+      spriteID: abfbe5d945609264b8b83ed9bd52c760
+      internalID: 997734778
       vertices: []
       indices: 
       edges: []
@@ -257,10 +257,10 @@ TextureImporter:
       name: duck_idle_6
       rect:
         serializedVersion: 2
-        x: 3766
-        y: 4354
-        width: 330
-        height: 381
+        x: 3612
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,8 +268,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aac244e05f42ac6428810f0f120accc2
-      internalID: 178849780
+      spriteID: b587779dae50a834abff7b81a453eb87
+      internalID: -162218747
       vertices: []
       indices: 
       edges: []
@@ -278,10 +278,10 @@ TextureImporter:
       name: duck_idle_7
       rect:
         serializedVersion: 2
-        x: 4367
-        y: 4354
-        width: 332
-        height: 381
+        x: 4214
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,8 +289,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 576fd72dc2483ba498901ba45b902846
-      internalID: 1234121541
+      spriteID: ab5bdbbc2380cd94a94e2785b1e50798
+      internalID: 73904137
       vertices: []
       indices: 
       edges: []
@@ -299,10 +299,10 @@ TextureImporter:
       name: duck_idle_8
       rect:
         serializedVersion: 2
-        x: 4970
-        y: 4354
-        width: 328
-        height: 392
+        x: 4816
+        y: 4214
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,8 +310,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7aa63ce05db01246ac301f98626b883
-      internalID: -48074454
+      spriteID: 7894cc88c4e9b584ba6c068b402cb4bb
+      internalID: 710097668
       vertices: []
       indices: 
       edges: []
@@ -320,10 +320,10 @@ TextureImporter:
       name: duck_idle_9
       rect:
         serializedVersion: 2
-        x: 155
-        y: 3754
-        width: 328
-        height: 378
+        x: 0
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,8 +331,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ef899f4ad274684d9227e5db770cfdb
-      internalID: -2065451573
+      spriteID: 433880e4dd78d1f49ae23a065ced2da2
+      internalID: 852774233
       vertices: []
       indices: 
       edges: []
@@ -341,10 +341,10 @@ TextureImporter:
       name: duck_idle_10
       rect:
         serializedVersion: 2
-        x: 755
-        y: 3754
-        width: 331
-        height: 375
+        x: 602
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,8 +352,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5dc3a2c1f614a814ea17a5eaf833bbe5
-      internalID: 909195111
+      spriteID: 87eea8e8118cc174c842db89f1255223
+      internalID: -928154950
       vertices: []
       indices: 
       edges: []
@@ -362,10 +362,10 @@ TextureImporter:
       name: duck_idle_11
       rect:
         serializedVersion: 2
-        x: 1358
-        y: 3754
-        width: 331
-        height: 375
+        x: 1204
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,8 +373,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ed457f1b41f8b444b083bde35df3e53
-      internalID: 1103560076
+      spriteID: e410fa3e472122b458de637c2ea871d1
+      internalID: -201981967
       vertices: []
       indices: 
       edges: []
@@ -383,10 +383,10 @@ TextureImporter:
       name: duck_idle_12
       rect:
         serializedVersion: 2
-        x: 1959
-        y: 3754
-        width: 333
-        height: 375
+        x: 1806
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,8 +394,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48c648a23082402418b4dbb9de175417
-      internalID: 910431023
+      spriteID: 36223b6e61aa3794cb8b10b8baf5a1ee
+      internalID: -756354874
       vertices: []
       indices: 
       edges: []
@@ -404,10 +404,10 @@ TextureImporter:
       name: duck_idle_13
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 3754
-        width: 333
-        height: 375
+        x: 2408
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,8 +415,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c063736ef652a24fb4c69e2fa07cee3
-      internalID: 1498688108
+      spriteID: fa0b42b21a1610c40bd35620f9f4687b
+      internalID: -566449923
       vertices: []
       indices: 
       edges: []
@@ -425,10 +425,10 @@ TextureImporter:
       name: duck_idle_14
       rect:
         serializedVersion: 2
-        x: 3161
-        y: 3754
-        width: 335
-        height: 375
+        x: 3010
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,8 +436,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4a3a1c37e6f61440a819c56ed3e6b5d
-      internalID: -58168326
+      spriteID: fb7142cc91ea65a46bb39798516ff19a
+      internalID: 104785041
       vertices: []
       indices: 
       edges: []
@@ -446,10 +446,10 @@ TextureImporter:
       name: duck_idle_15
       rect:
         serializedVersion: 2
-        x: 3763
-        y: 3754
-        width: 335
-        height: 375
+        x: 3612
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,8 +457,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cecda723f36444e48aadfe22a7ffe05d
-      internalID: 1271013241
+      spriteID: 66555b7bdda0748499c7407f824a836f
+      internalID: -1943945762
       vertices: []
       indices: 
       edges: []
@@ -467,10 +467,10 @@ TextureImporter:
       name: duck_idle_16
       rect:
         serializedVersion: 2
-        x: 4366
-        y: 3754
-        width: 333
-        height: 375
+        x: 4214
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,8 +478,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2db8390efe59f0e47aa54cdebaaaddbf
-      internalID: -782741051
+      spriteID: 1545d25c17999814599e24384c619fc0
+      internalID: 1203316753
       vertices: []
       indices: 
       edges: []
@@ -488,10 +488,10 @@ TextureImporter:
       name: duck_idle_17
       rect:
         serializedVersion: 2
-        x: 4970
-        y: 3751
-        width: 328
-        height: 394
+        x: 4816
+        y: 3612
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,8 +499,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4cde904369f6d04caa1ad1aed936df4
-      internalID: 1013788359
+      spriteID: 4a63dc136dd2825489eae8ec487b80c2
+      internalID: -1747919714
       vertices: []
       indices: 
       edges: []
@@ -509,10 +509,10 @@ TextureImporter:
       name: duck_idle_18
       rect:
         serializedVersion: 2
-        x: 152
-        y: 3153
-        width: 333
-        height: 375
+        x: 0
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -520,8 +520,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1124cbb6c41aac44bbc633f1fe07496
-      internalID: -1801499243
+      spriteID: 1fd2d4f466e13b44dbd09c947d0cc518
+      internalID: -1610163603
       vertices: []
       indices: 
       edges: []
@@ -530,10 +530,10 @@ TextureImporter:
       name: duck_idle_19
       rect:
         serializedVersion: 2
-        x: 753
-        y: 3152
-        width: 333
-        height: 377
+        x: 602
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -541,8 +541,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4f7093a7ac47bf44a9087e8bc4d458f
-      internalID: -2034512543
+      spriteID: 50c9da69fd9f5e24e889057e9e81af43
+      internalID: 2108820609
       vertices: []
       indices: 
       edges: []
@@ -551,10 +551,10 @@ TextureImporter:
       name: duck_idle_20
       rect:
         serializedVersion: 2
-        x: 1354
-        y: 3151
-        width: 335
-        height: 378
+        x: 1204
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,8 +562,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb25e279871d0834497bca0f1ff34d15
-      internalID: -1320505663
+      spriteID: 83dd7f234c1cb7e42a243d1ce597e41b
+      internalID: 914505512
       vertices: []
       indices: 
       edges: []
@@ -572,10 +572,10 @@ TextureImporter:
       name: duck_idle_21
       rect:
         serializedVersion: 2
-        x: 1956
-        y: 3151
-        width: 336
-        height: 380
+        x: 1806
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -583,8 +583,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b0d4c691d5caba45b98ce8c7091d870
-      internalID: -852804161
+      spriteID: 632fc8a77853eaf4386b847f6508c376
+      internalID: -1595194632
       vertices: []
       indices: 
       edges: []
@@ -593,10 +593,10 @@ TextureImporter:
       name: duck_idle_22
       rect:
         serializedVersion: 2
-        x: 2558
-        y: 3151
-        width: 337
-        height: 380
+        x: 2408
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -604,8 +604,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa0cac17167793b4b974f48b21535d55
-      internalID: 1184022238
+      spriteID: ec37862bb291c5a4e90d5216b3db21f7
+      internalID: 462066880
       vertices: []
       indices: 
       edges: []
@@ -614,10 +614,10 @@ TextureImporter:
       name: duck_idle_23
       rect:
         serializedVersion: 2
-        x: 3160
-        y: 3151
-        width: 338
-        height: 383
+        x: 3010
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -625,8 +625,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2034370f009874b4fab0d9c04134b0e3
-      internalID: -1471307955
+      spriteID: d1f25e61e82cc134aa3d2fa974ac6101
+      internalID: -1204799638
       vertices: []
       indices: 
       edges: []
@@ -635,10 +635,10 @@ TextureImporter:
       name: duck_idle_24
       rect:
         serializedVersion: 2
-        x: 3763
-        y: 3151
-        width: 336
-        height: 385
+        x: 3612
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -646,8 +646,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2291d6b5c9b382d4dbf3750055cd7e87
-      internalID: -2072906782
+      spriteID: 63045b972b4435c408a0d4ce955d8af3
+      internalID: 884040501
       vertices: []
       indices: 
       edges: []
@@ -656,10 +656,10 @@ TextureImporter:
       name: duck_idle_25
       rect:
         serializedVersion: 2
-        x: 4366
-        y: 3152
-        width: 336
-        height: 386
+        x: 4214
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -667,8 +667,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30c61168173ada4438957af90db83fbd
-      internalID: 643421417
+      spriteID: 0fba607150606464fba6d94208e19494
+      internalID: -1390346314
       vertices: []
       indices: 
       edges: []
@@ -677,10 +677,10 @@ TextureImporter:
       name: duck_idle_26
       rect:
         serializedVersion: 2
-        x: 4971
-        y: 3148
-        width: 327
-        height: 394
+        x: 4816
+        y: 3010
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -688,8 +688,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 794a7a971b3320849adc8e018c5fd121
-      internalID: -1907481225
+      spriteID: f428a1adf08420e4fa828fabadf0b14c
+      internalID: 109924685
       vertices: []
       indices: 
       edges: []
@@ -698,10 +698,10 @@ TextureImporter:
       name: duck_idle_27
       rect:
         serializedVersion: 2
-        x: 152
-        y: 2550
-        width: 333
-        height: 386
+        x: 0
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -709,8 +709,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87d5216c6911cf74c89be570fdcf115f
-      internalID: -1713684563
+      spriteID: 162aa8cc42de67442934cbfb0b8b3af0
+      internalID: -297824437
       vertices: []
       indices: 
       edges: []
@@ -719,10 +719,10 @@ TextureImporter:
       name: duck_idle_28
       rect:
         serializedVersion: 2
-        x: 755
-        y: 2550
-        width: 331
-        height: 388
+        x: 602
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -730,8 +730,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05ae256167c331449a4ae8a4fd4992c8
-      internalID: 2081180036
+      spriteID: 1645528f1eff20748b5f22cbea0decc1
+      internalID: 953012730
       vertices: []
       indices: 
       edges: []
@@ -740,10 +740,10 @@ TextureImporter:
       name: duck_idle_29
       rect:
         serializedVersion: 2
-        x: 1358
-        y: 2550
-        width: 331
-        height: 389
+        x: 1204
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -751,8 +751,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6be534538b2c6024884a9a90d1b86996
-      internalID: -1195000173
+      spriteID: 92252375e991de04c83b8570a07b23ee
+      internalID: -918281683
       vertices: []
       indices: 
       edges: []
@@ -761,10 +761,10 @@ TextureImporter:
       name: duck_idle_30
       rect:
         serializedVersion: 2
-        x: 1959
-        y: 2548
-        width: 333
-        height: 391
+        x: 1806
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -772,8 +772,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37afe711fa9224144a91de90be289b07
-      internalID: 474222567
+      spriteID: 2ff731335efb16343aa73c02c5d4482b
+      internalID: 726218396
       vertices: []
       indices: 
       edges: []
@@ -782,10 +782,10 @@ TextureImporter:
       name: duck_idle_31
       rect:
         serializedVersion: 2
-        x: 2562
-        y: 2547
-        width: 332
-        height: 392
+        x: 2408
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -793,8 +793,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfaa12da8fd888e4e9d529ab75bbdc72
-      internalID: 927522624
+      spriteID: 5b784de68037a2f44b82305c14a0875d
+      internalID: -806211108
       vertices: []
       indices: 
       edges: []
@@ -803,10 +803,10 @@ TextureImporter:
       name: duck_idle_32
       rect:
         serializedVersion: 2
-        x: 3164
-        y: 2547
-        width: 332
-        height: 392
+        x: 3010
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -814,8 +814,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58ad3e616fcbe934596a8ab4d7b0cd09
-      internalID: -588450373
+      spriteID: caace7e325d20c94996320e396d8c1cf
+      internalID: 1287989418
       vertices: []
       indices: 
       edges: []
@@ -824,10 +824,10 @@ TextureImporter:
       name: duck_idle_33
       rect:
         serializedVersion: 2
-        x: 3766
-        y: 2547
-        width: 332
-        height: 392
+        x: 3612
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -835,8 +835,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52f547b129c517f4a89d6e2c76b49f90
-      internalID: 282191454
+      spriteID: 36b41a284653b5f4ca1119c21953014a
+      internalID: -1023654722
       vertices: []
       indices: 
       edges: []
@@ -845,10 +845,10 @@ TextureImporter:
       name: duck_idle_34
       rect:
         serializedVersion: 2
-        x: 4369
-        y: 2547
-        width: 329
-        height: 392
+        x: 4214
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -856,8 +856,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29e8694792ce5cb4081c507cfaa5d4e6
-      internalID: 1480358676
+      spriteID: 0318477a386e383498ac53fce54b980d
+      internalID: -532615016
       vertices: []
       indices: 
       edges: []
@@ -866,10 +866,10 @@ TextureImporter:
       name: duck_idle_35
       rect:
         serializedVersion: 2
-        x: 4972
-        y: 2545
-        width: 326
-        height: 394
+        x: 4816
+        y: 2408
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -877,8 +877,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 551d0b6cbebcc324fadb343db8b633c1
-      internalID: 550955698
+      spriteID: 931c7a1a268fefe4888a076f69e7f5a2
+      internalID: 207327521
       vertices: []
       indices: 
       edges: []
@@ -887,10 +887,10 @@ TextureImporter:
       name: duck_idle_36
       rect:
         serializedVersion: 2
-        x: 155
-        y: 1944
-        width: 328
-        height: 394
+        x: 0
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -898,8 +898,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4fc5db5bd1c4184eb501da0a8a525e8
-      internalID: 1598888757
+      spriteID: b3025eca18377804fa584144e32d4ab8
+      internalID: -724367605
       vertices: []
       indices: 
       edges: []
@@ -908,10 +908,10 @@ TextureImporter:
       name: duck_idle_37
       rect:
         serializedVersion: 2
-        x: 758
-        y: 1944
-        width: 328
-        height: 394
+        x: 602
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -919,8 +919,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e187f1f9a601bcf48b082772797ffdf4
-      internalID: 1413304291
+      spriteID: 9f82777d8f7b7354f8dded143c97b571
+      internalID: -1105156995
       vertices: []
       indices: 
       edges: []
@@ -929,10 +929,10 @@ TextureImporter:
       name: duck_idle_38
       rect:
         serializedVersion: 2
-        x: 1361
-        y: 1944
-        width: 328
-        height: 391
+        x: 1204
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -940,8 +940,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d760f03282da69043bb26c90fc3c5c08
-      internalID: 1220545145
+      spriteID: 22f91a3665361f5448eea08f4e2282be
+      internalID: -1179074564
       vertices: []
       indices: 
       edges: []
@@ -950,10 +950,10 @@ TextureImporter:
       name: duck_idle_39
       rect:
         serializedVersion: 2
-        x: 1962
-        y: 1944
-        width: 330
-        height: 391
+        x: 1806
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -961,8 +961,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1946d87215167a54c86ddffe41174b4e
-      internalID: 291543620
+      spriteID: 7bcabbf1643c2f649afa4b0eda6ed140
+      internalID: -1857299539
       vertices: []
       indices: 
       edges: []
@@ -971,10 +971,10 @@ TextureImporter:
       name: duck_idle_40
       rect:
         serializedVersion: 2
-        x: 2565
-        y: 1944
-        width: 328
-        height: 391
+        x: 2408
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -982,8 +982,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30f50584f89c5d94a837a622903e6af3
-      internalID: 1480456083
+      spriteID: 55ca71bc6b051124cbf6eb1facb749a7
+      internalID: 507848721
       vertices: []
       indices: 
       edges: []
@@ -992,10 +992,10 @@ TextureImporter:
       name: duck_idle_41
       rect:
         serializedVersion: 2
-        x: 3165
-        y: 1944
-        width: 330
-        height: 389
+        x: 3010
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1003,8 +1003,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e0e54c056bf29f46a4dd93189083648
-      internalID: -1888858565
+      spriteID: 9ef41c5012b423f4885b931e85cce8e2
+      internalID: 1439189540
       vertices: []
       indices: 
       edges: []
@@ -1013,10 +1013,10 @@ TextureImporter:
       name: duck_idle_42
       rect:
         serializedVersion: 2
-        x: 3766
-        y: 1944
-        width: 332
-        height: 388
+        x: 3612
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1024,8 +1024,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5323886440d084748a9eefaefa0b2624
-      internalID: 1035275242
+      spriteID: 046ce6474c487be4eb95328ad25887c0
+      internalID: 500573871
       vertices: []
       indices: 
       edges: []
@@ -1034,10 +1034,10 @@ TextureImporter:
       name: duck_idle_43
       rect:
         serializedVersion: 2
-        x: 4369
-        y: 1946
-        width: 329
-        height: 384
+        x: 4214
+        y: 1806
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1045,8 +1045,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9af8fe6c3afca6549b7c731f4245aae3
-      internalID: 1772904575
+      spriteID: 9d3af1ef880866e4ea13014514dc9641
+      internalID: 1792952858
       vertices: []
       indices: 
       edges: []
@@ -1055,10 +1055,10 @@ TextureImporter:
       name: duck_idle_44
       rect:
         serializedVersion: 2
-        x: 155
-        y: 1344
-        width: 328
-        height: 382
+        x: 0
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1066,8 +1066,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aecc4784ac2ed41419b05e7e88c7ebe9
-      internalID: 2138754765
+      spriteID: b55edf0e541b33f4b848002631bbd08f
+      internalID: -168639530
       vertices: []
       indices: 
       edges: []
@@ -1076,10 +1076,10 @@ TextureImporter:
       name: duck_idle_45
       rect:
         serializedVersion: 2
-        x: 755
-        y: 1346
-        width: 331
-        height: 378
+        x: 602
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1087,8 +1087,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8fcf40fe4cb46b4297b62599a7b7e7e
-      internalID: 1035899487
+      spriteID: 000a5bb06f3a4a74a8d3bcfee2ee76b9
+      internalID: -1032629942
       vertices: []
       indices: 
       edges: []
@@ -1097,10 +1097,10 @@ TextureImporter:
       name: duck_idle_46
       rect:
         serializedVersion: 2
-        x: 1358
-        y: 1348
-        width: 331
-        height: 373
+        x: 1204
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1108,8 +1108,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d20de4939a51524884730c5d80a09a3
-      internalID: 923724449
+      spriteID: b747c3dcd7ad73f4b921b37054cb68c8
+      internalID: 1398308488
       vertices: []
       indices: 
       edges: []
@@ -1118,10 +1118,10 @@ TextureImporter:
       name: duck_idle_47
       rect:
         serializedVersion: 2
-        x: 1959
-        y: 1348
-        width: 333
-        height: 373
+        x: 1806
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1129,8 +1129,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26ec9c462b3e6314c801a920bf8bc15b
-      internalID: 1281224751
+      spriteID: cd2584e4e7a36ac438184c1d9879640f
+      internalID: -1880816484
       vertices: []
       indices: 
       edges: []
@@ -1139,10 +1139,10 @@ TextureImporter:
       name: duck_idle_48
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 1348
-        width: 335
-        height: 373
+        x: 2408
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1150,8 +1150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d24882d3109918144be4928fcc2cdbbd
-      internalID: 1354935072
+      spriteID: 32e5a47f244df43439e39dd09e445535
+      internalID: 888551619
       vertices: []
       indices: 
       edges: []
@@ -1160,10 +1160,10 @@ TextureImporter:
       name: duck_idle_49
       rect:
         serializedVersion: 2
-        x: 3163
-        y: 1348
-        width: 334
-        height: 373
+        x: 3010
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1171,8 +1171,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dde80ebb927538f4a9fe05245efb7915
-      internalID: -1944868441
+      spriteID: 3b446594b3e267c41bbf5f0a809b090d
+      internalID: -2058599647
       vertices: []
       indices: 
       edges: []
@@ -1181,10 +1181,10 @@ TextureImporter:
       name: duck_idle_50
       rect:
         serializedVersion: 2
-        x: 3763
-        y: 1348
-        width: 336
-        height: 371
+        x: 3612
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1192,8 +1192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41220a4e0e18cf041bbcb01d396e2f23
-      internalID: 714917362
+      spriteID: 7b17d449e1cc14a44a7954e7fdc8da4e
+      internalID: -339276754
       vertices: []
       indices: 
       edges: []
@@ -1202,10 +1202,10 @@ TextureImporter:
       name: duck_idle_51
       rect:
         serializedVersion: 2
-        x: 4366
-        y: 1348
-        width: 336
-        height: 371
+        x: 4214
+        y: 1204
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1213,8 +1213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cff723d9ff4b1f4d9b13288e432a058
-      internalID: -1552358639
+      spriteID: 2e05cb504edd73e46aa6d12cd8622876
+      internalID: 957382829
       vertices: []
       indices: 
       edges: []
@@ -1223,10 +1223,10 @@ TextureImporter:
       name: duck_idle_52
       rect:
         serializedVersion: 2
-        x: 152
-        y: 745
-        width: 333
-        height: 373
+        x: 0
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1234,8 +1234,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18b76048b4aef8e44bf7a19fa4bb626f
-      internalID: -952999752
+      spriteID: e1f330f84171a0649abb41c061ca19fe
+      internalID: 2011259249
       vertices: []
       indices: 
       edges: []
@@ -1244,10 +1244,10 @@ TextureImporter:
       name: duck_idle_53
       rect:
         serializedVersion: 2
-        x: 753
-        y: 745
-        width: 333
-        height: 373
+        x: 602
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1255,8 +1255,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4814543da190f349b909e064d8e7f6e
-      internalID: 1745091763
+      spriteID: 08a21a34548f8104f81fdd59d58fb011
+      internalID: -981549589
       vertices: []
       indices: 
       edges: []
@@ -1265,10 +1265,10 @@ TextureImporter:
       name: duck_idle_54
       rect:
         serializedVersion: 2
-        x: 1354
-        y: 745
-        width: 335
-        height: 373
+        x: 1204
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1276,8 +1276,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c6cc0a073cb3804d896ecb8715e2fee
-      internalID: 2039771097
+      spriteID: cec67392c90814f4cb84ff703a7df583
+      internalID: -251499505
       vertices: []
       indices: 
       edges: []
@@ -1286,10 +1286,10 @@ TextureImporter:
       name: duck_idle_55
       rect:
         serializedVersion: 2
-        x: 1956
-        y: 745
-        width: 336
-        height: 376
+        x: 1806
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1297,8 +1297,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 825d06f37bad3384498a9bc3fa4baff7
-      internalID: 592718676
+      spriteID: 5b85a6ac1fb79394cb0e978ae19878be
+      internalID: 771070418
       vertices: []
       indices: 
       edges: []
@@ -1307,10 +1307,10 @@ TextureImporter:
       name: duck_idle_56
       rect:
         serializedVersion: 2
-        x: 2558
-        y: 745
-        width: 337
-        height: 376
+        x: 2408
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1318,8 +1318,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4ea30e5ecb73d149a73a4bb4c73b428
-      internalID: -1465679984
+      spriteID: 8dc8a7af08a2a2040983b2843c0027ab
+      internalID: 2133699627
       vertices: []
       indices: 
       edges: []
@@ -1328,10 +1328,10 @@ TextureImporter:
       name: duck_idle_57
       rect:
         serializedVersion: 2
-        x: 3160
-        y: 745
-        width: 338
-        height: 378
+        x: 3010
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1339,8 +1339,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d6cea45ff93b7c49933c4f5ea9430b3
-      internalID: 1429995146
+      spriteID: f8897ed5a2f7ddf44bcd5567dfb6c697
+      internalID: 1112992784
       vertices: []
       indices: 
       edges: []
@@ -1349,10 +1349,10 @@ TextureImporter:
       name: duck_idle_58
       rect:
         serializedVersion: 2
-        x: 3763
-        y: 745
-        width: 336
-        height: 381
+        x: 3612
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1360,8 +1360,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b64f25c1a55912340aa8de062919272b
-      internalID: 837599695
+      spriteID: 76cdef86e17ab1e47bec4433e6b3bcfd
+      internalID: 343805232
       vertices: []
       indices: 
       edges: []
@@ -1370,10 +1370,10 @@ TextureImporter:
       name: duck_idle_59
       rect:
         serializedVersion: 2
-        x: 4366
-        y: 745
-        width: 336
-        height: 381
+        x: 4214
+        y: 602
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1381,8 +1381,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f86319b27a95d9458ceb4d82bcef929
-      internalID: -247927928
+      spriteID: cf63c85c70f1bfa418168707ecbbf633
+      internalID: 1970334520
       vertices: []
       indices: 
       edges: []
@@ -1391,10 +1391,10 @@ TextureImporter:
       name: duck_idle_60
       rect:
         serializedVersion: 2
-        x: 152
-        y: 142
-        width: 335
-        height: 383
+        x: 0
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1402,8 +1402,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a09b1c809ba4fec4f8d53061be6e1e7b
-      internalID: 829015771
+      spriteID: 452a8ccf720d44245be246818723c0a4
+      internalID: 909836018
       vertices: []
       indices: 
       edges: []
@@ -1412,10 +1412,10 @@ TextureImporter:
       name: duck_idle_61
       rect:
         serializedVersion: 2
-        x: 755
-        y: 142
-        width: 331
-        height: 386
+        x: 602
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1423,8 +1423,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4269f25714c1274469e6a2e521f0c4c9
-      internalID: 1385108553
+      spriteID: c890c1f9935768c468b0da522932e418
+      internalID: 1299799721
       vertices: []
       indices: 
       edges: []
@@ -1433,10 +1433,10 @@ TextureImporter:
       name: duck_idle_62
       rect:
         serializedVersion: 2
-        x: 1356
-        y: 142
-        width: 333
-        height: 386
+        x: 1204
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1444,8 +1444,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07066db8b666dab4981bf9106f318e95
-      internalID: -1794741528
+      spriteID: 0b097f68d1aecde4eb18320b53f34620
+      internalID: 1852160638
       vertices: []
       indices: 
       edges: []
@@ -1454,10 +1454,10 @@ TextureImporter:
       name: duck_idle_63
       rect:
         serializedVersion: 2
-        x: 1959
-        y: 142
-        width: 333
-        height: 388
+        x: 1806
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1465,8 +1465,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81e743e77c3ebbe4bbcfc0cb4f4f246a
-      internalID: -1654198820
+      spriteID: 43da707ccbbf6cc4d9b2a3b99e3c4b1a
+      internalID: 1617977352
       vertices: []
       indices: 
       edges: []
@@ -1475,10 +1475,10 @@ TextureImporter:
       name: duck_idle_64
       rect:
         serializedVersion: 2
-        x: 2561
-        y: 142
-        width: 334
-        height: 389
+        x: 2408
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1486,8 +1486,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 976e996613871f045bac88b3107d292e
-      internalID: -867179268
+      spriteID: a1e98661ce424e249b1f95d0b9c119ca
+      internalID: -612947576
       vertices: []
       indices: 
       edges: []
@@ -1496,10 +1496,10 @@ TextureImporter:
       name: duck_idle_65
       rect:
         serializedVersion: 2
-        x: 3163
-        y: 142
-        width: 333
-        height: 390
+        x: 3010
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1507,8 +1507,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fd5f812548f123479807d9d61f019d8
-      internalID: 875137403
+      spriteID: 2bfb925c9641da94fb5ffc680a80aebf
+      internalID: -2036252808
       vertices: []
       indices: 
       edges: []
@@ -1517,10 +1517,10 @@ TextureImporter:
       name: duck_idle_66
       rect:
         serializedVersion: 2
-        x: 3766
-        y: 142
-        width: 332
-        height: 391
+        x: 3612
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1528,8 +1528,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b60b36d089f6f834abe6a941edddd0cd
-      internalID: 1236967971
+      spriteID: 06ffbefe326d32a41b6bf2dfa8a0ce0b
+      internalID: -2137018796
       vertices: []
       indices: 
       edges: []
@@ -1538,10 +1538,10 @@ TextureImporter:
       name: duck_idle_67
       rect:
         serializedVersion: 2
-        x: 4369
-        y: 142
-        width: 329
-        height: 391
+        x: 4214
+        y: 0
+        width: 602
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1549,8 +1549,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d88bfe98683fb9448b09812cb81337f
-      internalID: -412892466
+      spriteID: af3d6fb9dbb2f404e880168d96649f86
+      internalID: -1730850944
       vertices: []
       indices: 
       edges: []
@@ -1558,7 +1558,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 571a2f34221befe4ca54a455ca290f12
+    spriteID: 409b894887f4ef94db808d523827446f
     internalID: 0
     vertices: []
     indices: 
@@ -1566,74 +1566,74 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      duck_idle_0: 640163298
-      duck_idle_18: -1801499243
-      duck_idle_54: 2039771097
-      duck_idle_6: 178849780
-      duck_idle_19: -2034512543
-      duck_idle_33: 282191454
-      duck_idle_51: -1552358639
-      duck_idle_63: -1654198820
-      duck_idle_3: 718621518
-      duck_idle_46: 923724449
-      duck_idle_22: 1184022238
-      duck_idle_58: 837599695
-      duck_idle_29: -1195000173
-      duck_idle_40: 1480456083
-      duck_idle_26: -1907481225
-      duck_idle_50: 714917362
-      duck_idle_13: 1498688108
-      duck_idle_42: 1035275242
-      duck_idle_9: -2065451573
-      duck_idle_36: 1598888757
-      duck_idle_31: 927522624
-      duck_idle_56: -1465679984
-      duck_idle_32: -588450373
-      duck_idle_15: 1271013241
-      duck_idle_49: -1944868441
-      duck_idle_28: 2081180036
-      duck_idle_14: -58168326
-      duck_idle_12: 910431023
-      duck_idle_27: -1713684563
-      duck_idle_24: -2072906782
-      duck_idle_43: 1772904575
-      duck_idle_62: -1794741528
-      duck_idle_11: 1103560076
-      duck_idle_25: 643421417
-      duck_idle_53: 1745091763
-      duck_idle_37: 1413304291
-      duck_idle_44: 2138754765
-      duck_idle_23: -1471307955
-      duck_idle_7: 1234121541
-      duck_idle_8: -48074454
-      duck_idle_39: 291543620
-      duck_idle_5: 871496290
-      duck_idle_57: 1429995146
-      duck_idle_61: 1385108553
-      duck_idle_52: -952999752
-      duck_idle_21: -852804161
-      duck_idle_38: 1220545145
-      duck_idle_41: -1888858565
-      duck_idle_2: 1507099336
-      duck_idle_34: 1480358676
-      duck_idle_64: -867179268
-      duck_idle_16: -782741051
-      duck_idle_48: 1354935072
-      duck_idle_45: 1035899487
-      duck_idle_65: 875137403
-      duck_idle_59: -247927928
-      duck_idle_17: 1013788359
-      duck_idle_47: 1281224751
-      duck_idle_20: -1320505663
-      duck_idle_55: 592718676
-      duck_idle_10: 909195111
-      duck_idle_1: 658014535
-      duck_idle_4: -1530678181
-      duck_idle_60: 829015771
-      duck_idle_35: 550955698
-      duck_idle_30: 474222567
-      duck_idle_66: 1236967971
-      duck_idle_67: -412892466
+      duck_idle_0: -1041086668
+      duck_idle_18: -1610163603
+      duck_idle_54: -251499505
+      duck_idle_6: -162218747
+      duck_idle_19: 2108820609
+      duck_idle_33: -1023654722
+      duck_idle_51: 957382829
+      duck_idle_63: 1617977352
+      duck_idle_3: 892882183
+      duck_idle_46: 1398308488
+      duck_idle_22: 462066880
+      duck_idle_58: 343805232
+      duck_idle_29: -918281683
+      duck_idle_40: 507848721
+      duck_idle_26: 109924685
+      duck_idle_50: -339276754
+      duck_idle_13: -566449923
+      duck_idle_42: 500573871
+      duck_idle_9: 852774233
+      duck_idle_36: -724367605
+      duck_idle_31: -806211108
+      duck_idle_56: 2133699627
+      duck_idle_32: 1287989418
+      duck_idle_15: -1943945762
+      duck_idle_49: -2058599647
+      duck_idle_28: 953012730
+      duck_idle_14: 104785041
+      duck_idle_12: -756354874
+      duck_idle_27: -297824437
+      duck_idle_24: 884040501
+      duck_idle_43: 1792952858
+      duck_idle_62: 1852160638
+      duck_idle_11: -201981967
+      duck_idle_25: -1390346314
+      duck_idle_53: -981549589
+      duck_idle_37: -1105156995
+      duck_idle_44: -168639530
+      duck_idle_23: -1204799638
+      duck_idle_7: 73904137
+      duck_idle_8: 710097668
+      duck_idle_39: -1857299539
+      duck_idle_5: 997734778
+      duck_idle_57: 1112992784
+      duck_idle_61: 1299799721
+      duck_idle_52: 2011259249
+      duck_idle_21: -1595194632
+      duck_idle_38: -1179074564
+      duck_idle_41: 1439189540
+      duck_idle_2: -1370534389
+      duck_idle_34: -532615016
+      duck_idle_64: -612947576
+      duck_idle_16: 1203316753
+      duck_idle_48: 888551619
+      duck_idle_45: -1032629942
+      duck_idle_65: -2036252808
+      duck_idle_59: 1970334520
+      duck_idle_17: -1747919714
+      duck_idle_47: -1880816484
+      duck_idle_20: 914505512
+      duck_idle_55: 771070418
+      duck_idle_10: -928154950
+      duck_idle_1: -1717647348
+      duck_idle_4: -1897826137
+      duck_idle_60: 909836018
+      duck_idle_35: 207327521
+      duck_idle_30: 726218396
+      duck_idle_66: -2137018796
+      duck_idle_67: -1730850944
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -71,7 +71,8 @@ public class AudioManager : MonoBehaviour
         songTimer -= Time.deltaTime;
         if (songTimer < 0)
             PlayBGM();
-        
+        if (playText)
+            PlayTextNoise();
                       
         
         // if (TestCrossFade == 1){
