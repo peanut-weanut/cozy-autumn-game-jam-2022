@@ -1,0 +1,1862 @@
+fileFormatVersion: 2
+guid: 8a9d993b942733d4bbd332b59149d5dd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bj_idle_0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 4933
+        width: 389
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b470c4db51681fe4ca713f3ed4cbca28
+      internalID: -2101020821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_1
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 4941
+        width: 391
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4960c31991e9db942b1a3ecb1a794c05
+      internalID: 1124279406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_2
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 4959
+        width: 392
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc57c50c6a03b44ba68261e02874dd0
+      internalID: -69581177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_3
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 4975
+        width: 386
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad28119776efe34aa3ac2a5c6de41ad
+      internalID: -1459870520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_4
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 4988
+        width: 386
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b35a96209c3044db38d3e2018c6a33
+      internalID: -1662561631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_5
+      rect:
+        serializedVersion: 2
+        x: 3118
+        y: 4983
+        width: 394
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc79cda0d0b3227459fcab270e253e8e
+      internalID: -761184659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_6
+      rect:
+        serializedVersion: 2
+        x: 3718
+        y: 4959
+        width: 397
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ced2819249708b46ba7b4f4028242d9
+      internalID: -1504078564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_7
+      rect:
+        serializedVersion: 2
+        x: 4321
+        y: 4943
+        width: 397
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14fe10dfebe436941b5618460b00e06f
+      internalID: 1147272734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_8
+      rect:
+        serializedVersion: 2
+        x: 4930
+        y: 4933
+        width: 389
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821552c631ebbe04894dfc91bf0726d7
+      internalID: -399866656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_9
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 4335
+        width: 392
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8389e45540485804aaedea1fb5af2918
+      internalID: 359906965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_10
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 4351
+        width: 381
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb603b54b9abde4a98d867b00ac7ad3
+      internalID: 1381292432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_11
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 4366
+        width: 375
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad46f297512da64d97bc6be1ecb3d20
+      internalID: -1548767721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_12
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 4364
+        width: 378
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40692798bb50dc9438d3fa9e8d13f639
+      internalID: 1729699736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_13
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 4361
+        width: 384
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5949d08daa2f5b64a934966e3f6da545
+      internalID: -126604462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_14
+      rect:
+        serializedVersion: 2
+        x: 3168
+        y: 4351
+        width: 384
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f137f9c42fb5bff489ad9fd8a10ac5fa
+      internalID: -1591967893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_15
+      rect:
+        serializedVersion: 2
+        x: 3771
+        y: 4345
+        width: 381
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b09b5870eea1594e8ea00bcf17abeff
+      internalID: 557763348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_16
+      rect:
+        serializedVersion: 2
+        x: 4364
+        y: 4345
+        width: 390
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04194ccf9d3da74399488fbd5bf0599
+      internalID: 1786247673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_17
+      rect:
+        serializedVersion: 2
+        x: 4927
+        y: 4332
+        width: 389
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f820928fd62a9554cbd38e74c4aec37b
+      internalID: -1258733266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_18
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 3747
+        width: 392
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1dc16296e0f0e04db6962bf8d10bed9
+      internalID: 554877728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_19
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 3761
+        width: 400
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d7e5f770e9d034d9a57ff3d4d78978
+      internalID: -825378177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_20
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 3769
+        width: 400
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b06eaaafb8bdb4f8d3ffa47418bf2b
+      internalID: -157493045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_21
+      rect:
+        serializedVersion: 2
+        x: 1946
+        y: 3763
+        width: 399
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb4e626adbcd0d4d91689a7270550ed
+      internalID: 397868405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_22
+      rect:
+        serializedVersion: 2
+        x: 2554
+        y: 3753
+        width: 392
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d774f184af8f640bcccd76243eb690
+      internalID: 2110969301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_23
+      rect:
+        serializedVersion: 2
+        x: 3160
+        y: 3739
+        width: 381
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ed7350c8e07c14a80acb7e1145d842
+      internalID: -670506335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_24
+      rect:
+        serializedVersion: 2
+        x: 3758
+        y: 3732
+        width: 383
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82db7b575f488144899df944cc68e7f2
+      internalID: 1595727745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_25
+      rect:
+        serializedVersion: 2
+        x: 4356
+        y: 3729
+        width: 383
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2f5a4d5cc9e5246b560311a0044490
+      internalID: -2058826843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_26
+      rect:
+        serializedVersion: 2
+        x: 4927
+        y: 3729
+        width: 389
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c413b99761e3efb4f8bed04e9e4e6e61
+      internalID: -731199744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_27
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 3128
+        width: 386
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4db1f3d9c58304c9f4beec03e51c8d
+      internalID: -1329695861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_28
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 3128
+        width: 389
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550c66911f138ec43b0dd95e4696d21f
+      internalID: -604592877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_29
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 3128
+        width: 389
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39452605e97d964ab17900e7d696720
+      internalID: -1529545846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_30
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 3128
+        width: 389
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8521cf2d8e41a40b18e21a2666fa94
+      internalID: 437871977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_31
+      rect:
+        serializedVersion: 2
+        x: 2549
+        y: 3128
+        width: 381
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4661db8f63f56e240afe45a021337bd2
+      internalID: -1812045248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_32
+      rect:
+        serializedVersion: 2
+        x: 3157
+        y: 3126
+        width: 373
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124da796f0e100747b370d6b1f60c606
+      internalID: 2042544344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_33
+      rect:
+        serializedVersion: 2
+        x: 3769
+        y: 3126
+        width: 365
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9d65233e910164e880f1860f3786bf
+      internalID: 245739147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_34
+      rect:
+        serializedVersion: 2
+        x: 4374
+        y: 3126
+        width: 365
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bcd82c459f3a91409e89415a8735603
+      internalID: 1830631380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_35
+      rect:
+        serializedVersion: 2
+        x: 4930
+        y: 3128
+        width: 391
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3ab651297234442b251950e3af2180
+      internalID: 1504025044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_36
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2525
+        width: 370
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e941a7d07de5c194bb905dbb6c4b5058
+      internalID: 2024344488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_37
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 2548
+        width: 375
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d57dd5c25a391c44918cca8ee9bb6e3
+      internalID: -1825660648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_38
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 2573
+        width: 375
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0db51fe8a1ca04187d869a6401a81d
+      internalID: 650065507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_39
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 2573
+        width: 376
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c2c326695f7ef42a4bcf555e34a702
+      internalID: 734043835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_40
+      rect:
+        serializedVersion: 2
+        x: 2525
+        y: 2557
+        width: 386
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3731a65e822bc8428efea17d765a5b3
+      internalID: -754468597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_41
+      rect:
+        serializedVersion: 2
+        x: 3128
+        y: 2538
+        width: 392
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71cdbdf56adc9e84883d00f9140f64b7
+      internalID: -874896660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_42
+      rect:
+        serializedVersion: 2
+        x: 3732
+        y: 2528
+        width: 388
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1569e0ded01c5e3489feff254b3a14b9
+      internalID: -1917902948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_43
+      rect:
+        serializedVersion: 2
+        x: 4335
+        y: 2525
+        width: 386
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b172ac18856dc4a98febcc03226f2b
+      internalID: 386420519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_44
+      rect:
+        serializedVersion: 2
+        x: 4930
+        y: 2525
+        width: 391
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639826fe6e1ea664eb156b3dfab3b1a2
+      internalID: 1126839457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_45
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1922
+        width: 387
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49347e39a0937254c9a660029698dbc5
+      internalID: 511675339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_46
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1922
+        width: 383
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26762808c827f364190570ffa244afca
+      internalID: -1969766903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_47
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 1922
+        width: 381
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718d6b751a2c4c642bb399244a0ab35d
+      internalID: -1992290860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_48
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 1922
+        width: 381
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43fa9a511bac71d46aef34b270000ed5
+      internalID: 769184844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_49
+      rect:
+        serializedVersion: 2
+        x: 2533
+        y: 1922
+        width: 384
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4526d6d8dd1e6944f866188db5efe65b
+      internalID: 1472841497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_50
+      rect:
+        serializedVersion: 2
+        x: 3134
+        y: 1922
+        width: 383
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a5c46b518d0304ea0cdf7ef55c5880
+      internalID: 1805760040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_51
+      rect:
+        serializedVersion: 2
+        x: 3734
+        y: 1922
+        width: 381
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baee502817141c4499497062b49c2a6d
+      internalID: 242168600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_52
+      rect:
+        serializedVersion: 2
+        x: 4335
+        y: 1922
+        width: 383
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1adf475157e504fa414e75d2b7f633
+      internalID: -852600752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_53
+      rect:
+        serializedVersion: 2
+        x: 4929
+        y: 1922
+        width: 392
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25821233a4703ac43911b036e8867850
+      internalID: -1726276647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_54
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1321
+        width: 384
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c2f993a38523d49b9f5a3a791e073b
+      internalID: -1410432293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_55
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 1321
+        width: 384
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95372e944e4ee4d4fb2f0da1b30e47f7
+      internalID: 1558102545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_56
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 1321
+        width: 383
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7b2654d301b0c4db52afff76c146b8
+      internalID: -1691904106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_57
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 1321
+        width: 384
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e804855c21b44348af44c6c094c65ed
+      internalID: -1116307044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_58
+      rect:
+        serializedVersion: 2
+        x: 2528
+        y: 1321
+        width: 383
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440fc56f911e81f40bf9edb9e8c46a67
+      internalID: -540497813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_59
+      rect:
+        serializedVersion: 2
+        x: 3128
+        y: 1321
+        width: 384
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91854afcb6584cd45b8a04614e43ebd0
+      internalID: -308659869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_60
+      rect:
+        serializedVersion: 2
+        x: 3729
+        y: 1321
+        width: 386
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db903f9a119768843a8d911e8bd120e5
+      internalID: -27814793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_61
+      rect:
+        serializedVersion: 2
+        x: 4329
+        y: 1321
+        width: 389
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584d9c24ff14d3d479e07e0f42b26c8a
+      internalID: 317663705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_62
+      rect:
+        serializedVersion: 2
+        x: 4930
+        y: 1321
+        width: 394
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9617a37a8ef68804bad622d6a327dda5
+      internalID: 37217968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_63
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 721
+        width: 390
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16307d7b33eb2fa4188eca145f6c6483
+      internalID: -780683026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_64
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 719
+        width: 391
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f4b1394fb70714d8798485992893b9
+      internalID: 1742325324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_65
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 720
+        width: 389
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa04093da28f3a459ce7a2f87728f16
+      internalID: 420312922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_66
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 719
+        width: 389
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2328aa11bf3cd1141b60d8fd25b63797
+      internalID: 532509006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_67
+      rect:
+        serializedVersion: 2
+        x: 2525
+        y: 719
+        width: 389
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9254d10ee3c623a488a5ba833f5b5dbe
+      internalID: -1353932792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_68
+      rect:
+        serializedVersion: 2
+        x: 3128
+        y: 720
+        width: 389
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71de1f6314218a849bffb69d40ae3c06
+      internalID: 1895684635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_69
+      rect:
+        serializedVersion: 2
+        x: 3729
+        y: 721
+        width: 391
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad84410a25ec70d4d9c5a357bf256707
+      internalID: -1483856062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_70
+      rect:
+        serializedVersion: 2
+        x: 4329
+        y: 721
+        width: 389
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73d7bdcc435eb5428a221e8616c4168
+      internalID: 305275499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_71
+      rect:
+        serializedVersion: 2
+        x: 4930
+        y: 719
+        width: 391
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef4f082d9314e8428da44ac6bf36c1d
+      internalID: -1364474624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_72
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 118
+        width: 394
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f9ce538ef31464eba393afdb1250f9
+      internalID: -244173198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_73
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 118
+        width: 391
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b4473f84ff9214aa43466ee714cc2e
+      internalID: -1611962235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_74
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 118
+        width: 391
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d9e435bee70f544ab4e2488de07590
+      internalID: 1223529916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_75
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 118
+        width: 392
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628d8e67cd5516d4da17318a0811743a
+      internalID: -1155272453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_76
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 118
+        width: 391
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e0c475268e00f4fa54115dba827ee9
+      internalID: 1701544302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bj_idle_77
+      rect:
+        serializedVersion: 2
+        x: 3126
+        y: 118
+        width: 391
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b8ae65a9ca9fc42be01c731eeea83f
+      internalID: -2108712725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 289e6e6579453384ebfbc98b339adce7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bj_idle_18: 554877728
+      bj_idle_73: -1611962235
+      bj_idle_9: 359906965
+      bj_idle_68: 1895684635
+      bj_idle_34: 1830631380
+      bj_idle_57: -1116307044
+      bj_idle_70: 305275499
+      bj_idle_43: 386420519
+      bj_idle_3: -1459870520
+      bj_idle_24: 1595727745
+      bj_idle_6: -1504078564
+      bj_idle_5: -761184659
+      bj_idle_63: -780683026
+      bj_idle_15: 557763348
+      bj_idle_12: 1729699736
+      bj_idle_38: 650065507
+      bj_idle_20: -157493045
+      bj_idle_51: 242168600
+      bj_idle_19: -825378177
+      bj_idle_69: -1483856062
+      bj_idle_37: -1825660648
+      bj_idle_58: -540497813
+      bj_idle_76: 1701544302
+      bj_idle_7: 1147272734
+      bj_idle_4: -1662561631
+      bj_idle_59: -308659869
+      bj_idle_25: -2058826843
+      bj_idle_41: -874896660
+      bj_idle_13: -126604462
+      bj_idle_47: -1992290860
+      bj_idle_33: 245739147
+      bj_idle_60: -27814793
+      bj_idle_49: 1472841497
+      bj_idle_16: 1786247673
+      bj_idle_71: -1364474624
+      bj_idle_30: 437871977
+      bj_idle_31: -1812045248
+      bj_idle_46: -1969766903
+      bj_idle_23: -670506335
+      bj_idle_67: -1353932792
+      bj_idle_45: 511675339
+      bj_idle_29: -1529545846
+      bj_idle_56: -1691904106
+      bj_idle_61: 317663705
+      bj_idle_42: -1917902948
+      bj_idle_66: 532509006
+      bj_idle_54: -1410432293
+      bj_idle_50: 1805760040
+      bj_idle_44: 1126839457
+      bj_idle_14: -1591967893
+      bj_idle_8: -399866656
+      bj_idle_72: -244173198
+      bj_idle_52: -852600752
+      bj_idle_48: 769184844
+      bj_idle_62: 37217968
+      bj_idle_55: 1558102545
+      bj_idle_65: 420312922
+      bj_idle_2: -69581177
+      bj_idle_28: -604592877
+      bj_idle_1: 1124279406
+      bj_idle_74: 1223529916
+      bj_idle_10: 1381292432
+      bj_idle_22: 2110969301
+      bj_idle_77: -2108712725
+      bj_idle_27: -1329695861
+      bj_idle_35: 1504025044
+      bj_idle_11: -1548767721
+      bj_idle_21: 397868405
+      bj_idle_64: 1742325324
+      bj_idle_32: 2042544344
+      bj_idle_0: -2101020821
+      bj_idle_75: -1155272453
+      bj_idle_36: 2024344488
+      bj_idle_53: -1726276647
+      bj_idle_17: -1258733266
+      bj_idle_39: 734043835
+      bj_idle_26: -731199744
+      bj_idle_40: -754468597
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

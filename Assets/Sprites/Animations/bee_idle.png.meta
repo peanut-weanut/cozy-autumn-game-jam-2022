@@ -1,0 +1,1378 @@
+fileFormatVersion: 2
+guid: 02fd407375e1ae442b056cd0672bee6d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bee_idle_0
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 3733
+        width: 376
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3e0fee08b4a144280964aeddfeea39
+      internalID: 471553176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_1
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 3735
+        width: 388
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5bdf637ee1c4ed418997f7dc6cd8a26
+      internalID: -665825068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_2
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 3735
+        width: 400
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c956711503cf541877fa2cbffdefe7
+      internalID: -1423234892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_3
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 3738
+        width: 409
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f95af0254fcbe50489d27a3cdf451eb3
+      internalID: 808823226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_4
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 3740
+        width: 411
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b7eda5df4b95c47a822bd77aface47
+      internalID: -490825612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_5
+      rect:
+        serializedVersion: 2
+        x: 3136
+        y: 3745
+        width: 401
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3b7fd6df4b2614bb784b42c8935bf6
+      internalID: 1442691442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_6
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 3747
+        width: 378
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d7339368110dd4ba7e60259b933b11
+      internalID: 3583048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_7
+      rect:
+        serializedVersion: 2
+        x: 4340
+        y: 3761
+        width: 367
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29077be5c3d5e0e48a7d2a18eb074bf5
+      internalID: 1352573120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_8
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 3149
+        width: 369
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f3e18e28b9c8a42b0b37f6057946cb
+      internalID: -519303497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_9
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 3152
+        width: 374
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514e471c71912564295e3b1d236a62c1
+      internalID: 1538343326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_10
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 3157
+        width: 383
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5aa06f86fa92734fa244e12115a2956
+      internalID: -685223698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_11
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 3162
+        width: 407
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aad32cd8b5b25746aced5c7a4aaddf5
+      internalID: 246306439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_12
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 3164
+        width: 407
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c2b654161eaa545ae6782e971a0e2a
+      internalID: -1386987368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_13
+      rect:
+        serializedVersion: 2
+        x: 3138
+        y: 3166
+        width: 405
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179b9a9053b2ce944848dbf4b4bd5492
+      internalID: -1009141833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_14
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 3171
+        width: 386
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd15e634b80caa941989d2b176b38bda
+      internalID: 1002884792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_15
+      rect:
+        serializedVersion: 2
+        x: 4340
+        y: 3155
+        width: 369
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74921db8418a334ba966987e4b536c5
+      internalID: -439330851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2571
+        width: 376
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29c455e54cc58c46a38dc9add6dbf51
+      internalID: -762041152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_17
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 2571
+        width: 390
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c30e2003771224bbfb4e29db11f70a
+      internalID: -465824020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_18
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 2571
+        width: 409
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d186bfb5bcd691340a8445acd8434e52
+      internalID: -1792546897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_19
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 2571
+        width: 411
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195be086490660c42bc733e8c592565d
+      internalID: -1143811577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_20
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 2569
+        width: 416
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7a267c076579e46a1019583444afdb
+      internalID: 638743331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_21
+      rect:
+        serializedVersion: 2
+        x: 3136
+        y: 2565
+        width: 402
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba73f6c59121bc42a679fe3f2880c09
+      internalID: -741859844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_22
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 2562
+        width: 383
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a1fc152f6e8544dbe0f73fe547c54f
+      internalID: 11208901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_23
+      rect:
+        serializedVersion: 2
+        x: 4340
+        y: 2546
+        width: 383
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63fe57e6d6acc54c802a6307faeea42
+      internalID: -934814081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_24
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1955
+        width: 369
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb15821c95e22174e9068f997cb86e2a
+      internalID: 256792075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_25
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1951
+        width: 371
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c72dab97ff429148963d2de4ada1690
+      internalID: -591497961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_26
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 1944
+        width: 388
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628d2f717391f0a4ab67f925c99ef631
+      internalID: 1951743791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_27
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 1939
+        width: 404
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c652a7e9167ecb4aad1cdfc8e4c048d
+      internalID: 90647653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_28
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 1934
+        width: 414
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc4bcf49b77fd040b07268c3219eea3
+      internalID: -648931292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_29
+      rect:
+        serializedVersion: 2
+        x: 3136
+        y: 1932
+        width: 407
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f058ca6592c30479c664f8643c1e91
+      internalID: -145705205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_30
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 1929
+        width: 393
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2caafd2c4c1174589a3474ad696a9a
+      internalID: 1455329973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_31
+      rect:
+        serializedVersion: 2
+        x: 4340
+        y: 1939
+        width: 404
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ad3ed2657cfeb498346558e455c8db
+      internalID: 461798695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_32
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1325
+        width: 371
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef58c77deafdf5b4889c872e9823feae
+      internalID: -1808804823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_33
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1327
+        width: 385
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f066a4c182355b4dbfca68b361034a3
+      internalID: 1366981662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_34
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 1327
+        width: 407
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb475a801672f641b7ef1365478df31
+      internalID: -1374081239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_35
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 1330
+        width: 404
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77f15baa1c42594c8757e6f29a6825a
+      internalID: 834568471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_36
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 1332
+        width: 407
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8cc7ea157117f34687feb9253276787
+      internalID: -1524440943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_37
+      rect:
+        serializedVersion: 2
+        x: 3136
+        y: 1337
+        width: 402
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2a47c6cff04454c830b8711a0cac50
+      internalID: -949325260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_38
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 1339
+        width: 381
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67dfe0b4403a5a54199e22b7b9a379a9
+      internalID: 1804545756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_39
+      rect:
+        serializedVersion: 2
+        x: 4340
+        y: 1332
+        width: 414
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76239f07d77ffe94b9372ade3de31454
+      internalID: -66431038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_40
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 741
+        width: 369
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be9e410a483fa54fafd681a2c2ccb8b
+      internalID: -1275838122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_41
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 744
+        width: 371
+        height: 421
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2f124849c826844afdeeec3afb255f
+      internalID: 1639303863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_42
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 749
+        width: 385
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03549c18f3fdda946a798ab893336e21
+      internalID: 360136024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_43
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 754
+        width: 400
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43fbb98a8aa3334e9ca61b9f0279689
+      internalID: 2069764017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_44
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 756
+        width: 413
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161053e224e0efe4f9edcceb6cbac666
+      internalID: -316381046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_45
+      rect:
+        serializedVersion: 2
+        x: 3138
+        y: 758
+        width: 414
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a6ff99f21079d45b4b7db87516c5d6
+      internalID: -1434532646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_46
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 763
+        width: 393
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16237018cc0efa4496bfc34ec1763ec
+      internalID: 266967872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_47
+      rect:
+        serializedVersion: 2
+        x: 4340
+        y: 728
+        width: 409
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3925f7c735512eb489d6a7b8e380f197
+      internalID: 757879650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_48
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 163
+        width: 374
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 361bbc4ee8942c64da9941677db724e9
+      internalID: -994060625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_49
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 163
+        width: 388
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358c434c564124e4fa0c80fe37265ae6
+      internalID: 578487986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_50
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 163
+        width: 405
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ba13b396588814db998102c6479bcb
+      internalID: 1242208844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_51
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 163
+        width: 414
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af22c4736b4b7646b225f39dc787c39
+      internalID: -804881062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_52
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 161
+        width: 411
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0504249046e24114bb4e022126515b27
+      internalID: 1624223025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_53
+      rect:
+        serializedVersion: 2
+        x: 3136
+        y: 157
+        width: 404
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bce1694cb71c8645b54dc68bfc65d91
+      internalID: -203769065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_54
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 154
+        width: 383
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c2d4ad19645cf4c88abb74ea9c1819
+      internalID: -1267049399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_idle_55
+      rect:
+        serializedVersion: 2
+        x: 4340
+        y: 123
+        width: 390
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e4bd2a979be4a4995e65ca5b377079
+      internalID: -880468458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f50caa1d8a8d5ee4ba9d2c2352ca50d2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bee_idle_34: -1374081239
+      bee_idle_38: 1804545756
+      bee_idle_39: -66431038
+      bee_idle_23: -934814081
+      bee_idle_14: 1002884792
+      bee_idle_26: 1951743791
+      bee_idle_6: 3583048
+      bee_idle_22: 11208901
+      bee_idle_42: 360136024
+      bee_idle_40: -1275838122
+      bee_idle_13: -1009141833
+      bee_idle_55: -880468458
+      bee_idle_47: 757879650
+      bee_idle_49: 578487986
+      bee_idle_1: -665825068
+      bee_idle_48: -994060625
+      bee_idle_31: 461798695
+      bee_idle_44: -316381046
+      bee_idle_51: -804881062
+      bee_idle_24: 256792075
+      bee_idle_43: 2069764017
+      bee_idle_16: -762041152
+      bee_idle_20: 638743331
+      bee_idle_54: -1267049399
+      bee_idle_12: -1386987368
+      bee_idle_15: -439330851
+      bee_idle_19: -1143811577
+      bee_idle_41: 1639303863
+      bee_idle_9: 1538343326
+      bee_idle_53: -203769065
+      bee_idle_7: 1352573120
+      bee_idle_3: 808823226
+      bee_idle_28: -648931292
+      bee_idle_8: -519303497
+      bee_idle_4: -490825612
+      bee_idle_17: -465824020
+      bee_idle_21: -741859844
+      bee_idle_27: 90647653
+      bee_idle_29: -145705205
+      bee_idle_10: -685223698
+      bee_idle_36: -1524440943
+      bee_idle_11: 246306439
+      bee_idle_46: 266967872
+      bee_idle_18: -1792546897
+      bee_idle_32: -1808804823
+      bee_idle_33: 1366981662
+      bee_idle_37: -949325260
+      bee_idle_5: 1442691442
+      bee_idle_35: 834568471
+      bee_idle_30: 1455329973
+      bee_idle_52: 1624223025
+      bee_idle_2: -1423234892
+      bee_idle_45: -1434532646
+      bee_idle_0: 471553176
+      bee_idle_25: -591497961
+      bee_idle_50: 1242208844
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

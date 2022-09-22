@@ -1,0 +1,1532 @@
+fileFormatVersion: 2
+guid: 368bb60df8f180b4bba0159cf355dee8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bird_idle_0
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 4356
+        width: 322
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63809cc9ecc9f11458cd87896298faaf
+      internalID: 840318743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_1
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 4356
+        width: 322
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c9f2c75c37be3448f3be4fb11e05c5
+      internalID: -1791354961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_2
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 4356
+        width: 325
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02982e911898ed429e824828bc368fd
+      internalID: -1544992646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_3
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 4356
+        width: 325
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb05e1075bc51e4e9e785062f81601a
+      internalID: -1319871364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_4
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 4356
+        width: 325
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbfac365cc970374bafb58dd7cfdf1ed
+      internalID: -1209134773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_5
+      rect:
+        serializedVersion: 2
+        x: 3171
+        y: 4356
+        width: 325
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da08bdf0e5d228340aaefd95a5b2c4f3
+      internalID: 1304963157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_6
+      rect:
+        serializedVersion: 2
+        x: 3773
+        y: 4356
+        width: 325
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71c1c82131ede64eb8322aceaaa4f55
+      internalID: 625805894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_7
+      rect:
+        serializedVersion: 2
+        x: 4373
+        y: 4356
+        width: 324
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed91d83c3d4e28a4099a77e2c7663bad
+      internalID: 1910165361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_8
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 3754
+        width: 325
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21f5366ff5c63c49ad7caa0a8757f54
+      internalID: 221890044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_9
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 3754
+        width: 325
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2865c8ae794ac4483cdc6e06f05e95
+      internalID: 1346280999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_10
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 3754
+        width: 325
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef44b8b35b0263145a921c73377d3e04
+      internalID: 1117011097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_11
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 3754
+        width: 325
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa76062d5108f364f8bfc5ec02944ef8
+      internalID: 1427035732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_12
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 3754
+        width: 323
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8456866d723b2c64685da5383e0b4bcb
+      internalID: -555935518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_13
+      rect:
+        serializedVersion: 2
+        x: 3173
+        y: 3754
+        width: 323
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b6ce9972b078640862bdd11c4e8951
+      internalID: 1784737915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_14
+      rect:
+        serializedVersion: 2
+        x: 3775
+        y: 3754
+        width: 323
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc68c711ae41bf94faa3d3d1ef1bfac6
+      internalID: -521536436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_15
+      rect:
+        serializedVersion: 2
+        x: 4371
+        y: 3754
+        width: 329
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ec3c3241234ff48adc1b6ced0e94be
+      internalID: 498978929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_16
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 3152
+        width: 323
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57345a6ed83c32f4d885a01eacfa12df
+      internalID: -894050809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_17
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 3152
+        width: 325
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed899cf5a15abf439767e09340f51f5
+      internalID: 492194985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_18
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 3152
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39450704c4ca9d645a280288ed79e507
+      internalID: -562134452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_19
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 3152
+        width: 327
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0fd850564ca2c7418b74a5c149cc34b
+      internalID: 1843052604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_20
+      rect:
+        serializedVersion: 2
+        x: 2567
+        y: 3152
+        width: 327
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c87b3ab0e4e3c47a4891d1ca9fc2be
+      internalID: 1858623402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_21
+      rect:
+        serializedVersion: 2
+        x: 3167
+        y: 3152
+        width: 329
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34f97ea7803e214987370e564146285
+      internalID: -1611146491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_22
+      rect:
+        serializedVersion: 2
+        x: 3768
+        y: 3152
+        width: 330
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52cf9c94d1ded34a8e754edd810e9c6
+      internalID: 1428410087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_23
+      rect:
+        serializedVersion: 2
+        x: 4370
+        y: 3152
+        width: 330
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293dc9a74a381114ca4fe1b25527ac79
+      internalID: -1959984825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_24
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2550
+        width: 330
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45751007e8d1fbc4889219245afad8e7
+      internalID: -1098164505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_25
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 2550
+        width: 330
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d2af1ef6891394387eba5afbc71a58
+      internalID: -1482207066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_26
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 2550
+        width: 330
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b37a0b33e70f8f4fb784beb90e117a9
+      internalID: -1017535252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_27
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 2550
+        width: 329
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0495f2ca91eee49a7b065b8bcb0c15
+      internalID: 1331484450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_28
+      rect:
+        serializedVersion: 2
+        x: 2567
+        y: 2550
+        width: 327
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f6abc0c4b3ede4a995ab8584411eff
+      internalID: 1297620030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_29
+      rect:
+        serializedVersion: 2
+        x: 3169
+        y: 2550
+        width: 327
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a272f6a96aeeb2488d005fde1e99020
+      internalID: -2073164034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_30
+      rect:
+        serializedVersion: 2
+        x: 3771
+        y: 2550
+        width: 327
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d15d01b300ecc4986e985b7e34e719
+      internalID: -229777909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_31
+      rect:
+        serializedVersion: 2
+        x: 4370
+        y: 2550
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35dae931ce1fa447b3b039843d23fd0
+      internalID: 1595521778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_32
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1948
+        width: 327
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e1f37581b2ff945b3561430e502b52
+      internalID: -2063465367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_33
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 1948
+        width: 322
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77b7eaf4267d58458699b322589f78e
+      internalID: 601766273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_34
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 1948
+        width: 322
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56106007c1e4c704f9ddb342a971e078
+      internalID: 1217691476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_35
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 1948
+        width: 322
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4460740be5ca82748a03c50ac2c46bec
+      internalID: -1218581970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_36
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 1948
+        width: 322
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce2a208422eb0a468f7a4586e0d04ed
+      internalID: -1651504647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_37
+      rect:
+        serializedVersion: 2
+        x: 3171
+        y: 1948
+        width: 325
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b32695bbc9ce24cbdb5d09099a397a
+      internalID: -304166122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_38
+      rect:
+        serializedVersion: 2
+        x: 3773
+        y: 1948
+        width: 325
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb96f458adac40140bf76641d118d5fc
+      internalID: -1487674927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_39
+      rect:
+        serializedVersion: 2
+        x: 4370
+        y: 1948
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc18fee91ec26144b24e325db3d71c5
+      internalID: 1186205016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_40
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1346
+        width: 325
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2125f758ede62ae4ea9f4157971000bd
+      internalID: 488070395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_41
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 1346
+        width: 325
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cec95388e507134fabacd60ecaecea3
+      internalID: -711174163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_42
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 1346
+        width: 325
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce1be9b41eecd449a73877c9433d773
+      internalID: 1699657370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_43
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 1346
+        width: 325
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6688a0b11bf3349a9bb20123d216c0
+      internalID: -1380654906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_44
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 1346
+        width: 325
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392164fc512e6d744ae228db6fd721ed
+      internalID: 1319306928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_45
+      rect:
+        serializedVersion: 2
+        x: 3171
+        y: 1346
+        width: 325
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec58ae88b3699ce44bbc7d783c3524c4
+      internalID: 1482575738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_46
+      rect:
+        serializedVersion: 2
+        x: 3773
+        y: 1346
+        width: 325
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d17c0f5ba766be54d834ce3cea9895dd
+      internalID: 916459276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_47
+      rect:
+        serializedVersion: 2
+        x: 4371
+        y: 1346
+        width: 326
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b06b7333f3b3d740b0361976df14cec
+      internalID: 1474291269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_48
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 744
+        width: 325
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087c24777c313a6499731093850fa59e
+      internalID: -498139966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_49
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 744
+        width: 325
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe77409ae24d3d41934fdfca6c65cef
+      internalID: -892840425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_50
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 744
+        width: 325
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0696ad5c9eaa73a419f1d372ac1634c5
+      internalID: -657134626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_51
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 744
+        width: 327
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0112aecccf5cdf146a5b26107d79adf9
+      internalID: 645315589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_52
+      rect:
+        serializedVersion: 2
+        x: 2567
+        y: 744
+        width: 324
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08960c3e034c574bb7607e7522f8e45
+      internalID: 695289400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_53
+      rect:
+        serializedVersion: 2
+        x: 3169
+        y: 744
+        width: 322
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1b05cf74f838b45a3ce3bb7d0a502a
+      internalID: -2054572504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_54
+      rect:
+        serializedVersion: 2
+        x: 3771
+        y: 744
+        width: 322
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412c6b50492c3874190915aa6b7d7c4f
+      internalID: -1570277637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_55
+      rect:
+        serializedVersion: 2
+        x: 4371
+        y: 744
+        width: 326
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca15b002f69d3604f933274ae31b9b7d
+      internalID: -792216650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_56
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 142
+        width: 324
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7042118deaddb84aa25856f2cb66e31
+      internalID: 421758115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_57
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 142
+        width: 324
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a05e6867dba77438a2fc91b6a93775
+      internalID: -621490067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_58
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 142
+        width: 324
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b050c74cc704b2046b43a4836d580ef1
+      internalID: 526180667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_59
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 142
+        width: 322
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b5f5987dc57d246bfcfc90dd4d4f9b
+      internalID: 1915058561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_60
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 142
+        width: 325
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697c1eaacf2055f448eb5b7f42f57180
+      internalID: 1002457666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_61
+      rect:
+        serializedVersion: 2
+        x: 3171
+        y: 142
+        width: 322
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d89eb57cb2c0a429f2a3977e1ae9cc
+      internalID: -1693361871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_idle_62
+      rect:
+        serializedVersion: 2
+        x: 3773
+        y: 142
+        width: 322
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179acf92422814d46952d9f294e473b2
+      internalID: 1274024958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 05d4b071ee4558c49913e04640e3c9cf
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bird_idle_39: 1186205016
+      bird_idle_50: -657134626
+      bird_idle_31: 1595521778
+      bird_idle_58: 526180667
+      bird_idle_41: -711174163
+      bird_idle_62: 1274024958
+      bird_idle_33: 601766273
+      bird_idle_53: -2054572504
+      bird_idle_3: -1319871364
+      bird_idle_25: -1482207066
+      bird_idle_15: 498978929
+      bird_idle_49: -892840425
+      bird_idle_52: 695289400
+      bird_idle_7: 1910165361
+      bird_idle_9: 1346280999
+      bird_idle_14: -521536436
+      bird_idle_59: 1915058561
+      bird_idle_45: 1482575738
+      bird_idle_26: -1017535252
+      bird_idle_35: -1218581970
+      bird_idle_5: 1304963157
+      bird_idle_30: -229777909
+      bird_idle_18: -562134452
+      bird_idle_28: 1297620030
+      bird_idle_46: 916459276
+      bird_idle_55: -792216650
+      bird_idle_24: -1098164505
+      bird_idle_23: -1959984825
+      bird_idle_60: 1002457666
+      bird_idle_48: -498139966
+      bird_idle_16: -894050809
+      bird_idle_20: 1858623402
+      bird_idle_51: 645315589
+      bird_idle_43: -1380654906
+      bird_idle_38: -1487674927
+      bird_idle_47: 1474291269
+      bird_idle_0: 840318743
+      bird_idle_57: -621490067
+      bird_idle_19: 1843052604
+      bird_idle_54: -1570277637
+      bird_idle_34: 1217691476
+      bird_idle_42: 1699657370
+      bird_idle_6: 625805894
+      bird_idle_29: -2073164034
+      bird_idle_56: 421758115
+      bird_idle_4: -1209134773
+      bird_idle_10: 1117011097
+      bird_idle_17: 492194985
+      bird_idle_32: -2063465367
+      bird_idle_27: 1331484450
+      bird_idle_2: -1544992646
+      bird_idle_11: 1427035732
+      bird_idle_40: 488070395
+      bird_idle_44: 1319306928
+      bird_idle_8: 221890044
+      bird_idle_12: -555935518
+      bird_idle_22: 1428410087
+      bird_idle_61: -1693361871
+      bird_idle_37: -304166122
+      bird_idle_36: -1651504647
+      bird_idle_21: -1611146491
+      bird_idle_13: 1784737915
+      bird_idle_1: -1791354961
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

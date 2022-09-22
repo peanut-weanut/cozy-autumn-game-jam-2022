@@ -6,6 +6,8 @@ position: 0,0
 // <<Me>> and <<Them>> are custom commands implemented in PhoneChatDialogueHelper.cs
 
 // beginning of the game
+
+
 <<Me>>
 Hey, what's up? I heard you graduated!
 <<wait 3.5>>
@@ -38,17 +40,19 @@ somewhere cool?
 Hold on
 <<wait 4.5>>
 Let me send you a drawing
-<<wait 4.5>>
+<<wait 1>>
+<<StartMusic>>
+<<wait 7.5>>
 
 <<Them>>
 hmm alright
-<<wait 6>>
+<<wait 3>>
 just so you know
 <<wait 3>>
 you can use your mouse to look around and find interesting things to draw
 <<wait 4>>
 when you find something interesting to draw you can press space to take your sketchbook out
-<<wait 4>>
+<<wait 6>>
 
 <<Me>>
 x: Oh, I just brought a few sheets of paper today :p
@@ -71,9 +75,10 @@ okok ill let you draw now
 
 // display tutorial
 // <<SetTrigger tutorial>>
-<<StartMusic>>
-<<AdvanceState>> //-1 to 0
-<<Stop>>
+
+<<SetState -1>> //-1 to 0
+
+<<stop>>
 // <<jump PromptPlaque>>
 ===
 
@@ -93,6 +98,7 @@ tags:
 colorID: 0
 position: 0,0
 ---
+<<ResetMusic>>
 <<Me>>
 <<DisplayImage>>
 <<Them>>
@@ -149,7 +155,7 @@ position: 0,0
 <<Me>>
 <<wait 1>>
 Tada!
-<<wait 1.5>>
+<<wait 3.5>>
 
 <<Them>>
 did we ever even read what that said
@@ -191,8 +197,10 @@ Anything that was written there is long gone
 aww
 
 // <<SetTrigger stage1_Dialogue>>
-<<AdvanceMusic>>
-<<AdvanceState>> //0 to 1
+<<SetState 1>> //0 to 1
+<<wait 3>>
+
+
 <<Stop>>
 ===
 
@@ -227,7 +235,7 @@ That actually reminds me of something...
 <<wait 3.5>>
 Hold on, lemme draw it
 
-<<PlayMusic>>
+<<ResetMusic>>
 
 // <<SetTrigger stage1_makeDrawable>>
 
@@ -346,8 +354,8 @@ x: :)
 yeah i guess im lame too
 
 // <<SetTrigger stage2_Dialogue>>
-<<AdvanceMusic>>
-<<AdvanceState>>
+
+<<SetState 2>>
 
 <<Stop>>
 ===
@@ -397,7 +405,7 @@ But you lived...
 Drama queen!
 
 // <<SetTrigger stage2_Dialogue>>
-<<AdvanceState>>
+<<SetState 2>>
 
 <<Stop>>
 ===
@@ -419,15 +427,22 @@ colorID: 0
 position: 0,0
 ---
 // STAGE 3
+<<wait 7>>
+<<Them>>
+well, anyways
+<<wait 3>>
+any cute critters around?
+<<wait 4>>
+<<Me>>
+A few... I can take some photos if you'd like
 <<wait 5>>
 <<Them>>
-any cute critters around?
-//a few... i can take some photos if youd like
-//no dummy 
-//i want you to draw them
+no dummy
+<<wait 4>> 
+i want you to draw them
 
 // <<SetTrigger stage2_makeDrawable>>
-<<PlayMusic>>
+<<ResetMusic>>
 <<Stop>>
 ===
 
@@ -486,8 +501,8 @@ thats one brave bee...
 <<Me>>
 Indeed...
 
-<<AdvanceMusic>>
-<<AdvanceState>>
+
+<<SetState 3>>
 
 
 <<Stop>>
@@ -521,8 +536,8 @@ yeah i guess thats true
 <<wait 3.5>>
 there's a lot of things there for a woodpecker to enjoy
 
-<<AdvanceMusic>>
-<<AdvanceState>>
+
+<<SetState 3>>
 
 <<Stop>>
 ===
@@ -561,8 +576,8 @@ I'll take the compliment.
 <<wait 3>>
 What else to draw...?
 
-<<AdvanceMusic>>
-<<AdvanceState>>
+
+<<SetState 3>>
 
 <<Stop>>
 ===
@@ -592,7 +607,7 @@ you've been drawing there for a while
 is there anywhere to sit down?
 
 // <<SetTrigger stage3_makeDrawable>>
-<<PlayMusic>>
+<<ResetMusic>>
 <<Stop>>
 ===
 
@@ -678,8 +693,8 @@ Yeah.
 <<wait 2.5>>
 Me too.
 
-<<AdvanceMusic>>
-<<AdvanceState>>
+
+<<SetState 4>>
 
 
 <<Stop>>
@@ -753,8 +768,8 @@ LOL???
 <<Me>>
 Yep...
 
-<<AdvanceMusic>>
-<<AdvanceState>>
+
+<<SetState 4>>
 
 
 <<Stop>>
@@ -822,8 +837,8 @@ hmm
 <<wait 5>>
 i guess things change
 
-<<AdvanceMusic>>
-<<AdvanceState>>
+
+<<SetState 4>>
 
 
 <<Stop>>
@@ -877,7 +892,7 @@ is it japan
 <<Me>>
 I'll start drawing now
 <<wait 1>>
-<<PlayMusic>>
+<<ResetMusic>>
 <<wait 4>>
 
 //[Dessa will send texts every 5-8 seconds guessing what it is, until you trigger the PoI trigger on the lakehouse]
@@ -912,7 +927,6 @@ i think i have an idea
 
 
 // <<SetTrigger stage4_makeDrawable>>
-<<AdvanceState>>
 
 <<Stop>>
 ===
@@ -970,7 +984,7 @@ IM gonna send you a drawing
 
 //[Pause for about 5 seconds or so]
 <<wait 10>>
-<<DisplayMoneyshot>>
+//<<DisplayMoneyshot>>
 tada!
 it's us 
 
