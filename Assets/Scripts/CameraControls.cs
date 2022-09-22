@@ -22,7 +22,8 @@ public class CameraControls : MonoBehaviour
     public Image lookSprite;
     public delegate void POISeenDelegate();
     public POISeenDelegate POISeen;
-    public GameObject currentPOI;
+    public List<GameObject> currentPOI = new List<GameObject>();
+    public GameObject realCurrentPOI;
 
     // Start is called before the first frame update
     public enum states {
@@ -83,7 +84,14 @@ public class CameraControls : MonoBehaviour
             POITimer = 0;
             StartTimer = false;
             DebugPOISeen = true;
-            currentPOI = null;
+            currentPOI.Clear();
+        }
+        if (state == states.LOOKING){
+            if (POISeenCancelBuffer > 0.0f){
+                POISeenCancelBuffer -= Time.deltaTime;
+            } else if (POISeenCancelBuffer <= 0.0f){
+                DebugPOISeen = false;
+            }
         }
     }
     public bool StartTimer = false;
@@ -100,6 +108,7 @@ public class CameraControls : MonoBehaviour
             
         }
     }
+    public float POISeenCancelBufferTime, POISeenCancelBuffer = 2.0f;
     void ToggleState(){
         Debug.Log("Tried to toggle.");
         lookSprite.enabled = !lookSprite.enabled;
@@ -124,39 +133,64 @@ public class CameraControls : MonoBehaviour
                 }
                 state = states.LOOKING;
                 StartTimer = false;
-                DebugPOISeen = false;
+                // DebugPOISeen = false;
+                POISeenCancelBuffer = POISeenCancelBufferTime;
                 //Cursor.SetCursor(cursorSpriteDraw, Vector2.zero, CursorMode.Auto);
                 Cursor.lockState = CursorLockMode.Locked;
             break;
         }
     }
     bool CheckPOIs(){
+        currentPOI.Clear();
+        realCurrentPOI = null;
         for(int i = 0; i < GameManager.game.POIs.Length-1; i++){
-            if (GameManager.game.POIs[i].GetComponent<Renderer>().isVisible){
+            var newCPOI = GameManager.game.POIs[i];
+            var frustumPlanes = GeometryUtility.CalculateFrustumPlanes(Camera.main);
+            bool POIVisible = GeometryUtility.TestPlanesAABB(frustumPlanes,GameManager.game.POIs[i].GetComponent<Renderer>().bounds);
+            if (POIVisible){
                 //run the script that starts selecting
                 if (GameManager.game.POIs[i].GetComponent<POIScript>().isDrawable){
-                    currentPOI = GameManager.game.POIs[i];
-                    Debug.Log(i + " is visible and drawable! \n" + currentPOI.name + " is your current POI.");
-                    return true;
+                    currentPOI.Add(GameManager.game.POIs[i]);
+                    PrioritizePOI();
+                    Debug.Log(newCPOI.name + " is visible and drawable! \n" + realCurrentPOI.name + " is your current POI.");
+                    
                 }
                 else{
-                    Debug.Log(i + " is visible!");
-                    return false;
+                    Debug.Log(newCPOI.name + " is visible!");
+                    
                 }
             } else {
-                Debug.Log(i + " is not visible!");
-                return false;
+                Debug.Log(newCPOI.name + " is not visible!");
+                
             }                     
         }
+        if (currentPOI.Count > 0)
+            return true;
         return false;
     }
-    void InheritRotation(GameObject cam){
-        cam.GetComponent<CinemachineVirtualCamera>().transform.rotation = Camera.main.transform.rotation;
+    void PrioritizePOI(){
+        int i = 0;
+        float camAngle = Camera.main.transform.forward.y;
+        float minAngle = 180.0f;
+        int min = i;
+        foreach(GameObject POI in currentPOI){
+            if(Mathf.Abs(Camera.main.transform.position.y - POI.transform.position.y) < minAngle){
+                minAngle = Mathf.Abs(Camera.main.transform.position.y - POI.transform.position.y);
+                min = i;
+            }  
+            i++;  
+            
+        }
+        realCurrentPOI = currentPOI[min];
+        
     }
-    public void MatchCameras(int hackyIndex)
-    {
-        //Match Values : follow offset, position & rotation
-            cameras[hackyIndex].GetComponent<CinemachineVirtualCamera>().ForceCameraPosition(transform.position, Camera.main.transform.rotation);
-    }
+    // void InheritRotation(GameObject cam){
+    //     cam.GetComponent<CinemachineVirtualCamera>().transform.rotation = Camera.main.transform.rotation;
+    // }
+    // public void MatchCameras(int hackyIndex)
+    // {
+    //     //Match Values : follow offset, position & rotation
+    //         cameras[hackyIndex].GetComponent<CinemachineVirtualCamera>().ForceCameraPosition(transform.position, Camera.main.transform.rotation);
+    // }
 
 }

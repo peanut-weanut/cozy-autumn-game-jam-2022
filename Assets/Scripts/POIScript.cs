@@ -12,7 +12,7 @@ public class POIScript : MonoBehaviour
     public bool triggerActive;
     private Renderer render;
     private string myTag;
-    
+    List<int> activeIndices = new List<int>();
     
     private void Start(){
         GameManager.game.OnListUpdate += CheckTrigger;
@@ -29,11 +29,11 @@ public class POIScript : MonoBehaviour
         isVisible = false;  
     }
     void CheckMe(){
-        if(GameManager.game.camControls.currentPOI == this.transform.gameObject){
-            isDrawable = false;
-            LockType();
-            Debug.Log(this.transform.name + " has just checked itself.");
-        }
+            if(GameManager.game.camControls.realCurrentPOI == this.transform.gameObject){
+                isDrawable = false;
+                LockType();
+                Debug.Log(this.transform.name + " has just checked itself.");
+            }
     }
     void LockType(){
         var myType = GameObject.FindGameObjectsWithTag(myTag);
@@ -42,20 +42,19 @@ public class POIScript : MonoBehaviour
         }
     }
     void CheckTrigger(){
-        int badCount = 0;
-        int goodCount = 0;
-        foreach(Trigger t in myTrigger){
-            goodCount++;
-            if (GameManager.game.triggersActive.Contains(t)){
+        activeIndices.Clear();
+        for(int i  = 0; i < myTrigger.Length-1; i++){
+            
+            if (GameManager.game.triggersActive.Contains(myTrigger[i])){
                 triggerActive = true;
+                activeIndices.Add(i);
             } else{
-                badCount++;
             }
-            if (badCount == goodCount)
-                triggerActive = false;
-            ExecuteTrigger(t);
+            
             // Debug.Log(this.transform.name + " checked " + t.id);
         }
+        foreach (int i in activeIndices)
+            ExecuteTrigger(myTrigger[i]);
         
     }
     void ExecuteTrigger(Trigger trigger){

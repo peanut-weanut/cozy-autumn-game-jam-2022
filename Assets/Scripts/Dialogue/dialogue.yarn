@@ -3,13 +3,8 @@ tags:
 colorID: 0
 position: 0,0
 ---
-<<jump Intro>>
-===
-title: Intro
-tags: 
-colorID: 0
-position: 0,0
----
+// <<Me>> and <<Them>> are custom commands implemented in PhoneChatDialogueHelper.cs
+
 // beginning of the game
 <<Me>>
 Hey, what's up? I heard you graduated!
@@ -18,43 +13,79 @@ How have you been these days?
 <<wait 3.5>>
 
 <<Them>>
-heyyyy
-<<wait 3.5>>
-been good
-<<wait 3.5>>
-its hard to find work right now with my major
+heyyy
+<<wait 4.5>>
+long time no see
 <<wait 4>>
 
 <<Me>>
-Awe, that sucks.
-<<wait 2.5>>
-You've been good otherwise?
+I know, right!
 <<wait 3.5>>
-
-<<Them>>
-yeah i actually moved into a new apartment in downtown boston
-<<wait 4.75>>
-
-<<Me>>
-That's awesome!
-<<wait 2.5>>
-x: Hey I'm actually somewhere pretty cool too :)
+You've been good?
+<<wait 4.5>>
+x: You'll never guess where I am right now... :)
 <<wait 4.5>>
 
 <<Them>>
-oh word?
+ive been good
+<<wait 4.75>>
+hmm where are you
+<<wait 4.5>>
+somewhere cool?
 <<wait 3.5>>
 
 <<Me>>
 Hold on
-<<wait 2.5>>
+<<wait 4.5>>
 Let me send you a drawing
+<<wait 4.5>>
+
+<<Them>>
+hmm alright
+<<wait 6>>
+just so you know
+<<wait 3>>
+you can use your mouse to look around and find interesting things to draw
+<<wait 4>>
+when you find something interesting to draw you can press space to take your sketchbook out
+<<wait 4>>
+
+<<Me>>
+x: Oh, I just brought a few sheets of paper today :p
+<<wait 3>>
+It's way easier to use right mouse button to look up and down while drawing when I don't have to lug around a giant sketchbook!
+<<wait 10>>
+
+<<Them>>
+fair enough
+<<wait 6>>
+just dont forget to press enter to submit your drawing
+<<wait 4>>
+
+<<Me>>
+I know that already!!
+<<wait 4>>
+
+<<Them>>
+okok ill let you draw now
 
 // display tutorial
-<<AdvanceState>>
-
+// <<SetTrigger tutorial>>
+<<StartMusic>>
+<<AdvanceState>> //-1 to 0
+<<Stop>>
+// <<jump PromptPlaque>>
 ===
 
+title: PostPic
+tags:
+colorID: 0
+position:0,0
+---
+<<Me>>
+<<DisplayImage>>
+<<wait 7>>
+===
 
 
 title: PromptPlaque
@@ -62,15 +93,30 @@ tags:
 colorID: 0
 position: 0,0
 ---
-// Stage 0
+<<Me>>
+<<DisplayImage>>
 <<Them>>
+<<wait 6>>
+wait thats so dope
+<<wait 5>>
+r u at the lake!?!?
+<<wait 3>>
+<<Me>>
+x: Yep! :)
 <<wait 2.5>>
-hey is that little thing on the fence still there? 
+// Stage 0 TALK INTO A BIT MORE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+<<Them>>
+omg
+<<wait 2.5>>
+hey is that little thing we did on the fence still there? 
 <<wait 4.5>>
 
 <<Me>>
 Yeah, I think it was next to the picnic table.
-// <<jump PromptPlaqueSuccess>>
+// <<SetTrigger stage0_makeDrawable>>
+
+//
+<<Stop>>
 ===
 
 title: PromptPlaqueFail
@@ -79,14 +125,17 @@ colorID: 0
 position: 0,0
 ---
 // <<if GetTrigger stage1_Check_drawing == False>>
+<<Me>>
+<<DisplayImage>>
+<<wait 7>>
 <<Them>>
 <<wait 2.5>>
-no i think it was a plaque or something
+no i think it was a sign or something
 <<wait 4>>
 
 <<Me>>
 Maybe I'm not drawing it for long enough for it to be clear?
-
+<<Stop>>
 ===
 
 
@@ -95,6 +144,8 @@ tags:
 colorID: 0
 position: 0,0
 ---
+<<Me>>
+<<DisplayImage>>
 <<Me>>
 <<wait 1>>
 Tada!
@@ -139,8 +190,13 @@ Anything that was written there is long gone
 <<Them>>
 aww
 
-<<SetTrigger stage1_Dialogue>>
+// <<SetTrigger stage1_Dialogue>>
+<<AdvanceMusic>>
+<<AdvanceState>> //0 to 1
+<<Stop>>
 ===
+
+
 
 
 
@@ -158,9 +214,10 @@ colorID: 0
 position: 0,0
 ---
 //Stage 1
+<<wait 2>>
 <<Them>>
 <<wait 2.5>>
-yknow being in the city kinda sucks
+yknow living in the city kinda stinks
 <<wait 3.5>>
 i havent swam in ages
 <<wait 3.5>>
@@ -168,53 +225,65 @@ i havent swam in ages
 <<Me>>
 That actually reminds me of something...
 <<wait 3.5>>
-hold on, lemme draw it
+Hold on, lemme draw it
 
-<<SetTrigger stage1_makeDrawable>>
+<<PlayMusic>>
+
+// <<SetTrigger stage1_makeDrawable>>
+
+<<Stop>>
 ===
 
-title: PromptSomewhereToSwim_LakeFinished
-tags: 
-colorID: 0
-position: 0,0
----
-<<Them>>
-<<wait 2>>
-since you drew the lake
-<<wait 3>>
-i do have a slight memory with the waterfall on the other side
-<<wait 5>>
+// title: PromptSomewhereToSwim_LakeFinished
+// tags: 
+// colorID: 0
+// position: 0,0
+// ---
+// <<Them>>
+// <<wait 2>>
+// since you drew the lake
+// <<wait 3>>
+// i do have a slight memory with the waterfall on the other side
+// <<wait 5>>
 
-<<Me>>
-Maybe I should draw that too
+// <<Me>>
+// Maybe I should draw that too
 
-<<SetTrigger waterfall_makeDrawable>>
-===
+// // <<SetTrigger waterfall_makeDrawable>>
+// <<AdvanceState>>
 
-title: PromptSomewhereToSwim_WaterfallFinished
-tags: 
-colorID: 0
-position: 0,0
----
-<<Them>>
-<<wait 2>>
-since you drew the waterfall
-<<wait 3.5>>
-i do have a memory with the lake on the other side
+// <<Stop>>
+//===
 
-<<Me>>
-<<wait 4>>
-I think I know what you're talking about
-<<wait 2.5>>
-let me draw it real quick
-<<SetTrigger lake_makeDrawable>>
-===
+// title: PromptSomewhereToSwim_WaterfallFinished
+// tags: 
+// colorID: 0
+// position: 0,0
+// ---
+// <<Them>>
+// <<wait 2>>
+// since you drew the waterfall
+// <<wait 3.5>>
+// i do have a memory with the lake on the other side
+
+// <<Me>>
+// <<wait 4>>
+// I think I know what you're talking about
+// <<wait 2.5>>
+// let me draw it real quick
+// // <<SetTrigger lake_makeDrawable>>
+
+// <<Stop>>
+//===
 
 title: PromptSomewhereToSwimFail
 tags: 
 colorID: 0
 position: 0,0
 ---
+<<Me>>
+<<DisplayImage>>
+<<wait 7>>
 <<Me>>
 <<wait 2>>
 Oh wait, that didn't turn out how i wanted it to
@@ -228,6 +297,7 @@ or the waterfall
 
 <<Me>>
 Yeah, just hold on, let me finish drawing it
+<<Stop>>
 ===
 
 title: PromptSomewhereToSwimSuccess_Lake
@@ -235,6 +305,9 @@ tags:
 colorID: 0
 position: 0,0
 ---
+<<Me>>
+<<DisplayImage>>
+<<wait 7>>
 <<Them>>
 <<wait 2>>
 i remember when we tried to throw skipping stones 
@@ -266,14 +339,17 @@ this is why no one sat next to you in school
 But you sat next to me 
 <<wait 8>>
 //[long pause]
-*smile*
-//:)
+x: :)
 <<wait 4>>
 
 <<Them>>
 yeah i guess im lame too
 
-<<SetTrigger stage2_Dialogue>>
+// <<SetTrigger stage2_Dialogue>>
+<<AdvanceMusic>>
+<<AdvanceState>>
+
+<<Stop>>
 ===
 
 title: PromptSomewhereToSwimSuccess_Waterfall
@@ -281,6 +357,9 @@ tags:
 colorID: 0
 position: 0,0
 ---
+<<Me>>
+<<DisplayImage>>
+<<wait 7>>
 <<Them>>
 <<wait 2>>
 dont even send this to me
@@ -317,10 +396,641 @@ But you lived...
 <<wait 4>>
 Drama queen!
 
-<<SetTrigger stage2_Dialogue>>
+// <<SetTrigger stage2_Dialogue>>
+<<AdvanceState>>
+
+<<Stop>>
 ===
 
 
 
 
 
+
+
+
+
+
+
+
+title: PromptAnimals
+tags: 
+colorID: 0
+position: 0,0
+---
+// STAGE 3
+<<wait 5>>
+<<Them>>
+any cute critters around?
+//a few... i can take some photos if youd like
+//no dummy 
+//i want you to draw them
+
+// <<SetTrigger stage2_makeDrawable>>
+<<PlayMusic>>
+<<Stop>>
+===
+
+title: PromptAnimalsFail
+tags: 
+colorID: 0
+position: 0,0
+---
+<<Me>>
+<<DisplayImage>>
+<<wait 7>>
+// NO DIALOGUE FOR FAILING ANIMAL PROMPT WAS WRITTEN
+<<Me>>
+<<wait 2.5>>
+Wait a second
+<<wait 2.5>>
+Let me redo that
+<<wait 3>>
+
+<<Them>>
+yeah im not sure what im looking at
+<<Stop>>
+===
+
+title: PromptAnimalsSuccess_Bee
+tags: 
+colorID: 0
+position: 0,0
+---
+<<Me>>
+<<DisplayImage>>
+<<wait 5>>
+<<Them>>
+<<wait 2.5>>
+oh wow
+<<wait 2.5>>
+thats cute
+<<wait 3.5>>
+you dont see bees up near the waterfall too often
+<<wait 4.5>>
+
+<<Me>>
+Yeah
+<<wait 2>>
+Too many frogs
+<<wait 3>>
+I wonder what it's doing here?
+<<wait 3.5>>
+
+<<Them>>
+whatever it is
+<<wait 4>>
+thats one brave bee...
+<<wait 2.5>>
+
+<<Me>>
+Indeed...
+
+<<AdvanceMusic>>
+<<AdvanceState>>
+
+
+<<Stop>>
+===
+
+title: PromptAnimalsSuccess_Bird
+tags: 
+colorID: 0
+position: 0,0
+---
+<<Me>>
+<<DisplayImage>>
+<<wait 5>>
+<<Them>>
+<<wait 2.5>>
+hmm
+<<wait 2.5>>
+shouldn't all the birds be in the south by now
+<<wait 4>>
+
+<<Me>>
+Well
+<<wait 2.5>>
+Not every bird migrates
+<<wait 4>>
+Remember that woodpecker that wouldn't leave the cabin alone all winter?
+<<wait 5>>
+
+<<Them>>
+yeah i guess thats true
+<<wait 3.5>>
+there's a lot of things there for a woodpecker to enjoy
+
+<<AdvanceMusic>>
+<<AdvanceState>>
+
+<<Stop>>
+===
+
+title: PromptAnimalsSuccess_Frog
+tags: 
+colorID: 0
+position: 0,0
+---
+<<Me>>
+<<DisplayImage>>
+<<wait 5>>
+<<Them>>
+<<wait 2.5>>
+yeah i know
+<<wait 3>>
+you showed it to everyone
+<<wait 3.5>>
+like 15 times
+<<wait 3>>
+
+<<Me>>
+It was a good drawing
+<<wait 3>>
+x: My mom liked it :)
+<<wait 3>>
+
+<<Them>>
+eh
+<<wait 2.5>>
+i like your new drawings better
+<<wait 3.5>>
+
+<<Me>>
+I'll take the compliment.
+<<wait 3>>
+What else to draw...?
+
+<<AdvanceMusic>>
+<<AdvanceState>>
+
+<<Stop>>
+===
+
+
+
+
+
+
+
+
+
+
+
+
+
+title: PromptSomewhereToSit
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<wait 2.5>>
+<<Them>>
+you've been drawing there for a while
+<<wait 3>>
+is there anywhere to sit down?
+
+// <<SetTrigger stage3_makeDrawable>>
+<<PlayMusic>>
+<<Stop>>
+===
+
+title: PromptSomewhereToSitFail
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<Me>>
+Yeah, this:
+<<wait 1>>
+<<DisplayImage>>
+<<wait 4>>
+<<Them>>
+that doesnt look very comfortable
+<<wait 3.5>>
+
+<<Me>>
+Hold on, let me try again
+
+<<Stop>>
+===
+
+title: PromptSomewhereToSitSuccess_PicnicTable
+tags: 
+colorID: 0
+position: 0,0
+---
+<<wait 1>>
+<<Me>>
+Yeah, this
+<<wait 1.5>>
+<<DisplayImage>>
+<<wait 4.5>>
+
+<<Them>>
+is that what i think that is
+<<wait 4.5>>
+oh man so many memories
+<<wait 4>>
+
+<<Me>>
+Yeah 
+<<wait 3>>
+
+<<Them>>
+no srsly 
+<<wait 4>>
+remember the last time my family came over for thanksgiving
+<<wait 5>>
+giant ass spider crawled out of the turkey
+<<wait 3>>
+
+<<Me>>
+LOL YEAH
+<<wait 2.5>>
+And then, you knocked the turkey OFF OF THE CLIFF
+<<wait 4>>
+Yeah, my dad was so pissed...
+<<wait 3>>
+
+<<Them>>
+didnt ur parents spend like a whole day preparing the turkey
+<<wait 4.5>>
+ride home was awkward as hell
+<<wait 3>>
+
+<<Me>>
+lol
+<<wait 2.5>>
+Well at least your mom took us to go get ice cream afterwards.
+
+<<wait 8>>
+<<Them>>
+yeah
+<<wait 4>>
+i miss her
+<<wait 2.5>>
+
+<<Me>>
+Yeah.
+<<wait 2.5>>
+Me too.
+
+<<AdvanceMusic>>
+<<AdvanceState>>
+
+
+<<Stop>>
+===
+
+title: PromptSomewhereToSitSuccess_Tree
+tags: 
+colorID: 0
+position: 0,0
+---
+<<wait 1>>
+<<Me>>
+Yeah, this
+<<wait 1.5>>
+<<DisplayImage>>
+<<wait 4.5>>
+<<Them>>
+OMG THIS IS SO GOOD
+<<wait 3.5>>
+remember when we layed down under a tree and just stared at the sky 
+<<wait 4.5>>
+
+<<Me>>
+x: Yeah :) We chatted all day about random BS
+<<wait 4>>
+Remember that kid we talked about?
+<<wait 3.5>>
+The one that wouldn't leave you alone.
+<<wait 4.5>>
+
+<<Them>>
+ugh what was his name
+<<wait 5>>
+like lucas or something?? 
+<<wait 2.5>>
+
+<<Me>>
+It was Luke.
+<<wait 2.5>>
+You'll never guess what he's up to now
+<<wait 3.5>>
+
+<<Them>>
+i always thought hed be like 
+<<wait 3>>
+an investment banker or something sleazy
+<<wait 4>>
+
+<<Me>>
+Close!
+<<wait 2.5>>
+He brought me my order at mcdonalds
+<<wait 4>>
+
+<<Them>>
+woah
+<<wait 2.5>>
+
+<<Me>>
+That's not all
+<<wait 3>>
+He was telling me about how he could send my art "to the moon" if I drew pictures of bored monkeys???
+<<wait 6>>
+
+<<Them>>
+what
+<<wait 2.5>>
+LOL???
+<<wait 4>>
+
+<<Me>>
+Yep...
+
+<<AdvanceMusic>>
+<<AdvanceState>>
+
+
+<<Stop>>
+===
+
+title: PromptSomewhereToSitSuccess_Stump
+tags: 
+colorID: 0
+position: 0,0
+---
+<<wait 1>>
+<<Me>>
+Yeah, this
+<<wait 1.5>>
+<<DisplayImage>>
+<<wait 4.5>>
+<<Them>>
+omg lol
+<<wait 2.5>>
+is that the trash ghost stump
+<<wait 3.5>>
+
+<<Me>>
+What? lol
+<<wait 3>>
+OH YEAH LOL
+<<wait 3>>
+
+<<Them>>
+yeah we were hiding in there cause you were grounded or something stupid
+<<wait 5.5>>
+and ur mom sent austin to come after us
+<<wait 4>>
+
+<<Me>>
+Yep. Then you started throwing empty wrappers at him
+<<wait 4.5>>
+"Ooooohhh I'm the trash ghost"
+<<wait 3.5>>
+
+<<Them>>
+yeah we freaked him the hell out
+<<wait 3.5>>
+what a stupid kid
+<<wait 3>>
+does he still help out at your dads
+<<wait 3.5>>
+
+<<Me>>
+No, my dad closed the shop
+<<wait 3.5>>
+
+<<Them>>
+wtf
+<<wait 1.5>>
+
+<<Me>>
+He's at the community college rn
+<<wait 3.5>>
+x: Getting his associates :)
+<<wait 3>>
+
+<<Them>>
+hmm 
+<<wait 5>>
+i guess things change
+
+<<AdvanceMusic>>
+<<AdvanceState>>
+
+
+<<Stop>>
+===
+
+
+
+
+
+
+
+
+
+
+title: PromptLakehouse
+tags: 
+colorID: 0
+position: 0,0
+---
+<<wait 2.5>>
+<<Me>>
+Hey
+<<wait 2.5>>
+There's something here I've been wanting to draw
+<<wait 3.5>>
+
+<<Them>>
+what is it
+<<wait 2.5>>
+
+<<Me>>
+x: It's a surprise :)
+<<wait 2.5>>
+
+<<Them>>
+oh man
+<<wait 2.5>>
+i hate surprises 
+<<wait 3.5>>
+
+<<Me>>
+I'll give you a hint
+<<wait 3>>
+It's some place you should visit...
+<<wait 3.5>>
+
+<<Them>>
+is it japan
+<<wait 2.5>>
+
+<<Me>>
+I'll start drawing now
+<<wait 1>>
+<<PlayMusic>>
+<<wait 4>>
+
+//[Dessa will send texts every 5-8 seconds guessing what it is, until you trigger the PoI trigger on the lakehouse]
+
+<<Them>>
+//Variable Messages
+it cant be hawaii
+<<wait 6>>
+is it the golden gate ive already been to the golden gate
+<<wait 7>>
+just tell me //>:(
+<<wait 8>> 
+can i find it on google
+<<wait 6>>
+is it somewhere i know
+<<wait 5>>
+your moms house
+<<wait 8>>
+idk dude just tell me
+<<wait 6>>
+ok im just not gonna say anything
+<<wait 8>>
+are you still there?
+//end 
+
+//[shortly after the full loop plays for the first time]
+//if drawing long enough
+<<wait 5>>
+wait
+<<wait 3>>
+i think i have an idea
+
+
+// <<SetTrigger stage4_makeDrawable>>
+<<AdvanceState>>
+
+<<Stop>>
+===
+
+title: PromptLakehouseFail
+tags: 
+colorID: 0
+position: 0,0
+---
+<<Me>>
+Hold on, I just want to get this right
+
+
+<<Stop>>
+===
+
+title: PromptLakehouseSuccess
+tags: 
+colorID: 0
+position: 0,0
+---
+<<Me>>
+Remember this?
+
+<<Them>>
+is that the lakehouse?
+
+<<Me>>
+You got it!
+
+<<Them>>
+did anyone new move in?
+
+<<Me>>
+Some deer
+A family of possum, too
+
+<<Them>>
+jesus
+its really gone to heck, huh
+
+<<Me>>
+No one took care of the house, so
+
+<<Them>>
+what?? why not
+
+<<Me>>
+Well, who would?
+
+<<Them>>
+theres really no one who stuck around, huh
+yknow what hold on
+IM gonna send you a drawing
+
+//[Pause for about 5 seconds or so]
+<<wait 10>>
+<<DisplayMoneyshot>>
+tada!
+it's us 
+
+<<Me>>
+Am I holding a hammer?
+
+i miss that place
+lets save it
+
+<<Me>>
+x: I'd like that :)
+
+
+// <<SetTrigger ending>>
+//ending
+
+<<Stop>>
+===
+
+
+
+
+
+
+
+title: PromptUnusedDock
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<Them>>
+omg i just thought of when we dragged ur mattress all the way downstairs
+n then threw it in the water cause we thought we could use it like a raft
+
+//:)
+<<Me>>
+What a nice day
+Floating on the river was nice
+
+<<Them>>
+shopping for a new mattress was fun though
+
+<<Me>>
+Yeah! I still wish we got that memory foam mattress I fell asleep on.
+The one we got instead is killing my back!
+
+<<Them>>
+you seriously haven't bought a new mattress in 7 years?
+
+<<Me>>
+Hey, if it ain't broke
+
+<<Them>>
+it sounds like its broke
+
+<<Me>>
+Yeah, it's broke
+
+<<AdvanceState>>
+
+<<Stop>>
+===

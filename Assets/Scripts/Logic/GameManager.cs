@@ -37,7 +37,10 @@ public class GameManager : MonoBehaviour
     public GameObject[] stage2Objects;
     public GameObject[] stage3Objects;
     public GameObject[] stage4Objects;
-    int state = 5; // tutorial state
+    public string nextPrompt;
+    public delegate void OnStoryToldDelegate();
+    public OnStoryToldDelegate OnStoryTold;
+    int state = -2; // -1 is the tutorial state
     private void Awake()
     {
         Application.targetFrameRate = 90;
@@ -62,9 +65,80 @@ public class GameManager : MonoBehaviour
         controls.debug.AdvanceCutscene.performed += ctx => AdvanceState();
         canvas.TransDone += AllowDrawing;
         canvas.TransDoneLooking += DisallowDrawing;
-        drawUtils.OnDoneDrawing += StartTestDialogue;
-        UpdateTriggers(new List<Trigger>{triggers[2]});
-        OnListUpdate?.Invoke();
+        drawUtils.OnDoneDrawing += PlayPrompt;
+        
+        AdvanceState();
+    }
+    void PlayPrompt(){
+        if(camControls.DebugPOISeen){
+            switch(camControls.realCurrentPOI.tag){
+                case "Plaque":
+                    Debug.Log("Ran " + camControls.realCurrentPOI.tag);
+                    dialogueRunner.Stop();
+                    dialogueRunner.StartDialogue("PromptPlaqueSuccess");
+                    break;
+                case "Tree":
+                    Debug.Log("Ran " + camControls.realCurrentPOI.tag);
+                    dialogueRunner.Stop();
+                    dialogueRunner.StartDialogue("PromptSomewhereToSitSuccess_Tree");
+                    break;
+                case "Lake":
+                    Debug.Log("Ran " + camControls.realCurrentPOI.tag);
+                    dialogueRunner.Stop();
+                    dialogueRunner.StartDialogue("PromptSomewhereToSwimSuccess_Lake");
+                    break;
+                case "Picnic Table":
+                    Debug.Log("Ran " + camControls.realCurrentPOI.tag);
+                    dialogueRunner.Stop();
+                    dialogueRunner.StartDialogue("PromptSomewhereToSitSuccess_PicnicTable");
+                    break;
+                case "Stump":
+                    Debug.Log("Ran " + camControls.realCurrentPOI.tag);
+                    dialogueRunner.Stop();
+                    dialogueRunner.StartDialogue("PromptSomewhereToSitSuccess_Stump");
+                    break;
+                case "Waterfall":
+                    Debug.Log("Ran " + camControls.realCurrentPOI.tag);
+                    dialogueRunner.Stop();
+                    dialogueRunner.StartDialogue("PromptSomewhereToSwimSuccess_Waterfall");
+                    break;
+                case "Lakehouse":
+                    Debug.Log("Ran " + camControls.realCurrentPOI.tag);
+                    dialogueRunner.Stop();
+                    dialogueRunner.StartDialogue("PromptLakehouseSuccess");
+                    break;
+                case "Frog":
+                    Debug.Log("Ran " + camControls.realCurrentPOI.tag);
+                    dialogueRunner.Stop();
+                    dialogueRunner.StartDialogue("PromptAnimalsSuccess_Frog");
+                    break;
+                case "Bird":
+                    Debug.Log("Ran " + camControls.realCurrentPOI.tag);
+                    dialogueRunner.Stop();
+                    dialogueRunner.StartDialogue("PromptAnimalsSuccess_Bird");
+                    break;
+                case "Bee":
+                    Debug.Log("Ran " + camControls.realCurrentPOI.tag);
+                    dialogueRunner.Stop();
+                    dialogueRunner.StartDialogue("PromptAnimalsSuccess_Bee");
+                    break;   
+                default:
+                    Debug.Log("Couldn't run dialogue.");
+                break;
+            }
+            OnStoryTold();
+        }
+        else if (state == -1){
+            AdvanceState();
+            Debug.Log("Since this is the tutorial, we advance the state for free.");
+        }
+        else
+        {
+            Debug.Log("Could not get poi seen");
+        }
+    }
+    void SendPicture(){
+        dialogueRunner.StartDialogue("PostPic");
     }
     private static GameObject[] FindObjectsInLayer(int layer)
     {
@@ -78,8 +152,14 @@ public class GameManager : MonoBehaviour
      }
      return ret.ToArray();        
     }
-    void StartTestDialogue(){
-        dialogueRunner.StartDialogue("PromptPlaque");
+    [YarnCommand("NextPrompt")]
+    void StartNewDialogue(){
+        dialogueRunner.Stop();
+        dialogueRunner.StartDialogue(nextPrompt);
+    }
+    [YarnCommand("Stop")] // for the ui animation
+    void StopDialogue(){
+        dialogueRunner.Stop();
     }
     void Update(){
 
@@ -94,20 +174,34 @@ public class GameManager : MonoBehaviour
     void AdvanceState(){
         state++;
         switch(state){
+            case -1: // tutorial dialogue
+                UpdateTriggers(new List<Trigger>{});
+                nextPrompt = "PromptPlaque";
+            break;
             case 0:
-                //done in start function
+                StartNewDialogue();
+                UpdateTriggers(new List<Trigger>{triggers[2]});
+                nextPrompt = "PromptSomewhereToSwim";
             break;
             case 1:
+                StartNewDialogue();
                 UpdateTriggers(new List<Trigger>{triggers[5], triggers[6]});
+                nextPrompt = "PromptAnimals";
             break;
             case 2:
+                StartNewDialogue();
                 UpdateTriggers(new List<Trigger>{triggers[9],triggers[10]});
+                nextPrompt = "PromptSomewhereToSit";
             break;
             case 3:
+                StartNewDialogue();
                 UpdateTriggers(new List<Trigger>{triggers[13],triggers[14]});
+                nextPrompt = "PromptLakehouse";
             break;
             case 4:
+                StartNewDialogue();
                 UpdateTriggers(new List<Trigger>{triggers[17],triggers[18]});
+                // nextPrompt = "PromptPlaque";
             break;
         }
     }

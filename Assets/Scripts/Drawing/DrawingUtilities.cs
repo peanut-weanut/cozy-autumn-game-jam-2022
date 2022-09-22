@@ -173,10 +173,11 @@ public class DrawingUtilities : MonoBehaviour
     //     }
     // }
     public Camera[] screenshottingCameras;
+    public Texture2D textPic;
     void SubmitDrawing(){ //VERY IMPORTANT TO NOT CALL CLEARDRAWINGS ANYWHERE ELSE THAN HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         SaveAllToArray();
         screenshots.Add(GetScreenshot(screenshottingCameras[0])); // for final gallery at end of game
-        var textPic = GetScreenshot(screenshottingCameras[1]);
+        textPic = GetScreenshot(screenshottingCameras[1]);
         //send textpic to dialogue helper
         // SendToDialogueHelper();
         ClearDrawings();
@@ -193,6 +194,7 @@ public class DrawingUtilities : MonoBehaviour
         screenshotTexture.ReadPixels(rect, 0, 0);
         screenshotTexture.Apply();
         RenderTexture.active = null;
+        Debug.Log("Screenshot from" + cam.name + " recorded.");
         return screenshotTexture;
     }
     void UndoDrawing(){

@@ -44,7 +44,8 @@ namespace Yarn.Unity.Example
             runner = GetComponent<DialogueRunner>();
             runner.AddCommandHandler("Me", SetSenderMe ); // registers Yarn Command <<Me>>, which sets the current message sender to "Me"
             runner.AddCommandHandler("Them", SetSenderThem ); // registers Yarn Command <<They>>, which sets the current message sender to "Them" (whoever the player is talking to)
-            runner.AddCommandHandler<int>("DisplayImage", DisplayImage);
+            runner.AddCommandHandler("DisplayImage", DisplayImage);
+            runner.AddCommandHandler("Moneyshot", DisplayMoneyshot);
             // runner.AddCommandHandler<int>("NextStage", SetNextStage); // set nextstage stage. ends dialogue and goes to next stage
             // runner.AddCommandHandler<Trigger>("CheckTrigger", OnTrigger) //taking a trigger as an argument, it will wait until the trigger is activated, and then go to the next dialogue
 
@@ -78,9 +79,14 @@ namespace Yarn.Unity.Example
 
         //THIS IS SUPPOSED TO BE CALLED BY THE YARN SCRIPT Yarnchatdialoge and display an image
         //;3
-        void DisplayImage(int spriteID)
+        void DisplayMoneyshot(){
+            //send the cute drawing that cassie makes
+        }
+        void DisplayImage()
         {
-            Sprite picToPost = spriteArray[spriteID];
+            Texture2D sprite = GameManager.game.drawUtils.textPic;
+
+            Sprite picToPost = Sprite.Create(sprite,new Rect(0,0,sprite.width,sprite.height),new Vector2(0.5f, 0.5f));
             chatImageGameObject = new GameObject();
             chatImage = chatImageGameObject.AddComponent<Image>() as Image;
             chatImage.sprite = picToPost;
@@ -88,9 +94,9 @@ namespace Yarn.Unity.Example
             chatImageGameObject.AddComponent<RectTransform>();
             chatImageGameObject.AddComponent<HorizontalLayoutGroup>();
             chatImageGameObject.AddComponent<CanvasRenderer>();
-            chatImageGameObject.AddComponent<LayoutElement>();
+            
 
-            var rectValue = chatImageGameObject.GetComponent<LayoutElement>();
+            var rectValue = chatImageGameObject.AddComponent<LayoutElement>();
 
             rectValue.preferredHeight = 200f;
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 public class AudioManager : MonoBehaviour
 {
@@ -31,10 +32,12 @@ public class AudioManager : MonoBehaviour
     {
         source = GetComponents<AudioSource>();
         GameManager.game.drawLines.OnDraw += PlayDrawSound;
-        PlayBGM();
+        // PlayBGM();
         songTimer -= 3.0f;
         GameManager.game.camControls.POISeen += POISongIndex;
-        controls.inputs.Submit.performed += ctx => AdvanceSongIndex();
+        GameManager.game.OnStoryTold += AdvanceSongIndex; // instead of audio taking queues from input, take it from dialogue
+        //GameManager.game.dialogueRunner.OnDialogueBegin += EndingSongIndex;
+        //GameManager.game.dialogueRunner.OnDialogueEnd += AmbientSongIndex;
         controls.CameraStates.ChangeView.performed += ctx => PlayPaperSound();
     }
     private void OnEnable()
@@ -46,14 +49,21 @@ public class AudioManager : MonoBehaviour
     {
         controls.Disable();
     }
+    [YarnCommand("StartMusic")]
+    void StartMusic(){
+        PlayBGM();
+    }
     // Update is called once per frame
     void Update()
     {
         songTimer -= Time.deltaTime;
         if (songTimer < 0){
-            PlayBGM();
+            
             if(nextSongIndex == 2)
                 ResetSongIndex();
+            else
+                PlayBGM();
+            
         }
         // if (TestCrossFade == 1){
         //     CrossfadeSources(5, 6);
@@ -84,6 +94,7 @@ public class AudioManager : MonoBehaviour
         nextSongIndex = 1;
         // TestCrossFade = 1;
     }
+    
     void AdvanceSongIndex(){
         switch(nextSongIndex){
             case 1:
@@ -94,6 +105,7 @@ public class AudioManager : MonoBehaviour
             // break;
         }
     }
+    [YarnCommand("AdvanceMusic")]
     void ResetSongIndex(){
         nextSongIndex = 0;
         currentSongPackIndex++; // DONT SET THIS HERE IN FINAL GAME, SET IT IN THE DIALOGUE
@@ -110,6 +122,7 @@ public class AudioManager : MonoBehaviour
     //         TestCrossFade = 0;
     //     }
     // }
+    [YarnCommand("PlayMusic")]
     void PlayBGM(){
         //play two songs on different tracks (5, 6), when you get the signal, crossfade between them.
         switch(currentSongPackIndex){
