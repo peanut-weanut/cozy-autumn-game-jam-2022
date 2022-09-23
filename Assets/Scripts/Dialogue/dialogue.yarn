@@ -42,7 +42,7 @@ Hold on
 <<wait 4.5>>
 Let me send you a drawing
 <<wait 1>>
-<<StartMusic>>
+
 <<wait 7.5>>
 
 <<Them>>
@@ -74,13 +74,11 @@ I know that already!!
 <<Them>>
 okok ill let you draw now
 
-// display tutorial
-// <<SetTrigger tutorial>>
-
-<<SetState -1>> //-1 to 0
 
 
-// <<jump PromptPlaque>>
+<<SetState -1>> 
+
+
 ===
 
 title: PostPic
@@ -99,31 +97,33 @@ tags:
 colorID: 0
 position: 0,0
 ---
-<<ResetMusic>>
+
 <<Me>>
 <<DisplayImage>>
 <<Them>>
 <<wait 6>>
 wait thats so dope
+<<StartMusic>>
 <<wait 5>>
 r u at the lake!?!?
-<<wait 3>>
+<<wait 4>>
 <<Me>>
 x: Yep! :)
 <<wait 2.5>>
 // Stage 0 TALK INTO A BIT MORE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 <<Them>>
 omg
-<<wait 2.5>>
+<<wait 3.5>>
 hey is that little thing we did on the fence still there? 
 <<wait 4.5>>
 
 <<Me>>
 Yeah, I think it was next to the picnic table.
-// <<SetTrigger stage0_makeDrawable>>
-
+<<wait 1000>>
+<<jump StopDialogue>>
+<<Stop>>
+<<wait 1000>>
 //
-
 ===
 
 title: PromptPlaqueFail
@@ -159,6 +159,12 @@ Tada!
 <<wait 3.5>>
 
 <<Them>>
+wow...
+<<wait 3.5>>
+just like i remember it
+<<wait 5.5>>
+ur a good artist yknow
+<<wait 2.5>>
 did we ever even read what that said
 <<wait 3.5>>
 
@@ -191,13 +197,15 @@ Well
 <<wait 1.5>>
 It's covered in marker
 <<wait 3.5>>
-Anything that was written there is long gone
+I guess we'll never know what it says...
 <<wait 2.5>>
 
 <<Them>>
 aww
-<<wait 3>>
-// <<SetTrigger stage1_Dialogue>>
+<<wait 5>>
+not gonna lie, i was kind of excited find out
+<<wait 4>>
+
 <<SetState 1>> //0 to 1
 
 
@@ -221,67 +229,33 @@ colorID: 0
 position: 0,0
 ---
 //Stage 1
-<<wait 4>>
+
 <<Them>>
-<<wait 2.5>>
 yknow living in the city kinda stinks
 <<wait 3.5>>
 i havent swam in ages
 <<wait 3.5>>
+i havent swam in ages
+<<wait 3.5>>
+i really wish i could go for a swim right now in a pool that doesnt smell like chlorine and pee
+<<wait 3>>
 
 <<Me>>
-That actually reminds me of something...
+Hey, that actually reminds me of something...
 <<wait 3.5>>
 Hold on, lemme draw it
 
 <<ResetMusic>>
+<<jump StopDialogue>>
+<<wait 1000>>
+<<Stop>>
 
-// <<SetTrigger stage1_makeDrawable>>
+<<Stop>>
+<<wait 1000>>
 
 
 ===
 
-// title: PromptSomewhereToSwim_LakeFinished
-// tags: 
-// colorID: 0
-// position: 0,0
-// ---
-// <<Them>>
-// <<wait 2>>
-// since you drew the lake
-// <<wait 3>>
-// i do have a slight memory with the waterfall on the other side
-// <<wait 5>>
-
-// <<Me>>
-// Maybe I should draw that too
-
-// // <<SetTrigger waterfall_makeDrawable>>
-// <<AdvanceState>>
-
-// 
-//===
-
-// title: PromptSomewhereToSwim_WaterfallFinished
-// tags: 
-// colorID: 0
-// position: 0,0
-// ---
-// <<Them>>
-// <<wait 2>>
-// since you drew the waterfall
-// <<wait 3.5>>
-// i do have a memory with the lake on the other side
-
-// <<Me>>
-// <<wait 4>>
-// I think I know what you're talking about
-// <<wait 2.5>>
-// let me draw it real quick
-// // <<SetTrigger lake_makeDrawable>>
-
-// 
-//===
 
 title: PromptSomewhereToSwimFail
 tags: 
@@ -304,7 +278,7 @@ or the waterfall
 
 <<Me>>
 Yeah, just hold on, let me finish drawing it
-
+<<jump StopDialogue>>
 ===
 
 title: PromptSomewhereToSwimSuccess_Lake
@@ -343,16 +317,16 @@ this is why no one sat next to you in school
 <<wait 4>>
 
 <<Me>>
-But you sat next to me 
-<<wait 8>>
+You sat next to me 
+<<wait 6>>
 //[long pause]
 x:   :)
 <<wait 4>>
 
 <<Them>>
 yeah i guess im lame too
+<<wait 7>>
 
-// <<SetTrigger stage2_Dialogue>>
 
 <<SetState 2>>
 
@@ -382,11 +356,11 @@ i will never forgive you
 
 <<Me>>
 WTF are you talking about?
-<<wait 8>>
+<<wait 4>>
 
 <<Them>>
 YOU PUSHED ME OFF!!
-<<wait 6>>
+<<wait 3>>
 
 <<Me>>
 Oh yeah LOL
@@ -402,8 +376,9 @@ i literally thought i was gonna die
 But you lived...
 <<wait 4>>
 Drama queen!
+<<wait 7>>
 
-// <<SetTrigger stage2_Dialogue>>
+
 <<SetState 2>>
 
 
@@ -426,10 +401,12 @@ colorID: 0
 position: 0,0
 ---
 // STAGE 3
-<<wait 7>>
+
 <<Them>>
 well, anyways
 <<wait 3>>
+any cute critters around?
+<<wait 4>>
 any cute critters around?
 <<wait 4>>
 <<Me>>
@@ -440,9 +417,12 @@ no dummy
 <<wait 4>> 
 i want you to draw them
 
-// <<SetTrigger stage2_makeDrawable>>
-<<ResetMusic>>
 
+<<ResetMusic>>
+<<wait 1000>>
+<<jump StopDialogue>>
+<<Stop>>
+<<wait 1000>>
 ===
 
 title: PromptAnimalsFail
@@ -463,7 +443,9 @@ Let me redo that
 
 <<Them>>
 yeah im not sure what im looking at
-
+<<wait 3>>
+is that even a real animal?
+<<jump StopDialogue>>
 ===
 
 title: PromptAnimalsSuccess_Bee
@@ -492,14 +474,14 @@ I wonder what it's doing here?
 <<wait 3.5>>
 
 <<Them>>
-whatever it is
+whatever its reasons are
 <<wait 4>>
 thats one brave bee...
 <<wait 2.5>>
 
 <<Me>>
 Indeed...
-
+<<wait 2>>
 
 <<SetState 3>>
 
@@ -549,6 +531,8 @@ position: 0,0
 <<Me>>
 <<DisplayImage>>
 <<wait 5>>
+Y'know, the first thing i ever drew was a frog!
+<<wait 3>>
 <<Them>>
 <<wait 2.5>>
 yeah i know
@@ -601,13 +585,22 @@ position: 0,0
 
 <<wait 2.5>>
 <<Them>>
-you've been drawing there for a while
+you've been drawing there for a bit
 <<wait 3>>
 is there anywhere to sit down?
 
-// <<SetTrigger stage3_makeDrawable>>
-<<ResetMusic>>
+<<Me>>
+A few places...
+<<wait 4>>
+Actually hold on, let me send you another drawing. Some of these are really cute!
+<<wait 3>>
 
+
+<<ResetMusic>>
+<<wait 1000>>
+<<jump StopDialogue>>
+<<Stop>>
+<<wait 1000>>
 ===
 
 title: PromptSomewhereToSitFail
@@ -628,7 +621,7 @@ that doesnt look very comfortable
 <<Me>>
 Hold on, let me try again
 
-
+<<jump StopDialogue>>
 ===
 
 title: PromptSomewhereToSitSuccess_PicnicTable
@@ -800,7 +793,7 @@ OH YEAH LOL
 <<Them>>
 yeah we were hiding in there cause you were grounded or something stupid
 <<wait 5.5>>
-and ur mom sent austin to come after us
+and ur mom sent ur little brother to come after us
 <<wait 4>>
 
 <<Me>>
@@ -845,7 +838,13 @@ i guess things change
 
 
 
-
+title: StopDialogue
+tags:
+colorID: 0
+position: 0,0
+---
+<<wait 1000>>
+===
 
 
 
@@ -860,6 +859,7 @@ position: 0,0
 <<wait 2.5>>
 <<Me>>
 Hey
+<<wait 2.5>>
 <<wait 2.5>>
 There's something here I've been wanting to draw
 <<wait 3.5>>
@@ -881,7 +881,7 @@ i hate surprises
 <<Me>>
 I'll give you a hint
 <<wait 3>>
-It's some place you should visit on the water...
+It's an old place you should visit, on the water...
 <<wait 3.5>>
 
 <<Them>>
@@ -899,21 +899,21 @@ I'll start drawing now
 <<Them>>
 //Variable Messages
 it cant be hawaii
-<<wait 12>>
-is it the golden gate ive already been to the golden gate
 <<wait 14>>
+is it the golden gate ive already been to the golden gate
+<<wait 18>>
 x: just tell me >:(
-<<wait 16>> 
+<<wait 19>> 
 can i find it on google
-<<wait 12>>
+<<wait 20>>
 is it somewhere i know
-<<wait 10>>
+<<wait 13>>
 your moms house
-<<wait 16>>
+<<wait 18>>
 idk dude just tell me
-<<wait 12>>
+<<wait 15>>
 ok im just not gonna say anything
-<<wait 16>>
+<<wait 35>>
 are you still there?
 
 //[shortly after the full loop plays for the first time]
@@ -923,9 +923,11 @@ wait
 <<wait 3>>
 i think i have an idea
 
-<<stop>>
 // <<SetTrigger stage4_makeDrawable>>
-
+<<wait 1000>>
+<<jump StopDialogue>>
+<<Stop>>
+<<wait 1000>>
 
 ===
 
@@ -950,7 +952,8 @@ position: 0,0
 <<wait 2>>
 Remember this?
 <<wait 2.5>>
-
+<<DisplayImage>>
+<<wait 5>>
 <<Them>>
 is that the lakehouse?
 <<wait 3>>
@@ -977,7 +980,7 @@ its really gone to heck, huh
 
 <<Me>>
 No one took care of the house, so
-<<wait 3.5>>
+<<wait 2.5>>
 
 <<Them>>
 what?? why not
@@ -991,7 +994,7 @@ Well, who would?
 theres really no one who stuck around huh
 <<wait 4.5>>
 yknow what hold on
-<<wait 3>>
+<<wait 2>>
 IM gonna send you a drawing
 
 //[Pause for about 5 seconds or so]
@@ -1015,6 +1018,8 @@ lets save it
 
 <<Me>>
 I'd like that //:)
+<<wait 5>>
+<<FadeToBlack>>
 <<wait 10>>
 <<ToCredits>>
 // <<SetTrigger ending>>
@@ -1062,7 +1067,7 @@ it sounds like its broke
 <<Me>>
 Yeah, it's broke
 
-<<AdvanceState>>
+
 
 
 ===

@@ -156,11 +156,11 @@ public class CameraControls : MonoBehaviour
                     
                 }
                 else{
-                    Debug.Log(newCPOI.name + " is visible!");
+                    // Debug.Log(newCPOI.name + " is visible!");
                     
                 }
             } else {
-                Debug.Log(newCPOI.name + " is not visible!");
+                // Debug.Log(newCPOI.name + " is not visible!");
                 
             }                     
         }

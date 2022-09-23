@@ -3,7 +3,14 @@ guid: 51d440154aa47844f80be8d8f22af6c3
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - text: {instanceID: 0}
+  - parent: {instanceID: 0}
+  - audioManager: {instanceID: 0}
+  - optionsContainer: {instanceID: 0}
+  - optionPrefab: {instanceID: 0}
+  - dialogueBubblePrefab: {instanceID: 0}
+  - moneyshot: {fileID: 2800000, guid: 728ab0e29a55b364a9e0ed74e4b8e925, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

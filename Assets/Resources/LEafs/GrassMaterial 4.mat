@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: GrassMaterial 4
-  m_Shader: {fileID: 4800000, guid: 13c02b14c4d048fa9653293d54f6e0e1, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 82ce4956233868d43acc341e79b7f403, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -101,6 +101,7 @@ Material:
     - _EnableExternalAlpha: 0
     - _EnvironmentReflections: 1
     - _Flatten_Shadows: 0
+    - _Float: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -110,6 +111,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+    - _Saturate: 1.12
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -117,15 +119,17 @@ Material:
     - _Surface: 0
     - _Toon_Ramp_Smoothness: 0
     - _Toon_ramp_Offset: 0
+    - _Wind: 0.5
     - _Wind_Speed: 0.1
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _Atmosphere: {r: 0, g: 0, b: 0, a: 0}
+    - _Atmosphere: {r: 0.8207547, g: 0.3445621, b: 0.3445621, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.9056604, g: 0.73750484, b: 0.41438237, a: 1}
+    - _Color: {r: 1, g: 0.93022645, b: 0.7971698, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _Gradient: {r: 0.4811321, g: 0.33129895, b: 0.31545925, a: 0}
     - _Gradient_Color: {r: 0.38679248, g: 0.3387475, b: 0.24265754, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}

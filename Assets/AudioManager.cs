@@ -13,7 +13,6 @@ public class AudioManager : MonoBehaviour
     public AudioClip[] songPack2;
     public AudioClip[] songPack3;
     public AudioClip[] songPack4;
-
     public AudioListener listener;
     public int sourceID;
     public int soundCount, maxSoundCount;

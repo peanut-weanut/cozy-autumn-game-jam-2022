@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 using System;
@@ -32,12 +33,13 @@ namespace Yarn.Unity.Example
 
         [Tooltip("This is the chat message bubble UI object (what we are cloning for each message!)... NOT the container group for all chat bubbles")]
         public GameObject dialogueBubblePrefab;
-        public float lettersPerSecond = 10f;
+        public float lettersPerSecond = 20f;
         bool isFirstMessage = true;
 
         // current message bubble styling settings, modified by SetSender
         bool isRightAlignment = true;
         Color currentBGColor = Color.black, currentTextColor = Color.white;
+        public Image fade;
 
         void Awake()
         {
@@ -45,13 +47,21 @@ namespace Yarn.Unity.Example
             runner.AddCommandHandler("Me", SetSenderMe ); // registers Yarn Command <<Me>>, which sets the current message sender to "Me"
             runner.AddCommandHandler("Them", SetSenderThem ); // registers Yarn Command <<They>>, which sets the current message sender to "Them" (whoever the player is talking to)
             runner.AddCommandHandler("DisplayImage", DisplayImage);
-            runner.AddCommandHandler("Moneyshot", DisplayMoneyshot);
+            runner.AddCommandHandler("DisplayMoneyshot", DisplayMoneyshot);
+            runner.AddCommandHandler("FadeToBlack", FadeBlack);
             // runner.AddCommandHandler<int>("NextStage", SetNextStage); // set nextstage stage. ends dialogue and goes to next stage
             // runner.AddCommandHandler<Trigger>("CheckTrigger", OnTrigger) //taking a trigger as an argument, it will wait until the trigger is activated, and then go to the next dialogue
 
             // optionsContainer.SetActive(false); 
         }
-
+        bool startFade = false;
+        void FadeBlack(){
+            startFade = true;
+        }
+        void Update(){
+            if(startFade)
+                fade.color = new Color(fade.color.r, fade.color.g, fade.color.b, fade.color.a+0.0075f);
+        }
         void Start () 
         {
             
@@ -81,12 +91,12 @@ namespace Yarn.Unity.Example
 
         //THIS IS SUPPOSED TO BE CALLED BY THE YARN SCRIPT Yarnchatdialoge and display an image
         //;3
-        void DisplayMoneyshot(){
-            //send the cute drawing that cassie makes
-        }
+       
         private Sprite picToPost;
+        bool firstAfterImage = false;
         void DisplayImage()
         {
+
             Texture2D sprite = GameManager.game.drawUtils.textPic;
 
             // Sprite picToPost = Sprite.Create(sprite,new Rect(0,0,sprite.width,sprite.height),new Vector2(0.5f, 0.5f));
@@ -95,9 +105,7 @@ namespace Yarn.Unity.Example
             chatImage = chatImageGameObject.AddComponent<RawImage>() as RawImage;
             chatImage.texture = sprite;
 
-            chatImageGameObject.AddComponent<RectTransform>();
             chatImageGameObject.AddComponent<HorizontalLayoutGroup>();
-            chatImageGameObject.AddComponent<CanvasRenderer>();
             
 
             var rectValue = chatImageGameObject.AddComponent<LayoutElement>();
@@ -109,8 +117,8 @@ namespace Yarn.Unity.Example
             localScale.localScale = new Vector3 (0.35f, 0.5f, 1f);
             chatImageGameObject.transform.SetParent(parent.transform);
             chatImageGameObject.transform.SetAsLastSibling();
-            
-
+            chatImageGameObject.SetActive(true);
+            firstAfterImage = true;
 
 
             //var rectValue = chatImageGameObject.GetComponent<RectTransform>();
@@ -120,7 +128,53 @@ namespace Yarn.Unity.Example
             Debug.Log("Posted Image to Chat");
             //Instantiate(chatImageGameObject, dialogueBubblePrefab.transform.parent);
 
+            
 
+
+
+
+            //Sprite.Create(picToPost, new Rect(0.0f, 0.0f, picToPost.width, picToPost.height), new Vector2(0.5f, 0.5f), 100.0f);
+            //var bg = dialogueBubblePrefab.GetComponentInChildren<Image>();
+            //bg.sprite = spriteArray[spriteID];
+            //Instantiate<Sprite>(spriteArray[spriteID], bg.transform.position, bg.transform.rotation);
+
+        }
+        public Texture2D moneyshot;
+        void DisplayMoneyshot()
+        {
+
+            
+
+            // Sprite picToPost = Sprite.Create(sprite,new Rect(0,0,sprite.width,sprite.height),new Vector2(0.5f, 0.5f));
+            
+            chatImageGameObject = new GameObject();
+            chatImage = chatImageGameObject.AddComponent<RawImage>() as RawImage;
+            chatImage.texture = moneyshot;
+
+            chatImageGameObject.AddComponent<HorizontalLayoutGroup>();
+            
+
+            var rectValue = chatImageGameObject.AddComponent<LayoutElement>();
+
+            rectValue.preferredHeight = 200f;
+
+            var localScale = chatImageGameObject.GetComponent<RectTransform>();
+
+            localScale.localScale = new Vector3 (0.35f, 0.5f, 1f);
+            chatImageGameObject.transform.SetParent(parent.transform);
+            chatImageGameObject.transform.SetAsLastSibling();
+            chatImageGameObject.SetActive(true);
+            firstAfterImage = true;
+
+
+            //var rectValue = chatImageGameObject.GetComponent<RectTransform>();
+
+            //rectValue.sizeDelta = new Vector2(415.2f, 79.48f);
+
+            Debug.Log("Posted Image to Chat");
+            //Instantiate(chatImageGameObject, dialogueBubblePrefab.transform.parent);
+
+            
 
 
 
@@ -177,27 +231,32 @@ namespace Yarn.Unity.Example
             UpdateMessageBoxSettings();
         }
 
-        // Coroutine currentTypewriterEffect;
+        Coroutine currentTypewriterEffect;
 
         public override void RunLine(LocalizedLine dialogueLine, Action onDialogueLineFinished)
         {
-            // if (currentTypewriterEffect != null)
-            // {
-            //     StopCoroutine(currentTypewriterEffect);
-            // }
+            if (currentTypewriterEffect != null)
+            {
+                StopCoroutine(currentTypewriterEffect);
+            }
 
             CloneMessageBoxToHistory();
+            if (firstAfterImage){
+                chatImageGameObject.transform.SetAsLastSibling();
+                firstAfterImage = false;
+            }
 
             text.text = dialogueLine.TextWithoutCharacterName.Text;
 
-            // currentTypewriterEffect = StartCoroutine(ShowTextAndNotify());
+            currentTypewriterEffect = StartCoroutine(ShowTextAndNotify());
 
-            // IEnumerator ShowTextAndNotify() {
-                // yield return StartCoroutine(Effects.Typewriter(text, lettersPerSecond, null));
-                // currentTypewriterEffect = null;
-                audioManager.playText = true;
+            IEnumerator ShowTextAndNotify() {
+                yield return StartCoroutine(Effects.Typewriter(text, lettersPerSecond, null));
+                currentTypewriterEffect = null;
+                
                 onDialogueLineFinished();
-            // }
+            }
+            audioManager.playText = true;
         }
 
         public override void RunOptions(DialogueOption[] dialogueOptions, Action<int> onOptionSelected)

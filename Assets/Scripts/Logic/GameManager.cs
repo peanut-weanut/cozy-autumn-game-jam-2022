@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Yarn.Unity;
 
 public class GameManager : MonoBehaviour
@@ -51,6 +52,7 @@ public class GameManager : MonoBehaviour
         drawUtils = transform.GetComponent<DrawingUtilities>();
         dialogueRunner.AddCommandHandler<int>("SetState", SetState);
         dialogueRunner.AddCommandHandler("ToCredits", ToCredits);
+        dialogueRunner.AddCommandHandler("Stop", StopDialogue);
         game = this;
     }
 
@@ -73,8 +75,9 @@ public class GameManager : MonoBehaviour
         AdvanceState();
     }
     void ToCredits(){
-        //transition scene to credits
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+    public bool[] alreadyPlayed = new bool[6];
     void PlayPrompt(){
         if(camControls.DebugPOISeen){
             switch(camControls.realCurrentPOI.tag){
@@ -140,8 +143,36 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Could not get poi seen");
+            Debug.Log("Could not get poi seen, running failure.");
+            StartFailure();
         }
+    }
+    void StartFailure(){
+         switch(state){
+            case -1:
+                    
+            break;
+            case 0:
+                dialogueRunner.Stop();
+                dialogueRunner.StartDialogue("PromptPlaqueFail");
+            break;
+            case 1:
+                dialogueRunner.Stop();
+                dialogueRunner.StartDialogue("PromptSomewhereToSwimFail");
+            break;
+            case 2:
+                dialogueRunner.Stop();
+                dialogueRunner.StartDialogue("PromptAnimalsFail");
+            break;
+            case 3:
+                dialogueRunner.Stop();
+                dialogueRunner.StartDialogue("PromptSomewhereToSitFail");
+            break;
+            case 4:
+                dialogueRunner.Stop();
+                dialogueRunner.StartDialogue("PromptLakehouseFail");
+            break;
+         }
     }
     void SendPicture(){
         dialogueRunner.StartDialogue("PostPic");
@@ -158,12 +189,12 @@ public class GameManager : MonoBehaviour
      }
      return ret.ToArray();        
     }
-    [YarnCommand("NextPrompt")]
     void StartNewDialogue(){
         dialogueRunner.Stop();
         dialogueRunner.StartDialogue(nextPrompt);
+        Debug.Log("Starting new dialogue: " + nextPrompt);
     }
-    [YarnCommand("Stop")] // for the ui animation
+    // [YarnCommand("Stop")] // for the ui animation
     void StopDialogue(){
         dialogueRunner.Stop();
     }
@@ -185,39 +216,60 @@ public class GameManager : MonoBehaviour
         Debug.Log("State is " + state);
         switch(state){
             case -1: // tutorial dialogue
-                UpdateTriggers(new List<Trigger>{});
-                nextPrompt = "PromptPlaque";
-                audioManager.currentSongPack = audioManager.songPack0;
+                if (!alreadyPlayed[0]){
+                    UpdateTriggers(new List<Trigger>{});
+                    nextPrompt = "PromptPlaque";
+                    audioManager.currentSongPack = audioManager.songPack0;
+                }
+                alreadyPlayed[0] = true;
             break;
             case 0:
-                StartNewDialogue();
-                UpdateTriggers(new List<Trigger>{triggers[2]});
-                nextPrompt = "PromptSomewhereToSwim";
-                audioManager.currentSongPackIndex = 0;
+                if (!alreadyPlayed[1]){
+                    StartNewDialogue();
+                    UpdateTriggers(new List<Trigger>{triggers[2]});
+                    nextPrompt = "PromptSomewhereToSwim";
+                    audioManager.currentSongPackIndex = 0;
+                }
+                alreadyPlayed[1] = true;
             break;
             case 1:
-                StartNewDialogue();
-                UpdateTriggers(new List<Trigger>{triggers[5], triggers[6]});
-                nextPrompt = "PromptAnimals";
-                audioManager.currentSongPackIndex = 1;
+                if (!alreadyPlayed[2]){
+                    StartNewDialogue();
+                    UpdateTriggers(new List<Trigger>{triggers[5], triggers[6]});
+                    nextPrompt = "PromptAnimals";
+                    audioManager.currentSongPackIndex = 1;
+                }
+                alreadyPlayed[2] = true;
             break;
             case 2:
-                StartNewDialogue();
-                UpdateTriggers(new List<Trigger>{triggers[9],triggers[10]});
-                nextPrompt = "PromptSomewhereToSit";
-                audioManager.currentSongPackIndex = 2;
+                if (!alreadyPlayed[3]){
+                    StartNewDialogue();
+                    foreach(GameObject POI in stage3Objects){
+                        POI.GetComponent<POIScript>().isDrawable = true;
+                    }
+                    UpdateTriggers(new List<Trigger>{triggers[9],triggers[10]});
+                    nextPrompt = "PromptSomewhereToSit";
+                    audioManager.currentSongPackIndex = 2;
+                }
+                alreadyPlayed[3] = true;
             break;
             case 3:
-                StartNewDialogue();
-                UpdateTriggers(new List<Trigger>{triggers[13],triggers[14]});
-                nextPrompt = "PromptLakehouse";
-                audioManager.currentSongPackIndex = 3;
+                if (!alreadyPlayed[4]){
+                    StartNewDialogue();
+                    UpdateTriggers(new List<Trigger>{triggers[13],triggers[14]});
+                    nextPrompt = "PromptLakehouse";
+                    audioManager.currentSongPackIndex = 3;
+                }
+                alreadyPlayed[4] = true;
             break;
             case 4:
-                StartNewDialogue();
-                UpdateTriggers(new List<Trigger>{triggers[17],triggers[18]});
-                audioManager.currentSongPackIndex = 4;
+                if (!alreadyPlayed[5]){
+                    StartNewDialogue();
+                    UpdateTriggers(new List<Trigger>{triggers[17],triggers[18]});
+                    audioManager.currentSongPackIndex = 4;
                 // nextPrompt = "PromptPlaque";
+                }
+                alreadyPlayed[5] = true;
             break;
         }
     }
