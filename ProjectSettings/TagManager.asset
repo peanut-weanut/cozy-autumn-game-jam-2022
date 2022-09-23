@@ -15,6 +15,7 @@ TagManager:
   - Lakehouse
   - Frog
   - Bird
+  - Bee
   layers:
   - Default
   - TransparentFX

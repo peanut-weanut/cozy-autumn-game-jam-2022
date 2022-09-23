@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     public CanvasBehavior canvas;
     public DrawingUtilities drawUtils;
     public DialogueRunner dialogueRunner;
+    public AudioManager audioManager;
 
 
     public GameObject[] stage0Objects;
@@ -48,6 +49,8 @@ public class GameManager : MonoBehaviour
         drawLines = GetComponent<DrawLines>();
         camControls = Camera.main.transform.GetComponent<CameraControls>();
         drawUtils = transform.GetComponent<DrawingUtilities>();
+        dialogueRunner.AddCommandHandler<int>("SetState", SetState);
+        dialogueRunner.AddCommandHandler("ToCredits", ToCredits);
         game = this;
     }
 
@@ -68,6 +71,9 @@ public class GameManager : MonoBehaviour
         drawUtils.OnDoneDrawing += PlayPrompt;
         
         AdvanceState();
+    }
+    void ToCredits(){
+        //transition scene to credits
     }
     void PlayPrompt(){
         if(camControls.DebugPOISeen){
@@ -170,42 +176,56 @@ public class GameManager : MonoBehaviour
     void DisallowDrawing(){
         drawLines.allowDrawing = false;
     }
-    [YarnCommand("AdvanceState")]
+   
     void AdvanceState(){
+        foreach(GameObject POI in POIs){
+            POI.GetComponent<POIScript>().isDrawable = false;
+        }
         state++;
+        Debug.Log("State is " + state);
         switch(state){
             case -1: // tutorial dialogue
                 UpdateTriggers(new List<Trigger>{});
                 nextPrompt = "PromptPlaque";
+                audioManager.currentSongPack = audioManager.songPack0;
             break;
             case 0:
                 StartNewDialogue();
                 UpdateTriggers(new List<Trigger>{triggers[2]});
                 nextPrompt = "PromptSomewhereToSwim";
+                audioManager.currentSongPackIndex = 0;
             break;
             case 1:
                 StartNewDialogue();
                 UpdateTriggers(new List<Trigger>{triggers[5], triggers[6]});
                 nextPrompt = "PromptAnimals";
+                audioManager.currentSongPackIndex = 1;
             break;
             case 2:
                 StartNewDialogue();
                 UpdateTriggers(new List<Trigger>{triggers[9],triggers[10]});
                 nextPrompt = "PromptSomewhereToSit";
+                audioManager.currentSongPackIndex = 2;
             break;
             case 3:
                 StartNewDialogue();
                 UpdateTriggers(new List<Trigger>{triggers[13],triggers[14]});
                 nextPrompt = "PromptLakehouse";
+                audioManager.currentSongPackIndex = 3;
             break;
             case 4:
                 StartNewDialogue();
                 UpdateTriggers(new List<Trigger>{triggers[17],triggers[18]});
+                audioManager.currentSongPackIndex = 4;
                 // nextPrompt = "PromptPlaque";
             break;
         }
     }
 
+    void SetState(int newState){
+        state = newState-1;
+        AdvanceState();
+    }
     void UpdateTriggers(List<Trigger> triggerList){
         triggersActive.Clear();
         foreach(Trigger t in triggerList){

@@ -88,7 +88,7 @@ public class DrawLines : MonoBehaviour
                     newDrawing = Instantiate(drawingPrefab, Vector3.zero, Quaternion.identity);
                     newDrawing.transform.GetComponent<LineRenderer>().forceRenderingOff = true;
                     newDrawing.transform.parent = hit.transform;
-                    newDrawing.transform.localPosition = Vector3.zero - canvas.transform.InverseTransformDirection(ray.direction * 0.25f);
+                    newDrawing.transform.localPosition = Vector3.zero - canvas.transform.InverseTransformDirection(ray.direction * 0.15f);
                     newDrawing.transform.localRotation = Quaternion.Euler(Vector3.zero);
                     newDrawing.transform.localScale = Vector3.one;
                     

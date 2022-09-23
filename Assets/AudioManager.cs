@@ -18,15 +18,18 @@ public class AudioManager : MonoBehaviour
     public int sourceID;
     public int soundCount, maxSoundCount;
     private int nextSongIndex = 0;
-    private int currentSongPackIndex = 0;
-    private AudioClip[] currentSongPack;
+    public int currentSongPackIndex = 0;
+    public AudioClip[] currentSongPack;
     private float songTimer = 100.0f;
     public InputSystem controls;
     public AudioClip[] paperSounds;
     private int currentPaperSound;
+    public DialogueRunner dialogueRunner;
     private void Awake()
     {
         controls = new InputSystem();
+        dialogueRunner.AddCommandHandler("StartMusic", StartMusic);
+        dialogueRunner.AddCommandHandler("ResetMusic", ResetMusic);
     }
     void Start()
     {
@@ -39,6 +42,16 @@ public class AudioManager : MonoBehaviour
         //GameManager.game.dialogueRunner.OnDialogueBegin += EndingSongIndex;
         //GameManager.game.dialogueRunner.OnDialogueEnd += AmbientSongIndex;
         controls.CameraStates.ChangeView.performed += ctx => PlayPaperSound();
+       
+        
+    }
+    void StartMusic(){
+        Debug.Log("Start music executed.");
+        PlayBGM();
+        nextSongIndex = 0;
+    }
+    void ResetMusic(){
+        nextSongIndex = 0;
     }
     private void OnEnable()
     {
@@ -49,22 +62,19 @@ public class AudioManager : MonoBehaviour
     {
         controls.Disable();
     }
-    [YarnCommand("StartMusic")]
-    void StartMusic(){
-        PlayBGM();
-    }
+    // [YarnCommand("StartMusic")]
+    
     // Update is called once per frame
+    bool playOnceCheck = true;
     void Update()
     {
         songTimer -= Time.deltaTime;
-        if (songTimer < 0){
-            
-            if(nextSongIndex == 2)
-                ResetSongIndex();
-            else
-                PlayBGM();
-            
-        }
+        if (songTimer < 0)
+            PlayBGM();
+        if (playText)
+            PlayTextNoise();
+                      
+        
         // if (TestCrossFade == 1){
         //     CrossfadeSources(5, 6);
         // } else if (TestCrossFade == 2){
@@ -92,6 +102,7 @@ public class AudioManager : MonoBehaviour
     // public float crossfadeAmount;
     void POISongIndex(){
         nextSongIndex = 1;
+        Debug.Log("Set song index to 1.");
         // TestCrossFade = 1;
     }
     
@@ -99,6 +110,7 @@ public class AudioManager : MonoBehaviour
         switch(nextSongIndex){
             case 1:
                 nextSongIndex = 2;
+                Debug.Log("Set song index to 2.");
             break;
             // case 2:
             //     nextSongIndex = 0; we dont want this to happen when you submit lol
@@ -107,14 +119,28 @@ public class AudioManager : MonoBehaviour
     }
     [YarnCommand("AdvanceMusic")]
     void ResetSongIndex(){
-        nextSongIndex = 0;
         currentSongPackIndex++; // DONT SET THIS HERE IN FINAL GAME, SET IT IN THE DIALOGUE
-        // TestCrossFade = 2;
+        nextSongIndex = 0;
+        Debug.Log("Reset song index and advanced song pack.");
     }
-    void DisableSongIndex(){
-        nextSongIndex = 3;
+    public bool isItMe = false;
+    public AudioClip[] textingSounds;
+    public bool playText = false;
+    void PlayTextNoise(){
+        switch(isItMe){
+            case true:
+                source[4].PlayOneShot(textingSounds[0]);
+            break;
+            case false:
+                source[4].PlayOneShot(textingSounds[1]);
+            break;
+        }
+        playText = false;
+    }
+    // void DisableSongIndex(){
+    //     nextSongIndex = 3;
         
-    }
+    // }
     // void CrossfadeSources(int sourceFrom, int sourceTo){
     //     source[sourceFrom].volume = Mathf.Lerp(source[sourceFrom].volume, 0.0f, crossfadeAmount);
     //     source[sourceTo].volume = Mathf.Lerp(source[sourceTo].volume, 1.0f, crossfadeAmount);
@@ -142,7 +168,11 @@ public class AudioManager : MonoBehaviour
                 currentSongPack = songPack4;
             break;
         }
-        songTimer = currentSongPack[nextSongIndex].length;
+        if (nextSongIndex != 3)
+            songTimer = currentSongPack[nextSongIndex].length;
+        else
+            songTimer = 10.0f;
+        
         switch(nextSongIndex){
         case 0:
             source[5].clip = currentSongPack[0];
@@ -167,6 +197,7 @@ public class AudioManager : MonoBehaviour
             source[6].volume = 0;
             source[6].clip = currentSongPack[1];
             source[6].Play();
+            nextSongIndex = 3;
         break;
         case 3:
             source[5].clip = currentSongPack[0];
@@ -177,5 +208,6 @@ public class AudioManager : MonoBehaviour
             source[6].Play();
         break;
         }
+        Debug.Log("Played BGM: The current song pack is " + currentSongPackIndex + ", the current song timer is " + songTimer + ", and the current song index is" + nextSongIndex + ".");
     }
 }

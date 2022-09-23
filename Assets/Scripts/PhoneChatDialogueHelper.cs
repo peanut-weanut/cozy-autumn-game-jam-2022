@@ -19,12 +19,13 @@ namespace Yarn.Unity.Example
         public Sprite[] spriteArray;
 
         //Chat Image Game Object
-        private Image chatImage;
+        private RawImage chatImage;
 
         private GameObject chatImageGameObject;
 
         //gets where the image needs to be put
         public GameObject parent;
+        public AudioManager audioManager;
 
         public GameObject optionsContainer;
         public OptionView optionPrefab;
@@ -32,7 +33,6 @@ namespace Yarn.Unity.Example
         [Tooltip("This is the chat message bubble UI object (what we are cloning for each message!)... NOT the container group for all chat bubbles")]
         public GameObject dialogueBubblePrefab;
         public float lettersPerSecond = 10f;
-        
         bool isFirstMessage = true;
 
         // current message bubble styling settings, modified by SetSender
@@ -66,6 +66,7 @@ namespace Yarn.Unity.Example
             currentBGColor = new Color(1.0f, 0.5824543f, 0.259434f);
             currentBGColor.a = 1.0f;
             currentTextColor = Color.white;
+            GameManager.game.audioManager.isItMe = true;
         }
 
         // YarnCommand <<Them>> does not use YarnCommand C# attribute, registers in Awake() instead
@@ -75,6 +76,7 @@ namespace Yarn.Unity.Example
             currentBGColor = new Color(1.0f, 0.284667f, 0.2588235f);
             currentBGColor.a = 1.0f;
             currentTextColor = Color.white;
+            GameManager.game.audioManager.isItMe = false;
         }
 
         //THIS IS SUPPOSED TO BE CALLED BY THE YARN SCRIPT Yarnchatdialoge and display an image
@@ -82,14 +84,16 @@ namespace Yarn.Unity.Example
         void DisplayMoneyshot(){
             //send the cute drawing that cassie makes
         }
+        private Sprite picToPost;
         void DisplayImage()
         {
             Texture2D sprite = GameManager.game.drawUtils.textPic;
 
-            Sprite picToPost = Sprite.Create(sprite,new Rect(0,0,sprite.width,sprite.height),new Vector2(0.5f, 0.5f));
+            // Sprite picToPost = Sprite.Create(sprite,new Rect(0,0,sprite.width,sprite.height),new Vector2(0.5f, 0.5f));
+            
             chatImageGameObject = new GameObject();
-            chatImage = chatImageGameObject.AddComponent<Image>() as Image;
-            chatImage.sprite = picToPost;
+            chatImage = chatImageGameObject.AddComponent<RawImage>() as RawImage;
+            chatImage.texture = sprite;
 
             chatImageGameObject.AddComponent<RectTransform>();
             chatImageGameObject.AddComponent<HorizontalLayoutGroup>();
@@ -102,9 +106,10 @@ namespace Yarn.Unity.Example
 
             var localScale = chatImageGameObject.GetComponent<RectTransform>();
 
-            localScale.localScale = new Vector3 (.5f, 1f, 1f);
-
+            localScale.localScale = new Vector3 (0.35f, 0.5f, 1f);
             chatImageGameObject.transform.SetParent(parent.transform);
+            chatImageGameObject.transform.SetAsLastSibling();
+            
 
 
 
@@ -190,6 +195,7 @@ namespace Yarn.Unity.Example
             // IEnumerator ShowTextAndNotify() {
                 // yield return StartCoroutine(Effects.Typewriter(text, lettersPerSecond, null));
                 // currentTypewriterEffect = null;
+                audioManager.playText = true;
                 onDialogueLineFinished();
             // }
         }
