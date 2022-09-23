@@ -172,8 +172,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: This is a message.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a181fbe1ee23c7a47a63ff9f70f28545, type: 2}
+  m_sharedMaterial: {fileID: -1313871228990831355, guid: a181fbe1ee23c7a47a63ff9f70f28545, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -335,6 +335,7 @@ MonoBehaviour:
   - {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 21300000, guid: f821a4a09d3018f49bd94fffdbcc9279, type: 3}
   parent: {fileID: 8969981256357223180}
+  audioManager: {fileID: 0}
   optionsContainer: {fileID: 0}
   optionPrefab: {fileID: 4898135292715651530, guid: f7bc3e33b24fb496dab285d98e122495, type: 3}
   dialogueBubblePrefab: {fileID: 2571956448017840357}
@@ -1111,11 +1112,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 8
-    m_Right: 8
-    m_Top: 8
-    m_Bottom: 8
-  m_ChildAlignment: 0
+    m_Left: 36
+    m_Right: 35
+    m_Top: 7
+    m_Bottom: 18
+  m_ChildAlignment: 4
   m_Spacing: 0
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
