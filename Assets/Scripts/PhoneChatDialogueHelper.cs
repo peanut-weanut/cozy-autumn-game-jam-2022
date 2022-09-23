@@ -19,7 +19,7 @@ namespace Yarn.Unity.Example
         public Sprite[] spriteArray;
 
         //Chat Image Game Object
-        private Image chatImage;
+        private RawImage chatImage;
 
         private GameObject chatImageGameObject;
 
@@ -84,14 +84,16 @@ namespace Yarn.Unity.Example
         void DisplayMoneyshot(){
             //send the cute drawing that cassie makes
         }
+        private Sprite picToPost;
         void DisplayImage()
         {
             Texture2D sprite = GameManager.game.drawUtils.textPic;
 
-            Sprite picToPost = Sprite.Create(sprite,new Rect(0,0,sprite.width,sprite.height),new Vector2(0.5f, 0.5f));
+            // Sprite picToPost = Sprite.Create(sprite,new Rect(0,0,sprite.width,sprite.height),new Vector2(0.5f, 0.5f));
+            
             chatImageGameObject = new GameObject();
-            chatImage = chatImageGameObject.AddComponent<Image>() as Image;
-            chatImage.sprite = picToPost;
+            chatImage = chatImageGameObject.AddComponent<RawImage>() as RawImage;
+            chatImage.texture = sprite;
 
             chatImageGameObject.AddComponent<RectTransform>();
             chatImageGameObject.AddComponent<HorizontalLayoutGroup>();

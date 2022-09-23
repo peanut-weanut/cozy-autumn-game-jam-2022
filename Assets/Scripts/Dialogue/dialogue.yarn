@@ -9,6 +9,7 @@ position: 0,0
 
 
 <<Me>>
+<<wait 5>>
 Hey, what's up? I heard you graduated!
 <<wait 3.5>>
 How have you been these days?
@@ -880,7 +881,7 @@ i hate surprises
 <<Me>>
 I'll give you a hint
 <<wait 3>>
-It's some place you should visit...
+It's some place you should visit on the water...
 <<wait 3.5>>
 
 <<Them>>
