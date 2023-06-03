@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Cinemachine;
+#if UNITY_WEBGL && !UNITY_EDITOR
+using System.Runtime.InteropServices;
+#endif
 
 public class CameraControls : MonoBehaviour
 {
     //Switches between cinemachines cameras for looking and drawing
 
     // public List<int> visiblePOIs;
+    public string browserVersion;
 
     public GameObject[] cameras;
     // Animator anim;
@@ -34,6 +38,12 @@ public class CameraControls : MonoBehaviour
     {
         controls = new InputSystem();
         Cursor.lockState = CursorLockMode.Locked;
+        #if UNITY_WEBGL && !UNITY_EDITOR
+            browserVersion = GetBrowserVersion();
+        #else
+            browserVersion = "N/A";
+        #endif
+        Debug.Log("Browser version: " + browserVersion);
     }
     
     void Start()
@@ -69,6 +79,11 @@ public class CameraControls : MonoBehaviour
     //         break;
     //     }
     // }
+    #if UNITY_WEBGL && !UNITY_EDITOR
+    [DllImport("__Internal")]
+    private static extern string GetBrowserVersion();
+    #endif
+
     void Update(){
         if(StartTimer){
             if(state == states.DRAWING)
@@ -168,6 +183,7 @@ public class CameraControls : MonoBehaviour
             return true;
         return false;
     }
+    
     void PrioritizePOI(){
         int i = 0;
         float camAngle = Camera.main.transform.forward.y;
@@ -181,9 +197,19 @@ public class CameraControls : MonoBehaviour
             i++;  
             
         }
-        realCurrentPOI = currentPOI[min];
-        
+        realCurrentPOI = currentPOI[min];       
     }
+
+    //coroutine
+    IEnumerator RandomBullshit(){
+        //a += 1
+        yield return new WaitUntil(IsMusicStopped);
+        // a += 1
+        // a = 2
+    }
+    bool IsMusicStopped() => finalSongStopped;
+    bool finalSongStopped;
+
     // void InheritRotation(GameObject cam){
     //     cam.GetComponent<CinemachineVirtualCamera>().transform.rotation = Camera.main.transform.rotation;
     // }

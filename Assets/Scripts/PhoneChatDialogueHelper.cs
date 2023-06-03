@@ -94,7 +94,7 @@ namespace Yarn.Unity.Example
        
         private Sprite picToPost;
         bool firstAfterImage = false;
-        void DisplayImage()
+        void DisplayImage() // TODO: you have to fix the texting order
         {
 
             Texture2D sprite = GameManager.game.drawUtils.textPic;
