@@ -118,9 +118,9 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _Atmosphere: {r: 0.9622642, g: 0.73985404, b: 0.73985404, a: 0}
+    - _Atmosphere: {r: 1, g: 0.6324958, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.82880104, g: 0.83137256, b: 0.30196077, a: 1}
+    - _Color: {r: 1, g: 0.7839799, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Gradient: {r: 0.5943396, g: 0.18843651, b: 0.1485849, a: 0}
     - _Gradient_Color: {r: 0.3490566, g: 0.3314597, b: 0.0049394714, a: 0}

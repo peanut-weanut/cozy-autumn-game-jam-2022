@@ -24234,7 +24234,7 @@ MonoBehaviour:
   currentPOI: []
   realCurrentPOI: {fileID: 0}
   StartTimer: 0
-  POITime: 10
+  POITime: 5
   POITimer: 0
   DebugPOISeen: 0
   POISeenCancelBufferTime: 0

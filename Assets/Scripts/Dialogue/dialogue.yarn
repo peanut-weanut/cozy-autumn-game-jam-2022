@@ -142,6 +142,8 @@ no i think it was a sign or something
 
 <<Me>>
 Maybe I'm not drawing it for long enough for it to be clear?
+<<wait 4>>
+Let me draw it until something changes...
 
 ===
 
@@ -960,7 +962,7 @@ is that the lakehouse?
 
 <<Me>>
 You got it!
-<<wait 2.5>>
+<<wait 4.5>>
 
 <<Them>>
 did anyone new move in?
@@ -980,7 +982,7 @@ its really gone to heck, huh
 
 <<Me>>
 No one took care of the house, so
-<<wait 2.5>>
+<<wait 5.5>>
 
 <<Them>>
 what?? why not
@@ -998,7 +1000,7 @@ yknow what hold on
 IM gonna send you a drawing
 
 //[Pause for about 5 seconds or so]
-<<wait 6>>
+<<wait 10>>
 <<DisplayMoneyshot>>
 
 <<wait 1>>
@@ -1009,12 +1011,12 @@ it's us
 
 <<Me>>
 Am I holding a hammer?
-<<wait 3>>
+<<wait 4>>
 
 i miss that place
-<<wait 3>>
+<<wait 5>>
 lets save it
-<<wait 4>>
+<<wait 8>>
 
 <<Me>>
 I'd like that //:)
