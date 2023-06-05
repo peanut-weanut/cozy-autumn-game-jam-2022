@@ -68,8 +68,10 @@ public class AudioManager : MonoBehaviour
     void Update()
     {
         songTimer -= Time.deltaTime;
-        if (songTimer < 0)
+        if (songTimer < 0){
             PlayBGM();
+            GetSongEnded();
+        }
         if (playText)
             PlayTextNoise();
                       
@@ -208,5 +210,12 @@ public class AudioManager : MonoBehaviour
         break;
         }
         Debug.Log("Played BGM: The current song pack is " + currentSongPackIndex + ", the current song timer is " + songTimer + ", and the current song index is" + nextSongIndex + ".");
+    }
+    public bool isCurrentSongEnded;
+    void GetSongEnded(){
+        isCurrentSongEnded = true;
+    }
+    private void LateUpdate() {
+        isCurrentSongEnded = false;     
     }
 }

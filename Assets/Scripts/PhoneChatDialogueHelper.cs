@@ -40,15 +40,19 @@ namespace Yarn.Unity.Example
         bool isRightAlignment = true;
         Color currentBGColor = Color.black, currentTextColor = Color.white;
         public Image fade;
+        public Transform chatParent;
 
         IEnumerator WaitForSound()
         {
             //checks to see if audio is playing
-            if (audioManager != null)
-            //wait until song stops playing then fade to black
-            //sound should be changed to the current song playing
-            yield return new WaitUntil(() => Sound.isPlaying == false);
-            FadeBlack();
+            if (audioManager != null){
+                yield return new WaitForEndOfFrame();
+            } else{
+                //wait until song stops playing then fade to black
+                //sound should be changed to the current song playing
+                yield return new WaitUntil(() => GameManager.game.audioManager.isCurrentSongEnded == true);
+                FadeBlack();
+            }
 
         }
 
@@ -68,7 +72,7 @@ namespace Yarn.Unity.Example
             runner.AddCommandHandler("StartWaitForSound", StartWaitForSound);
             // runner.AddCommandHandler<int>("NextStage", SetNextStage); // set nextstage stage. ends dialogue and goes to next stage
             // runner.AddCommandHandler<Trigger>("CheckTrigger", OnTrigger) //taking a trigger as an argument, it will wait until the trigger is activated, and then go to the next dialogue
-
+            chatParent = dialogueBubblePrefab.transform.parent;
             // optionsContainer.SetActive(false); 
         }
         bool startFade = false;
@@ -159,9 +163,6 @@ namespace Yarn.Unity.Example
         public Texture2D moneyshot;
         void DisplayMoneyshot()
         {
-
-            
-
             // Sprite picToPost = Sprite.Create(sprite,new Rect(0,0,sprite.width,sprite.height),new Vector2(0.5f, 0.5f));
             
             chatImageGameObject = new GameObject();
@@ -190,17 +191,6 @@ namespace Yarn.Unity.Example
 
             Debug.Log("Posted Image to Chat");
             //Instantiate(chatImageGameObject, dialogueBubblePrefab.transform.parent);
-
-            
-
-
-
-
-            //Sprite.Create(picToPost, new Rect(0.0f, 0.0f, picToPost.width, picToPost.height), new Vector2(0.5f, 0.5f), 100.0f);
-            //var bg = dialogueBubblePrefab.GetComponentInChildren<Image>();
-            //bg.sprite = spriteArray[spriteID];
-            //Instantiate<Sprite>(spriteArray[spriteID], bg.transform.position, bg.transform.rotation);
-
         }
 
         // when we clone a new message box, re-style the message box based on whether SetSenderMe or SetSenderThem was most recently called
@@ -237,7 +227,7 @@ namespace Yarn.Unity.Example
                     dialogueBubblePrefab, 
                     dialogueBubblePrefab.transform.position, 
                     dialogueBubblePrefab.transform.rotation, 
-                    dialogueBubblePrefab.transform.parent
+                    chatParent
                 );
                 dialogueBubblePrefab.transform.SetAsLastSibling();
             }
