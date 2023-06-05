@@ -24224,6 +24224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6203e2e9365e0b8498e6b5161f36bfb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  browserVersion: 
   cameras:
   - {fileID: 1555108452}
   - {fileID: 329231291}
@@ -24234,7 +24235,7 @@ MonoBehaviour:
   currentPOI: []
   realCurrentPOI: {fileID: 0}
   StartTimer: 0
-  POITime: 5
+  POITime: 1
   POITimer: 0
   DebugPOISeen: 0
   POISeenCancelBufferTime: 0
