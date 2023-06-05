@@ -60,6 +60,7 @@ namespace Yarn.Unity.Example
         {
             StartCoroutine(WaitForSound());
         }
+        
 
         void Awake()
         {
@@ -72,7 +73,10 @@ namespace Yarn.Unity.Example
             runner.AddCommandHandler("StartWaitForSound", StartWaitForSound);
             // runner.AddCommandHandler<int>("NextStage", SetNextStage); // set nextstage stage. ends dialogue and goes to next stage
             // runner.AddCommandHandler<Trigger>("CheckTrigger", OnTrigger) //taking a trigger as an argument, it will wait until the trigger is activated, and then go to the next dialogue
-            chatParent = dialogueBubblePrefab.transform.parent;
+            chatParent = dialogueBubblePrefab.transform.parent; 
+            Debug.Log(chatParent.name);
+            originalY = chatParent.position.y;           
+            
             // optionsContainer.SetActive(false); 
         }
         bool startFade = false;
@@ -80,14 +84,18 @@ namespace Yarn.Unity.Example
             startFade = true;
         }
         void Update(){
+            //scroll up and down script
+
             if(startFade)
                 fade.color = new Color(fade.color.r, fade.color.g, fade.color.b, fade.color.a+0.0075f);
         }
         void Start () 
         {
-            
             dialogueBubblePrefab.SetActive(false);
             UpdateMessageBoxSettings();
+            scrollLim[0] = 0.0f;
+            scrollLim[1] = 100.0f;
+            GameManager.game.controls.mouse.MouseScroll.performed += ctx => ScrollChat();
         }
 
         // YarnCommand <<Me>>, but does not use YarnCommand C# attribute, registers in Awake() instead
@@ -112,7 +120,20 @@ namespace Yarn.Unity.Example
 
         //THIS IS SUPPOSED TO BE CALLED BY THE YARN SCRIPT Yarnchatdialoge and display an image
         //;3
-       
+        float[] scrollLim = new float[2];
+        float scrollAmount = 1.0f;
+        float originalY;
+        void ScrollChat(){
+            float scrollDir = GameManager.game.controls.mouse.MouseScroll.ReadValue<float>();
+            
+            scrollLim[1] = chatParent.childCount * 200f;
+
+            scrollAmount = Mathf.Clamp(scrollAmount+ (scrollDir * Time.deltaTime * 2.5f), scrollLim[0], scrollLim[1]);
+            Debug.Log("Scroll Direction:" + scrollDir);
+            Debug.Log("Scroll Amount: " + scrollAmount);
+            
+            chatParent.position = new Vector3(chatParent.position.x, originalY+scrollAmount, chatParent.position.z);
+        }
         private Sprite picToPost;
         bool firstAfterImage = false;
         void DisplayImage() // TODO: you have to fix the texting order

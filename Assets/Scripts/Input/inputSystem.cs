@@ -62,6 +62,15 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MouseScroll"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""5e15a8ed-57c4-47df-bd00-df31c5a184c9"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -117,6 +126,17 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Click"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""67f38cf7-06f8-412d-b587-c9333b9eedcf"",
+                    ""path"": ""<Mouse>/scroll/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MouseScroll"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -235,6 +255,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         m_mouse_Drag = m_mouse.FindAction("Drag", throwIfNotFound: true);
         m_mouse_MousePosition = m_mouse.FindAction("MousePosition", throwIfNotFound: true);
         m_mouse_Click = m_mouse.FindAction("Click", throwIfNotFound: true);
+        m_mouse_MouseScroll = m_mouse.FindAction("MouseScroll", throwIfNotFound: true);
         // Camera States
         m_CameraStates = asset.FindActionMap("Camera States", throwIfNotFound: true);
         m_CameraStates_ChangeView = m_CameraStates.FindAction("Change View", throwIfNotFound: true);
@@ -308,6 +329,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
     private readonly InputAction m_mouse_Drag;
     private readonly InputAction m_mouse_MousePosition;
     private readonly InputAction m_mouse_Click;
+    private readonly InputAction m_mouse_MouseScroll;
     public struct MouseActions
     {
         private @InputSystem m_Wrapper;
@@ -316,6 +338,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         public InputAction @Drag => m_Wrapper.m_mouse_Drag;
         public InputAction @MousePosition => m_Wrapper.m_mouse_MousePosition;
         public InputAction @Click => m_Wrapper.m_mouse_Click;
+        public InputAction @MouseScroll => m_Wrapper.m_mouse_MouseScroll;
         public InputActionMap Get() { return m_Wrapper.m_mouse; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -337,6 +360,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                 @Click.started -= m_Wrapper.m_MouseActionsCallbackInterface.OnClick;
                 @Click.performed -= m_Wrapper.m_MouseActionsCallbackInterface.OnClick;
                 @Click.canceled -= m_Wrapper.m_MouseActionsCallbackInterface.OnClick;
+                @MouseScroll.started -= m_Wrapper.m_MouseActionsCallbackInterface.OnMouseScroll;
+                @MouseScroll.performed -= m_Wrapper.m_MouseActionsCallbackInterface.OnMouseScroll;
+                @MouseScroll.canceled -= m_Wrapper.m_MouseActionsCallbackInterface.OnMouseScroll;
             }
             m_Wrapper.m_MouseActionsCallbackInterface = instance;
             if (instance != null)
@@ -353,6 +379,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                 @Click.started += instance.OnClick;
                 @Click.performed += instance.OnClick;
                 @Click.canceled += instance.OnClick;
+                @MouseScroll.started += instance.OnMouseScroll;
+                @MouseScroll.performed += instance.OnMouseScroll;
+                @MouseScroll.canceled += instance.OnMouseScroll;
             }
         }
     }
@@ -470,6 +499,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         void OnDrag(InputAction.CallbackContext context);
         void OnMousePosition(InputAction.CallbackContext context);
         void OnClick(InputAction.CallbackContext context);
+        void OnMouseScroll(InputAction.CallbackContext context);
     }
     public interface ICameraStatesActions
     {
