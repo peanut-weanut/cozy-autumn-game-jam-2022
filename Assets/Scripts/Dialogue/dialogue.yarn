@@ -1020,8 +1020,9 @@ lets save it
 
 <<Me>>
 I'd like that //:)
-<<wait 5>>
-<<FadeToBlack>>
+//<<wait 5>>
+<<<StartWaitForSound>>>
+//<<FadeToBlack>>
 <<wait 10>>
 <<ToCredits>>
 // <<SetTrigger ending>>

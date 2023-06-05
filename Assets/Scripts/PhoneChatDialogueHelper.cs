@@ -41,6 +41,22 @@ namespace Yarn.Unity.Example
         Color currentBGColor = Color.black, currentTextColor = Color.white;
         public Image fade;
 
+        IEnumerator WaitForSound()
+        {
+            //checks to see if audio is playing
+            if (audioManager != null)
+            //wait until song stops playing then fade to black
+            //sound should be changed to the current song playing
+            yield return new WaitUntil(() => Sound.isPlaying == false);
+            FadeBlack();
+
+        }
+
+        void StartWaitForSound()
+        {
+            StartCoroutine(WaitForSound());
+        }
+
         void Awake()
         {
             runner = GetComponent<DialogueRunner>();
@@ -49,6 +65,7 @@ namespace Yarn.Unity.Example
             runner.AddCommandHandler("DisplayImage", DisplayImage);
             runner.AddCommandHandler("DisplayMoneyshot", DisplayMoneyshot);
             runner.AddCommandHandler("FadeToBlack", FadeBlack);
+            runner.AddCommandHandler("StartWaitForSound", StartWaitForSound);
             // runner.AddCommandHandler<int>("NextStage", SetNextStage); // set nextstage stage. ends dialogue and goes to next stage
             // runner.AddCommandHandler<Trigger>("CheckTrigger", OnTrigger) //taking a trigger as an argument, it will wait until the trigger is activated, and then go to the next dialogue
 
