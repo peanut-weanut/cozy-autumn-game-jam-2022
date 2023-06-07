@@ -5515,6 +5515,7 @@ GameObject:
   - component: {fileID: 175753312}
   - component: {fileID: 175753308}
   - component: {fileID: 175753313}
+  - component: {fileID: 175753314}
   m_Layer: 7
   m_Name: Lakehouse_Temp
   m_TagString: Lakehouse
@@ -5541,6 +5542,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 006d959bcd6818144a524343aeffd259, type: 2}
   - {fileID: 11400000, guid: 413e02262d6be8b4e83e6ef5e4c1dfa6, type: 2}
   triggerActive: 0
+  outline: {fileID: 0}
 --- !u!4 &175753312
 Transform:
   m_ObjectHideFlags: 0
@@ -5608,6 +5610,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &175753314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175753307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &187453266
 GameObject:
   m_ObjectHideFlags: 0
@@ -5620,6 +5640,7 @@ GameObject:
   - component: {fileID: 187453268}
   - component: {fileID: 187453267}
   - component: {fileID: 187453270}
+  - component: {fileID: 187453271}
   m_Layer: 7
   m_Name: bee_idle_0
   m_TagString: Bee
@@ -5733,6 +5754,25 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 014b39d631432374da4f8005e7e69187, type: 2}
   - {fileID: 11400000, guid: 413e02262d6be8b4e83e6ef5e4c1dfa6, type: 2}
   triggerActive: 0
+  outline: {fileID: 0}
+--- !u!114 &187453271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187453266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &239807247
 GameObject:
   m_ObjectHideFlags: 0
@@ -5744,6 +5784,7 @@ GameObject:
   - component: {fileID: 239807249}
   - component: {fileID: 239807248}
   - component: {fileID: 239807250}
+  - component: {fileID: 239807251}
   m_Layer: 7
   m_Name: Stump
   m_TagString: Stump
@@ -5837,6 +5878,25 @@ MonoBehaviour:
   - {fileID: 11400000, guid: abfd4ea81be4e164ca787b3def98fbf9, type: 2}
   - {fileID: 11400000, guid: 413e02262d6be8b4e83e6ef5e4c1dfa6, type: 2}
   triggerActive: 0
+  outline: {fileID: 0}
+--- !u!114 &239807251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239807247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!64 &249726733
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12304,6 +12364,7 @@ GameObject:
   - component: {fileID: 991964328}
   - component: {fileID: 991964327}
   - component: {fileID: 991964330}
+  - component: {fileID: 991964331}
   m_Layer: 7
   m_Name: bj_idle_0
   m_TagString: Bird
@@ -12417,6 +12478,25 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 014b39d631432374da4f8005e7e69187, type: 2}
   - {fileID: 11400000, guid: 413e02262d6be8b4e83e6ef5e4c1dfa6, type: 2}
   triggerActive: 0
+  outline: {fileID: 0}
+--- !u!114 &991964331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991964326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1018698852
 GameObject:
   m_ObjectHideFlags: 0
@@ -12470,6 +12550,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2253e33f8782b7846b19e176adc21450, type: 3}
   - {fileID: 8300000, guid: 3109681693856b346a746e32b925dd0e, type: 3}
   - {fileID: 8300000, guid: 18ffd207eea7cf846a39af0e5b5ecf89, type: 3}
+  indicatorSound: {fileID: 8300000, guid: 643dd0c24eb254d4e9f32728148181d0, type: 3}
   source: []
   songPack0:
   - {fileID: 8300000, guid: 1dffb7269d6f2764cb13dca6158666ef, type: 3}
@@ -12506,6 +12587,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0879d54428b4cd648a9c98433893044e, type: 3}
   - {fileID: 8300000, guid: 2577c715337e81549ac8da36b10fafb0, type: 3}
   playText: 0
+  isCurrentSongEnded: 0
 --- !u!82 &1018698854
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12627,11 +12709,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: da769f930d27dd148882220ac74bdef2, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.143
+  m_audioClip: {fileID: 8300000, guid: 643dd0c24eb254d4e9f32728148181d0, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.81
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -19144,6 +19226,7 @@ GameObject:
   - component: {fileID: 1498742651}
   - component: {fileID: 1498742650}
   - component: {fileID: 1498742649}
+  - component: {fileID: 1498742653}
   m_Layer: 7
   m_Name: frog_idle_0
   m_TagString: Frog
@@ -19170,6 +19253,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 014b39d631432374da4f8005e7e69187, type: 2}
   - {fileID: 11400000, guid: 413e02262d6be8b4e83e6ef5e4c1dfa6, type: 2}
   triggerActive: 0
+  outline: {fileID: 0}
 --- !u!95 &1498742650
 Animator:
   serializedVersion: 4
@@ -19257,6 +19341,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 50.522, z: 0}
+--- !u!114 &1498742653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498742648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1504765543
 GameObject:
   m_ObjectHideFlags: 0
@@ -24670,6 +24772,25 @@ MonoBehaviour:
   - {fileID: 11400000, guid: abfd4ea81be4e164ca787b3def98fbf9, type: 2}
   - {fileID: 11400000, guid: 413e02262d6be8b4e83e6ef5e4c1dfa6, type: 2}
   triggerActive: 0
+  outline: {fileID: 0}
+--- !u!114 &1557091098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557091093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1567365669
 GameObject:
   m_ObjectHideFlags: 0
@@ -29514,6 +29635,7 @@ MonoBehaviour:
   isDrawable: 0
   myTrigger: []
   triggerActive: 0
+  outline: {fileID: 0}
 --- !u!4 &1573391286 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2894698916591434107, guid: dc9bedbb650f5f9409c2161ad5f872f1, type: 3}
@@ -35132,6 +35254,7 @@ GameObject:
   - component: {fileID: 1969347446}
   - component: {fileID: 1969347445}
   - component: {fileID: 1969347448}
+  - component: {fileID: 1969347449}
   m_Layer: 7
   m_Name: bird_idle_0
   m_TagString: Bird
@@ -35245,6 +35368,25 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 014b39d631432374da4f8005e7e69187, type: 2}
   - {fileID: 11400000, guid: 413e02262d6be8b4e83e6ef5e4c1dfa6, type: 2}
   triggerActive: 0
+  outline: {fileID: 0}
+--- !u!114 &1969347449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969347444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1001 &1983450220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35334,6 +35476,7 @@ GameObject:
   - component: {fileID: 1988796867}
   - component: {fileID: 1988796866}
   - component: {fileID: 1988796869}
+  - component: {fileID: 1988796870}
   m_Layer: 7
   m_Name: duck_idle_0
   m_TagString: Untagged
@@ -35447,6 +35590,25 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 014b39d631432374da4f8005e7e69187, type: 2}
   - {fileID: 11400000, guid: 413e02262d6be8b4e83e6ef5e4c1dfa6, type: 2}
   triggerActive: 0
+  outline: {fileID: 0}
+--- !u!114 &1988796870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988796865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1993556612
 GameObject:
   m_ObjectHideFlags: 0
@@ -40652,6 +40814,7 @@ GameObject:
   - component: {fileID: 8581563479268069519}
   - component: {fileID: 7435144395263917161}
   - component: {fileID: 8581563479268069520}
+  - component: {fileID: 8581563479268069521}
   m_Layer: 7
   m_Name: Water_fall
   m_TagString: Waterfall
@@ -40671,6 +40834,7 @@ GameObject:
   - component: {fileID: 3127819603243822813}
   - component: {fileID: 4293583133123976380}
   - component: {fileID: 7981754766482388535}
+  - component: {fileID: 7981754766482388536}
   m_Layer: 7
   m_Name: Sign
   m_TagString: Plaque
@@ -41384,6 +41548,7 @@ GameObject:
   - component: {fileID: 3779108750085973542}
   - component: {fileID: 1798444945247784964}
   - component: {fileID: 8765693879394251194}
+  - component: {fileID: 8765693879394251195}
   m_Layer: 7
   m_Name: Pond_big
   m_TagString: Lake
@@ -41534,6 +41699,25 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5276bcc419c9455439f84f5f04a96a37, type: 2}
   - {fileID: 11400000, guid: 413e02262d6be8b4e83e6ef5e4c1dfa6, type: 2}
   triggerActive: 0
+  outline: {fileID: 0}
+--- !u!114 &7981754766482388536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482631874713553140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!23 &8046591555013244614
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41717,6 +41901,25 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bf7fafbfe486dd447a550635c3dd278f, type: 2}
   - {fileID: 11400000, guid: 413e02262d6be8b4e83e6ef5e4c1dfa6, type: 2}
   triggerActive: 0
+  outline: {fileID: 0}
+--- !u!114 &8581563479268069521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218966586584943121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1001 &8606984384627089232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41798,6 +42001,7 @@ GameObject:
   - component: {fileID: 1397300606950837352}
   - component: {fileID: 3740780941596511717}
   - component: {fileID: 8765315834061045132}
+  - component: {fileID: 8765315834061045133}
   m_Layer: 7
   m_Name: Park_bench_Table
   m_TagString: Picnic Table
@@ -41824,6 +42028,25 @@ MonoBehaviour:
   - {fileID: 11400000, guid: abfd4ea81be4e164ca787b3def98fbf9, type: 2}
   - {fileID: 11400000, guid: 413e02262d6be8b4e83e6ef5e4c1dfa6, type: 2}
   triggerActive: 0
+  outline: {fileID: 0}
+--- !u!114 &8765315834061045133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8765315834061045131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!4 &8765693879394251193
 Transform:
   m_ObjectHideFlags: 0
@@ -41858,3 +42081,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bf7fafbfe486dd447a550635c3dd278f, type: 2}
   - {fileID: 11400000, guid: 413e02262d6be8b4e83e6ef5e4c1dfa6, type: 2}
   triggerActive: 0
+  outline: {fileID: 0}
+--- !u!114 &8765693879394251195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7186990261776085734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []

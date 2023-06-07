@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public AudioClip[] DrawSounds;
+    public AudioClip indicatorSound;
     public AudioSource[] source;
     public AudioClip[] songPack0;
     public AudioClip[] songPack1;
@@ -41,8 +42,6 @@ public class AudioManager : MonoBehaviour
         //GameManager.game.dialogueRunner.OnDialogueBegin += EndingSongIndex;
         //GameManager.game.dialogueRunner.OnDialogueEnd += AmbientSongIndex;
         controls.CameraStates.ChangeView.performed += ctx => PlayPaperSound();
-       
-        
     }
     void StartMusic(){
         Debug.Log("Start music executed.");
@@ -81,6 +80,26 @@ public class AudioManager : MonoBehaviour
         // } else if (TestCrossFade == 2){
         //     CrossfadeSources(6, 5);
         // }
+    }
+    public bool playPOI{
+        get{
+            return _playPOI;
+        }
+        set{
+            _playPOI = value;
+            PlayPOISound(_playPOI);
+        }
+    }
+    private bool _playPOI;
+    void PlayPOISound(bool play){
+        if(!play){
+            print("Didn't play POI sound.");
+            return;
+        }
+        Debug.Log("Played POI sound.");
+        source[3].PlayOneShot(indicatorSound);
+        playPOI = false;
+
     }
     void PlayPaperSound(){
         source[0].PlayOneShot(paperSounds[currentPaperSound]);

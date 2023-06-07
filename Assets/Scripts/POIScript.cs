@@ -13,7 +13,7 @@ public class POIScript : MonoBehaviour
     private Renderer render;
     private string myTag;
     List<int> activeIndices = new List<int>();
-    
+    public Outline outline;
     private void Start(){
         GameManager.game.OnListUpdate += CheckTrigger;
         GameManager.game.camControls.POISeen += CheckMe;
@@ -21,19 +21,34 @@ public class POIScript : MonoBehaviour
         if(!startVisible)
             render.enabled = false;
         myTag = transform.tag;
+        outline = GetComponent<Outline>();
+        outline.enabled = false;
     }
     public void OnBecameVisible(){ //if it mattered, then this method would return a ray instead 
-        isVisible = true;    
+        isVisible = true; 
+        SetOutline();
     }
     public void OnBecameInvisible(){ //if it mattered, then this method would return a ray instead 
         isVisible = false;  
+        SetOutline();
+    }
+    void SetOutline(){
+        if(outline){
+            if(isDrawable){
+                outline.enabled = true;
+            } else{
+                outline.enabled = false;
+            }
+        }
     }
     void CheckMe(){
-            if(GameManager.game.camControls.realCurrentPOI == this.transform.gameObject){
-                isDrawable = false;
-                LockType();
-                Debug.Log(this.transform.name + " has just checked itself.");
-            }
+        if(GameManager.game.camControls.realCurrentPOI == this.transform.gameObject){
+            isDrawable = false;
+            LockType();
+            GameManager.game.audioManager.playPOI = true;
+            //toggle visual indicator here.
+            Debug.Log(this.transform.name + " has just checked itself.");
+        }
     }
     void LockType(){
         var myType = GameObject.FindGameObjectsWithTag(myTag);
@@ -65,6 +80,7 @@ public class POIScript : MonoBehaviour
             } 
             else if (trigger.id.EndsWith("_MakeDrawable")){
                 isDrawable = true;
+                SetOutline();
             } 
             else if(trigger.id.EndsWith("_Despawn")){
                 render.enabled = false;
