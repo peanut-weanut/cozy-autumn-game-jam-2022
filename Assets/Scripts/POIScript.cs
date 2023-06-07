@@ -33,12 +33,8 @@ public class POIScript : MonoBehaviour
         SetOutline();
     }
     void SetOutline(){
-        if(outline){
-            if(isDrawable){
-                outline.enabled = true;
-            } else{
-                outline.enabled = false;
-            }
+        if(GetComponent<Outline>()){
+            outline.enabled = isDrawable;
         }
     }
     void CheckMe(){
