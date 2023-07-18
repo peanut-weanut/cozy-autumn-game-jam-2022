@@ -132,7 +132,7 @@ namespace Yarn.Unity.Example
             Debug.Log("Scroll Direction:" + scrollDir);
             Debug.Log("Scroll Amount: " + scrollAmount);
             
-            chatParent.position = new Vector3(chatParent.position.x, originalY+scrollAmount, chatParent.position.z);
+            chatParent.position = new Vector3(chatParent.position.x, originalY-scrollAmount, chatParent.position.z);
         }
         private Sprite picToPost;
         bool firstAfterImage = false;
@@ -149,14 +149,14 @@ namespace Yarn.Unity.Example
 
             chatImageGameObject.AddComponent<HorizontalLayoutGroup>();
             
-
             var rectValue = chatImageGameObject.AddComponent<LayoutElement>();
 
             rectValue.preferredHeight = 200f;
+            rectValue.preferredWidth = 2f;
 
             var localScale = chatImageGameObject.GetComponent<RectTransform>();
 
-            localScale.localScale = new Vector3 (0.35f, 0.5f, 1f);
+            localScale.localScale = new Vector3 (0.35f, 0.5f, 1f) * 0.75f;
             chatImageGameObject.transform.SetParent(parent.transform);
             chatImageGameObject.transform.SetAsLastSibling();
             chatImageGameObject.SetActive(true);
@@ -169,11 +169,6 @@ namespace Yarn.Unity.Example
 
             Debug.Log("Posted Image to Chat");
             //Instantiate(chatImageGameObject, dialogueBubblePrefab.transform.parent);
-
-            
-
-
-
 
             //Sprite.Create(picToPost, new Rect(0.0f, 0.0f, picToPost.width, picToPost.height), new Vector2(0.5f, 0.5f), 100.0f);
             //var bg = dialogueBubblePrefab.GetComponentInChildren<Image>();
@@ -235,7 +230,8 @@ namespace Yarn.Unity.Example
             {
                 layoutGroup.padding.left = 0;
                 layoutGroup.padding.right = 32;
-                bg.transform.SetAsFirstSibling();
+                bg.transform.SetAsLastSibling();
+                Debug.LogWarning("Set bubble as last sibling in UpdateMessageBox.");
             }
         }
 
@@ -251,6 +247,7 @@ namespace Yarn.Unity.Example
                     chatParent
                 );
                 dialogueBubblePrefab.transform.SetAsLastSibling();
+                Debug.LogAssertion("Set bubble as last sibling in CloneMessageBox.");
             }
             isFirstMessage = false;
 
@@ -271,8 +268,15 @@ namespace Yarn.Unity.Example
             CloneMessageBoxToHistory();
             if (firstAfterImage){
                 chatImageGameObject.transform.SetAsLastSibling();
+                chatImageGameObject.transform.SetSiblingIndex(chatImageGameObject.transform.GetSiblingIndex()-1);
+                // chatImageGameObject.GetComponent<RectTransform>().localScale = new Vector3 (0.35f, 0.5f, 1f);
+                // Debug.LogAssertion("Set bubble as last sibling in RunLine.");
+                // var replacedObject = chatImageGameObject.transform.parent.GetChild(chatImageGameObject.transform.parent.childCount-1);
+                // Debug.LogWarning(replacedObject.name);
+                // replacedObject.SetSiblingIndex(replacedObject.GetSiblingIndex()-1);
                 firstAfterImage = false;
             }
+            
 
             text.text = dialogueLine.TextWithoutCharacterName.Text;
 
