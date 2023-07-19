@@ -124,7 +124,7 @@ namespace Yarn.Unity.Example
         float scrollAmount = 1.0f;
         float originalY;
         void ScrollChat(){
-            float scrollDir = GameManager.game.controls.mouse.MouseScroll.ReadValue<float>();
+            float scrollDir = -GameManager.game.controls.mouse.MouseScroll.ReadValue<float>();
             
             scrollLim[1] = chatParent.childCount * 200f;
 
@@ -152,7 +152,7 @@ namespace Yarn.Unity.Example
             var rectValue = chatImageGameObject.AddComponent<LayoutElement>();
 
             rectValue.preferredHeight = 200f;
-            rectValue.preferredWidth = 2f;
+            // rectValue.preferredWidth = 2f;
 
             var localScale = chatImageGameObject.GetComponent<RectTransform>();
 
@@ -230,7 +230,7 @@ namespace Yarn.Unity.Example
             {
                 layoutGroup.padding.left = 0;
                 layoutGroup.padding.right = 32;
-                bg.transform.SetAsLastSibling();
+                bg.transform.SetAsFirstSibling();
                 Debug.LogWarning("Set bubble as last sibling in UpdateMessageBox.");
             }
         }
