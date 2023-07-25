@@ -1000,31 +1000,32 @@ yknow what hold on
 IM gonna send you a drawing
 
 //[Pause for about 5 seconds or so]
-<<wait 10>>
+<<wait 20>>
 <<DisplayMoneyshot>>
 
 <<wait 1>>
 tada!
-<<wait 2.5>>
+<<wait 20>>
 it's us 
 <<wait 4>>
 
 <<Me>>
 Am I holding a hammer?
 <<wait 4>>
-
+<<Them>>
 i miss that place
 <<wait 5>>
 lets save it
 <<wait 8>>
 
 <<Me>>
-I'd like that //:)
+I'd like that 
+//:)
 //<<wait 5>>
-<<<StartWaitForSound>>>
+<<StartWaitForSound>>
 //<<FadeToBlack>>
-<<wait 10>>
-<<ToCredits>>
+<<wait 30>>
+<<jump StopDialogue>>
 // <<SetTrigger ending>>
 //fadetoblack
 

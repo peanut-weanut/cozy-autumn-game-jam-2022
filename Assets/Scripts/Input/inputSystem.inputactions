@@ -208,6 +208,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "SkipToLastSequence",
+                    "type": "Button",
+                    "id": "262e4272-f10f-415f-b749-c378729069e7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -219,6 +228,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "AdvanceCutscene",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "73c7ce68-d2af-4ec6-bb35-47a0dc80baf0",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SkipToLastSequence",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

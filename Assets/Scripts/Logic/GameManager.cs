@@ -68,11 +68,18 @@ public class GameManager : MonoBehaviour
     void Start(){
         POIs = FindObjectsInLayer(7);
         controls.debug.AdvanceCutscene.performed += ctx => AdvanceState();
+        controls.debug.SkipToLastSequence.performed += ContextMenu => SkipToLastSequence();
         canvas.TransDone += AllowDrawing;
         canvas.TransDoneLooking += DisallowDrawing;
         drawUtils.OnDoneDrawing += PlayPrompt;
         
         AdvanceState();
+    }
+    void SkipToLastSequence(){
+        nextPrompt = "PromptLakehouse";
+        StartNewDialogue();
+        UpdateTriggers(new List<Trigger>{triggers[17],triggers[18]});
+        audioManager.currentSongPackIndex = 4;
     }
     void ToCredits(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -195,7 +202,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Starting new dialogue: " + nextPrompt);
     }
     // [YarnCommand("Stop")] // for the ui animation
-    void StopDialogue(){
+    public void StopDialogue(){
         dialogueRunner.Stop();
     }
     void Update(){

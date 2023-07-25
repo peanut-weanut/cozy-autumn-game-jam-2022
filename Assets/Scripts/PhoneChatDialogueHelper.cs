@@ -44,8 +44,10 @@ namespace Yarn.Unity.Example
 
         IEnumerator WaitForSound()
         {
+            GameManager.game.StopDialogue();
+            GameObject.Destroy(GameManager.game.dialogueRunner);
             //checks to see if audio is playing
-            if (audioManager != null){
+            if (audioManager == null){
                 yield return new WaitForEndOfFrame();
             } else{
                 //wait until song stops playing then fade to black
@@ -87,7 +89,10 @@ namespace Yarn.Unity.Example
             //scroll up and down script
 
             if(startFade)
-                fade.color = new Color(fade.color.r, fade.color.g, fade.color.b, fade.color.a+0.0075f);
+                fade.color = new Color(fade.color.r, fade.color.g, fade.color.b, fade.color.a+0.0025f);
+            if(fade.color.a >= 1.0f){
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
         }
         void Start () 
         {
@@ -129,8 +134,8 @@ namespace Yarn.Unity.Example
             scrollLim[1] = chatParent.childCount * 200f;
 
             scrollAmount = Mathf.Clamp(scrollAmount+ (scrollDir * Time.deltaTime * 2.5f), scrollLim[0], scrollLim[1]);
-            Debug.Log("Scroll Direction:" + scrollDir);
-            Debug.Log("Scroll Amount: " + scrollAmount);
+            // Debug.Log("Scroll Direction:" + scrollDir);
+            // Debug.Log("Scroll Amount: " + scrollAmount);
             
             chatParent.position = new Vector3(chatParent.position.x, originalY-scrollAmount, chatParent.position.z);
         }
@@ -167,7 +172,7 @@ namespace Yarn.Unity.Example
 
             //rectValue.sizeDelta = new Vector2(415.2f, 79.48f);
 
-            Debug.Log("Posted Image to Chat");
+            // Debug.Log("Posted Image to Chat");
             //Instantiate(chatImageGameObject, dialogueBubblePrefab.transform.parent);
 
             //Sprite.Create(picToPost, new Rect(0.0f, 0.0f, picToPost.width, picToPost.height), new Vector2(0.5f, 0.5f), 100.0f);
@@ -205,7 +210,7 @@ namespace Yarn.Unity.Example
 
             //rectValue.sizeDelta = new Vector2(415.2f, 79.48f);
 
-            Debug.Log("Posted Image to Chat");
+            // Debug.Log("Posted Image to Chat");
             //Instantiate(chatImageGameObject, dialogueBubblePrefab.transform.parent);
         }
 
@@ -231,7 +236,7 @@ namespace Yarn.Unity.Example
                 layoutGroup.padding.left = 0;
                 layoutGroup.padding.right = 32;
                 bg.transform.SetAsFirstSibling();
-                Debug.LogWarning("Set bubble as last sibling in UpdateMessageBox.");
+                // Debug.LogWarning("Set bubble as last sibling in UpdateMessageBox.");
             }
         }
 
@@ -247,7 +252,7 @@ namespace Yarn.Unity.Example
                     chatParent
                 );
                 dialogueBubblePrefab.transform.SetAsLastSibling();
-                Debug.LogAssertion("Set bubble as last sibling in CloneMessageBox.");
+                // Debug.LogAssertion("Set bubble as last sibling in CloneMessageBox.");
             }
             isFirstMessage = false;
 

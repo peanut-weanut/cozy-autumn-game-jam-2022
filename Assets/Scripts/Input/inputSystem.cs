@@ -230,6 +230,15 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SkipToLastSequence"",
+                    ""type"": ""Button"",
+                    ""id"": ""262e4272-f10f-415f-b749-c378729069e7"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -241,6 +250,17 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""AdvanceCutscene"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""73c7ce68-d2af-4ec6-bb35-47a0dc80baf0"",
+                    ""path"": ""<Keyboard>/l"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SkipToLastSequence"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -266,6 +286,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         // debug
         m_debug = asset.FindActionMap("debug", throwIfNotFound: true);
         m_debug_AdvanceCutscene = m_debug.FindAction("AdvanceCutscene", throwIfNotFound: true);
+        m_debug_SkipToLastSequence = m_debug.FindAction("SkipToLastSequence", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -465,11 +486,13 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_debug;
     private IDebugActions m_DebugActionsCallbackInterface;
     private readonly InputAction m_debug_AdvanceCutscene;
+    private readonly InputAction m_debug_SkipToLastSequence;
     public struct DebugActions
     {
         private @InputSystem m_Wrapper;
         public DebugActions(@InputSystem wrapper) { m_Wrapper = wrapper; }
         public InputAction @AdvanceCutscene => m_Wrapper.m_debug_AdvanceCutscene;
+        public InputAction @SkipToLastSequence => m_Wrapper.m_debug_SkipToLastSequence;
         public InputActionMap Get() { return m_Wrapper.m_debug; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -482,6 +505,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                 @AdvanceCutscene.started -= m_Wrapper.m_DebugActionsCallbackInterface.OnAdvanceCutscene;
                 @AdvanceCutscene.performed -= m_Wrapper.m_DebugActionsCallbackInterface.OnAdvanceCutscene;
                 @AdvanceCutscene.canceled -= m_Wrapper.m_DebugActionsCallbackInterface.OnAdvanceCutscene;
+                @SkipToLastSequence.started -= m_Wrapper.m_DebugActionsCallbackInterface.OnSkipToLastSequence;
+                @SkipToLastSequence.performed -= m_Wrapper.m_DebugActionsCallbackInterface.OnSkipToLastSequence;
+                @SkipToLastSequence.canceled -= m_Wrapper.m_DebugActionsCallbackInterface.OnSkipToLastSequence;
             }
             m_Wrapper.m_DebugActionsCallbackInterface = instance;
             if (instance != null)
@@ -489,6 +515,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                 @AdvanceCutscene.started += instance.OnAdvanceCutscene;
                 @AdvanceCutscene.performed += instance.OnAdvanceCutscene;
                 @AdvanceCutscene.canceled += instance.OnAdvanceCutscene;
+                @SkipToLastSequence.started += instance.OnSkipToLastSequence;
+                @SkipToLastSequence.performed += instance.OnSkipToLastSequence;
+                @SkipToLastSequence.canceled += instance.OnSkipToLastSequence;
             }
         }
     }
@@ -513,5 +542,6 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
     public interface IDebugActions
     {
         void OnAdvanceCutscene(InputAction.CallbackContext context);
+        void OnSkipToLastSequence(InputAction.CallbackContext context);
     }
 }
