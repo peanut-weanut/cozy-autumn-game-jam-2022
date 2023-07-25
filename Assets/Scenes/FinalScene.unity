@@ -390,6 +390,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 510d28b669c8d664bb13e7c6c70e292b, type: 3}
+--- !u!1 &115198490 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8969981254383336152, guid: e6ea56d050357fb49afa6cb0c5d95c9f, type: 3}
+  m_PrefabInstance: {fileID: 881058414}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &115198492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115198490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 279645990}
+  m_Horizontal: 1
+  m_Vertical: 1
+  m_MovementType: 1
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 1987928000}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &123183901
 GameObject:
   m_ObjectHideFlags: 0
@@ -5911,6 +5946,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4354706438806220888, guid: e451fcabed90ba147aa0cacda0a08457, type: 3}
+--- !u!224 &279645990 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8969981256357223181, guid: e6ea56d050357fb49afa6cb0c5d95c9f, type: 3}
+  m_PrefabInstance: {fileID: 881058414}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &285934810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12248,6 +12288,10 @@ PrefabInstance:
     - target: {fileID: 8969981256357223181, guid: e6ea56d050357fb49afa6cb0c5d95c9f, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8969981256357223181, guid: e6ea56d050357fb49afa6cb0c5d95c9f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0007042921
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6ea56d050357fb49afa6cb0c5d95c9f, type: 3}
@@ -35514,6 +35558,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 283d7e57c2d005947b1b66395d58d292, type: 3}
+--- !u!224 &1987928000 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8969981254918857437, guid: e6ea56d050357fb49afa6cb0c5d95c9f, type: 3}
+  m_PrefabInstance: {fileID: 881058414}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1988796865
 GameObject:
   m_ObjectHideFlags: 0
