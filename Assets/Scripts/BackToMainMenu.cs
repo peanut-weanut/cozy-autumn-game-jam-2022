@@ -16,7 +16,7 @@ public class BackToMainMenu : MonoBehaviour
     {
         
     }
-    void ToMainMenu(){
+    public void ToMainMenu(){
         SceneManager.LoadScene(0); // if you have time then just make it go to a copy of scene 1 with no dialogue
     }
 }
