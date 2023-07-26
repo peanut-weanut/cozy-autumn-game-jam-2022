@@ -39,7 +39,7 @@ public class POIScript : MonoBehaviour
     }
     void CheckMe(){
         if(GameManager.game.camControls.realCurrentPOI == this.transform.gameObject){
-            isDrawable = false;
+            // isDrawable = false;
             LockType();
             GameManager.game.audioManager.playPOI = true;
             //toggle visual indicator here.
@@ -78,8 +78,7 @@ public class POIScript : MonoBehaviour
                 isDrawable = true;
                 SetOutline();
             } 
-            else if(trigger.id.EndsWith("_Despawn")){
-                render.enabled = false;
+            else if(trigger.id.EndsWith("_Disable_drawable")){
                 isDrawable = false;
             }
             else if(trigger.id.EndsWith("_Despawn")){

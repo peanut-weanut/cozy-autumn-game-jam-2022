@@ -78,6 +78,7 @@ public class GameManager : MonoBehaviour
     void SkipToLastSequence(){
         nextPrompt = "PromptLakehouse";
         StartNewDialogue();
+        
         UpdateTriggers(new List<Trigger>{triggers[17],triggers[18]});
         audioManager.currentSongPackIndex = 4;
     }
@@ -87,6 +88,7 @@ public class GameManager : MonoBehaviour
     public bool[] alreadyPlayed = new bool[6];
     void PlayPrompt(){
         if(camControls.DebugPOISeen){
+            GenericDisable();
             switch(camControls.realCurrentPOI.tag){
                 case "Plaque":
                     Debug.Log("Ran " + camControls.realCurrentPOI.tag);
@@ -154,6 +156,23 @@ public class GameManager : MonoBehaviour
             StartFailure();
         }
     }
+    void GenericDisable(){
+        foreach(GameObject POI in stage0Objects){
+            POI.GetComponent<POIScript>().isDrawable = false;
+        }
+        foreach(GameObject POI in stage1Objects){
+            POI.GetComponent<POIScript>().isDrawable = false;
+        }
+        foreach(GameObject POI in stage2Objects){
+            POI.GetComponent<POIScript>().isDrawable = false;
+        }
+        foreach(GameObject POI in stage3Objects){
+            POI.GetComponent<POIScript>().isDrawable = false;
+        }
+        foreach(GameObject POI in stage4Objects){
+            POI.GetComponent<POIScript>().isDrawable = false;
+        }
+    }
     void StartFailure(){
          switch(state){
             case -1:
@@ -161,22 +180,37 @@ public class GameManager : MonoBehaviour
             break;
             case 0:
                 dialogueRunner.Stop();
+                foreach(GameObject POI in stage0Objects){
+                    POI.GetComponent<POIScript>().isDrawable = true;
+                }
                 dialogueRunner.StartDialogue("PromptPlaqueFail");
             break;
             case 1:
                 dialogueRunner.Stop();
+                foreach(GameObject POI in stage1Objects){
+                    POI.GetComponent<POIScript>().isDrawable = true;
+                }
                 dialogueRunner.StartDialogue("PromptSomewhereToSwimFail");
             break;
             case 2:
                 dialogueRunner.Stop();
+                foreach(GameObject POI in stage2Objects){
+                    POI.GetComponent<POIScript>().isDrawable = true;
+                }
                 dialogueRunner.StartDialogue("PromptAnimalsFail");
             break;
             case 3:
                 dialogueRunner.Stop();
+                foreach(GameObject POI in stage3Objects){
+                    POI.GetComponent<POIScript>().isDrawable = true;
+                }
                 dialogueRunner.StartDialogue("PromptSomewhereToSitFail");
             break;
             case 4:
                 dialogueRunner.Stop();
+                foreach(GameObject POI in stage4Objects){
+                    POI.GetComponent<POIScript>().isDrawable = true;
+                }
                 dialogueRunner.StartDialogue("PromptLakehouseFail");
             break;
          }
@@ -233,6 +267,7 @@ public class GameManager : MonoBehaviour
             case 0:
                 if (!alreadyPlayed[1]){
                     StartNewDialogue();
+                    // UpdateTriggers(new List<Trigger>{triggers[21]});
                     UpdateTriggers(new List<Trigger>{triggers[2]});
                     nextPrompt = "PromptSomewhereToSwim";
                     audioManager.currentSongPackIndex = 0;
@@ -242,6 +277,7 @@ public class GameManager : MonoBehaviour
             case 1:
                 if (!alreadyPlayed[2]){
                     StartNewDialogue();
+                    // UpdateTriggers(new List<Trigger>{triggers[21]});
                     UpdateTriggers(new List<Trigger>{triggers[5], triggers[6]});
                     nextPrompt = "PromptAnimals";
                     audioManager.currentSongPackIndex = 1;
@@ -254,6 +290,7 @@ public class GameManager : MonoBehaviour
                     foreach(GameObject POI in stage3Objects){
                         POI.GetComponent<POIScript>().isDrawable = true;
                     }
+                    // UpdateTriggers(new List<Trigger>{triggers[21]});
                     UpdateTriggers(new List<Trigger>{triggers[9],triggers[10]});
                     nextPrompt = "PromptSomewhereToSit";
                     audioManager.currentSongPackIndex = 2;
@@ -263,6 +300,7 @@ public class GameManager : MonoBehaviour
             case 3:
                 if (!alreadyPlayed[4]){
                     StartNewDialogue();
+                    
                     UpdateTriggers(new List<Trigger>{triggers[13],triggers[14]});
                     nextPrompt = "PromptLakehouse";
                     audioManager.currentSongPackIndex = 3;
@@ -272,6 +310,7 @@ public class GameManager : MonoBehaviour
             case 4:
                 if (!alreadyPlayed[5]){
                     StartNewDialogue();
+                    // UpdateTriggers(new List<Trigger>{triggers[21]});
                     UpdateTriggers(new List<Trigger>{triggers[17],triggers[18]});
                     audioManager.currentSongPackIndex = 4;
                 // nextPrompt = "PromptPlaque";
