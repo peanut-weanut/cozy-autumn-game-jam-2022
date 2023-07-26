@@ -1000,7 +1000,7 @@ yknow what hold on
 IM gonna send you a drawing
 
 //[Pause for about 5 seconds or so]
-<<wait 20>>
+<<wait 15>>
 <<DisplayMoneyshot>>
 
 <<wait 1>>
