@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7b7146c5064e29c4d9f251aaf46b85d0
+guid: e00e235749f2c2241ab506758699c341
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,12 +7,12 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Tree_Leaves_mid
+      name: Green_Leaves_matt
     second: {fileID: 2100000, guid: 2ecb0e3cb66091740b155c8dced76631, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Trunk_matt
+      name: Trunk_matt.001
     second: {fileID: 2100000, guid: 2625cc957b9816549b5c8e3755dca36e, type: 2}
   materials:
     materialImportMode: 2
@@ -45,7 +45,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -98,7 +98,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
